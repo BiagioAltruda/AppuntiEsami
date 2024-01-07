@@ -1,0 +1,202 @@
+-Dimostrare che ogni sottogruppo di un gruppo ciclico è ciclico OK
+-Il Quoziente nel caso della domanda precedente è ciclico? OK
+-Dimostra che non esistono due estensioni distinte di grado 2 di R ??
+-Cosa dice il lemma di Gauss? OK
+-Sia G gruppo con |G|=n dimostra che G si può immergere in Sn ??
+-Parlami delle radici dell'unità sui campi finiti OK
+-Grado del campo di spezzamento di x^10-1 su Fp al variare di p primo 
+-Calcolare #{(a,b,c) £ (N100)^3 | 2^5 divide abc}
+-Esiste un gruppo G/(G^k) con elementi di ord infinito?
+-Parlami del gruppo Q/Z
+-Dire per quali n esiste un'estensione di Q(i) di grado n, dimostrazione di esistenza e unicità del polinomio minimo;
+-cosa è un gruppo ciclico?
+-esempio di omo da Z in Z iniettivo ma non surgettivo
+-campo di spezzamento di (x^3-5)(x^2+6) su Q
+-dimostra che in un'estensione finita ogni suo elemento è algebrico
+-dimostrare che p primo implica p irriducibile
+-campo di spezzamento di x^16+2x^8+7
+-campo di spezzamento di x^16-1
+-numero di automorfismi di S3 e di S3 X S3
+-teorema di corrispondenza tra sottogruppi
+-numero dei divisori di 0 in F5[x]/(x^15-1)
+-data l'estensione K=Q(radice di a, radice di b) con a e b razionali (dimostrare che non è restrittivo imporre che siano interi), determinare i possibili gradi su Q, dire per quali coppie (a,b) il grado è 4 e, fissati a e b, trovare tutti i campi "compresi" tra Q e K
+-cos'è K[x]/(f(x))? Come si definisce il prodotto tra i suoi elementi? Quanti elementi ha?
+-p(x) a coefficienti razionali e di grado n, (x-a)^m|p(x) con 2m>n, dimostrare che a è razionale
+-parla della funzione di Eulero
+-come si dimostra che un sottogruppo moltiplicativo finito di un campo è ciclico?
+-dati un gruppo G, un suo automorfismo f e due sottogruppi normali H e K tali che f(H)=K, dimostrare che G/H e G/K sono isomorfi;
+-è vero in generale che se G/H e G/K sono isomorfi allora lo sono anche H e K?
+-definizione di estensione finita ed estensione algebrica + dimostrazione di finita --> algebrica
+-parlami del teorema cinese del resto
+-fai un parallelo del teorema cinese per gli anelli; (in particolare F2[x]/(x^4+x+1) X F2[x]/(x^4+x^2+1)
+-cosa dice il teorema fondamentale dell'algebra?
+-se ho un campo K posso sempre prendere un'estensione di grado 4?
+-polinomi irriducibili su Q e su Q(i)
+-Gruppi abeliani : che ordine può avere un elemento di G che ordine può avere un sottogruppo di G
+-che cos'è un'estensione algebrica? dimostra che ogni estensione finita è algebrica
+-contare le f surgettive tra due insiemi
+-Dati un campo K e una sua estensione F, spiegare che differenza c'è tra essere un'estensione algebrica e un'estensione finita di K, e dimostrare che una cosa implica l'altra ma non viceversa
+-Trova un gruppo tale che, per infinite scelte di n (naturale) esistano infiniti elementi di ordine n.
+-Definizione Anello Euclideo + Dimostrazione del perché Z[i] è Euclideo
+-Cosa mi sa dire del quoziente Z[i]/(c+id)
+-Dal punto di vista della struttura algebrica cosa possiamo dire? In che caso è un dominio o un campo
+-Cosa succede se quoziento per un elemento non irriducibile?
+-A cosa è isomorfo Z[i]/(i+1)
+-Z[i]/3 x Z[i]/(1+i) isomorfo a K. Trovare K
+-TCR
+-Vero o falso: dato G gruppo, se ha un numero finito di sottogruppi allora G è finito
+-Cosa significa che un sottogruppo è normale? Fai un esempio
+-Se hai un sottogruppo normale H <| G e K <| H, K <| G? (<| è il simbolo di sottogruppo normale)
+-In Zp[x] prendo un polinomio irriducibile di grado n, cosa ottengo se faccio K=Zp[x]/(f(x))? In quel campo K, dire il cds
+-Criterio di Eisenstein
+-In un anello commutativo, ideale I, anello A. Se I è massimale sappiamo qualcosa sul quoziente?
+-primi p congrui a 1 (mod 4), dimostrazione
+-Che gruppi di ordine 8 conosciamo? Abeliani e non
+-Perchè D4 non è abeliano?
+-Gruppi isomorfi a D4
+-Polinomio ciclotomico, dimostrazione della sua irriducibilità
+-per trovare l'MCD in Z ho due modi
+-Vale Euclide per trovare l'MCD?
+-Che succede se si fa Euclide su due numeri di Fibonacci successivi?
+-Perchè MCD( F(n), F(n-1) ) = MCD( F(n), F(n)+F(n-1) )?
+-Da AE (Algoritmo di Euclide) come si arriva a Bezout?
+-Dove si è usato Bezout durante il corso?
+-Definizione elemento primo in Z e perchè c'entra Bezout
+-Enuncia e dimostra "algebrico su algebrico è algebrico"
+-Cds di:   f(x) =  x^6 - 2x^3 - 1
+-Dove si può parlare di MCD? Come definiamo l'MCD in un PID?
+-Che cosa significa "algebrico" e "trascendente"?
+-x,y elementi di G con ordine finito, xy ha ordine finito?
+-Z gruppo libero generato da un elemento x, voglio un sottogruppo generato da x
+-Perchè un campo finito F deve avere caratteristica p con p primo
+-Costruire un campo di caratteristica 3
+-Costruire un campo di caratteristica 9 come quoziente di anello di polinomi
+-Chi sono gli Zp[x] in cui x^2 +1 è riducibile in Zp[x]? oltre a Z2[x]
+-Se p = 1  (mod 4)  --> x^2 +1 è riducibile in Zp[x]?
+-Piccolo Teorema di Fermat
+-Cos'è phi(n)?
+-Quando phi(a*b)=phi(a)*phi(b)?
+-Dimostrare che la somma dei phi(d) divisori d di n = n
+-Dimostrare che la scomposizione in fattori primi è unica
+-Piccolo teorema di Fermat 
+-Enunciato più generale del teorema di Fermat, a^n congruo a mod n
+-Cardinalità di Zm* con m intero.
+-phi(p^n) a cosa è uguale? Dimostrarlo
+-Cosa sappiamo di Zp* oltre che ha p-1 elementi (spoiler: è un gruppo ciclico)
+-primo teorema di isomorfismo gruppi
+-teorema di isomorfismo tra anelli. differenze tra i due
+-se non sei in un PID cosa succede?
+-A\I  con A anello e I ideale , cosa sappiamo?
+-teorema di Wilson+ dimostrazione 
+-Cosa è un elemento primo, irriducibile in un anello, che relazione c'è?
+-Cosa è un PID?
+-Che esempi abbiamo visto di PID durante il corso?
+-Dimostrare che un PID è un UFD (domanda non in programma, volontario)
+-Dimostrare che x^4 +1 è irriducibile su Z[x] e su Zp[x] per ogni p primo.
+-Che cos'è un Campo di spezzamento?
+-Stima del grado dell'estensione di un Campo di spezzamento sul campo di partenza
+-Esiste un modo universale/canonico per associare un gruppo qualsiasi ad un gruppo abeliano?
+-che criteri abbiamo per i polinomi irriducibili in Z[x]?
+-come  abbiamo applicato Eisenstain  per i polinomi ciclotomici?
+-spiegare perchè se f(x+1) è  irriducibile in Z[x]--> f(x) irriducibile in Z[x]
+-studiare i sottogruppi di  cardinalità 6 di S5
+-ce ne sono altri?
+-di gruppi di ordine 6 cosa conosco?
+-sigma=(1,2,3) e t (1,2) (4,5). quanto fa il coniugio  t. sigma. t^-1 ?
+-phi S3--> S5
+-Z(sqrt10)
+-x^4+1  fattorizzabile su qualunque Zp facendo un collegamento con l'esistenza di un campo con p^2 elementi
+-Dimostrare che in un PID primo = irriducibile
+-Quali gruppi di ordine 8 conosce?
+-Il corpo dei Quaternioni di Hamilton
+-Qual'è il sgrp moltiplicativo dei Quaternioni?
+-È isomorfo a D4?
+-Che sgr ha il gruppo dei Quaternioni?
+-Qual'è il centro dei quaternioni?
+-Questi sgr sono normali?
+-Se quoziento un gruppo per il suo centro cosa succede?
+-G/Z(G) è abeliano, perchè?
+-Successioni lineari a coefficienti costanti: cosa abbiamo fatto per Fibonacci e come emerge la regola generale
+-Esempio successione in cui vale la regola per le successioni di Fibonacci
+-Enucia e dimostra "Algebrico su algebrico è algebrico"
+-Esempio di una estensione di un campo di caratteristica p che non è algebrico
+-Enunciato e dimostrazione dell'identità di Bezout
+-Dove vale Bezout e come si dimostra?
+-Dimostrare che non esiste una funzione   f : N ---> N   t.c   f^2(n)=n+5 per ogni n in N (Esercizio 5.25)
+-K<L ("<" è un'inclusione). Sia a appartenente ad L algebrico su K di grado dispari. Confrotare K(a^2) con K(a) (Esercizio 13.21)
+-Sia f(x) un polinomio di grado n irriducibile appartenente a Zp[x]. Cosa sappiamo di Zp[x]/(f(x))
+-Dimostrare il teorema di Lagrange
+-Come mai Zp con p primo è un campo?
+-Teorema di Eulero-Fermat
+-phi(p^n) = p^n - p^(n-1)
+-Dimostrazione del perchè i numeri primi congrui a 1 mdo 4 sono infiniti
+-x^2 congruo a -1 mod p
+-Q[x]/( (x-1)^2 * (x+1) ) è un campo? Perchè?
+-Z[x]/( 5 , x^2 +1 ) cos'è?
+-Z[x]/( 5 , x^2 +1 ) isomorfo a Z5[x]/( x^2 +1). Dimostramelo
+-Z5[x]/( x^2 +1) ha a che vedere con Z[i]/(5)?
+-Esempi di funzioni aritmetiche moltiplicative 
+-Quando è stata introdotta la somma dei divisori e perchè si è introdotta?
+-chi sono i primi di Z[i] ?
+-Cos'è il centro di un gruppo?
+-Centro di un gruppo non commutativo, tipo S4
+-Se f(x) è irriducibile in K[x] con K campo. K[x]/( f(x) ) è un campo? Dimostrarlo
+-In K[x]/( f(x) ) bisogna far vedere che esistel'inverso usando Bezout
+-Se ho 2 elementi algebrici, F<K, ho alfa e beta in K algebrici su F. alfa + beta è algebrico su F?
+-F<K<L, il teorema delle torri, dimostrazione
+-Q( sqrt(3) - sqrt (2) ), trovare il grado di questa estensione
+-Numeri di Fermat
+-F<K a,b in K algebrici, a+b è algebrico su K?
+Elementi algebrici e trascendenti costruzione e dim
+Bezout polinomi
+Eisenstein
+Torri
+Estensione algebrica
+Copia di Zp in campo di char p
+Classi di conoiugio, coniugio é automorfismo?
+Sn, coniugio in Sn e cardinalità della classe di coniugio in Sn
+Correlazione tra estensione algebrica e estensiome finita
+Isomorfismo di valutazione in alpha per costruire polinomio minimo
+É vero che estensione algebrica é finita? No
+Cosa é in estensione algebrica differenza con l’estensione semplice
+Estensione algebrica infinita può essere Qbarra
+Piccolo teorema di fermat 
+Tcr e dimostrazione
+Sottogruppo di Zn(additivo)
+Come sono i sottogruppi di un gruppo ciclico-> ciclici
+Dimostrare che per ogni d che divide n allora ho unico sottogruppo di ord d
+Sn
+Segno della permutazione (omomorfismo da Sn a Z2)
+Inversione delle permutazione
+An
+Sn/An isomorfo a Z2
+An normale in Sn
+Eisenstein 
+Se f(x) irrid in Zp allora lo é anche in Z[x]
+F: Z[x]->Zp[x] proiezione al quoziente
+Definizione di campo
+Esempio di corpo-> corpo dei quaternioni (é infinito come insieme). Esiste esempio di corpo finito? No, corpo finito é un campo
+Teorema di lagrange
+Fatto che elementi appartengono solo a un laterale e non possono appartenere a due disgiunti 
+Cardinalità dei laterali sinistri: #G/#H
+Le classi laterali hanno una struttura? Se e solo se H é normale. Definire la struttura 
+Cosa significa normale
+H normale in G, K normale in H. K non per forza normale in G: sia H=gruppo di klein, G =S4, K={id, (1,2)(3,4)}. Ma esiste elemento in S4 t.c t(1,2)(3,4)t^(-1) non funziona. Ad esempio t=(1,4)
+Perché klein normale in S4? Composto da tutte le coppie di trasposizioni disgiunte, e qualsiasi coniugio faccio si ricade là dentro.
+Sia G=Sn e H=An, si può trovare in questo caso K normale in H ma non normale in Sn?
+Classi di coniugio di An
+Definizione generatore di un gruppo 
+Definizione insieme di generatori
+Esempio di gruppo che non ha un numero finito di generatori 
+Teorema di isomorfismo negli anelli
+Cosa é un dominio
+Elemento algebrico/ elemento trascendente e costruzione
+Dominio di integrità cosa é
+Elemento irriducibile in un dominio
+Definizione elemento primo in un dominio 
+P primo é anche irriducibile in un dominio 
+Dove irriducibile implica primo
+Definizione dominio euclideo
+Mostrare irriducibile implica primo
+Irriducibile non primi tipo in Z[sqr(-5)]
+Estensione finita é algebrica
