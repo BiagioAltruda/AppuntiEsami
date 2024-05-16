@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cose.md",
+                "file": "Numeri Complessi.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cose.md",
+                "file": "Numeri Complessi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cose.md",
+                "file": "Numeri Complessi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cose.md"
+                "file": "Numeri Complessi.md"
               }
             }
           }
@@ -161,10 +161,10 @@
   },
   "active": "edff243d0a4c66e6",
   "lastOpenFiles": [
+    "Untitled.canvas",
     "Numeri Complessi.md",
     "Cose.md",
     "3.15.md",
-    "Untitled.canvas",
     "Principio di Archimede.md",
     "Intervallo.md",
     "Estremo superiore.md",
