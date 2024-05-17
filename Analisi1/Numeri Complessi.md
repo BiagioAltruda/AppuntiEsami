@@ -1,3 +1,7 @@
+---
+aliases:
+  - numero complesso
+---
 si definisce come $i$ quel numero tale che $i^2=-1$ detta unità immaginaria.
 I numeri complessi sono della forma $$z=a+bi,\, a,b\in\mathbb{R}$$
 La parte reale di $z\in\mathbb{C}$ è $\mathcal{R}(z)=\mathcal{R}(a+bi)=a$.
@@ -45,3 +49,19 @@ Valgono le seguenti proprietà per la norma di due qualunque numeri complessi $z
 2. $|z+w|\leq|z|+|w|$
 3. $|z|\leq|\mathcal{R}(z)|+|\mathcal{Im}(z)|$
 ---
+ogni $z\in\mathbb{C}$ si può scrivere in *forma trigonometrica*. Sia infatti $\rho=|z|$ e $z\neq 0$ e $\theta=\arg(z)$, allora:
+$$z=\rho(\cos\theta+i\sin\theta)$$
+
+---
+Poniamo $\forall t\in\mathbb{R}$: $$e^{it}=\cos t+i\sin t$$
+Abbiamo definito una funzione $e^{it}:\mathbb{R}\to\mathbb{C}$ $2\pi$-periodica.
+Allora il numero complesso di modulo $\rho$ e argomento $\theta$ si può scrivere come 
+$$\rho e^{i\theta}$$
+Questa si dice *forma esponenziale* del numero complesso.
+
+---
+
+[[3.36]] formule di Moivre
+[[Radice n-esmime]]
+[[Teorema Fondamentale dell'Algebra]]
+#complex 

@@ -11,3 +11,4 @@ Esiste un insieme $\mathbb{R}$ con due operazioni interne, $+$ e $*$ ed una rela
 - se $a\leq b \Rightarrow \forall c\in\mathbb{R} a+c\leq b+c$
 - $a\leq b \Rightarrow \forall c\in\mathbb{R},\, c\geq 0, a*c\leq b*c$
 In più vale L'[[Assioma di Dedekind]]
+#reals
