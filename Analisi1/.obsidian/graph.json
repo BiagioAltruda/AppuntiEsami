@@ -41,18 +41,32 @@
         "a": 1,
         "rgb": 5431473
       }
+    },
+    {
+      "query": "tag:#trig  ",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    },
+    {
+      "query": "tag:#funzioni  ",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "textFadeMultiplier": 0.2,
+  "nodeSizeMultiplier": 1.06337325349301,
+  "lineSizeMultiplier": 2.53043912175649,
   "collapse-forces": true,
   "centerStrength": 0.518713248970312,
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
   "scale": 1,
-  "close": true
+  "close": false
 }

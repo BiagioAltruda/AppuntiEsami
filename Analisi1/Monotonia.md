@@ -25,3 +25,4 @@ Dimostriamo il caso $f$ crescente, l'altro è analogo.
 Comunque presi due punti distinti $x,y$, uno è minore dell'altro, supponiamo $x<y$, allora $f(x)<f(y)$ in particolare sono valori diversi. dunque $f$ è iniettiva $\blacksquare$ 
 *Proposizione*:
 Una funzione $f:A\subset\mathbb{R}\to\mathbb{R}$ è monotona e invertibile allora $f^{-1}$ ha lo stesso tipo di monotonia.
+#funzioni 

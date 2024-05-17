@@ -1,0 +1,5 @@
+---
+aliases:
+  - Dividendo
+  - Divisione Euclidea
+---

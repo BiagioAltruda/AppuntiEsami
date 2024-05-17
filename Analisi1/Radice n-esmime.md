@@ -11,7 +11,7 @@ $$\cos(n\theta)+i\sin(n\theta)=\cos\phi+i\sin\phi$$
 che equivale al sistema: $$\begin{align*}\cos(n\theta)=cos\phi \\\sin(n\theta)=\sin\theta\end{align*}$$
 $n\theta$ e $\phi$ differiscono per un multiplo intero di $2\pi$: $$n\theta=\phi+2m\pi$$
 Ovvero: $$\theta=\frac{\phi}{n}+\frac{2m\pi}{n}$$
-[[Dividendo]] l'intero $m$ per l'intero $n$ troviamo $h,k$ tali che: 
+[[Algoritmo di Bezout|Dividendo]] l'intero $m$ per l'intero $n$ troviamo $h,k$ tali che: 
 $$m=hn+k,\qquad k\in\{0,\dots,n-1\}$$
 Segue che: $$\theta=\frac{\phi}{n}+2m\pi+\frac{2k\pi}{n}$$
 Considerando $\theta$ come l'argmin, possiamo ignorare $2m\pi$. Poniamo: 

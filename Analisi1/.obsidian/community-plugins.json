@@ -1,4 +1,8 @@
 [
   "obsidian-mind-map",
-  "obsidian-git"
+  "obsidian-git",
+  "templater-obsidian",
+  "dataview",
+  "buttons",
+  "cmdr"
 ]
