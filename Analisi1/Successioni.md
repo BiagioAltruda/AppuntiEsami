@@ -13,4 +13,9 @@ In ogni caso la successione è limitata superiormente. $\blacksquare$
 ---
 
 [[Limite]] di successioni.
+
+---
+*Proposizione*:
+Una successione $\{a_n\}_n$ è infinitesima se e solo se la successione dei valori assoluti è infinitesima.
+[[Teoremi di confronto per successioni]]
 #SuccessionieSerie

@@ -1,6 +1,7 @@
+
 ```dataview
 TABLE  file.etags AS Tag, file.inlinks AS InLinks, file.outlinks AS OutLinks
-WHERE file.name != this.file.name
+WHERE file.name != this.file.name and file.name!="Board"
 SORT file.name ASC 
 ```
 

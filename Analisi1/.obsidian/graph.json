@@ -55,6 +55,27 @@
         "a": 1,
         "rgb": 5395168
       }
+    },
+    {
+      "query": "tag:#NumberTheory  ",
+      "color": {
+        "a": 1,
+        "rgb": 11621088
+      }
+    },
+    {
+      "query": "tag:#SuccessionieSerie  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701233
+      }
+    },
+    {
+      "query": "tag:#combinatoria  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
     }
   ],
   "collapse-display": false,
