@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4235a3740c0432dc",
+        "id": "9ca61c1d012f8eef",
         "type": "tabs",
         "children": [
           {
-            "id": "f14e3f9c3ff39b73",
+            "id": "414c59bc735d1b48",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoremi di confronto per successioni.md",
+                "file": "Meta/Table of Contents.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,13 +65,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0568a010d898a1d8",
@@ -87,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoremi di confronto per successioni.md",
+                "file": "Meta/Table of Contents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoremi di confronto per successioni.md",
+                "file": "Meta/Table of Contents.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teoremi di confronto per successioni.md"
+                "file": "Meta/Table of Contents.md"
               }
             }
           }
@@ -148,13 +146,14 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "homepage:Open homepage": false
     }
   },
-  "active": "f14e3f9c3ff39b73",
+  "active": "414c59bc735d1b48",
   "lastOpenFiles": [
-    "Board.md",
     "Teoremi di confronto per successioni.md",
+    "Board.md",
     "Limite.md",
     "Successioni.md",
     "Meta/Table of Contents.md",

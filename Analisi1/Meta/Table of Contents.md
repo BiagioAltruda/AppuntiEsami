@@ -7,5 +7,5 @@ SORT file.name ASC
 
 # File da linkare
 ```dataview
-LIST WHERE file.outlinks=[] and file.inlinks=[] and file.name!=this.file.name
+LIST WHERE file.outlinks=[] and file.inlinks=[] and file.name!=this.file.name and file.name!="Board"
 ```
