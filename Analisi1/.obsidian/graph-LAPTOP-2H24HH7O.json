@@ -1,0 +1,93 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#complex  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "tag:#costanti  ",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "tag:#topology  ",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "tag:#reals  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431378
+      }
+    },
+    {
+      "query": "tag:#fSpeciali  ",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "tag:#trig  ",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    },
+    {
+      "query": "tag:#funzioni  ",
+      "color": {
+        "a": 1,
+        "rgb": 5395168
+      }
+    },
+    {
+      "query": "tag:#NumberTheory  ",
+      "color": {
+        "a": 1,
+        "rgb": 11621088
+      }
+    },
+    {
+      "query": "tag:#SuccessionieSerie  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701233
+      }
+    },
+    {
+      "query": "tag:#combinatoria  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0.2,
+  "nodeSizeMultiplier": 1.06337325349301,
+  "lineSizeMultiplier": 2.53043912175649,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1,
+  "close": false
+}
