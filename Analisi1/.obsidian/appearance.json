@@ -1,5 +1,8 @@
 {
   "accentColor": "",
   "cssTheme": "Ukiyo",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "dashboard"
+  ]
 }

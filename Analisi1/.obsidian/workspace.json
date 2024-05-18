@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9ca61c1d012f8eef",
+        "id": "83a8c76f52c8afa2",
         "type": "tabs",
         "children": [
           {
-            "id": "414c59bc735d1b48",
+            "id": "1c54c47297c19166",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/Table of Contents.md",
+                "file": "Teoremi di confronto per successioni.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +49,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "0568a010d898a1d8",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Meta/Table of Contents.md",
+                "file": "Teoremi di confronto per successioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Meta/Table of Contents.md",
+                "file": "Teoremi di confronto per successioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Meta/Table of Contents.md"
+                "file": "Teoremi di confronto per successioni.md"
               }
             }
           }
@@ -150,39 +150,39 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "414c59bc735d1b48",
+  "active": "1c54c47297c19166",
   "lastOpenFiles": [
-    "Teoremi di confronto per successioni.md",
-    "Board.md",
     "Limite.md",
+    "BUTTAZZO.pdf",
+    "Teoremi di confronto per successioni.md",
     "Successioni.md",
-    "Meta/Table of Contents.md",
-    "Untitled 2.canvas",
-    "Untitled.canvas",
-    "Untitled 1.canvas",
-    "binomio di Newton.md",
-    "Teorema dei Residui.md",
-    "Algoritmo di Bezout.md",
-    "funzioni iperboliche.md",
-    "Numeri Complessi.md",
     "Radice n-esmime.md",
-    "Costante di Eulero-Mascheroni.md",
+    "Meta/Table of contents.md",
+    "Board.md",
+    "Home.md",
+    "Principio di Archimede.md",
+    "Untitled.canvas",
+    "3.15.md",
+    "3.36.md",
+    "Algoritmo di Bezout.md",
+    "Assioma di Dedekind.md",
+    "binomio di Newton.md",
+    "Board-LAPTOP-2H24HH7O.md",
+    "3.15-LAPTOP-2H24HH7O.md",
+    "Numeri Reali.md",
+    "Estremo superiore-LAPTOP-2H24HH7O.md",
+    "Monotonia-LAPTOP-2H24HH7O.md",
+    "Numeri Complessi-LAPTOP-2H24HH7O.md",
+    "Numeri Reali-LAPTOP-2H24HH7O.md",
+    "Principio di Archimede-LAPTOP-2H24HH7O.md",
+    "Radice n-esmime-LAPTOP-2H24HH7O.md",
+    "Successioni-LAPTOP-2H24HH7O.md",
+    "Teorema Fondamentale dell'Algebra.md",
+    "Teorema Fondamentale dell'Algebra-LAPTOP-2H24HH7O.md",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
     "Appunti",
     "Meta",
-    "Meta/Templates",
-    "Monotonia.md",
-    "Intervallo.md",
-    "Teorema Fondamentale dell'Algebra.md",
-    "3.36.md",
-    "3.15.md",
-    "Funzione Gamma.md",
-    "Assioma di Dedekind.md",
-    "Principio di Archimede.md",
-    "Numeri Reali.md",
-    "maggiorante.md",
-    "Funzione Beta.md",
-    "Estremo superiore.md",
-    "Cose.md",
-    "2024-05-13.md"
+    "Meta/Templates"
   ]
 }
