@@ -1,13 +1,15 @@
-Diciamo che la successione $\{a_n\}_n$ ammette *limite* $l\in\bar{\mathbb{R}}$ (i numeri reali estesi) o più brevemente, tende ad $l$, se:
+Diciamo che la [[Successioni|successione]] $\{a_n\}_n$ ammette *limite* $l\in\bar{\mathbb{R}}$ (i numeri reali estesi) o più brevemente, tende ad $l$, se:
 $$\forall U\in\mathcal{F}_l,\,\exists\bar{n}\in\mathbb{N}:\forall n\geq\bar{n},\quad a_n\in U$$
 in tal caso scriviamo $a_n\to l$
 
 ---
-*Teorema*:
+*Teorema 5.12* :
 Il limite di una successione, se esiste, è unico.
 *Dimostrazione*:
 se $a_n\to l_1$ e $a_n\to l_2$ con $l_1\neq l_2$, possiamo scegliere due intorni disgiunti $U_1\in\mathcal{F}_{l_1}$ e $U_2\in\mathcal{F}_{l_2}$. Per la definizione di limite, definitivamente $a_n\in U_1$ e $a_n\in U_2$ cioè definitivamente $a_n\in U_1\cap U_2$, che è assurdo essendo loro disgiunti. $\blacksquare$
-*Proposizione*:
+
+---
+*Proposizione 5.13*:
 Se $a_n\to l$ allora ogni sua estratta tende a $l$.
 *Dimostrazione*:
 Sia $\{a_{n_k}\}_n$ un estratta, allora:
@@ -17,14 +19,14 @@ $$\forall n\geq\bar{n},\quad a_k\in U$$
 $\blacksquare$
 
 ---
-*Proposizione*:
+*Proposizione 5.16*:
 Una successione $\{a_n\}_n$ converge ad $l\in\mathbb{R}$ se e solo se: $$\forall\varepsilon>0\,\exists\bar{n}:\forall n\geq\bar{n}, \quad |a_n-l|<\varepsilon$$
 Una successione $\{a_n\}_n$ diverge positivamente (negativamente) se e solo se: $$\forall M\,\exists\bar{n}\geq n,\quad a_n>M\quad(<M)$$
 La prima proprietà è equivalente a dire che:
 $$\forall\varepsilon>0,\exists\bar{n}:\forall n\geq \bar{n}, l-\varepsilon<a_n<l+\varepsilon$$
 
 ---
-*Teorema*:
+*Teorema 5.25*:
 Siano $\{a_n\}_n$ e $\{b_n\}_n$ due successioni tali che $$a_n\to l_a,\qquad b_n\to l_b$$
 Allora, se ha senso scrivere $l_a+l_b$, abbiamo $$(a_n+b_n)\to(l_a+l_b).$$
 E vale lo stesso per il prodotto, se ha senso.
@@ -35,4 +37,44 @@ Quindi definitivamente: $$|(a_n+b_n)-(l_a+l_b)|<2\varepsilon$$
 Supponiamo adesso il caso $l_a=+\infty$ quindi $l_b$ può essere o no $+\infty$ ma in ogni caso è inferiormente limitato. In particolare $b_n$ converge o diverge positivamente. Vale a dire: $$\exists K\in\mathbb{R}:\forall n\in\mathbb{N},\quad b_n\geq K$$ (è limitata inferiormente), quindi $$a_n+b_n\geq a_n+K$$
 poiché $a_n\to+\infty$, per ogni $M\in\mathbb{R}$ definitivamente $a_n>M$, quindi $$a_n+b_n>M+K$$ dunque $$(a_n+b_n)\to+\infty$$Passiamo a dimostrare il caso del prodotto dato che gli altri casi della somma sono analoghi. Iniziamo col caso reale. osserviamo che:$$|a_nb_n-l_al_b|=|a_nb_n-l_ab_n+l_ab_n-l_al_b|\leq|a_n-l_a|\cdot|b_n|+|l_a|\cdot|b_n-l_b|$$
 Dato che $\{b_n\}_n$ converge, è limitata, pertanto esiste $K>0$ tale che per ogni $n$ si ha che $|b_n|\leq K$, scelto $\varepsilon>0$, per ipotesi definitivamente vale: $$|a_nb_n-l_al_b|\leq |a_n-l_a|\cdot|b_n|+|l_a|\cdot|b_n-l_b|\leq K\varepsilon+|l_a|\varepsilon\leq (K+|l_a|)\varepsilon$$
-Non ci rimane che il caso $l_a=+\infty$ e $l_b>0$
+Non ci rimane che il caso $l_a=+\infty$ e $l_b>0$. Scelto un numero $K\in(0,l_b)$, per esempio $K=\frac{l_b}{2}$m se $l_b\in\mathbb{R}$, o $K=1$ se $l=+\infty$ , definitivamente $b_n\geq K$, d'altra parte, fissato $M>0$, definitivamente $a_n>M$, quindi $a_nb_n>KM$ cioè $a_nb_n\to+\infty = l_al_b.\,\,\,\blacksquare$ ^a4cf4b
+
+---
+*Proposizione 5.27*:
+Il prodotto di una successione infinitesima per una limitata è una successione infinitesima.
+*Dimostrazione*:
+Se $a_n\to 0$ allora anche $|a_n|\to0$, mentre se $\{b_n\}_n$ è limitate esiste $K>0$ tale che $\forall n\in\mathbb{N}\quad|b_n|\leq K$. Allora $$0\leq|a_nb_n|=|a_n||b_n|\leq K|a_n|,$$ dato che $K|a_n|\to 0$, anche $|a_nb_n|\to 0$ per il teorema dei carabinieri, quindi $a_nb_n\to0$ per la caratterizzazione sui moduli delle successioni (Proposizione 5.18) [[Successioni#^9be3a8| Proposizione 5.18]]. $\blacksquare$ 
+
+---
+*Proposizione 5.29*:
+Se $a_n\to l$ allora anche $|a_n|\to l$
+*Dimostrazione*:
+Cominciamo con il caso $l\in\mathbb{R}$, per disuguaglianza triangolare vale: $$0\leq||a_n|-|l||\leq|a_n-l|$$ d'altra parte $a_n\to l$ quindi $(a_n-l)\to 0$ quindi anche $|a_n-l|\to 0$, si conclude applicando il [[Teoremi di confronto per successioni#^5ede27|teorema dei carabinieri]].
+Il caso $l=\pm \infty$ è triviale.
+
+---
+*Proposizione 5.30*:
+Siano $a_{n}\to l$ e $b_{n}\to l$ due successioni:
+1. se $l_{a}<l_{b}$ allora definitivamente $a_{n}<b_{n}$,
+2. se [[definitivamente e frequentemente|frequentemente]] $a_{n}\leq b_{n}$ allora $l_{a}\leq l_{b}$.
+
+---
+*Proposizione 5.31*:
+se $a_{n}\to l$ allora: $$
+l=+\infty \Rightarrow \frac{1}{a_{n}}\to 0^{+}
+$$$$
+l\in\mathbb{R}\setminus \left\{ 0 \right\} \Rightarrow \frac{1}{a_{n}} \to \frac{1}{l}   
+$$
+$$l=0^{+} \Rightarrow \frac{1}{a_{n}} \to +\infty$$
+Se $a_{n}$ ha segno [[definitivamente e frequentemente|definitivamente]] non costante, allora $\left\{ \frac{1}{a_{n}} \right\}_{n}$ non ha limite.
+Valgono le proposizioni analoghe con $0^{-}$ e $-\infty$.
+*Dimostrazione*:
+Per il [[Limite#^a4cf4b|teorema sul limite del prodotto]] basta considerare i casi $l=+\infty$, $l=0^{+}$,  $0<l<+\infty$, dato che gli altri si ottengono applicando questo risultato alla successione $\left\{ -a_{n} \right\}_{n}$. In ciascuno di questi casi, definitivamente $a_{n}>0$, pertanto anche $\frac{1}{a_{n}}>0$.
+Iniziamo con $l=+\infty$: scelto $\varepsilon>0$, definitivamente $a_{n}>\frac{1}{\varepsilon}$, quindi definitivamente: $$
+-\varepsilon<0< \frac{1}{a_{n}}<\varepsilon
+$$
+cioè $\frac{1}{a_{n}}\to 0^{+}$.
+
+Caso $l=0^{+}$: se $a_{n}\to l=0^{+}$ sia $(H,K)$ un intorno di $l$, vale che $0\leq H<a_{n}<K$ vale a dire che $\frac{1}{K} < \frac{1}{a_{n}}< \frac{1}{H}\leq+\infty$. Chiaramente $\frac{1}{K}\to +\infty\Rightarrow \frac{1}{a_{n}}\to +\infty$.
+
+Caso $0<l<+\infty$: Fissato un intorno $(H,K)$ di $\frac{1}{l}$, scegliamo $H'\geq H$ in modo che $0<H'< \frac{1}{l}$. Allora abbiamo $0< \frac{1}{K}<l< \frac{1}{H'}$, quindi  definitivamente $0< \frac{1}{K}<a_{n}< \frac{1}{H'}$ vale a dire $H'< \frac{1}{a_{n}} <K$, pertanto $H< \frac{1}{a_{n}}< K$, che dimostra $\frac{1}{a_{n}}\to \frac{1}{l}.\,\,\blacksquare$ 

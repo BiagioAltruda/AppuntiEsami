@@ -1,3 +1,9 @@
+---
+aliases:
+- successione
+---
+
+
 1. Si dice *successione* una qualunque applicazione definita in una semiretta di $\mathbb{N}$
 2. Si dice *sottosuccessione* (o estratta) di una successione $\{a_n\}_n$ la composizione $a\,\circ\,k$, dove $k:\mathbb{N}\to\mathbb{N}$ è una qualunque applicazione crescente.
 
@@ -15,7 +21,8 @@ In ogni caso la successione è limitata superiormente. $\blacksquare$
 [[Limite]] di successioni.
 
 ---
-*Proposizione*:
+*Proposizione 5.18*:
 Una successione $\{a_n\}_n$ è infinitesima se e solo se la successione dei valori assoluti è infinitesima.
 [[Teoremi di confronto per successioni]]
-#SuccessionieSerie
+
+#SuccessionieSerie ^9be3a8

@@ -4,16 +4,44 @@
     "type": "split",
     "children": [
       {
-        "id": "83a8c76f52c8afa2",
+        "id": "be53eb25147b08f7",
         "type": "tabs",
         "children": [
           {
-            "id": "1c54c47297c19166",
+            "id": "b44818806f241cc8",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "BUTTAZZO.pdf"
+              }
+            }
+          },
+          {
+            "id": "8bdeca286544c052",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoremi di confronto per successioni.md",
+                "file": "Meta/Table of contents.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "1e1664f324c0a9e9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a8169e8081e03b49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Monotonia.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +97,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "0568a010d898a1d8",
@@ -85,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoremi di confronto per successioni.md",
+                "file": "BUTTAZZO.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoremi di confronto per successioni.md",
+                "file": "BUTTAZZO.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,12 +154,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teoremi di confronto per successioni.md"
+                "file": "BUTTAZZO.pdf"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -150,35 +178,35 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "1c54c47297c19166",
+  "active": "b44818806f241cc8",
   "lastOpenFiles": [
-    "Limite.md",
+    "Monotonia.md",
+    "Estremo superiore.md",
     "BUTTAZZO.pdf",
-    "Teoremi di confronto per successioni.md",
-    "Successioni.md",
-    "Radice n-esmime.md",
+    "Continuità.md",
+    "Limite.md",
     "Meta/Table of contents.md",
+    "binomio di Newton.md",
+    "Successioni.md",
+    "Teoremi di confronto per successioni.md",
+    "definitivamente e frequentemente.md",
+    "Untitled.md",
+    "Algoritmo di Bezout.md",
+    "maggiorante.md",
+    "Radice n-esmime.md",
     "Board.md",
     "Home.md",
     "Principio di Archimede.md",
     "Untitled.canvas",
     "3.15.md",
     "3.36.md",
-    "Algoritmo di Bezout.md",
     "Assioma di Dedekind.md",
-    "binomio di Newton.md",
     "Board-LAPTOP-2H24HH7O.md",
     "3.15-LAPTOP-2H24HH7O.md",
     "Numeri Reali.md",
     "Estremo superiore-LAPTOP-2H24HH7O.md",
     "Monotonia-LAPTOP-2H24HH7O.md",
     "Numeri Complessi-LAPTOP-2H24HH7O.md",
-    "Numeri Reali-LAPTOP-2H24HH7O.md",
-    "Principio di Archimede-LAPTOP-2H24HH7O.md",
-    "Radice n-esmime-LAPTOP-2H24HH7O.md",
-    "Successioni-LAPTOP-2H24HH7O.md",
-    "Teorema Fondamentale dell'Algebra.md",
-    "Teorema Fondamentale dell'Algebra-LAPTOP-2H24HH7O.md",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "Appunti",
