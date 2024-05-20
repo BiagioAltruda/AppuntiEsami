@@ -78,3 +78,29 @@ cioè $\frac{1}{a_{n}}\to 0^{+}$.
 Caso $l=0^{+}$: se $a_{n}\to l=0^{+}$ sia $(H,K)$ un intorno di $l$, vale che $0\leq H<a_{n}<K$ vale a dire che $\frac{1}{K} < \frac{1}{a_{n}}< \frac{1}{H}\leq+\infty$. Chiaramente $\frac{1}{K}\to +\infty\Rightarrow \frac{1}{a_{n}}\to +\infty$.
 
 Caso $0<l<+\infty$: Fissato un intorno $(H,K)$ di $\frac{1}{l}$, scegliamo $H'\geq H$ in modo che $0<H'< \frac{1}{l}$. Allora abbiamo $0< \frac{1}{K}<l< \frac{1}{H'}$, quindi  definitivamente $0< \frac{1}{K}<a_{n}< \frac{1}{H'}$ vale a dire $H'< \frac{1}{a_{n}} <K$, pertanto $H< \frac{1}{a_{n}}< K$, che dimostra $\frac{1}{a_{n}}\to \frac{1}{l}.\,\,\blacksquare$ 
+
+---
+# Limiti di Funzioni
+I limiti di funzioni si definiscono come: $$
+\lim_{ x \to +\infty }f(x)=l \Leftrightarrow \forall U\in \mathcal{F}_{l},\exists\bar{x}\in \mathbb{R}:\forall x\in (\text{dom}f)  \cap [\bar{x},+\infty[,\qquad f(x)\in U.
+$$
+---
+Sia $f$ una funzione reale tale che $+\infty$ è punto di accumulazione del dominio di $f$; diciamo che $f$ tende a $l\in\bar{\mathbb{R}}$ per $x\to +\infty$ se: $$
+\forall U\in \mathcal{F}_{l},\exists\bar{x}\in \mathbb{R}:\forall x\in (\text{dom}f)  \cap [\bar{x},+\infty[,\qquad f(x)\in U.
+$$
+In tal caso scriviamo $$
+\lim_{ x \to +\infty }f(x)=l 
+$$
+Valgono le proprietà:
+1. $$
+\lim_{ x \to +\infty }f(x)=l \Leftrightarrow \forall U\in \mathcal{F}_{l},\exists\bar{x}\in \mathbb{R}:\forall x\in \text{dom}f,\qquad x\geq \bar{x} \Rightarrow f(x)\in U
+$$
+2. $$\lim_{ x \to +\infty }f(x)=+\infty \Leftrightarrow \forall U\in \mathcal{F}_{l},\exists\bar{x}\in \mathbb{R}:\forall x\in \text{dom}f,\qquad x> \bar{x} \Rightarrow f(x)\in U$$
+3. $$\lim_{ x \to +\infty }f(x)=l \Leftrightarrow \forall U\in \mathcal{F}_{l},\exists\bar{x}\in \mathbb{R}:\forall x\in \text{dom}f,\qquad x\geq \bar{x} \Rightarrow f(x)\in U$$
+PAGINA 266 
+
+---
+
+
+#SuccessionieSerie 
+#Limiti

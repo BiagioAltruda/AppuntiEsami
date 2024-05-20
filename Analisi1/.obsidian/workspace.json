@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "be53eb25147b08f7",
+        "id": "2c49ccc8c1f22791",
         "type": "tabs",
         "children": [
           {
-            "id": "b44818806f241cc8",
+            "id": "27aec4e6310c4ad2",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -16,32 +16,20 @@
                 "file": "BUTTAZZO.pdf"
               }
             }
-          },
-          {
-            "id": "8bdeca286544c052",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Meta/Table of contents.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ]
       },
       {
-        "id": "1e1664f324c0a9e9",
+        "id": "84a1b2620676e55e",
         "type": "tabs",
         "children": [
           {
-            "id": "a8169e8081e03b49",
+            "id": "c974c85cbe6cee73",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monotonia.md",
+                "file": "Numeri Complessi.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BUTTAZZO.pdf",
+                "file": "Numeri Complessi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BUTTAZZO.pdf",
+                "file": "Numeri Complessi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BUTTAZZO.pdf"
+                "file": "Numeri Complessi.md"
               }
             }
           }
@@ -178,17 +166,18 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "b44818806f241cc8",
+  "active": "c974c85cbe6cee73",
   "lastOpenFiles": [
+    "Teoremi di confronto per successioni.md",
+    "Limite.md",
+    "BUTTAZZO.pdf",
+    "Successioni.md",
+    "Meta/Table of contents.md",
+    "Continuità.md",
+    "Numeri Complessi.md",
     "Monotonia.md",
     "Estremo superiore.md",
-    "BUTTAZZO.pdf",
-    "Continuità.md",
-    "Limite.md",
-    "Meta/Table of contents.md",
     "binomio di Newton.md",
-    "Successioni.md",
-    "Teoremi di confronto per successioni.md",
     "definitivamente e frequentemente.md",
     "Untitled.md",
     "Algoritmo di Bezout.md",
@@ -206,7 +195,6 @@
     "Numeri Reali.md",
     "Estremo superiore-LAPTOP-2H24HH7O.md",
     "Monotonia-LAPTOP-2H24HH7O.md",
-    "Numeri Complessi-LAPTOP-2H24HH7O.md",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "Appunti",

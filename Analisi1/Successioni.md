@@ -23,6 +23,16 @@ In ogni caso la successione è limitata superiormente. $\blacksquare$
 ---
 *Proposizione 5.18*:
 Una successione $\{a_n\}_n$ è infinitesima se e solo se la successione dei valori assoluti è infinitesima.
+
+---
+*Teorema* (Bolzano-Weierstrass):
+Ogni successione limitata di numeri reali ha almeno una sottosuccessione convergente.
+*Dimostrazione*:
+Sia $\{a_n\}_n$ una successione limitata, allora esistono $\alpha_{0}$ e $\beta_{0}$ tali che $$
+\forall n\in \mathbb{N},\,a_{n} \in I=[\alpha_{0},\beta_{0}]
+$$ ## VEDI DISPENSE
+
+
 [[Teoremi di confronto per successioni]]
 
 #SuccessionieSerie ^9be3a8
