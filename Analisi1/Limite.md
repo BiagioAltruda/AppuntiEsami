@@ -68,6 +68,7 @@ $$
 $$l=0^{+} \Rightarrow \frac{1}{a_{n}} \to +\infty$$
 Se $a_{n}$ ha segno [[definitivamente e frequentemente|definitivamente]] non costante, allora $\left\{ \frac{1}{a_{n}} \right\}_{n}$ non ha limite.
 Valgono le proposizioni analoghe con $0^{-}$ e $-\infty$.
+
 *Dimostrazione*:
 Per il [[Limite#^a4cf4b|teorema sul limite del prodotto]] basta considerare i casi $l=+\infty$, $l=0^{+}$,  $0<l<+\infty$, dato che gli altri si ottengono applicando questo risultato alla successione $\left\{ -a_{n} \right\}_{n}$. In ciascuno di questi casi, definitivamente $a_{n}>0$, pertanto anche $\frac{1}{a_{n}}>0$.
 Iniziamo con $l=+\infty$: scelto $\varepsilon>0$, definitivamente $a_{n}>\frac{1}{\varepsilon}$, quindi definitivamente: $$
@@ -80,7 +81,7 @@ Caso $l=0^{+}$: se $a_{n}\to l=0^{+}$ sia $(H,K)$ un intorno di $l$, vale che $0
 Caso $0<l<+\infty$: Fissato un intorno $(H,K)$ di $\frac{1}{l}$, scegliamo $H'\geq H$ in modo che $0<H'< \frac{1}{l}$. Allora abbiamo $0< \frac{1}{K}<l< \frac{1}{H'}$, quindi  definitivamente $0< \frac{1}{K}<a_{n}< \frac{1}{H'}$ vale a dire $H'< \frac{1}{a_{n}} <K$, pertanto $H< \frac{1}{a_{n}}< K$, che dimostra $\frac{1}{a_{n}}\to \frac{1}{l}.\,\,\blacksquare$ 
 
 ---
-# Limiti di Funzioni
+**Limiti di Funzioni**
 I limiti di funzioni si definiscono come: $$
 \lim_{ x \to +\infty }f(x)=l \Leftrightarrow \forall U\in \mathcal{F}_{l},\exists\bar{x}\in \mathbb{R}:\forall x\in (\text{dom}f)  \cap [\bar{x},+\infty[,\qquad f(x)\in U.
 $$
@@ -94,13 +95,63 @@ $$
 Valgono le proprietà:
 1. $$
 \lim_{ x \to +\infty }f(x)=l \Leftrightarrow \forall U\in \mathcal{F}_{l},\exists\bar{x}\in \mathbb{R}:\forall x\in \text{dom}f,\qquad x\geq \bar{x} \Rightarrow f(x)\in U
+$$ $$
+	\Leftrightarrow \forall U\in\mathcal{F_{l}},\exists \bar{x} \in \mathbb{R}: \forall x\in \text{dom}f, \qquad x> \bar{x} \Rightarrow f(x)\in U
 $$
-2. $$\lim_{ x \to +\infty }f(x)=+\infty \Leftrightarrow \forall U\in \mathcal{F}_{l},\exists\bar{x}\in \mathbb{R}:\forall x\in \text{dom}f,\qquad x> \bar{x} \Rightarrow f(x)\in U$$
-3. $$\lim_{ x \to +\infty }f(x)=l \Leftrightarrow \forall U\in \mathcal{F}_{l},\exists\bar{x}\in \mathbb{R}:\forall x\in \text{dom}f,\qquad x\geq \bar{x} \Rightarrow f(x)\in U$$
-PAGINA 266 
+2. $$\lim_{ x \to +\infty }f(x)=+\infty \Leftrightarrow \forall M\in \mathbb{R},\exists  \bar{x} \in \mathbb{R} : \forall x \in \text{dom}f,\quad x> \bar{x}\Rightarrow f(x) > M$$
+3. 
+$$\lim_{ x \to +\infty }f(x)=l\in \mathbb{R} \Leftrightarrow \forall U\in \mathcal{F}_{l},\exists\bar{x}\in \mathbb{R}:\forall x\in \text{dom}f,\qquad x \geq \bar{x} \Rightarrow l-\varepsilon<f(x)<l+\varepsilon$$
+Analoghe per $x \to -\infty$.
 
 ---
+Sia $f$ una funzione reale, e sia $x_{*}$ un suo punto di accumulazione. Diciamo che la funzione $f$ tende a $l\in \mathbb{R}$ per $x$ che tende a $x_{*}$  se $$
+\forall U \in \mathcal{F_{l}}, \exists V \in \mathcal{F_{x_{*}}}:\forall x\in \text{dom}f \cap V\setminus \left\{ x_{*} \right\}, \qquad f(x)\in U 
+$$
+In tal caso scriviamo $\lim_{ x \to x_{*} }=l$ 
+Valgono le analoghe proprietà dei limiti di [[Teoremi di confronto per successioni#^04236a|successioni]].
 
+---
+	*Teorema 6.2*: se $f$ è una funzione reale, e $x_*$, è un punto di accumulazione di dom$f$, allora sono equivalenti:
+1. $\lim_{ x \to x_{*} }=l$
+2. per ogni successione $\left\{ x_{n} \right\}_{n}$ di punti in $\text{dom}f\setminus \left\{ x_{*} \right\}$, se $x_{n}\to x_{*}$ allora $f(x_{n})\to l$.
+*Dimostrazione*: iniziamo con $1)\Rightarrow 2)$; Sia dunque $\left\{ x_{n} \right\}_{n}$ una successione di punti del dominio di $f$, diversi da $x_{*}$, che tende ad $x_{*}$ e fissiamo un intorno $U\in \mathcal{F_{l}}$ dobbiamo provare che definitivamente $f(x_{n})\in U$. Sappiamo che esiste un intorno $V\in\mathcal{F_{x_{*}}}$ tale che se $x\in \text{dom}f \cap V\setminus \left\{ x_{*} \right\}$ allora $f(x)\in U$, ma $x_{n}\to\in \text{dom}f\setminus \left\{ x_{n} \right\}_{n}$ per ogni $n$, per ipotesi, e definitivamente $x_{n}\in V$ perché $x_{n}\to x_{*}$ e $V$ è un intorno di $x_{*}$, dunque definitivamente $x_{n}\in \text{dom}f\cap V\setminus \left\{ x_{n} \right\}_{n}$ così definitivamente $f(x_{n})\in U$, come richiesto.
+Dimostriamo adesso $2)\Rightarrow 1)$. supponiamo che non sia vero che $f(x)\to l$, e mostriamo che esiste una successione $\left\{ x_{n} \right\}+n$ di punti del dominio di $f$ diversi da $x_*$ che tende a $x_{*}$ e tale che $\left\{ f(x_{n}) \right\}_{n}$ non tende ad $l$. Ovvero:
+$$
+\exists U_{0}\in\mathcal{F_{l}}:\forall V\in\mathcal{F_{x_{*}}}, \exists x\in \text{dom}f \cap V\setminus \left\{ x_{n} \right\}: f(x)\not\in U_{0}
+$$ Scegliamo una successione $\left\{ V_{n} \right\}_{n}$ di intorni di $x_{*}$ come segue: $$
+\text{se } x_{*}=+\infty,\qquad V_{n}=(n,+\infty)
+$$
+$$
+\text{se } x_{*} \in \mathbb{R}\qquad V_{n}=\left( x_{*}-\frac{1}{n}, x_{*}+ \frac{1}{n} \right)
+$$
+$$
+\text{se }x_{*}=-\infty,\qquad V_{n}=(-\infty,n)
+$$
+Osserviamo che per il teorema dei carabinieri se $\left\{ x_{n} \right\}_{n}$ è una qualsiasi successione tale che $\forall n,x_{n}\in V_{n}$ allora $x_{n}\to x_{*}$. Segue anche per ogni $n$ esiste un punto, $x_{n}$, tale che $x_{n}\in \text{dom}f\cap V_{n}\setminus \left\{ x_{n} \right\}$ e che $f(x_{n})\notin U_{0}$, che è assurdo. $\blacksquare$
+
+---
+Seguono alcuni *limiti fondamentali*:
+$$
+\begin{gather}
+ \lim_{ x \to 0 } \frac{\sin x}{x}=1, \qquad 6.9)\\
+ \lim_{ x \to 0 } \frac{1-\cos x}{x^{2}}=\frac{1}{2},\qquad 6.10)\\
+ \lim_{ x \to 0 } \frac{e^x-1}{x}=1, \qquad 6.11)\\
+ \lim_{ x \to 0 } \frac{\log(1+x)}{x}=1,\qquad 6.12)\\
+ \lim_{ x \to  \pm \infty} \left(1+\frac{1}{x}\right)^{x}=e\qquad 6.13),\\
+ \lim_{ x \to 0 } (1+x)^{1/x}=e, \qquad 6.14)
+\end{gather}
+ $$
+ e anche $$
+\begin{gather}
+\lim_{ x \to -\infty } e^{x}=0^{+},\quad\lim_{ x \to \infty } e^{x}=+\infty\quad 6.15)\\
+\lim_{ x \to 0^{+} } \log x=-\infty,\quad\lim_{ x \to +\infty }\log x=+\infty\quad 6.16) 
+\end{gather}
+$$
 
 #SuccessionieSerie 
 #Limiti
+
+^7fd831
+
+
+^604ab5

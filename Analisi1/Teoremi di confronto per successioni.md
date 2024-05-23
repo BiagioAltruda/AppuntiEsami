@@ -2,7 +2,7 @@
 Sia $a_n\to l\in\mathbb{R}$, e sia $H<l<K$, allora definitivamente $H<a_n<K$, in particolare, ogni successione convergente è limitata. Invece, ogni successione divergente positivamente è limitata inferiormente.
 *Dimostrazione*:
 Per la prima parte, osserviamo che ogni intervallo $(H,K)$ è un intorno di $l$, quindi per definizione di limite, definitivamente $a_n\in(H,K)$, concludo con la limitatezza.
-La seconda parte segue dalla definizione di limite e dalla proposizione sulla limitatezza delle successioni. $\blacksquare$
+La seconda parte segue dalla definizione di limite e dalla proposizione sulla limitatezza delle successioni. $\blacksquare$ ^04236a
 
 ---
 *Teorema 5.21* (di permanenza del segno):

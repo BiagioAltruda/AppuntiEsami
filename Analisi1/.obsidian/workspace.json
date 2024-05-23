@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2c49ccc8c1f22791",
+        "id": "468678986075e7e8",
         "type": "tabs",
         "children": [
           {
-            "id": "27aec4e6310c4ad2",
+            "id": "2199fc92fc0a7249",
             "type": "leaf",
             "state": {
               "type": "pdf",
@@ -16,26 +16,49 @@
                 "file": "BUTTAZZO.pdf"
               }
             }
+          },
+          {
+            "id": "d6bba63c37bde72a",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "Board.md"
+              }
+            }
           }
         ]
       },
       {
-        "id": "84a1b2620676e55e",
+        "id": "cd77e80cb1f83d97",
         "type": "tabs",
         "children": [
           {
-            "id": "c974c85cbe6cee73",
+            "id": "a4a77ea86be71b81",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Numeri Complessi.md",
+                "file": "Limite.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "067c5c28b6922d46",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Continuità.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -64,7 +87,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#continuità",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +104,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -102,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Numeri Complessi.md",
+                "file": "Continuità.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Numeri Complessi.md",
+                "file": "Continuità.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Numeri Complessi.md"
+                "file": "Continuità.md"
               }
             }
           }
@@ -166,14 +190,15 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "c974c85cbe6cee73",
+  "active": "0dcc3702682ee9a3",
   "lastOpenFiles": [
-    "Teoremi di confronto per successioni.md",
+    "Continuità.md",
     "Limite.md",
     "BUTTAZZO.pdf",
-    "Successioni.md",
+    "Board.md",
     "Meta/Table of contents.md",
-    "Continuità.md",
+    "Teoremi di confronto per successioni.md",
+    "Successioni.md",
     "Numeri Complessi.md",
     "Monotonia.md",
     "Estremo superiore.md",
@@ -183,7 +208,6 @@
     "Algoritmo di Bezout.md",
     "maggiorante.md",
     "Radice n-esmime.md",
-    "Board.md",
     "Home.md",
     "Principio di Archimede.md",
     "Untitled.canvas",
