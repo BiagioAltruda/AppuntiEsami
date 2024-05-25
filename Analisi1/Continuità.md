@@ -94,4 +94,36 @@ $$
 y\in B\cap V \quad\Rightarrow\quad g(y)\in U
 $$
 che unita alla prima dà ancora il risultato di prima, ponendo $W=W_{1}$.$\blacksquare$
+
+---
+Una definizione alternativa di continuità è che se $f:A\to \mathbb{R} \text{ e } x_{*}\in A$, si dice che $f$ è continui in $x_{*}$ se:
+$$
+\forall U \in \mathcal{F_{f(x_{*})}},\exists V \in \mathcal{F_{f(x_{*})}}:\forall x \in A \cap V, \quad f(x)\in U
+$$
+Vale anche la seguente
+*Proposizione 6.17*: Sia $f:A\to \mathbb{R}$, allora la definizione data sopra è equivalente a:
+$$
+\begin{align}
+
+\forall U\in \mathcal{F_{f(x_{*})}}, \exists V\in \mathcal{F_{x_{*}}}: f(A\cap V)\subset U\qquad 1) \\
+
+\forall U \in \mathcal{F_{f(x_{*})}}, f^{-1}(U)\text{ contiene l'intersezione con } A\text{ di un intorno di }x_{*}\quad 2)\\
+
+x_{*}\text{è punto isolato di }A \text{ oppure }\lim_{ x \to x_{*} } f(x)=f(x_{*})\qquad 3)\\
+\forall \varepsilon>0,\exists\delta>0:\forall x \in A,\quad|x-x_{*}|<\delta \quad\Rightarrow\quad |f(x)-f(x_{*})|<\varepsilon\quad 4)
+\end{align}
+$$
+*Dimostrazione*:
+$1)$ e $2)$ sono riscritture della definizione di sopra. Dimostriamo che $1)\Rightarrow 3)$, se $f$ è continua in $x_{*}$, questo può essere punto isolato di $A$ (allora ho finito), oppure può essere punto di accumulazione di $A$; in questo caso, essendo $A\cap V\setminus \left\{ x_{*} \right\}$ la continuità di $f$ implica che
+$$
+\forall U \in \mathcal{F_{f(x_{*})}},\exists V \in \mathcal{F_{f(x_{*})}}:\forall x \in A \cap V, \quad f(x)\in U
+$$
+che è precisamente $\lim_{ x \to x_{*} }f(x)=f(x_{*}).$ Proviamo il viceversa, se $x_{*}$ è isolato, per definizione esiste un intorno $V_{0}\in \mathcal{F_{x_{*}}}$ tale che $A\cap V_{0}=\left\{ x_{*} \right\}$; allora, scelto un qualsiasi intorno $U$ di $f(x_{*})$ certamente $x \in A\cap V_{0}\Rightarrow x=x_{*}\Rightarrow f(x)=f(x_{*})\in U$ ([[Limite|Proposizione 5.1]]). Se invece $x_{*}$ è di accumulazione e $\lim_{ x \to x_{*} }f(x)=f(x_{*})$, per definizione di limite, fissato $U\in \mathcal{F_{f(x_{*})}}$ esiste $V\in \mathcal{F_{x_{*}}}$ tale che $$
+\forall x \in A\cap V\setminus \left\{ x_{*} \right\} ,\qquad f(x)\in U
+$$
+ma anche $f(x_{*})\in U$, quindi per ogni $x \in A\cap V$ è $f(x)\in U$.
+Infine $4)$ è equivalente a $1)$ perché $x_{*}$ e $f(x_{*})$ sono numeri reali: ogni intorno di un numero reale $a$ contiene un intervallo della forma $\left\{ x:|x-a|<\varepsilon \right\}$, e viceversa ogni intervallo di questo tipo è un intorno di $a$. $\blacksquare$
+
+
+Seguono i primi [[Teoremi e proprietà delle funzioni continue]].
 #continuità
