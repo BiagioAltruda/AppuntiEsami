@@ -1,3 +1,5 @@
+
+
 $$\sinh x=\frac{e^x-e^{-x}}{2}$$
 $$\cosh x=\frac{e^x+e^{-x}}{2}$$
 $$\tanh x=\frac{e^x-e^{-x}}{e^x+e^{-x}}=\frac{\sinh x}{\cosh x}$$

@@ -4,32 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "7054cd78f11a2935",
+        "id": "09a06988f82523c6",
         "type": "tabs",
         "children": [
           {
-            "id": "ab78aa5391f3a5d4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "BUTTAZZO.pdf"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "9d756f95e4cb1b03",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "dbbe0c79c523b0d0",
+            "id": "327aeecbfd0de5e4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teoremi e proprietà delle funzioni continue.md",
+                "file": "Teoremi di confronto per successioni.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#continuità",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,13 +65,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "0568a010d898a1d8",
@@ -103,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teoremi e proprietà delle funzioni continue.md",
+                "file": "Teoremi di confronto per successioni.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teoremi e proprietà delle funzioni continue.md",
+                "file": "Teoremi di confronto per successioni.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teoremi e proprietà delle funzioni continue.md"
+                "file": "Teoremi di confronto per successioni.md"
               }
             }
           }
@@ -164,39 +146,45 @@
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false,
       "omnisearch:Omnisearch": false,
-      "homepage:Open homepage": false
+      "homepage:Open homepage": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "dbbe0c79c523b0d0",
+  "active": "327aeecbfd0de5e4",
   "lastOpenFiles": [
-    "Continuità.md",
-    "Teoremi e proprietà delle funzioni continue.md",
-    "BUTTAZZO.pdf",
+    "Teorema Fondamentale dell'Algebra.md",
+    "Teorema di Discretezza di N.md",
+    "Q non è completo.md",
+    "omotopia.md",
+    "Gruppo fondamentale.md",
     "Meta/Table of contents.md",
+    "Untitled.md",
+    "General Topology.md",
+    "topbook.pdf",
+    "disuguaglianza di Bernoulli.md",
+    "BUTTAZZO.pdf",
     "Limite.md",
-    "Esercizi.md",
-    "Board.md",
-    "Teoremi di confronto per successioni.md",
-    "Successioni.md",
-    "Numeri Complessi.md",
-    "Monotonia.md",
-    "Estremo superiore.md",
-    "binomio di Newton.md",
-    "definitivamente e frequentemente.md",
-    "Algoritmo di Bezout.md",
-    "maggiorante.md",
-    "Radice n-esmime.md",
-    "Home.md",
     "Principio di Archimede.md",
-    "Untitled.canvas",
-    "3.15.md",
-    "3.36.md",
+    "Densità di Q.md",
+    "Intervallo.md",
+    "Estremo superiore.md",
+    "ProvaTau.md",
+    "Numeri Complessi.md",
+    "Esercizi.md",
+    "topbook.pdf.crdownload",
+    "Successioni.md",
+    "Funzioni lipschitziane e uniformemente continue.md",
     "Assioma di Dedekind.md",
-    "Board-LAPTOP-2H24HH7O.md",
-    "3.15-LAPTOP-2H24HH7O.md",
-    "Numeri Reali.md",
-    "Estremo superiore-LAPTOP-2H24HH7O.md",
-    "Monotonia-LAPTOP-2H24HH7O.md",
+    "Algoritmo di Bezout.md",
+    "Excalidraw/Drawing 2024-06-05 16.21.52.excalidraw.md",
+    "Excalidraw",
+    "Untitled.canvas",
+    "Relazioni tra insiemi.md",
+    "Board.md",
+    "Infinitesimi.md",
+    "Topologia degli spazi metrici.md",
+    "Appunti_geometria_2.pdf",
+    "(C.i.m.e. Summer Schools volume 30) Henri Cartan (auth.), E. Martinelli (eds.) - Funzioni e varietà complesse-Springer Berlin Heidelberg (2011).pdf",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "Appunti",
