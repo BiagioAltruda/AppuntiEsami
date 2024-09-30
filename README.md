@@ -15,5 +15,5 @@ Se trovate errori, cose da fixare, cose mancanti etc. contattatemi e cerco di si
 (e perfavore se manco per qualche giorno in uni mandatemi la roba così la metto qua lol)
 
 ----------------------------------------------------------------------------------------------------------
-Sempre su GitHub trovare, https://github.com/BiagioAltruda/Calc1 a questo link, il JackChan, dispense dell'Analisi del primo anno. Stesa di me e Jack D'Aurizio
+Sempre su GitHub trovare, https://github.com/BiagioAltruda/Calc1 a questo link, il JackChan, dispense dell'Analisi del primo anno. Stesa da me e Jack D'Aurizio
 # AppuntiEsami
