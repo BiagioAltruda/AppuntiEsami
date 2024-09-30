@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "b7c68af203366bfe",
+    "id": "8de842709c03da5c",
     "type": "split",
     "children": [
       {
-        "id": "9d966af2c7e8b969",
+        "id": "88bbf7c894637dcd",
         "type": "tabs",
         "children": [
           {
-            "id": "d76a5b355f97bef9",
+            "id": "8f697b7aff4b5229",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "General Topology.md",
+                "file": "Esercizi.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "880f288a490e066d",
+    "id": "a6dbe12aa5445338",
     "type": "split",
     "children": [
       {
-        "id": "d4283e503e169aab",
+        "id": "4b1560693fc5a906",
         "type": "tabs",
         "children": [
           {
-            "id": "72cadb3713adc5f8",
+            "id": "7c27c9b99500af3b",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,13 +43,13 @@
             }
           },
           {
-            "id": "0dcc3702682ee9a3",
+            "id": "da25cb2ba98481d4",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": true,
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "1dbd31d417b5482a",
+            "id": "381c0532fe14af80",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,23 +69,24 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300,
+    "collapsed": true
   },
   "right": {
-    "id": "0568a010d898a1d8",
+    "id": "024063fc6a00afd1",
     "type": "split",
     "children": [
       {
-        "id": "aab51ff24dbeb42d",
+        "id": "d6cc569124aba6b0",
         "type": "tabs",
         "children": [
           {
-            "id": "0d04cd9d0c4f9bb9",
+            "id": "7594dd797e317717",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "General Topology.md",
+                "file": "Esercizi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +98,19 @@
             }
           },
           {
-            "id": "bebea7caa72f5299",
+            "id": "542ce3d4fc309be1",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "General Topology.md",
+                "file": "Esercizi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "8ee471e852aef122",
+            "id": "92f7191b47aeef9e",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,12 +121,12 @@
             }
           },
           {
-            "id": "de0ef19c6a3ee169",
+            "id": "943b2784bb2c0ad5",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "General Topology.md"
+                "file": "Esercizi.md"
               }
             }
           }
@@ -143,51 +144,14 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "templater-obsidian:Templater": false,
-      "omnisearch:Omnisearch": false,
-      "homepage:Open homepage": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "d76a5b355f97bef9",
+  "active": "8f697b7aff4b5229",
   "lastOpenFiles": [
-    "Meta/Table of contents.md",
-    "Gruppo fondamentale.md",
-    "General Topology.md",
-    "Teoremi di confronto per successioni.md",
-    "topbook.pdf",
-    "Teorema Fondamentale dell'Algebra.md",
-    "Teorema di Discretezza di N.md",
-    "Q non è completo.md",
-    "omotopia.md",
-    "Untitled.md",
-    "disuguaglianza di Bernoulli.md",
-    "BUTTAZZO.pdf",
-    "Limite.md",
-    "Principio di Archimede.md",
-    "Densità di Q.md",
-    "Intervallo.md",
-    "Estremo superiore.md",
-    "ProvaTau.md",
-    "Numeri Complessi.md",
+    "Geometria 1.md",
+    "Analisi 1.md",
     "Esercizi.md",
-    "topbook.pdf.crdownload",
-    "Successioni.md",
-    "Funzioni lipschitziane e uniformemente continue.md",
-    "Assioma di Dedekind.md",
-    "Algoritmo di Bezout.md",
-    "Excalidraw/Drawing 2024-06-05 16.21.52.excalidraw.md",
-    "Excalidraw",
-    "Untitled.canvas",
-    "Relazioni tra insiemi.md",
-    "Board.md",
-    "Appunti_geometria_2.pdf",
-    "(C.i.m.e. Summer Schools volume 30) Henri Cartan (auth.), E. Martinelli (eds.) - Funzioni e varietà complesse-Springer Berlin Heidelberg (2011).pdf",
-    "Untitled 2.canvas",
-    "Untitled 1.canvas",
-    "Appunti",
-    "Meta",
-    "Meta/Templates"
+    "Welcome.md"
   ]
 }
