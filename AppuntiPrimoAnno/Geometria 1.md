@@ -6,7 +6,7 @@ $$
 $$
 \cdot: \mathbb{F}\times \mathbb{F} \to \mathbb{F}
 $$
-la terna $(F,+,\cdot)$ si dice campo se valgono le seguenti proprietà:
+La terna $(F,+,\cdot)$ si dice campo se valgono le seguenti proprietà:
 1. $\forall a,b,c \in \mathbb{F}, \,\, (a+b)+c=a+(b+c)$ e anche $a(b\cdot c)=a(b\cdot c)$.
 2. $\forall a,b \in \mathbb{F},\,\, a+b=b+a$ e anche $a\cdot b=b\cdot a$.
 3. $\exists\,\,0_{\mathbb{F}}$ e $1_{\mathbb{F}}$ tali che: $\forall a\in \mathbb{F} a+0_{\mathbb{F}}=a$ e $a\cdot 1_{\mathbb{F}}=a$.
@@ -28,7 +28,7 @@ la terna $(F,+,\cdot)$ si dice campo se valgono le seguenti proprietà:
 	$(a+ib)(c+id)= (ac-bd)+i(ad+bc)$
 4. Sia $p$ un numero primo, $\mathbb{F_{p}}$ è il campo di $p$ elementi.
 	$\mathbb{F_{p}}=\{0,1,2,\dots,p-1,p\}$.
-	Notare che $\forall a\in \mathbb{Z} \exists m,r \in \mathbb{Z} \text{ tale che } a=mp+r$ (Contiamo *modulo* p).
+	Notare che $\forall a\in \mathbb{Z},\,\exists m,r \in \mathbb{Z} \text{ tale che } a=mp+r$ (Contiamo *modulo* p).
 	$+:\mathbb{F_{p}}\times \mathbb{F_{p}}\to \mathbb{F_{p}}$, $(a+b)$ è il resto della divisione euclidea $\frac{a+b}{p}$.
 	$\cdot: \mathbb{F_{p}}\times \mathbb{F_{p}} \to \mathbb{F_{p}}$, $a\cdot b$ è il resto della divisione euclidea $\frac{ab}{p}$.
 5. $\mathbb{N}$ e $\mathbb{Z}$ non sono campi.
@@ -43,7 +43,7 @@ $$
 +:\mathbb{F}^{n} \times \mathbb{F}^{n} \to \mathbb{F}^{n}, \text{ tale che }
 $$
 $$
-\begin{pmatrix} x_{1}\\x_{2}\\.\\.\\.\\ xn\end{pmatrix} + \begin{pmatrix} y_{1}\\y_{2}\\.\\.\\.\\ y_{n}\end{pmatrix}= \begin{pmatrix} x_{1}+y_{1}\\x_{2}+y_{2}\\.\\.\\.\\ x_{n}+y_{n}\end{pmatrix}
+\begin{pmatrix} x_{1}\\x_{2}\\.\\.\\.\\ x_{n}\end{pmatrix} + \begin{pmatrix} y_{1}\\y_{2}\\.\\.\\.\\ y_{n}\end{pmatrix}= \begin{pmatrix} x_{1}+y_{1}\\x_{2}+y_{2}\\.\\.\\.\\ x_{n}+y_{n}\end{pmatrix}
 $$
 $$
 \cdot:\mathbb{F} \times \mathbb{F}^{n} \to \mathbb{F}^{n} \text{ tale che }
