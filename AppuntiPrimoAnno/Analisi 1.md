@@ -148,12 +148,12 @@ $$
 |x|-|y|\leq |x-y|
 $$
 Inoltre $$
-|y|=|y-x+y|\leq |y-x|+|x|
+|y|=|y-x+x|\leq |y-x|+|x|
 $$
 cioè $|y|\leq |x-y|+|x|.$
 Da cui
 $$
-|y|-|x|\leq |x,y| \text{ ossia } -|x-y|\leq |x|-|y|
+|y|-|x|\leq |x-y| \text{ ossia } -|x-y|\leq |x|-|y|
 $$
 Segue che 
 $$

@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Geometria 1.md",
+                "file": "Analisi 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -158,7 +159,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8f697b7aff4b5229",
+  "active": "2618c073f072c26e",
   "lastOpenFiles": [
     "Geometria 1.md",
     "Analisi 1.md",
