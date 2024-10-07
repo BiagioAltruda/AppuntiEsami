@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "024063fc6a00afd1",
@@ -162,10 +163,10 @@
   },
   "active": "07142caf4ac97206",
   "lastOpenFiles": [
-    "Esercizi Geometria.md",
-    "Algebra 1.md",
     "Geometria 1.md",
     "Analisi 1.md",
+    "Algebra 1.md",
+    "Esercizi Geometria.md",
     "Welcome.md"
   ]
 }

@@ -74,5 +74,37 @@ Sia $(G,*)$ un gruppo. Allora
 $1)$ è immediata conseguenza della definizione di sopra.
 Mentre per $2)$: siano $x,y\in G$. Sia $e$ l'elemento neutro di $G$. Allora si ha:
 $$
-(x*y)*(\bar{y}*\bar{x})=x*(y*(\bar{y}*\bar{x}))=x*((y*\bar{y})*\bar{x})=x*(e*\bar{x})=
+(x*y)*(\bar{y}*\bar{x})=x*(y*(\bar{y}*\bar{x}))=x*((y*\bar{y})*\bar{x})=x*(e*\bar{x})= x *\bar{x}=e
 $$
+La prima e la seconda uguaglianza derivano dall'associatività, la terza dal fatto che $\bar{y}$ è il simmetrico di $y$, la quarta dal fatto che $e$ è l'elemento neutro di $G$, l'ultima dal fatto che $\bar{x}$ è il simmetrico di $x$. Analogamente si prova che 
+$$
+(\bar{y}*\bar{x})*(x*y)=e \,\, \blacksquare.
+$$
+*Proposizione*:
+Sia $(G,*)$ un gruppo. Allora $\forall x,y,z\in G$ valgono le seguenti implicazioni:
+1. $x*y=x*z \implies y=z$
+2. $y*x=z*x \implies y=z$
+*Dimostrazione*:
+Proviamo $1)$, l'altra è analoga. Siano quindi $x,y,z\in G$. Allora valgono le seguenti implicazioni:
+$$
+x*y=x*z \implies \bar{x}*(x*y)=\bar{x}*(x*z) \implies y=z\,\,\blacksquare.
+$$
+*Definizione*:
+Sia $(G,*)$ un gruppo, e sia $H$ un sottoinsieme non vuoto di $G$. Si dice che $H$ è chiuso rispetto all'operazione $*$ se, $\forall x,y\in H,\,x*y\in H$.
+
+*Definizione*:
+Sia $(G,*)$ un gruppo, e sia $H$ un sottoinsieme non vuoto di $G$, chiuso rispetto all'operazione $*$. Si dice operazione $*$ ristretta ad $H$ l'operazione $*_{H}$ su $H$ così definita: $\forall x,y\in H, \, x*_{H}y=x*y$.
+
+*Definizione*:
+Sia $(G,*)$ un gruppo e sia $H$ un sottoinsieme non vuoto di $G$. Allora $H$ si dice un sottogruppo di $G$ se:
+1. $H$ è chiuso rispetto all'operazione $*$
+2. $H$ è un gruppo rispetto all'operazione $*$ ristretta.
+In tal caso si scrive anche $H<G$.
+
+*Proposizione*:
+Sia $(G,*)$ un gruppo e sia $H$ un suo sottogruppo. Allora:
+1. l'elemento neutro di $H$ è l'elemento neutro di $G$.
+2. Il simmetrico in $H$ di ogni suo elemento è il suo simmetrico in $G$.
+*Dimostrazione*:
+$1)$ Sia $e$ il neutro di $H$. Allora $e$ è un elemento idempotente del gruppo $H$ e dunque $e=e*_{H}e=e*e$. Ma allora $e$ è un elemento idempotente del gruppo $G$. Segue che $e$ è l'elemento neutro anche di $G$.
+$2)$ Sia $x$ un elemento di $H$, e sia anche $\bar{x}$ il suo simmetrico in $H$. Allora $x*\bar{x}=\bar{x}*x=e$. Poiché questo è l'elemento neutro di $G$ segue che $\bar{x}$ è il simmetrico di $x$ in $G$.
