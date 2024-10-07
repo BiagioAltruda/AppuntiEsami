@@ -1,5 +1,5 @@
-Appunti personali per gli esami della facoltà di matematica di Matematica
-Gli appunti presi nei vari corsi sono nella cartella AppuntiPrimoAnno. Nelle altre c'e' roba mia vecchia o comunque non necessariamente completa. Siete liberi di spulciarvi tutto a vostro rischio e pericolo.
+Appunti personali per gli esami della facoltà di  Matematica
+Gli appunti presi nei vari corsi sono nella cartella AppuntiUNIBA. Nelle altre c'e' roba mia vecchia o comunque non necessariamente completa. Siete liberi di spulciarvi tutto a vostro rischio e pericolo.
 Per usufruire degli appunti:
 1. Scaricare l'applicazione di notetaking OBSIDIAN
 2. clonare la repo in una cartella a piacere

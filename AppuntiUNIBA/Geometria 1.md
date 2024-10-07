@@ -245,7 +245,7 @@ Ad esempio se $z=\sqrt{ 3 }-5i$. $\mathrm{Re}(z)=\sqrt{ 3 }$, $\mathrm{Im}(z)=-5
 Due numeri complessi $z=a+ ib$ e $z'=a'+b'i$ sono uguale se e solo se $a=a'$ e $b=b'$.
 
 *Osservazione*:
-Per assegnare un numero complesso $z=a+ib$ diamo una coppia ordinata $(a,b)$ di numeri reali. Perciò possiamo rappresentare il numero complesso $z$ come il punto $(a,b)\in R\times \mathbb{R}=\mathbb{R}^{2}$.
+Per assegnare un numero complesso $z=a+ib$ diamo una coppia ordinata $(a,b)$ di numeri reali. Perciò possiamo rappresentare il numero complesso $z$ come il punto $(a,b)\in \mathbb{R}\times \mathbb{R}=\mathbb{R}^{2}$.
 Infatti la funzione  $$f:\mathbb{R}^{2}\to \mathbb{C}\, \text{ tale che } (a,b)\to a+ib$$
 *Definizione*:
 Su $\mathbb{C}$ sono definite delle operazioni di somma e prodotto.
@@ -316,3 +316,77 @@ Valgono le seguenti proprietà:
 3. $\forall z\in \mathbb{C},\, z\cdot \bar{z}=|z|^{2}$
 4. $\forall z,w\in \mathbb{C},\, |z\cdot w|=|z|\cdot|w|$
 5. $\forall z\in \mathbb{C}, z\neq 0,\, z^{-1}= \frac{\bar{z}}{|z|^{2}}$
+
+--------
+
+*Esempi sottospazi vettoriali*:
+Sia $V=\mathbb{R}^{3},\,W=\left\{ (x,y,z)\in \mathbb{R}^{3}|\,3x-y+z=0 \right\}$. è un sottospazio vettoriale.
+Dimostriamolo:
+1. $W\neq \emptyset$, infatti $\underline{0}=\begin{pmatrix}0\\0\\0\end{pmatrix}\in W$.
+2. Mostriamo adesso che $W$ è chiuso per combinazioni lineari.
+	Siano $u= \begin{pmatrix}u_{1}\\u_{2}\\u_{3}\end{pmatrix},\,v=\begin{pmatrix}v_{1}\\v_{2}\\v_{3}\end{pmatrix}\in W$, e siano $\lambda,\mu \in \mathbb{R}$. 
+	$3u_{1}-u_{2}+u_{3}=0$ ma anche $3v_{1}-v_{2}+v_{3}=0$. Consideriamo $\lambda u+\mu v$:
+	$$
+\lambda u+\mu v=\begin{pmatrix}
+\lambda u_{1}\\\lambda u_{2}\\\lambda u_{3}
+\end{pmatrix} + \begin{pmatrix}
+\mu v_{1}\\\mu v_{2}\\\mu v_{3}
+\end{pmatrix}= \begin{pmatrix}
+\lambda u_{1}+\mu v_{1}\\ \lambda u_{2}+\mu v_{2}\\\lambda u_{3}+\mu v_{3}
+\end{pmatrix} \implies
+$$
+$$
+3(\lambda u_{1}+\mu u_{1})-\lambda u_{2}-\mu u_{2}+\lambda v_{3}+\mu u_{3}=
+$$
+$$
+\lambda(3u_{1}-u_{2}+u_{3}) + \mu(3v_{1}-v_{2}+v_{3})= \lambda(0)+\mu(0)=0\, \blacksquare.
+$$
+
+*Osservazione*:
+Se $\underline{0}\not\in W$ allora, $W$ non è sottospazio vettoriale. 
+
+Sia $V=\mathbb{R}^{4}, W=\left\{ (x_{1},x_{2},x_{3},x_{4})\in \mathbb{R}^{4}|\, 2x_{1}-x_{3}=1 \right\}$. $W\neq \emptyset$, infatti $\begin{pmatrix} \frac{1}{2}\\0\\0\\0 \end{pmatrix}\in W$
+Ma non è un sottospazio vettoriale dato che $\underline{0}=\begin{pmatrix}0\\0\\0\\0\\\end{pmatrix}$ non rispetta la condizione di $W$. Alternativamente si può fare il seguente controllo:
+Siano $\begin{pmatrix}u_{1}\\u_{2}\\u_{3}\\u_{4}\end{pmatrix},\,v=\begin{pmatrix}v_{1}\\v_{2}\\v_{3}\\v_{4}\end{pmatrix}\in W$, e siano $\lambda,\mu \in \mathbb{R}$. Con gli stessi conti di prima otteniamo:
+$$
+\lambda (2u_{1}-u_{3})+\mu(2v_{1}-v_{3})=\lambda(1)+\mu(1)=\lambda+\mu \neq 1\, \forall \lambda,\mu \in \mathbb{R}
+$$
+Allora $W$ non è chiuso per combinazioni lineari, quindi non è un sottospazio vettoriale.
+
+--------
+
+Dire se $U\subset \mathbb{R}^{3}$ è sottospazio.
+$$
+U=\left\{ \begin{pmatrix}
+x\\y\\z\\
+\end{pmatrix}\in \mathbb{R}^{3}|\,x^{2}-y+2z=0 \right\}.
+$$
+1. $U\neq \emptyset$ dato che $\underline{0}\in U$.
+2. Siano $u,v\in U$, $\lambda,\mu \in U$, considero $\lambda u+\mu v$.
+$$ \lambda u+\mu v=
+ \begin{pmatrix}
+\lambda u_{1}+\mu v_{1}\\ \lambda u_{2}+\mu v_{2}\\\lambda u_{3}+\mu v_{3}
+\end{pmatrix}
+$$
+$$
+(\lambda u_{1}+\mu v_{1})^{2}-(\lambda u_{2}+\mu v_{2})+2(\lambda u_{3}+\mu v_{3}) =
+$$
+$$
+\lambda^{2}u_{1}^{2}+2\lambda \mu u_{1}v_{1}+\mu^{2}v_{1}^{2}-\lambda u_{2}-\mu v_{2}+2\lambda u_{3}+2\mu v_{3}= 
+$$
+$$
+\lambda^{2}u_{1}^{2}+2\lambda \mu u_{1}v_{1}+\mu^{2}v_{1}^{2}+\lambda(-v_{1})^{2}+\mu(-v_{1})^{2}= (\lambda^{2}-\lambda)v_{1}^{2}+2\lambda \mu u_{1}v_{3}+(\mu^{2}+\mu)v_{1}^{2}
+$$
+Che non fa $0, \,\forall \lambda,\mu \in \mathbb{R}$, ad esempio se $u_{1}=v_{1}=1$ $\lambda=\mu =2$ non funziona.
+
+----------
+
+Sia $V=\mathbb{R}[t],$ e sia $W=\left\{ 2at^{2}+3b |\, a,b\in \mathbb{R} \right\}$.
+1. Mi chiedo se $\underline{0}\in W$, cioè $\underline{0}=0+0t+0t^{2}+\dots$ 
+	Si, mi basta considerare $a=b=0$ allora $2\cdot0t^{2}+3\cdot0\in W$.
+2. Siano $p,q\in W,\, \lambda,\mu \in \mathbb{R}$, allora $p=2a_{1}t^{2}+3b_{1}$, e $q=2a_{2}t^{2}+3b_{2}$, Con $a_{1},a_{2},b_{1},b_{2}\in \mathbb{R}$.
+	$$\lambda p+\mu q= \lambda(2a_{1}t^{2}+3b_{1})+\mu(2a_{2}t^{2}+3b_{2})$$
+$$
+2\lambda a_{1}t^{2}+2\mu a_{2}t^{2}+3\lambda b_{1}+3\mu b_{2}= 2(\lambda a_{1}+\mu a_{2})t^{2}+3(\lambda b_{1}+\mu b_{2}).
+$$
+Che è della forma che cercavo. Quindi $W$ è un sottospazio vettoriale.
