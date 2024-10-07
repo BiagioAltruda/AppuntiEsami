@@ -188,3 +188,253 @@ Se $x,y,z \in \mathbb{R}:\,\, d(x,z)=|x-z|=|x-y+y-z|\leq |x-y|+|y-z|= d(x,y)+ d(
 
 *Definizione*:
 La distanza $d(x,y)=|x-y|$ si dice distanza euclidea. L'insieme $\mathbb{R}$ si dice spazio metrico euclideo.
+
+*Osservazione* (Interpretazione geometrica di $\mathbb{R}$):
+$\mathbb{R}$ é in corrispondenza biunivoca con la retta euclidea.
+
+*Definizione*:
+Sia $A\subset \mathbb{R}$. Diremo che $b\in \mathbb{R}$ è un maggiorante per l'insieme $A$ se:
+$$
+\forall a\in A:\,\,a\leq b.
+$$
+Denoteremo con il simbolo $\mathcal{M}_{A}$ l'insieme dei maggioranti per $A$.
+
+*Definizione*:
+Sia $A\subset \mathbb{R}$. Diremo che $b\in \mathbb{R}$ è un minorante per $A$ se:
+$$
+\forall a\in A:\,\, b\leq a.
+$$
+Denoteremo con il simbolo $\mu_{A}$, l'insieme dei minoranti per $A$
+
+*Definizione*:
+Sia $A\subset \mathbb{R}$. Si dice $A$ è limitato superiormente se: $\mathcal{M_{A}}\neq \emptyset$.
+Si dice che $A$ è limitato inferiormente se $\mu_{A}\neq \emptyset$.
+Si dice che $A$ é limitato se è limitato sia superiormente sia inferiormente.
+
+*Definizione*:
+Sia $A\subset \mathbb{R}$. Si dice che $M\in \mathbb{R}$ è un massimo per $A$ se:
+$$
+M\in A\cap \mathcal{M_{A}},
+$$
+ossia
+$$
+\begin{cases}
+M\in A \\ \forall a\in A:\,\, a\leq M
+\end{cases}
+$$
+
+*Definizione*:
+Sia $A\subset \mathbb{R}$. Si dice che $m\in \mathbb{R}$ è un minimo per $A$ se:
+$$
+m\in A\cap\mu_{A},
+$$
+ossia
+$$
+\begin{cases}
+m\in A \\ \forall a\in A:\,\, m\leq a
+\end{cases}
+$$
+
+*Proposizione*:
+Sia $A\subset \mathbb{R}$ se esiste un massimo per $A$, allora esso è unico.
+Se esiste un minimo per $A$, allora esso è unico.
+*Dimostrazione*:
+Siano $M_{1},M_{2}\in \mathbb{R}$ massimi per $A$. Allora risulta che 
+$$
+\begin{cases}
+M_{1}\in A \\ \forall a\in A:\,\,a\leq M_{1} 
+\end{cases}\,\,
+\text{ e anche }
+\begin{cases}
+M_{2}\in A \\ \forall a\in A:\,\,a\leq M_{2} 
+\end{cases}
+$$
+Essendo $M_{1} \in A$, si ha che $M_{1}\leq M_{2}$ ma anche $M_{2}\in A$ quindi $M_{2}\leq M_{1}$. Allora essendo $\leq$ una relazione d'ordine si ha che $M_{1}=M_{2}$. 
+Analogamente si mostra l'unicità del minimo. $\blacksquare$
+
+*Notazione*:
+Sia $A\subset \mathbb{R}$ e sia $M\in A$ un massimo per $A$, denoteremo $M$ con il simbolo $\max A$.
+Se esiste il minimo di $A$, lo denoteremo con $\min A$.
+
+*Proposizione*:
+Sia $A\subset \mathbb{R}, \,A\neq \emptyset \text{, e, } B\subset \mathbb{R},\,B\neq \emptyset$. Supponiamo che $A\subset B$ e che esistano il minimo sia di $A$, $\xi_{1}$ e il minimo di $B$, $\xi_{2}$. Allora $\xi_{2}\leq \xi_{1}$.
+Inoltre se $\exists \max A=\eta_{1}$ e $\exists \max B=\eta_{2}$, si ha che $\eta_{1}\leq \eta_{2}$.
+
+*Dimostrazione*:
+Per ipotesi $\exists \min A =\xi_{1}$ e $\exists \min B = \xi_{2}$, ossia
+$$
+\xi_{1}\in A \cap \mu_{A} \,\, \xi_{2}\in B \cap \mu_{B}
+$$
+Vogliamo provare che $\xi_{2}\leq \xi_{1}$.
+Poiché $A\subset B$ si ha che
+$$
+\mu _{B}\subset \mu_{A}.
+$$
+Segue che, $\xi_{2}\in B\cap\mu B, \text{ ma }\mu_{2}\subset \mu_{}A, \text{ e quindi }\xi_{2}\in\mu_{A}$, ed essendo $\xi_{1}\in A$, allora $\xi_{2}\leq \xi_{1}$.
+Analogamente, se esistono il $\max A=\eta_{1}$ ed il $\max B=\eta_{2}$, si prova che $\eta_{1}\leq \eta_{2}\,\, \blacksquare$.
+
+*Teorema* (Teorema di esistenza dell'estremo superiore):
+Sia $A\subset \mathbb{R}, \, A\neq \emptyset$. Supponiamo che $\mathcal{M_{A}}\neq \emptyset$. Allora esiste il $\min \mathcal{M_{A}}\in \mathbb{R}$.
+
+*Dimostrazione*:
+Per ipotesi $A \neq \emptyset$ e $\mathcal{M_{A}}\neq \emptyset$, tali insiemi $A$ e $\mathcal{M_{A}}$ sono separati, ossia: $\forall a\in A,\, \forall b\in \mathcal{M_{A}}:\,\, a\leq b$. Per l'assioma di completezza di Dedekind:
+$$
+\exists c\in \mathbb{R} \text{ tale che } \forall a\in A,\, \forall b\in \mathcal{M_{A}}:\,\, a\leq c\leq b.
+$$
+Proviamo che $c=\min \mathcal{M_{A}}$. Poiché $\forall a\in A,\, a\leq c$ risulta che $c\in \mathcal{M_{A}}$.
+Inoltre $\forall b\in \mathcal{M_{A}},\,\, c\leq b$ risulta che $c\in \mu_{\mathcal{M_{A}}}$. 
+Segue che $c\in \mathcal{M_{A}}\cap \mu_{\mathcal{M_{A}}}$ da cui $c=\min\mathcal{M_{A}}\,\, \blacksquare$.
+
+*Definizione*:
+Sia $A\subset \mathbb{R}, A \neq \emptyset,\, \mathcal{M_{A}}\neq \emptyset$. Si chiama estremo superiore di $A$ il numero reale $\min\mathcal{M_{A}}$, tale numero si denota con il simbolo $\sup A$.
+Se $A \neq \emptyset$ e $\mathcal{M_{A}}= \emptyset$ si scrive $\sup A=+\infty$.
+
+Analogamente
+*Teorema* (Teorema di esistenza dell'estremo inferiore):
+Sia $A\subset \mathbb{R}, \,A \neq \emptyset,$ supponiamo che $\mu_{A}\neq \emptyset$. Allora esiste $\max \mu_{A}\in \mathbb{R}$
+
+*Definizione*: 
+Sia $A\subset \mathbb{R}, A \neq \emptyset,\, \mu_{A}\neq \emptyset$. Si chiama estremo inferiore di $A$ il numero reale $\max\mu_{A}$, tale numero si denota con il simbolo $\inf A$.
+Se $A \neq \emptyset$ e $\mu_{A}= \emptyset$ si scrive $\inf A=-\infty$.
+
+*Esempio*:
+1. 
+$A= \left\{ x\in\mathbb{R}:\,\, x\leq1 \right\}$.
+$\mathcal{M_{A}}=\left\{ b\in \mathbb{R}|\,\,\forall x \in A: x\leq b \right\}=\left\{  b\in \mathbb{R}\,|\, 1\leq b\right\}$.
+$A\cap \mathcal{M_{A}}=\left\{ 1 \right\}=\max A$.
+
+2. 
+$B=\left\{ x \in \mathbb{R}\,|\,x<1 \right\}$.
+$\mathcal{M_{B}}=\left\{ b\in \mathbb{R}\,|\,b \geq1 \right\}$
+$B\cap \mathcal{M_{B}}=\emptyset$. $B$ non ammette massimo.
+Per il teorema dell'estremo superiore, il $\sup B=\min \mathcal{M_{B}}$ esiste comunque.
+Risulta che $\mu_{\mathcal{M_{B}}}=\left\{ y\in \mathbb{R}\,|\, y\leq 1 \right\}$ da cui segue che $\mathcal{M_{B}}\cap \mathcal{\mu_{\mathcal{M_{B}}}}=\left\{ 1 \right\}= \sup B$.
+
+*Proposizione*:
+Sia $A\subset \mathbb{R},\,A\neq \emptyset$. Supponiamo che $\mu_{A}\neq \emptyset$ e $\mathcal{M_{A}}\neq \emptyset$. Allora risulta che $\inf A \leq \sup A$.
+Inoltre $\inf A= \sup A \Leftrightarrow A \text{ ha un solo elemento}$.
+
+*Dimostrazione*:
+Osserviamo che $\forall a\in A$:
+$$
+\inf A\leq a\leq \sup A.
+$$
+da cui $\inf A \leq \sup A$. Inoltre $\inf A = \sup A \Leftrightarrow A=\{a\}, \,a=\inf A=\sup A$.
+
+*Proposizione*:
+Siano $A,B \subset \mathbb{R},\,A,B\neq \emptyset$. Supponiamo che esistano $\inf$ e $\sup$ sia di $A$ che di $B$.
+Se $A\subset B$, allora
+$$
+\sup A \leq \sup B
+$$
+$$
+\inf B \leq \inf A
+$$
+*Dimostrazione*:
+Vogliamo dimostrare che $\sup A \leq \sup B$ ossia
+$$
+\min\mathcal{M_{A}}\leq \min\mathcal{M_{B}}
+$$
+dato che $A\subset B$, si ha che $\mathcal{M_{B}}\subset \mathcal{M_{A}}$. Applicando la ((proposizione)) riguardante il minimo di insiemi si ha che $\min \mathcal{M_{A}}\leq \min\mathcal{M_{B}}$ e quindi $\sup A \leq \sup B$. Analogo per gli estremi inferiori: $\mathcal{M_{B}} \subset \mathcal{M_{A}}$, applicando la stessa proposizione si ha che $\max\mu_{B}\leq\max\mu_{B}$ cioè $\inf B \leq \inf A$.
+
+*Proposizione*:
+Sia $A \subset \mathbb{R}, \, A\neq \emptyset$. Supponiamo che $\exists \max A\in \mathbb{R}$, allora  $\max A= \sup A$.
+Analogamente se $\exists \min A \in \mathbb{R}$, allora $\min A=\inf A$.
+*Dimostrazione*:
+Supponiamo che $\exists \max A=M \in \mathbb{R}$ allora $M \subset A\cap \mathcal{M_{A}}$. Voglio verificare che $M$ è il $\sup A$.
+Sia $y\in \mathcal{M_{A}}$. Dato che $M\in A$ si ha che $M\leq y$, segue che $M$ è il più piccolo dei maggioranti di $A\,\blacksquare$.
+Analogo per l'estremo inferiore.
+
+**Caratterizzazioni dell'estremo superiore e inferiore**
+*Proposizione*:
+Sia $A\subset \mathbb{R},\, A\neq \emptyset, \mathcal{M_{A}\neq \emptyset}$,  Sono fatti equivalenti:
+1. $\xi=\sup A$
+2. $i)$ $\forall a\in A:\, a\leq \xi \in \mathbb{R}$
+	$ii)$ $\forall y\in \mathbb{R}, y<\xi:\, \exists a\in A$ tale che $y<a$.
+
+*Dimostrazione*:
+Proviamo che $1) \implies 2)$. Per ipotesi $\xi=\sup A\in \mathbb{R}$. Segue che $\xi =\min \mathcal{M_{A}}$ per definizione di estremo superiore, ossia $\xi \in \mathcal{M_{A}}\cap \mu_{\mathcal{M_{A}}}$, ottenendo $\xi \in \mathcal{M_{A}}$. Otteniamo così il punto $i)$
+Sia $y \in \mathbb{R}, \,y<\xi$. Essendo $\xi$ il più piccolo dei maggioranti di $A$, si ha che $y \not\in \mathcal{M_{A}}$. Pertanto $\exists a\in A$ tale che $y<a$.
+Proviamo che $2) \implies 1)$. Per ipotesi valgono $i)$ e $ii)$. Dalla $i)$ segue che $\xi \in \mathcal{M_{A}}$. Devo verificare che $\xi \in \mu_{\mathcal{M_{A}}}$. Se $y\in \mathcal{M_{A}}$ risulta che $\xi\leq y$. Se fosse $y<\xi$ per la $ii)$ $\exists a\in A:\,\, y<a$ da cui $y\not\in \mathcal{M_{A}}$ che è assurdo.
+Segue che $\xi \in \mathcal{M_{A}}\cap \mu_{\mathcal{M_{A}}}$ da cui $\xi=\min\mathcal{M_{A}}=\sup A$
+
+*Proposizione*:
+Sia $A\subset \mathbb{R}, A\neq \emptyset, \mu_{A}\neq \emptyset$. Sono fatti equivalenti:
+1. $\eta=\inf A$
+2. $i)$ $\forall a\in A,\, \eta\leq a, \,\eta \in \mathbb{R}$
+	$ii)$ $\forall y\in \mathbb{R}:\,\eta<y: \exists a\in A$ tale che $a<y$.
+
+*Corollario* (della caratterizzazione di $\sup$):
+Sia $A\subset \mathbb{R}, \, \mathcal{M_{A}}\neq \emptyset$. Sono fatti equivalenti:
+1. $\xi=\sup A$.
+2. $i)$ $\forall a\in A: a\leq\xi \in \mathbb{R}$
+	$ii)$ $\forall \varepsilon>0,\, \exists a\in A$ tale che $\xi-\varepsilon<a$.
+*Dimostrazione*:
+Supponiamo vera $1)$ e dimostriamo $2)$. Per la caratterizzazione dell'estremo superiore di $A$ risulta vera la $i)$. Sia $\varepsilon \in \mathbb{R},\, \varepsilon>0$. Poniamo $y= \xi-\varepsilon$. Risulta che $y<\xi$, per la $ii)$ della caratterizzazione dell'estremo superiore $\exists a\in A: y<a$. Da cui segue che $\xi-\varepsilon<a\,\blacksquare$.
+Supponiamo vera $2)$ e dimostriamo $1)$. Per la caratterizzazione dell'estremo superiore, basta provare che $\forall y\in \mathbb{R},\, y<\xi, \,\exists a\in A:\, y<a$. Sia allora $y\in \mathbb{R}, \,y<\xi$. Poniamo $\varepsilon:= \xi-y, \,\varepsilon \in \mathbb{R}, \,\varepsilon>0$. Per la $ii)$ si ha che $\exists a\in A$ tale che $\xi-\varepsilon<a$. Concludiamo che $y=\xi-\varepsilon \implies y<a \, \blacksquare$.
+
+*Corollario* (della caratterizzazione di estremo inferiore):
+Sia $A\subset \mathbb{R}, \mu_{A}\neq \emptyset$. Sono fatti equivalenti:
+1. $\eta=\inf A$.
+2. $i)$ $\forall a\in A: \eta\leq a, \,\eta \in \mathbb{R}$
+	$ii)$ $\forall \varepsilon >0, \,\exists a\in A$ tale che $a<\eta+\varepsilon$.
+
+*Proposizione* (La dimostrazione è sul Buttazzo): 
+Siano $A,B\subset \mathbb{R},\, A,B\neq \emptyset, \, A,B$ separati. Sono fatti equivalenti:
+1. $A,B$ sono contigui, cioè $\exists!\, c\in \mathbb{R}$ tale che $\forall a\in A,\, \forall b\in B: a\leq c\leq b$.
+2. $\sup A = \inf B$.
+
+*Osservazione*:
+$A=\left\{ x \in \mathbb{R}|\, x<1 \right\}$, $B=\left\{ x\in \mathbb{R}|\, x>1 \right\}$.
+Vale che $\sup A = \inf B$ e sono contigui.
+
+*Proposizione*:
+Siano $X,Y\subset \mathbb{R}, X\neq \emptyset,\, Y\neq \emptyset,\, X,Y$ separati. Sono fatti equivalenti:
+1. $X,Y$ sono contigui.
+2. $\forall \varepsilon>0,\, \exists x \in X,\, \exists y\in Y$ tali che $y-x<\varepsilon$.
+
+*Dimostrazione*:
+dimostriamo che $1) \implies 2)$. Si ha che $\sup X = \inf Y$. Sia $\varepsilon>0$. In corrispondenza di $\frac{\varepsilon}{2}$ per il corollario, $\exists x \in X$ tale che $\sup X - \frac{\varepsilon}{2}<x$. In corrispondenza di $\frac{\varepsilon}{2},\, \exists \in Y$ tale che $y<\inf Y + \frac{\varepsilon}{2}$. Segue che
+$$y-x < \inf Y + \frac{\varepsilon}{2}- \sup X+ \frac{\varepsilon}{2}= \inf Y + \frac{\varepsilon}{2}- \inf Y + \frac{\varepsilon}{2} = \varepsilon.$$
+Concludiamo che $y-x < \varepsilon$.
+Dimostriamo che $2)\implies 1)$. Per ipotesi $\forall \varepsilon>0, \exists x \in X,\, \exists y \in Y$ tale che $y-x<\varepsilon$.
+Al fine di dimostrare che $\sup X = \inf Y$ verifichiamo che $\forall \varepsilon>0: \,0\leq\inf Y - \sup X < \varepsilon$. (Posso scegliere $\bar{\varepsilon}= \inf Y - \sup X, \, \bar{\varepsilon}>0: \, 0 \leq \inf Y - \sup X < \bar{\varepsilon}= \inf Y - \sup X$.)
+Sia quindi $\varepsilon>0$. Per $2)$, $\exists x \in X, \, \exists y\in Y$ tali che $y-x<\varepsilon$.
+Segue che $\inf Y - \sup X \leq y-x<\varepsilon$ da cui $\inf Y - \sup X <\varepsilon \,\blacksquare.$
+
+----------
+*Definizione*:
+Sia $I\subset \mathbb{R}$. Si dice che $I$ è un intervallo se:
+$$
+\forall a,b \in I,\, a\leq b, \, a\neq b: \, \left\{z\in \mathbb{R}|\, a<z<b \right\}\subset I 
+$$
+
+*Notazione per intervalli di estremi $a,b \in \mathbb{R}$ e di semirette*:
+Siano $a,b\in \mathbb{R}, \,a<b$. Denoteremo:
+1. $]a,a[=\emptyset$,
+2. $[a,a]={a}$
+3. $]a,b[= \left\{ z \in \mathbb{R}|\, a<z<b \right\}$ (Intervallo aperto di estremi $a,b$).
+4. $[a,b]=\left\{ z\in \mathbb{R}| a\leq z\leq b \right\}$ (Intervallo chiuso di estremi $a,b$).
+5. $]a,b]= \left\{ z\in \mathbb{R} \, a\leq z<b \right\}$ (Intervallo aperto a destra di estremi $a,b$).
+6. $[a,b[= \left\{ z \in \mathbb{R}|\, a<z\leq b \right\}$ (Intervallo aperto a sinistra di estremi $a,b$).
+7. $[a,+\infty[=\left\{ z \in \mathbb{R}|, a\leq z \right\}$ (semiretta destra chiusa di estremo $a$).
+8. $],a,\infty[= \left\{ z \in \mathbb{R}|\, a<z \right\}$ (semiretta destra aperta di estremo $a$)
+9. $]-\infty,b]= \left\{ z\in \mathbb{R}| z\leq b \right\}$ (semiretta sinistra chiusa di estremo $b$).
+10. $]-\infty,b[= \left\{ z\in \mathbb{R}| z< b \right\}$ (semiretta sinistra aperta di estremo $b$).
+11. $]-\infty,+\infty[ = \mathbb{R}$
+
+*Teorema* (Caratterizzazione degli intervalli di $\mathbb{R}$):
+Sia $I\subset \mathbb{R}$. Sono fatti equivalenti:
+1. $I$ è un intervallo.
+2. $I$ è un intervallo di estremi reali, oppure $I$ è una semiretta destra, oppure $I$ è una semiretta sinistra, oppure $I=\emptyset$ oppure $I=\mathbb{R}$, oppure $I$ è ridotto ad un solo elemento.
+
+*Dimostrazione*:
+$2) \implies 1)$ è ovvia. Dimostriamo $1)\implies2)$. Sia $I\subset \mathbb{R}$ un intervallo. Se $I$ è vuoto o ridotto ad un solo elemento allora vale $2)$. Supponiamo $I$ di non essere in uno di questi casi e che $I$ sia limitato. Poniamo $a=\inf I\in \mathbb{R}$ e $b= \sup I\in \mathbb{R}$. Verifichiamo che
+$$
+]a,b[\subset I\subset [a,b]
+$$ La seconda inclusione è ovvia, dimostriamo la prima.
+Sia $y\in ]a,b[$. Allora $\inf I<y<\sup I$. Per le caratterizzazioni di estremo superiore e inferiore di $I$, $\exists x \in I,$ tale che $y<x$, $\exists x' \in I$ tale che $x'<y$.
+Pertanto $x,x'\in I, \, y\in \mathbb{R},\,\, x'<y<x$. Essendo $I$ un intervallo si ha che $y \in I$.
+Supponiamo poi che $I$ sia limitato solo inferiormente. Risulta che $a= \inf I \in \mathbb{R}, \, \sup I = +\infty$. Si dimostra che $]a,+\infty[\subset I \subset [a,+\infty[$. 
+Analogamente se $I$ è limitato solo superiormente.
+Se $I$ non è limitato, allora $I=\mathbb{R}\, \blacksquare.$
