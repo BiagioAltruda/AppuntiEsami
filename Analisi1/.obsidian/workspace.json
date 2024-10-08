@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9d966af2c7e8b969",
+        "id": "fbba0a40041fdceb",
         "type": "tabs",
         "children": [
           {
-            "id": "d76a5b355f97bef9",
+            "id": "316157239faa2923",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "General Topology.md",
+                "file": "Teorema di Discretezza di N.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "General Topology.md",
+                "file": "Teorema di Discretezza di N.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "General Topology.md",
+                "file": "Teorema di Discretezza di N.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "General Topology.md"
+                "file": "Teorema di Discretezza di N.md"
               }
             }
           }
@@ -150,11 +150,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d76a5b355f97bef9",
+  "active": "316157239faa2923",
   "lastOpenFiles": [
     "Meta/Table of contents.md",
-    "Gruppo fondamentale.md",
     "General Topology.md",
+    "Gruppo fondamentale.md",
     "Teoremi di confronto per successioni.md",
     "topbook.pdf",
     "Teorema Fondamentale dell'Algebra.md",

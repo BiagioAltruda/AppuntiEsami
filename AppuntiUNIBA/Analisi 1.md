@@ -438,3 +438,107 @@ Pertanto $x,x'\in I, \, y\in \mathbb{R},\,\, x'<y<x$. Essendo $I$ un intervallo 
 Supponiamo poi che $I$ sia limitato solo inferiormente. Risulta che $a= \inf I \in \mathbb{R}, \, \sup I = +\infty$. Si dimostra che $]a,+\infty[\subset I \subset [a,+\infty[$. 
 Analogamente se $I$ è limitato solo superiormente.
 Se $I$ non è limitato, allora $I=\mathbb{R}\, \blacksquare.$
+
+---------
+*Definizione*:
+Sia $A\subset \mathbb{R}$. Si dice che $A$ è induttivo se:
+1. $0\in A$
+2. $x \in A \implies x+1\in A$
+
+*Esempio*:
+$A=[0,+\infty[$ è induttivo, dato che $0\in A$ e $\forall x \in A: x+1\in A$, perché se $0\leq x$ allora $0\leq1\leq x+1$ quindi $x+1\in A$.
+
+*Definizione*:
+Si dice insieme dei numeri naturali e si denota con il simbolo $\mathbb{N}$, l'intersezione di tutti i sottoinsiemi induttivi di $\mathbb{R}$.
+
+Posto $\mathcal{F}=\left\{ A\subset \mathbb{R}|\, A \text{ induttivo } \right\}$, si ha che $\mathcal{F}\neq \emptyset$.
+Per definizione, poniamo $\mathbb{N}=\cap_{A\in \mathcal{F}}A$.
+Ogni elemento di $\mathbb{N}$ è detto numero naturale.
+
+*Proposizione*:
+$\mathbb{N}$ è induttivo.
+
+*Dimostrazione*:
+Verifichiamo che $\mathbb{N}$ è induttivo. 
+$\forall A \in \mathcal{F}: 0 \in A$, segue che $0\in \cap_{A\in \mathcal{F}}A=\mathbb{N}$.
+Verifichiamo ora che $x \in \mathbb{N} \implies x+1 \in \mathbb{N}$. Quindi sia $n\in \mathbb{N}$. Risulta che $\forall A \in \mathcal{F}:\, n\in A$. Essendo $A$ induttivo $n+1 \in A, \forall A\in \mathcal{F}$. Allora $n+1 \in \cap_{A\in \mathcal{F}}A=\mathbb{N}$.
+Pertanto $\mathbb{N}$ è induttivo $\blacksquare.$
+
+*Osservazione*:
+Essendo $\mathbb{N}$ induttivo, si ha che $\mathbb{N}\subset [0,+\infty[$.
+
+**Principio d'induzione**
+Sia $A\subset \mathbb{N}$, tale che:
+1. $0\in A$
+2. $\forall n: (n\in A \implies n+1\in A)$.
+Allora si ha che $A=\mathbb{N}$.
+
+*Dimostrazione*:
+Per ipotesi $A\subset \mathbb{N}$. Inoltre essendo $A$ induttivo, si ha che $A\in \mathcal{F}$, da cui $\mathbb{N}=\cap_{B\in \mathcal{F}}B\subset A$. Allora $A=\mathbb{N}$.
+
+*Definizione*:
+Se $n\in \mathbb{N}$ allora $n+1$ si chiama il successivo di $n$.
+
+*Osservazione*:
+ Essendo $\mathbb{N}$ induttivo, ogni successivo di un naturale è un numero naturale.
+
+*Proposizione*:
+Risulta che:
+1. $\forall n,m\in \mathbb{N},\,\, n+m\in \mathbb{N}$.
+2. $\forall n,m\in \mathbb{N},\, n\cdot m\in \mathbb{N}$.
+
+*Dimostrazione*:
+Dimostriamo $1)$. Verifichiamo che $\forall n,m\in \mathbb{N}:\, n+m\in \mathbb{N}$.
+Sia quindi $m\in \mathbb{N}$. Consideriamo l'insieme $A_{m}=\left\{ n\in \mathbb{N}|\,n+m\in \mathbb{N} \right\}$. Proviamo che $A_{m}=\mathbb{N}$.
+Dimostriamolo per induzione.
+Infatti risulta che $A_{n}\subset \mathbb{N}$. Inoltre $0\in A_{m}$ poiché $0+m=m\in \mathbb{N}$.
+Inoltre sia $n\in A_{m}$, ossia $n+m\in \mathbb{N}$. Consideriamo $(n+1)+m= (n+m)+1$. Essendo $n+m\in \mathbb{N}$ e $\mathbb{N}$ induttivo, concludiamo che $(n+1)+m\in \mathbb{N}$ da cui $n+1\in A_{m}$. Quindi $A_{m}$ è induttivo e per il principio di induzione: $A_{m}=\mathbb{N}$.
+
+Dimostriamo $2)$. Verifichiamo che $\forall n,m\in \mathbb{N}:\, n+m\in \mathbb{N}$.
+Sia quindi $m\in \mathbb{N}$. Consideriamo l'insieme $B_{m}=\left\{ n\in \mathbb{N}| n\cdot m\in \mathbb{N} \right\}\subset \mathbb{N}$. Vale che $0\in B_{m}$ essendo $m\cdot 0=0\in \mathbb{N}$.
+Verifichiamo che $n\in B_{m}\implies n+1\in B_{m}$. Sia quindi $n\in B_{m}$. Valutiamo $(n+1)m= n\cdot m + m$. $n\cdot m\in \mathbb{N}$ ed essendo $m\in \mathbb{N}$ per come dimostrato sopra $n\cdot m +m \in \mathbb{N}$. Quindi $n+1 \in B_{m}$. Quindi $B_{m}$ è induttivo e allora $B_{m}=\mathbb{N}\, \blacksquare\,$.
+
+**Principio di induzione generalizzato**
+Sia $A\subset \mathbb{N}$, sia $n_{0}\in \mathbb{N}$. Supponiamo che:
+1. $n_{0}\in A$,
+2. $\forall n,\, n_{0}\leq n: \, n\in A \implies n+1\in A$.
+Allora risulta che $\left\{ n\in \mathbb{N}| n_{0}\leq n \right\}\subset A$.
+
+*Dimostrazione*:
+Poniamo $C=\left\{ n\in \mathbb{N}|\, n+n_{0}\in A \right\}$. Proveremo che $C$ è induttivo.
+Ovviamente $0\in C$, inoltre se $n\in C:\, n+1\in C$. Dato che se $n\in C,\, n+n_{0}\in A$ da cui $(n+1)+n_{0}=(n+n_{0})+1\in A$. Concludiamo che $C=\mathbb{N}$ da cui segue che $\left\{ n\in \mathbb{N}|\, n_{0}\leq n \right\}\subset A\,\blacksquare.$
+
+*Osservazione*:
+Se $A\subset \left\{ n\in \mathbb{N}|\, n\geq n_{0} \right\}$ e verifica le proprietà richieste dal principio di induzione generalizzato allora $A= \left\{ n\in \mathbb{N}|\, n>n_{0} \right\}$.
+
+*Notazione*:
+$]a,b[= (a,b)$
+
+*Teorema* (Discretezza di $\mathbb{N}$): $\forall n\in \mathbb{N}:\, (n,n+1)\cap \mathbb{N}=\varnothing$.
+
+*Dimostrazione*: Sia $C=\left\{ n\in \mathbb{N}|(n,n+1)\cap \mathbb{N}=\varnothing \right\}\subset \mathbb{N}$. Proviamo che $C$ è induttivo.
+1. $0\in C\,$? Sia $A=\mathbb{N}\setminus(0,1)\subset \mathbb{N}$. Proviamo che $A$ è induttivo. $0\in \mathbb{N},\, 0\not\in(0,1)\Rightarrow 0\in A$. inoltre sia $n\in A$.
+$$
+n \geq 0\Rightarrow n+1\geq 1\Rightarrow n+1 \not\in(0,1)\Rightarrow n+1\in A
+$$
+Quindi $A$ è induttivo. Per il principio di induzione $A=\mathbb{N}$.
+Quindi $\mathbb{N}\setminus (0,1)=\mathbb{N}\Leftrightarrow \mathbb{N}\cap(0,1)=\varnothing$.
+Quindi $0\in C$.
+
+2. Sia $n\in C$. Mostriamo che $n+1\in C$.
+$$
+n\in C\Leftrightarrow(n,n+1)\cap \mathbb{N}=\varnothing
+$$
+Poniamo
+$$
+B=\mathbb{N}\setminus(n+1,n+2)\subset \mathbb{N}
+$$
+Proviamo che $B$ è induttivo.
+$0\in B$ poiché $\forall n\in \mathbb{N}:\, n+1>0 \text{ e } 0\not\in(n+1,n+2)\Rightarrow 0\in B$. Sia $m\in \mathbb{N}$, suppongo $m\in B \Leftrightarrow m\in \mathbb{N}\setminus(n+1,n+2)$. Quindi $m\leq n+1 \vee n\geq n+2$.
+	2.1 $m<n+1$. dato che $(n,n+1)\cap \mathbb{N}=\varnothing$, si ha che $m\leq n$. Segue che $m+1<n+1\Rightarrow m+1\in B$.
+	2.2 $m=n+1\Rightarrow m+1=n+2 \not\in(n+1,n+2)\Rightarrow m+1\in B$.
+	2.3 $m\geq n+2\Rightarrow m+1\geq n+3\Rightarrow m+1\in B$.
+Segue che $B$ è induttivo e che $B=\mathbb{N}$. Quindi $\mathbb{N}\cap(n+1,n+2)=\varnothing$, quindi $C$ è induttivo e $C=\mathbb{N}$.
+Da cui $\mathbb{N}\cap(n,n+1)=\varnothing,\quad\forall n\in \mathbb{N}\,\blacksquare$.
+
+$\mathbb{N}$ si dice discreto, ossia verifica la proprietà $\forall n\in \mathbb{N}:\, \mathbb{N}\cap(n,n+1)=\varnothing$.
