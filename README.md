@@ -18,7 +18,9 @@ Se trovate errori, cose da fixare, cose mancanti etc. contattatemi e cerco di si
 Mi rendo conto che scaricare obsidian, clonare la repo, sincronizzare etc. è palloso, ma per una questione di tempo per il momento preferisco fare così. Alla fine del semestre potrei decidire (Non sto promettendo niente) di sistemare tutto in un file PDF, allo scopo di renderlo più facile da navigare in vista degli appelli d'esame.
 
 ----------------------------------------------------------------------------------------------------------
-Sempre su GitHub trovare, https://github.com/BiagioAltruda/Calc1 a questo link, il JackChan, dispense dell'Analisi del primo anno. Stesa da me e Jack D'Aurizio
+Sempre su GitHub trovate, https://github.com/BiagioAltruda/Calc1 a questo link, il JackChan, delle dispense dell'Analisi del primo anno. Stesa da me e Jack D'Aurizio. Sono a parer mio molto chiare anche se un po' tecniche, anche se seguono un approccio diverso. Gli esercizi soprattutto sono del tipo: "Esercizio FASTIDIOSISSIMO lasciato al povero fesso che credeva bastasse agitare un po' le mani". Se decidete di dare uno sguardo, non perdeteci troppo tempo.
+
+----------------------------------------------------------------------------------------------------------
 
 Proprio non vorrei ma devo fare un 
 DISCLAIMER:
