@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ef0be2512e8131a7",
+        "id": "43120596e857c1c1",
         "type": "tabs",
         "children": [
           {
-            "id": "07142caf4ac97206",
+            "id": "9128d02c80fa6efd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algebra 1.md",
+                "file": "Geometria 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "024063fc6a00afd1",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algebra 1.md",
+                "file": "Geometria 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algebra 1.md",
+                "file": "Geometria 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algebra 1.md"
+                "file": "Geometria 1.md"
               }
             }
           }
@@ -148,11 +147,14 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "07142caf4ac97206",
+  "active": "9128d02c80fa6efd",
   "lastOpenFiles": [
+    "Algebra 1.md",
+    "Informatica.md",
     "Geometria 1.md",
     "Analisi 1.md",
-    "Algebra 1.md",
+    "Esercizi Analisi.md",
+    "preamble.sty.md",
     "Esercizi Geometria.md",
     "Welcome.md"
   ]
