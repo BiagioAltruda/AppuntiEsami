@@ -377,3 +377,141 @@ Sia $A$ un anello unitario non nulla e sia $a\in A$ invertibile. Allora $a\neq 0
 Sia $A$ un anello e sia $a\in A$. Allora $a$ si dice cancellabile a destra se, $\forall x,y\in A,\,xa=ya\implies x=y$. Analogamente si definiscono gli elementi cancellabili a sinistra.
 
 *Proposizione*:
+In un anello, un elemento non nullo è regolare se e solo se è cancellabile.
+
+*Dimostrazione*:
+Sia $A$ un anello. Sia $a\in A,\,a\neq 0$. Supponiamo che $a$ sia regolare. Siano $x,y\in A$. Tali che $xa=ya$. Allora, per la proprietà distributiva otteniamo:
+$$
+0=xa-ya=xa+(-ya)=xa+(-y)a=(x-y)a
+$$
+Essendo $a$ regolare si deve avere che $x=y$. Quindi $a$ è cancellabile a destra. Analogamente si prova che $a$ è cancellabile a sinistra.
+Supponiamo che $a$ sia cancellabile. Sia quindi $b\in A$ tale che $ab=0$ o $ba=0$. Nel primo caso avremmo $ab=a0$. Essendo $a$ cancellabile a sinistra, segue che $b=0$. Si arriva alla stessa conclusione anche nell'altro caso. Segue immediatamente che $a$ è regolare.
+
+*Definizione*:
+Sia $(A,+,\cdot)$ un anello, e sia $B$ un sottoinsieme non vuoto di $A$. Allora $B$ si dice un sottoanello di $A$ se:
+1. $B$ è chiuso rispetto alle operazioni $+$ e $\cdot$
+2. $B$ è un anello rispetto alla restrizione delle operazioni di sopra
+
+Seguono due caratterizzazioni dei sottoanelli.
+
+*Proposizione* :
+Sia $A$ un anello, e sia $B$ un suo sottoinsieme non vuoto. Allora $B$ è sottoanello se e solo se:
+1. $B$ è sottogruppo additivo di $A$.
+2. $B$ è chiuso rispetto al prodotto di $A$.
+
+*Corollario*:
+Sia $A$ un anello, e sia $B$ un suo sottoinsieme non vuoto. Allora $B$ è sottoanello se e solo se:
+1. $\forall a,b\in B, a-b\in B$;
+2. $B$ è chiuso rispetto al prodotto di $A$.
+
+*Proposizione*:
+Ogni sottoanello di un anello commutativo è commutativo.
+
+*Dimostrazione*:
+credici
+
+*Proposizione*:
+Sia $A$ un anello unitario. Se $B$ è un sottoanello di $A$ tale che $1\in B$, allora $\mathcal{U}(B)$ è un sottogruppo di $\mathcal{U}(A)$.
+
+*Definizione*:
+Sia $(K,+,\cdot)$ un corpo (o campo), e sia $L$ un sottoinsieme non vuoto di $K$. Allora $L$ si dice sottocorpo (sottocampo) se:
+1. $L$ è chiuso rispetto a $+$ e $\cdot$
+2. $L$ è un corpo (campo) rispetto alle operazioni ristrette.
+
+*Definizione*:
+Siano $(A_{1},+_{1},\cdot_{1})$ e $(A_{2},+_{2},\cdot_{2})$ anelli. Un'applicazione $f:A_{1}\to A_{2}$ si dice omomorfismo di anelli se, $\forall a,b\in A$:
+$$
+f(a+b)=f(a)+f(b)
+$$
+$$
+f(a\cdot b)= f(a) \cdot f(b)
+$$
+*Proposizione*:
+Siano $(A_{1},+_{1},\cdot_{1})$ e $(A_{2},+_{2},\cdot_{2})$ anelli e sia $f:A_{1}\to A_{2}$ un omomorfismo di anelli. Allora valgono:
+1. Se $B_{1}$ è sottoanello di $A_{1}$ allora $f(B_{1})$ è sottoanello di $A_{2}$
+2. Se $B_{2}$ è sottoanello di $A_{2}$, allora $f^{-1}(B_{2})$ è sottoanello di $A_{1}$.
+
+*Definizione*:
+Siano $(A_{1},+_{1},\cdot_{1})$ e $(A_{2},+_{2},\cdot_{2})$ anelli e sia $f:A_{1}\to A_{2}$ un omomorfismo di anelli. Allora il nucleo di $f$ è l'insieme:
+$$
+Kerf=f^{-1}(\left\{ 0 \right\} )=\left\{ a\in A|\,f(a)=0 \right\} 
+$$
+Si dice immagine di $f$ l'insieme:
+$$
+\mathrm{Im}f=f(A_{1})=\left\{ f(a)|a\in A_{2} \right\} 
+$$
+*Corollario*:
+Siano $(A_{1},+_{1},\cdot_{1})$ e $(A_{2},+_{2},\cdot_{2})$ anelli e sia $f:A_{1}\to A_{2}$ un omomorfismo di anelli. Allora $Kerf$ è $\mathrm{Im}f$ sono sottoanelli rispettivamente di $A_{1}$ e $A_{2}$.
+
+*Proposizione*:
+Siano $(A_{1},+_{1},\cdot_{1})$ e $(A_{2},+_{2},\cdot_{2})$ anelli e sia $f:A_{1}\to A_{2}$ un omomorfismo di anelli. Allora:
+1. $f$ è un monomorfismo se e solo se $Kerf=\left\{ 0 \right\}$
+2. $f$ è un epimorfismo se e solo se $\mathrm{Im}f=\left\{ A_{2} \right\}$.
+
+*Proposizione*: Siano $(A_{1},+_{1},\cdot_{1})$ e $(A_{2},+_{2},\cdot_{2})$ anelli e sia $f:A_{1}\to A_{2}$ un epimorfismo di anelli. Allora se $A_{1}$ è unitario, anche $A_{2}$ lo è, e $f(1)=1$. Inoltre se $a\in A_{1}$ è invertibile lo è anche $f(a)$ e $f(a)^{-1}=f(a^{-1})$.
+
+*Dimostrazione*:
+Sia $a\in A_{2}$. Poiché $f$ è surgettivo, esiste $b\in A$ tale che $f(b)=a$. Allora:
+$$
+a=f(b)=f(b\cdot1)=f(b)f(1)=af(1)
+$$
+$$
+a=f(b)=f(1\cdot b)= f(1)f(b)=f(1)a
+$$
+Che dimostra la prima metà.
+Essendo $a$ invertibile in $A_{1}$, ed essendo $f$ un epimorfismo vale:
+$$
+f(a\cdot a^{-1})=f(a) f(a^{-1}) \implies f(1)= f(a)f(a^{-1})\implies 1= f(a)f(a^{-1})
+$$
+ovvero
+$$
+f(a^{-1})=f(a)^{-1}.
+$$
+
+*Proposizione*:
+Valgono per gli anelli le stesse proposizioni sulla composizione di omomorfismi e proprietà di isomorfismi.
+
+----
+**Divisibilità, teorema di divisione euclidea e algoritmo delle divisioni successive**
+
+*Definizione*:
+Sia $A$ un anello commutativo, e siano, $a,b\in A$. Si dice che $b$ divide $a$ se $\exists q\in A$ tale che $a=bq$. In tal caso si scrive $b|a$.
+
+*Osservazione*:
+La divisibilità definisce su un anello commutativo $A$ una relazione transitiva.
+
+*Definizione*:
+Sia $A$ un anello commutativo, e siano $a,b\in A$. Allora $a$ e $b$ si dicono associati se $a$ divide $b$ e $b$ divide $a$.
+
+*Proposizione*:
+Sia $A$ un dominio di integrità, siano $a,b\in A$. Allora $a$ e $b$ sono associati se e solo se esiste un elemento invertibile $u\in A$ tale che $b=au$.
+
+*Dimostrazione*:
+Siano $a$ e $b$ associati. Allora esistono $q,q'\in A$ tali che $a=bq$ e $b=aq'$, da cui $b=(bq)q'=b(qq')$. Se $b$ è zero, allora, anche $a$ è zero, dunque la tesi è verificata per $u=1$. Altrimenti $b$ è un elemento regolare e quindi cancellabile. Allora essendo $b 1=b(qq')$, segue che $1=qq'$. quindi $q$ è invertibile $\blacksquare$.
+
+*Corollario*:
+In un anello commutativo unitario, due elementi sono associati se e solo se hanno gli stessi divisori e multipli.
+
+*Proposizione*:
+Sia $a$ un anello commutativo. Allora $\forall a,b,c\in A$:
+1. se $a|b$ e $a|c$, allora $a| b\pm c$
+2. se $a|b$ e $a|b+c$, allora $a|c$
+3. se $a|b$, allora $a|bc$.
+
+*Dimostrazione*:
+1. Se $a|b,c$, allora esistono $q,q'\in A$ tali che $b=aq,\,c=aq'$, per cui, per la proprietà distributiva, si ha che $b+c=aq+aq'=a(q+q')$, quindi $a$ divide $b+c$. Allo stesso modo si mostra che $a$ divide $b-c$.
+2. Basta applicare $1)$ osservando che $c=(b+c)-b$.
+3. Se $b=aq$, con $q\in A$, allora $bc=(aq)c=a(qc)$ e quindi $a$ divide $bc$.
+
+*Teorema*(di divisione euclidea):
+Sia $a,b\in \mathbb{Z}$, ove $b \neq0$. Allora esistono, e sono univocamente determinati $q,r\in \mathbb{Z}$ tali che:
+1. $a=bq+r$;
+2. $0\leq r<|b|$
+$q$ ed $r$ si dicono rispettivamente quoziente e resto della divisione euclidea di $a$ per $b$.
+
+*Dimostrazione*:
+$SPG$ $b>0$. Consideriamo l'insieme:
+$$
+X=\left\{ a-bx\geq 0| x \in \mathbb{Z} \right\} 
+$$
+$X$ è non vuoto. Infatti se $a\geq 0$, allora $0\leq a= a- b0 \in X$. Altrimenti essendo $b\geq 1$, si ha $0\leq (1-b)a$.
