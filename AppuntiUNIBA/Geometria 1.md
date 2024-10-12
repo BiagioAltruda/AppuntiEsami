@@ -390,3 +390,249 @@ $$
 2\lambda a_{1}t^{2}+2\mu a_{2}t^{2}+3\lambda b_{1}+3\mu b_{2}= 2(\lambda a_{1}+\mu a_{2})t^{2}+3(\lambda b_{1}+\mu b_{2}).
 $$
 Che è della forma che cercavo. Quindi $W$ è un sottospazio vettoriale.
+
+----
+*Definizione*:
+Un sistema di equazioni della forma: $$
+\begin{cases}
+a_{11}x_{1}+a_{12}x_{2}+\dots+a_{1n}x_{n}=b_{1} \\
+\dots \\
+\dots \\
+a_{m1}x_{1}+a_{m 2}x_{2}+\dots+a_{mn}x_{n}=b_{m}
+\end{cases}
+$$
+Con $a_{ij}\in \mathbb{F},\, b_{i}\in \mathbb{F},\, i=1,\dots,m,\,j=1,\dots,n$. è detto sistema lineare con $m$ equazioni ed $n$ incognite. Gli $a_{ij}$ si dicono coefficienti del sistema, le $x_{j}$ incognite del sistema e i $b_{i}$ termini noti.
+Se $b_{i}=i, \,\forall i$, il sistema è detto sistema lineare omogeneo.
+
+La matrice $A=(a_{ij})\in M_{m,n}(\mathbb{F})$, è detta matrice associata al sistema.
+Il vettore $b= \begin{pmatrix}b_{1}\\b_{2}\\.\\.\\b_{m}\end{pmatrix}$ si dice vettore dei termini noti, e $x=\begin{pmatrix}x_{1}\\x_{2}\\.\\.\\x_{n}\end{pmatrix}$ vettore delle incognite.
+Si scrive $Ax=b$ per indicare il sistema precedente.
+Inoltre indico con $A'=(A|b)$, la matrice ottenuta da $A$ "aggiungendo" la colonna $b$, e si chiama matrice completa associata al sistema.
+
+*Esempi*:
+1. $$
+\begin{cases}
+2x_{1}-3x_{2}+4x_{3}-x_{4}=2  \\
+-x_{1}+x_{2}+\frac{1}{2}x_{4}=\pi
+\end{cases}
+$$
+$$
+A=\begin{pmatrix}
+2 &-3&4&-1\\ -1&1 & 0 & \frac{1}{2}
+\end{pmatrix}
+$$
+$b=\begin{pmatrix}2 \\\pi\end{pmatrix}$
+$$
+A'=\begin{pmatrix}
+2&-3&4&-1 &2 \\ -1&1&0& \frac{1}{2} & \pi
+\end{pmatrix}
+$$
+2. $$
+\begin{cases}
+2x_{1}-x_{2}=0  \\
+x_{1}+x_{2}=0 \\
+3x_{1}=0
+\end{cases}
+$$
+è un sistema omogeneo
+$A=\begin{pmatrix}2 &1 \\1&1\\3&0\end{pmatrix}$, $b=\underline{0}$, $A'=\begin{pmatrix} 2&1&0\\1&1&0\\3&0&0\end{pmatrix}$.
+3. $$
+\begin{cases}
+3x=2
+\end{cases}
+$$
+$A=(3)$, $A'=(3|2)$.
+
+*Teorema*:
+Sia $W\subset \mathbb{F}^{n}$, l'insieme delle soluzioni del sistema lineare omogeneo $Ax=\underline{0}$, con $A\in M_{m,n}(\mathbb{F})$ e $\underline{0}\in \mathbb{F}^{n}$.
+$W=Sol(Ax=\underline{0})$. Allora $W$ è sottospazio vettoriale di $\mathbb{F}^{n}$.
+
+*Dimostrazione*:
+Devo dimostrare che $\underline{0}\in \mathbb{F}^{n}$ appartiene a $W$ e che $\forall z,t\in W,\,\forall\alpha,\beta \in \mathbb{F},\, \alpha z+\beta t\in W$.
+$\underline{0}\in W$, infatti: $\underline{0}=\begin{pmatrix}0\\0\\.\\.\\0\end{pmatrix}\in \mathbb{F}^{n}$,
+$$Ax=\underline{0}: \begin{cases}
+a_{11}x_{1}+\dots+1_{1n}x_{n}=0 \\
+. \\
+. \\
+a_{m1}x_{1}+\dots+a_{mn}x_{n}=0
+\end{cases}$$
+
+Ogni sistema lineare omogeneo ammetta la soluzione nulla.
+
+Siano ora $z=\begin{pmatrix}z_{1}\\.\\.\\z_{n}\end{pmatrix}$ e $t=\begin{pmatrix}t_{1}\\.\\.\\t_{n}\end{pmatrix}\in W$, allora $z_{1},\dots,z_{n}$ e $t_{1},\dots,t_{n}$ sono soluzioni del sistema di sopra. Cioè $\forall i=1,\dots,m$, $a_{i 1}z_{1}+\dots+a_{in}z_{n}=0$ e $a_{i 1}t_{1}+\dots+ a_{in}t_{n}=0$.
+
+ Allora considero $\alpha z+\beta t=\begin{pmatrix}\alpha z_{1}+\beta t_{1}\\.\\.\\\alpha z_{n}+\beta t_{n}\end{pmatrix}$, è vero che questo nuovo vettore soddisfa tutte le equazioni del sistema?
+ Sia $i\in\{1,..,n\}$, allora $a_{i1}x_{1}+\dots+a_{in}x_{n}=0$, sostituisco il vettore di sopra:
+ $$
+a_{i 1}(\alpha z_{1}+\beta t_{1})+\dots+ a_{in}(\alpha z_{n}+\beta t_{n})=
+\alpha(a_{i 1}z_{1}+\dots+ a_{in}z_{n})+ \beta(a_{i 1}t_{1}+\dots+a_{in}t_{n})
+$$
+Ma $a_{i 1}z_{1}+\dots+ a_{in}z_{n}=0$ così come $a_{i 1}t_{1}+\dots+a_{in}t_{n}=0$
+$$
+\implies \alpha(0)+\beta(0)=0
+$$
+Allora $\alpha z+\beta t\in W\,\blacksquare.$
+
+*Osservazione*:
+In particolare se $z\in Sol(Ax=\underline{0})\implies \forall\lambda \in \mathbb{F}:\, \lambda z\in Sol(Ax=\underline{0})$.
+
+*Esercizio*:
+Sia $Ax=b, b\neq\underline{0}$ un sistema lineare. Dimostrare che $Sol(Ax=b)$ non è un sottospazio vettoriale.
+
+*Definizione*:
+Sia $V$ uno spazio vettoriale su $\mathbb{F}$, e siano $v_{1},v_{2},\dots,v_{k}\in V$. Definiamo l'insieme $Span(v_{1},\dots,v_{k})$ oppure $<v_{1},\dots,v_{k}>=\left\{ v\in V|\, \exists \alpha_{1},\dots,\alpha_{k}\in \mathbb{F}: v=\alpha_{1}v_{1}+\dots+\alpha_{k}v_{k}\right\}$. Viene detto spazio generato dai vettori $v_{1},\dots,v_{k}$ o insieme delle combinazioni lineari di $v_{1},\dots,v_{k}$.
+
+*Osservazione*:
+Se almeno uno tra $v_{1},\dots,v_{k}$ non è il vettore nullo, allora $Span(v_{1},\dots,v_{k})$ ha infiniti elementi.
+
+Un altro modo per scrivere $Span(v_{1},\dots,v_{n})=\left\{  \alpha_{1}v_{1}+\dots+\alpha_{k}v_{k}|\, \alpha_{i}\in \mathbb{F} \right\}$.
+E $Span(v)=\left\{ \alpha v|\,\alpha \in \mathbb{F} \right\}$.
+
+*Teorema*:
+Sia $V$ spazio vettoriale su $\mathbb{F}$, $v_{1},\dots,v_{k}\in V$. Allora valgono le seguenti proprietà:
+1. $\forall i=1,\dots,k,\, v_{i}\in Span(v_1,\dots,v_{k})$.
+2. $Span(v_{1},\dots,v_{k})$ è sottospazio vettoriale.
+3. Se $W$ è sottospazio di $V$ e $v_{1},\dots,v_{k}\in W$ allora $Span(v_{1},\dots,v_{k})\subset W$
+	Oppure anche: $Span(v_{1},\dots,v_{k})$ è il più piccolo sottospazio vettoriale di $V$ che contiene $v_{1},\dots,v_{k}$.
+*Dimostrazione*:
+1. Dobbiamo mostrare che $\forall i=1,\dots,k, \, v_{1},\dots,v_{k}$. Mi chiedo se $\exists \alpha_{1},\dots,\alpha_{k}\in \mathbb{F}: \,v_{1}=\alpha v_{1}+\dots,\alpha_{k}v_{k}$. Si, infatti, $v_{1}=1v_{1}+0v_{2}+\dots+0v_{n}$. ovvero $\forall i=1,\dots,k,\, v_{i}=0v_{1}+\dots+0v_{i-1}+1v_{i}+0v_{i+1}+\dots+0v_{k}$. Cioè basta prendere $\alpha_{i}=1$ e $\alpha_{j}=0,\,\forall j=1,\dots,k,\, j\neq i$. Allora, in particolare, $Span(v_{1},\dots,v_{k})\neq \emptyset$.
+2. Essendo $Span(v_{1},\dots,v_{k})\neq \emptyset$, basta dimostrare che $\forall u,w\in Span(v_{1},\dots,v_{k}),\, \forall \lambda,\mu \in \mathbb{F}:\, \lambda u+\mu w\in Span(v_{1},\dots,v_{k})$. 
+	Dato che $u,w \in Span(v_{1},\dots,v_{k})$: $\exists \alpha_{1},\dots,\alpha_{k},$ e $\beta_{1},\dots,\beta_{k}\in \mathbb{F}$ tali che $u=\alpha_{1}v_{1}+\dots+\alpha_kv_{k}$ e $w=\beta_{1}v_{1}+\dots,\beta_{k}v_{k}$.
+	Considero $\lambda u+\mu w \implies \lambda(\alpha_{1}v_{1}+,\dots,\alpha_{k}v_{k})+\mu(\beta_{1}v_{1}+\dots,\beta_{k}v_{k})=(\lambda\alpha_{1}+\mu\beta_{1})v_{1}+\dots+(\lambda\alpha_{k}+\mu\beta _{k})v_{k}$, che è una combinazione lineare di $v_{1},\dots,v_{k}$.
+3. Sia $w\in Span(v_{1},\dots,v_{k})$. Allora $\exists \gamma_{1},\gamma_{k}\in \mathbb{F}$ tali che $w=\gamma_{1}v_{1}+\dots+\gamma_{k}v_{k}$. Ma $W$ è sottospazio vettoriale di $V$ e contiene $v_{1},\dots,v_{k}$. Ma allora $\forall x_{1},\dots,x_{k}\in \mathbb{F},\, x_{1}v_{1}+\dots+x_{k}v_{k}\in W\implies w\in W \,\blacksquare$.
+
+-------
+*Esempi*:
+In $\mathbb{R}^{3}$
+$v_{1}=\begin{pmatrix}1\\-2\\4\end{pmatrix}, v_{2}=\begin{pmatrix}0\\3\\1\end{pmatrix}$. $Span(v_{1},v_{2})=\left\{\alpha_{1}v_{1}+\alpha_{2}v_{2}|\, \alpha_{1},\alpha_{2}\in \mathbb{R}\right\}=\left\{ \alpha_{1}\begin{pmatrix}1\\-2\\4\end{pmatrix}+\alpha_{2}\begin{pmatrix}0\\3\\1\end{pmatrix}|\, \alpha_{1},\alpha_{2}\in \mathbb{R} \right\}=$
+$$
+=\left\{ \begin{pmatrix}
+\alpha_{1}\\-2\alpha_{1}+3\alpha_{2}\\ 4\alpha_{1}+\alpha_{2}
+\end{pmatrix}|\, \alpha_{1},\alpha_{2}\in \mathbb{R} \right\} 
+$$
+
+In $M_{2,3}(\mathbb{R})$
+$A_{1}=\begin{pmatrix}1 &1&1 \\0&1&0\end{pmatrix}$, $A_{2}=\begin{pmatrix}0&0&0\\2&1&0\end{pmatrix}, \,A_{3}=\begin{pmatrix}0&0&0\\0&0&1\end{pmatrix}$
+$$
+Span(A_{1},A_{2},A_{3})=\left\{ \gamma_{1}A_{1}+\gamma_{2}A_{2}+\gamma_{3}A_{3}| \gamma_{1},\gamma_{2},\gamma_{3}\in \mathbb{R} \right\} =
+$$
+$$
+=\left\{ \begin{pmatrix}
+\gamma_{1}& \gamma_{1} & \gamma_{1}\\ \gamma_{2} & \gamma_{1} + \gamma_{2} & \gamma_{3}
+\end{pmatrix} |\gamma_{1},\gamma_{2},\gamma_{3}\in \mathbb{R}\right\} 
+$$
+
+*Lemma*:
+$\forall n\geq 0$, l'insieme $\mathbb{F}[t;n]=\left\{ a_{n}t^{n}+\dots+a_{0}| a_{0},\dots,a_{n}\in \mathbb{F} \right\}$, i polinomi di grado al massimo $n$ è un sottospazio vettoriale di $\mathbb{F}[t]$. 
+
+*Dimostrazione*:
+Infatti $\mathbb{F}[t;n]=Span(t^{n},t^{n-1},\dots,t,1)\,\blacksquare$.
+
+*Esempio*:
+In $\mathbb{R}[t,5]$. Considero $p_{1}(t)=t^{5}-3t^{4}+2t$, $p_{2}(t)=2t^{3}+2$, $p_{3}(t)=t^{4}+t^{2}$.
+$$Span(p_{1}(t),p_{2}(t),p_{3}(t))=\left\{ \beta_{1}p_{1}(t)+ \beta_{2}p_{2}(t)+\beta_{3}p_{3}(t) |\, \beta_{1},\beta_{2},\beta_{3}\in \mathbb{R}\right\}=$$
+$$
+=\left\{ \beta_{1}(t^{5}-3t^{4}+2t)+\beta_{2}(2t^{3}+2)+\beta_{3}(t^{4}+t^{2})| \beta_{1},\beta_{2},\beta_{3}\in \mathbb{R} \right\} =$$$$=\left\{ \beta_{1}t^{5}+(-3\beta_{1}+\beta_{3})t^{4}+2\beta_{2}t^{3}+\beta_{3}t^{2}+2\beta_{1}t+2\beta_{2}|\, \beta_{1},\beta_{2},\beta_{3}\in \mathbb{R} \right\}.
+$$
+**Basi**
+
+*Definizione*:
+Sia $V$ spazio vettoriale sul campo $\mathbb{F}$. I vettori $v_{1},\dots,v_{k}\in V$ si dicono linearmente indipendenti se $\forall \alpha,\dots\alpha_{k}\in \mathbb{F},$ tali che $\alpha_{1}v_{1}+\dots+\alpha_{k}v_{k}=\underline{0}\implies \alpha_{1}=\alpha_{2}=\dots=\alpha_{k}=0$.
+Viceversa si dicono linearmente dipendenti se $\exists \alpha_{1},\dots,\alpha_{k}\in \mathbb{F}$, non tutti nulli, tali che $\alpha_{1}v_{1}+\dots+\alpha_{k}v_{k}=\underline{0}$.
+
+*Osservazione*:
+$v_{1},\dots,v_{k}$ sono linearmente indipendenti se l'unica soluzione dell'equazione:
+$$
+\alpha_{1} v_{1}+\dots+\alpha_{k}v_{k}=\underline{0}
+$$
+nelle incognite $\alpha_{i}$, l'unica soluzione è quella nulla ($\alpha_{1}=\dots=\alpha_{k}$).
+
+*Esempio*:
+In $\mathbb{R}^{4}$
+Sia $v_{1}=\begin{pmatrix}1\\0\\2\\3\end{pmatrix},v_{2}=\begin{pmatrix}0\\-1\\0\\-1\end{pmatrix},v_{3}=\begin{pmatrix}1\\-1\\2\\2\end{pmatrix}$.
+Mi chiedo se sono indipendenti.
+$$
+\alpha_{1}v_{1}+\alpha_{2}v_{2}+\alpha_{3}v_{3}=\underline{0}
+$$
+$$
+\implies \alpha_{1}\begin{pmatrix}
+1\\0\\2\\3
+\end{pmatrix} + \alpha_{2}\begin{pmatrix}
+0\\-1\\0\\-1
+\end{pmatrix} + \alpha_{3}\begin{pmatrix}
+1\\-1\\2\\2
+\end{pmatrix} = \underline{0} \implies \begin{pmatrix}
+\alpha_{1}+\alpha_{3} \\-\alpha_{2}-\alpha_{3}\\2\alpha_{1}+2\alpha_{3}\\3\alpha_{1}-\alpha_{2}+2\alpha_{3}
+\end{pmatrix}= \begin{pmatrix}
+0\\0\\0\\0
+\end{pmatrix}
+$$
+Allora, vedendola come un sistema lineare otteniamo:
+$$
+\begin{cases}
+\alpha_{1}=-\alpha_{3} \\
+\alpha_{2}=-\alpha_{3} \\
+2(-\alpha_{3})+2\alpha_{3}=0 \\
+3(-\alpha_{3})-(-\alpha_{3})+2\alpha_{3}=0
+\end{cases}
+$$
+$\forall \alpha_{3}\in \mathbb{R}$ la terna: $\begin{pmatrix}-\alpha_{3}\\-\alpha_{3}\\-\alpha_{3}\end{pmatrix}$ è una soluzione del sistema.
+Infatti $v_{3}=v_{1}+v_{2}$.
+
+
+In $\mathbb{R}^{3}$
+$w_{1}=\begin{pmatrix}1\\1\\0\end{pmatrix},w_{2}=\begin{pmatrix}1\\0\\1\end{pmatrix},w_{3}=\begin{pmatrix}0\\0\\1\end{pmatrix}$.
+$\alpha_{1}w_{1}+\alpha_{2}w_{2}+\alpha_{3}w_{3}=\underline{0}$ Allora:
+$$
+\begin{cases}
+\alpha_{1}+\alpha_{2} =0\\
+\alpha_{1}+\alpha_{3} =0\\
+\alpha_{2}+\alpha_{3}=0
+\end{cases}
+\implies
+\begin{cases}
+\alpha_{2}=-\alpha_{1} \\
+\alpha_{3}=-\alpha_{1} \\
+-\alpha_{1}-\alpha_{1}=0 \implies \alpha_{1}=0
+\end{cases} \implies
+\begin{cases}
+\alpha_{1}=0 \\
+\alpha_{2}=0 \\
+\alpha_{3}=0
+\end{cases}
+$$
+Allora sono linearmente indipendenti.
+
+*Proposizione*:
+Sia $Ax=\underline{0}$, un sistema lineare, omogeneo, con $A\in M_{m,n}(\mathbb{F})$. Il sistema $Ax=\underline{0}$ ha un unica soluzione $x=\underline{0}\Leftrightarrow$ le colonne di $A$, $A_{1},\dots,A_{n}$ sono linearmente indipendenti.
+
+*Dimostrazione*:
+Infatti il sistema $Ax=\underline{0}$, lo posso scrivere come:
+$$
+A_{1}x_{1}+\dots+A_{n}x_{n}=\underline{0}
+$$
+Quest'equazione ha come soluzione, o solo quella nulla con $x=\underline{0}$ e allora le colonne di $A$ sono indipendenti oppure ne esiste una non nulla, $z\neq\underline{0}$ tale che $A_{1}z_{1}+\dots+A_{n}z_{n}=0$. Allora le colonne di $A$ sono linearmente dipendenti.
+
+*Proposizione*:
+Valgono le seguenti proprietà:
+1. Sia $v\in V$ allora $v$ è indipendente $\Leftrightarrow\, v\neq \underline{0}$.
+2. Se fra i vettori $v_{1},\dots,v_{k}$, c'è il vettore nullo. Allora $v_{1},\dots,v_{k}$ sono linearmente dipendenti.
+3. Se $\exists i,j, \,i\neq j$, tali che $v_{i}=v_{j}$. Allora i vettore $v_{1},\dots,v_{k}$ sono dipendenti.
+
+*Proposizione*:
+Sia $V$ spazio vettoriale su $\mathbb{F}$ e $v_{1},\dots,v_{k}\in V$. $v_{1},\dots,v_{k}$ sono linearmente dipendenti se e solo se: $\exists i=1,\dots, k$, tale che $v_{i}$ è combinazione lineare degli altri.
+
+*Dimostrazione*:
+$(\Rightarrow)$ Per ipotesi $v_{1},\dots,v_{k}$ sono dipendenti. Allora $\exists \alpha_{1},\dots,\alpha_{k}$ non tutti nulli, ad esempio $\alpha _i\neq 0$, tali che $\alpha_{1}v_{1}+\dots+\alpha_{k}v_{k}=0$. Se e solo se $$\alpha_{i}v_{i}=-(\alpha_{1}v_{1}+\dots+\alpha_{i-1}v_{i-1}+\alpha_{i+1}v_{i+1}+\dots+\alpha_{k}v_{k}) \implies$$
+$$
+v_{i}=-\left( \frac{-\alpha_{1}}{\alpha i} \right)v_{1}+\dots+\left(\frac{-\alpha_{k}}{\alpha_{i}}\right)v_{k}
+$$
+$(\Leftarrow)$ Per ipotesi$v_{i}=\beta_{1}v_{1}+\dots+\beta_{i-1}v_{i-1}+\beta_{i+1}v_{i+1}+\dots+\beta_{k}v_{k}$. Che è vero se e solo se:
+$$
+\beta_{1}v_{1}+\dots+\beta_{i-1}v_{i-1}+(-1)v_{i}+\beta_{i+1}v_{i+1}+\dots+\beta_{k}v_{k}=\underline{0}\,\blacksquare.
+$$
+
+*Esempio*:
+
+Siano $v_{1}=\begin{pmatrix}1\\0\\2\\3\end{pmatrix},v_{2}=\begin{pmatrix}0\\-1\\0\\-1\end{pmatrix},v_{3}=\begin{pmatrix}1\\-1\\2\\2\end{pmatrix}$.
+$v_{3}=v_{1}+v_{2}\implies v_{1}+v_{2}-v_{3}=\underline{0}$.

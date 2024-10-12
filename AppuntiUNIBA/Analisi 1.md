@@ -542,3 +542,153 @@ Segue che $B$ è induttivo e che $B=\mathbb{N}$. Quindi $\mathbb{N}\cap(n+1,n+2)
 Da cui $\mathbb{N}\cap(n,n+1)=\varnothing,\quad\forall n\in \mathbb{N}\,\blacksquare$.
 
 $\mathbb{N}$ si dice discreto, ossia verifica la proprietà $\forall n\in \mathbb{N}:\, \mathbb{N}\cap(n,n+1)=\varnothing$.
+
+*Teorema*:
+$\mathbb{N}$ non è limitato superiormente.
+
+*Dimostrazione*:
+Vogliamo provare che $\mathcal{M_{\mathbb{N}}}=\emptyset$. Supponiamo per assurdo che $\mathcal{M_{\mathbb{N}}}\neq \emptyset$. Per il teorema di esistenza dell'estremo superiore, $\exists M=\sup\mathbb{N}\in \mathbb{R}$. Segue che $M\in \mathcal{M_{\mathbb{N}}}$, cioè $\forall n\in \mathbb{N}: \, n\leq M$.
+Essendo $\mathbb{N}$ induttivo, si ha che $\forall n\in \mathbb{N}: n+1\in \mathbb{N} \implies \forall n\in \mathbb{N}, n+1\leq M$.
+Pertanto vale che $\forall n\in \mathbb{N}: n\leq M-1$, ma allora $M-1$ è un maggiorante di $\mathbb{N}$, che è assurdo in quanto avevamo supposto che $\sup\mathbb{N}=M. \, \blacksquare$.
+
+*Proposizione* (Proprietà archimedea di $\mathbb{R}$ (I)):
+
+$\forall a\in \mathbb{R},\, a>0:\, \exists n\in \mathbb{N}$ tale che $a<n$.
+
+*Dimostrazione*:
+Per il teorema precedente, si ha che $\mathcal{M_{\mathbb{N}}}=\emptyset$. Voglio dimostrare che $\forall a \in \mathbb{R},\, a>0, \exists n\in \mathbb{N}$ tale che $a<n$. Sia quindi $a \in \mathbb{R}, \,a>0$.
+Se per assurdo che la tesi sia falsa, ovvero che $\forall n\in \mathbb{N},\,a\geq n$.
+Pertanto si ha che $a\in \mathcal{M_{\mathbb{N}}}$, assurdo $\blacksquare$.
+
+*Proposizione* (Proprietà archimedea II):
+
+$\forall a,b\in \mathbb{R},\, a,b>0,\, \exists n\in \mathbb{N}$ tale che $na>b$. 
+
+*Dimostrazione*:
+Sia $a,b\in \mathbb{R}, \,a,b>0,\, a>b,$. Poiché $a\neq 0,\,\exists a^{-1}\in \mathbb{R}$.
+Consideriamo il numero reale $x=b\cdot a^{-1}$. Per la proprietà archimedea (I), $\exists n\in \mathbb{N}, \,$ tale che $n>x=b a^{-1}$.
+Pertanto essendo $a>0$, risulta che $na> xa=(b a^{-1})a= b \,\blacksquare.$
+
+*Corollario*:
+Se $x\in\mathbb{R},\, x\geq 0$, tale che $\forall n\in \mathbb{N}, \, n\neq 0,\, x\leq \frac{1}{n}$, allora $x=0$.
+
+*Dimostrazione*:
+Sia $x\geq 0$ tale che $\forall n\in \mathbb{N}, n\neq 0,\, x\leq \frac{1}{n}$.
+Se fosse che $x\neq 0$, allora $x>0$. Per la proprietà archimedea (I) applicata a $x^{-1}\in \mathbb{R}$, $\exists \bar{n} \in \mathbb{N},\, \bar{n}\neq 0$, tale che $\bar{n}> x^{-1}$. Segue che $$x> \frac{1}{\bar{n}}.$$
+Quindi si ha che $\frac{1}{\bar{n}}< x \leq \frac{1}{\bar{n}}$, allora $\frac{1}{\bar{n}}< \frac{1}{\bar{n}}$, assurdo $\,\blacksquare$.
+
+*Corollario*:
+Se $x \in \mathbb{R}, \, x>0$, allora $\exists n\in \mathbb{N},\, n\neq 0$ tale che $x> \frac{1}{n}$.
+
+*Dimostrazione*:
+Sia $x \in \mathbb{R},\, x>0$. Per il corollario precedente, se $\forall n\in \mathbb{N},\, n\neq 0, \, x\leq n$ allora $x=0$. Essendo $x> 0$, $\exists n\in \mathbb{N},\, n\neq 0$ tale che $x> \frac{1}{n}\, \blacksquare$.
+
+*Definizione*:
+$\mathbb{R}$ si dice un corpo, commutativo, archimedeo completo e totalmente ordinato.
+
+*Proposizione* (Principio del minimo):
+Ogni sottoinsieme $A \subset \mathbb{N}, \, A\neq \emptyset$, ammette minimo.
+
+*Dimostrazione*:
+Sia $A\subset \mathbb{N},\, A \neq \emptyset$. Risulta che $0\in\mu_{A}\neq \emptyset$. Per il teorema di esistenza dell'estremo inferiore in $\mathbb{R}$, $$
+\exists \inf A=\max\mu_{A}=a\in \mathbb{R}.
+$$
+Proveremo che $a=\min A$, cioè $a\in \mathbb{N}$.
+Poiché $0<1$, risulta che $a< a+1$, per la caratterizzazione dell'estremo inferiore, $\exists n\in A$ tale che $a\leq n< a+1$. Se $a=n$, la tesi sarebbe soddisfatta, ossia $\inf A\in \mathbb{N} \implies \inf A = \min A$. Se $a<n<n+1$, allora per la caratterizzazione dell'estremo inferiore $\exists m\in A$ tale che $a\leq m<n$. Segue che $m<n<a+1\leq m+1$ da cui $n\in]m,m+1[$ che è assurdo in quanto $]m,m+1[=\emptyset$. (Discretezza di $\mathbb{N}$). Concludiamo che $a=n$ $\blacksquare.$
+
+*Definizione*:
+$\mathbb{N}$ si dice ben ordinato in quanto $\mathbb{N}$ verifica il principio del minimo.
+
+*Definizione*:
+Si dice che $n\in \mathbb{N}$ è pari se $n=2p$, con $p \in\mathbb{N}$. Si dice che $n\in \mathbb{N}$ è dispari se $n=2m +1$, con $m\in \mathbb{N}$.
+\
+Denoteremo con $\mathbb{P}$ l'insieme dei naturali pari e $\mathbb{D}$ l'insieme dei naturali dispari.
+
+*Proposizione*:
+1. $\mathbb{P}\cup \mathbb{D}=\mathbb{N}$
+2. $\mathbb{P}\cap \mathbb{D}$.
+
+*Dimostrazione*:
+1. Verifichiamo che $A=\mathbb{P}\cup \mathbb{D}\subset \mathbb{N}$ soddisfa le ipotesi del principio di induzione.
+	Osserviamo che $0\in \mathbb{P}\subset A=\mathbb{P}\cup \mathbb{D}$. Proveremo anche che $A$ è induttivo. Sia $n\in A=\mathbb{P}\cup \mathbb{D}$. Se $n=2p$, con $p \in \mathbb{N}$, allora $n+1=2p+1 \in \mathbb{D}\subset A$. Se invece, $n=2m+1$, con $m\in \mathbb{N}$, allora $n+1=2m+1+1= 2(m+1)$, allora $n+1\in \mathbb{P}\subset A$.
+	Segue che $\forall n\in \mathbb{N}, n\in A$, allora $n+1\in A$. Per il principio di induzione $A=\mathbb{P}\cup \mathbb{D}=\mathbb{N}\, \blacksquare.$
+2. Vogliamo provare che $\mathbb{P}\cap \mathbb{D}=\emptyset$. Sia per assurdo che $\exists n\in \mathbb{P}\cap \mathbb{D}$. Allora $n=2p$, con $p \in \mathbb{N}$ ma anche $n=2m+1$, con $m\in \mathbb{N}$. Ovvero: $$
+2p=2m+1 \implies 2(p-m)=1.
+$$
+	Se $p=m, 2\cdot 0=0=1$, assurdo.
+	Se $p<m$, allora $2(p-m)=1$. Ma $p-m<0$ cioè $1=2(p-m)<0$, assurdo.
+	Se $p>m$, allora per la discretezza di $\mathbb{N}$ si ha che $p-m\geq 1$. Risulta allora che $1=2(p-m)\geq 2$, assurdo $\blacksquare$.
+
+*Teorema*:
+Ogni sottoinsieme $A\subset \mathbb{N}$, $A\neq \emptyset, \, \mathcal{M_{A}}\neq \emptyset$ ammette massimo.
+
+*Dimostrazione*:
+(Analogo al principio del minimo).
+
+**Numeri relativi (interi)**
+
+*Definizione*:
+Si dice $x \in \mathbb{R}$ è un numero relativo se $\exists n,m\in \mathbb{N}:\, x=m-n$.
+Si denotano con il simbolo $\mathbb{Z}$.
+
+*Proposizione*:
+Valgono le seguenti proprietà:
+1. $\mathbb{N}\subset \mathbb{Z}$.
+2. $\forall x,y\in \mathbb{Z}: x+y \in \mathbb{Z}, x\cdot y\in \mathbb{Z}, -x \in \mathbb{Z}$.
+
+*Dimostrazione*:
+1. $m\in \mathbb{N}$, allora $m=m-0\in \mathbb{Z}$.
+2. Siano $x,y\in \mathbb{Z}$. Allora per definizione $x=m-n,\,y=p-q$, con $m,n,p,q\in \mathbb{N}$. Quindi $x+y=m-n+p-q= (m+p)-(n+q)\in \mathbb{Z}$. Inoltre siano $x,y$ come prima, $x\cdot y= (m-n)\cdot(p-q)=mp-mq-np+nq=(mp+nq)- (mq+np)\in \mathbb{Z}$. Infine se $x \in \mathbb{Z}, \, x=m-n,\, m,n\in \mathbb{Z}$, allora $-x=-(m-n)=n-m\in \mathbb{Z}$.
+
+*Teorema*:
+Sia $A\subset \mathbb{Z}, \, A\neq \emptyset,\, \mu(A)\neq \emptyset$, allora $A$ ammette minimo. 
+
+*Teorema*:
+$\mathbb{Z}$ non è limitato superiormente, $\mathbb{Z}$ non è limitato inferiormente.
+
+*Dimostrazione*:
+La tesi segue osservando $\mathbb{N}\subset \mathbb{Z}$ e anche $-\mathbb{N}\subset \mathbb{Z}$.
+
+*Teorema*:
+Ogni sottoinsieme $A\subset \mathbb{Z},\, A\neq \emptyset, \mathcal{M_{A}}\neq \emptyset$ ammette massimo.
+
+
+**Numeri razionali**
+
+*Definizione*:
+Si dice che $x \in \mathbb{R}$ è un numero razionale se $\exists m\in \mathbb{Z}, n\in \mathbb{N},\, n\neq 0 \text{ tali che } x=m\cdot n^{-1}= \frac{m}{n}$.
+L'insieme dei numeri razionali si denota con $\mathbb{Q}$.
+Si dice che $x \in \mathbb{R}$ è un numero irrazionale se $x \in \mathbb{R}\setminus \mathbb{Q}$.
+
+*Proposizione*:
+Valgono le seguenti proprietà:
+1. $\mathbb{Z}\subset \mathbb{Q}$
+2. $\forall x,y\in \mathbb{Q},\, x+y\in \mathbb{Q},\, xy\in \mathbb{Q},\, -x \in \mathbb{Q}$
+3. $\forall x \in \mathbb{Q}, x\neq 0:\, x^{-1}\in \mathbb{Q}$
+
+*Dimostrazione*:
+1. Sia $x \in \mathbb{Z},$ in particolare $x=\frac{x}{1}\in \mathbb{Q}$.
+2. Siano $x,y\in \mathbb{Q}$. Per definizione $\exists m\in \mathbb{Z}, n\in \mathbb{Z}, n\neq 0,\,\exists p \in \mathbb{Z}, \,q\in \mathbb{N}, q\neq 0$, tali che $x=mn^{-1},\,y=pq^{-1}$. Segue che $x+y=mn^{-1}+pq^{-1}=\frac{mq+pn}{nq}\in \mathbb{Q}$. Inoltre $xy=(mn^{-1})(pq^{-1})= \frac{m}{n}\cdot \frac{p}{q}=(mp)(nq)^{-1}\in \mathbb{Q}$. Infine si ha che se $x \in \mathbb{Q}$ allora $-x \in \mathbb{Q}$. Infatti se $x=mn^{-1}$, come prima, allora $-x=-m(n^{-1})=(-m)n^{-1}\in \mathbb{Q}$.
+3. 
+
+
+*Teorema*: 
+$\mathbb{Q}$ è denso in $\mathbb{R}$. Ovvero: se $a,b\in \mathbb{R}, \,a<b$, allora $\exists q\in \mathbb{Q}$, tale che $a<q<b$.
+
+*Dimostrazione*: Ci sono 3 casi da considerare:
+1. Siano $a,b\in \mathbb{R}:\,0\leq a<b$;
+	Per l'assioma di Archimede vale che $\exists n\in \mathbb{N}:\, n(b-a)>1 \implies n> \frac{1}{b-a}$,
+
+	Segue che $nb-na>1$, da cui $nb>na+1$.
+	Consideriamo l'insieme:
+$$
+C=\left\{ p \in \mathbb{N}|\, na<p \right\}
+$$
+	che è non vuoto per la proprietà archimedea. Inoltre $C\subset \mathbb{N}$. Essendo $C\subset \mathbb{N}$, non vuoto, per il principio del minimo $\exists \min C=m\in \mathbb{N}$. Segue che $na<m$, $na+1<nb$, essendo inoltre $m=\min C$, risulta che $m-1 <na$ da cui $m\leq na +1$. Concludiamo che $na<m\leq na+1<nb$ e quindi $na<m<nb$. Moltiplicando per il reciproco di $n$ si ha che $a< mn^{-1}<b$.
+	Posto $q=mn^{-1}$, si ha che $q\in \mathbb{Q}$ e $a<q<b$.
+
+2. Siano $a,b\in \mathbb{R}:\,a<0<b$;
+Il caso è banale dato che $0\in\mathbb{Q}$.
+
+3. $a<b<0$.
+Si procede applicando il punto $1)$ al caso equivalente $0<-b<-a$. Otterremo così $-q$ che è il numero razionale cercato $\blacksquare$.
