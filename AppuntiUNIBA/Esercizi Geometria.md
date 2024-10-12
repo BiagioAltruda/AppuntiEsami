@@ -71,4 +71,28 @@ $$
 	$v=\begin{pmatrix}1\\2\\3\end{pmatrix}$ è combinazione lineare di $\begin{pmatrix}1\\1\\0\end{pmatrix}$ e $\begin{pmatrix}0\\1\\1\end{pmatrix}$.
 	$v=\begin{pmatrix}1\\2\\3\end{pmatrix}$ è combinazione lineare di $\begin{pmatrix}1\\1\\1\end{pmatrix}, \begin{pmatrix}1\\1\\0\end{pmatrix}$ e $\begin{pmatrix}1\\0\\0\end{pmatrix}$.
 	$A=\begin{pmatrix} 1&0\\0&2\end{pmatrix}$ è combinazione lineare di $\begin{pmatrix}1&1\\0&0\end{pmatrix}, \begin{pmatrix}0&0\\1&1\end{pmatrix}, \begin{pmatrix}1&0\\1&0\end{pmatrix}$ e $\begin{pmatrix}0&1\\0&1\end{pmatrix}$.
-	
+
+------
+
+*Definizione*:
+$$
+\mathbb{C}=\mathbb{R}\times \mathbb{R}=\mathbb{R}^{2}
+$$
+$$
++:(x,y)+(x',y')=(x+x',y+y')
+$$
+$$
+\cdot:(x,y)\cdot (x',y')= (x x'+yy', xy'+x'y)
+$$
+$(\mathbb{C},+,\cdot)=(\mathbb{R}\times \mathbb{R},+,\cdot)$ è un campo.
+
+-----
+*Definizione* (Forma trigonometrica numeri complessi):
+Sia $z\in \mathbb{C}$, $z=x+iy$.
+Siano $r=\left| z \right|$, e $\theta$ l'angolo formato tra il semiasse reale positivo e la semiretta uscente dall'origine passante per $z$.
+$x=r \cos \theta,\,y=r\sin \theta$. Allora $z=r(\cos \theta+i\sin \theta)$ è la forma trigonometrica di $z$.
+Le funzione $\sin \theta$ e $\cos \theta$ sono $2\pi-$periodiche. Quindi $\theta$, che si dice argomento di $z$, è definito a meno di multipli interi di $2\pi$.
+*Esercizio*:
+Scrivere la forma trigonometrica di $z=\frac{\sqrt{ 3 }}{2}+i \frac{1}{2}$.
+$r=\left| z \right|=\sqrt{ \frac{3}{4}+\frac{1}{4} }=1$
+$\theta=\arccos\left( \frac{\sqrt{ 3 }}{2} \right)= \frac{\pi}{6}$
