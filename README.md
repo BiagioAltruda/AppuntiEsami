@@ -1,6 +1,7 @@
 Appunti personali per gli esami della facoltà di  Matematica
 Gli appunti presi nei vari corsi sono nella cartella AppuntiUNIBA. Nelle altre c'e' roba mia vecchia o comunque non necessariamente completa. Siete liberi di spulciarvi tutto a vostro rischio e pericolo.
-Per usufruire degli appunti:
+Per usufruire degli appunti Potete scaricare i pdf allegati dei vari corsi.
+Alternativamente se avete un PC potete usare obsidian + github per sincronizzare velocemente i file:
 1. Scaricare l'applicazione di notetaking OBSIDIAN
 2. clonare la repo in una cartella a piacere
 3. aprire la cartella scaricata come Vault di obsidian
