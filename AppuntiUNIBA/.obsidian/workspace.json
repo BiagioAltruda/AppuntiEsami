@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algebra 1.md",
+                "file": "Analisi 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "024063fc6a00afd1",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algebra 1.md",
+                "file": "Analisi 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algebra 1.md",
+                "file": "Analisi 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algebra 1.md"
+                "file": "Analisi 1.md"
               }
             }
           }
@@ -150,13 +149,15 @@
   },
   "active": "9128d02c80fa6efd",
   "lastOpenFiles": [
-    "Analisi1.pdf",
-    "Geometria1.pdf",
-    "Esercizi Geometria.md",
-    "Esercizi Analisi.md",
-    "Algebra 1.md",
+    "Analisi1_17-10-2024.pdf",
+    "Geometria1_17-10-2024.pdf",
     "Geometria 1.md",
     "Analisi 1.md",
+    "Algebra 1.md",
+    "Geometria1.pdf",
+    "Analisi1.pdf",
+    "Esercizi Geometria.md",
+    "Esercizi Analisi.md",
     "Informatica.md",
     "preamble.sty.md",
     "Welcome.md"

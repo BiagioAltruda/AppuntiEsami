@@ -514,4 +514,199 @@ $SPG$ $b>0$. Consideriamo l'insieme:
 $$
 X=\left\{ a-bx\geq 0| x \in \mathbb{Z} \right\} 
 $$
-$X$ è non vuoto. Infatti se $a\geq 0$, allora $0\leq a= a- b0 \in X$. Altrimenti essendo $b\geq 1$, si ha $0\leq (1-b)a$.
+$X$ è non vuoto. Infatti se $a\geq 0$, allora $0\leq a= a- b0 \in X$. Altrimenti essendo $b\geq 1$, si ha $0\leq (1-b)a$. Essendo $X\subset \mathbb{N}$, per il principio del minimo, $\exists r\in X$ tale che $r$ è il suo minimo. Allora, per qualche $q\in \mathbb{Z},\,r=a-bq\geq0$. Vale quindi $1)$. Resta da verificare che $r<|b|$, ossia $r<b$. Supponiamo per assurdo che $r\geq b$. Allora $0\leq r-b=q-b(q+1)$. Quindi $r-b\in X$, pur essendo $r-b<r=\min X$, assurdo. Supponiamo ora che sia $b<0$. Allora $-b>0$ e quindi esistono, come appena dimostrato, $q,r\in \mathbb{Z}$ tali che si abbia $a=-bq+r$ e $0\leq r<|-b|=|b|$.
+Proviamo ora l'unicità. Siano $q_{1},q_{2},r_{1},r_{2}\in \mathbb{Z}$ tali che $q=q_{i},r=r_{i}$ con $i=1,2$. Allora:
+$$
+bq_{1}+r_{1}=bq_{2}+r_{2} \implies b(q_{1}-q_{2})=r_{2}-r_{1}
+$$
+$SPG$ supponiamo $r_{2}\geq r_{1}$.
+$$
+|b_{1}||q_{1}-q_{2}|=|b(q_{1}-q_{2})|=r_{2}-r_{1}<|b|
+$$
+Ma allora $0\leq|q_{1}-q_{2}|<1$, e quindi essendo $q_{1}-q_{2}$ intero segue che $|q_{1}-q_{2}|=0$, cioè $q_{1}=q_{2}$. Segue immediatamente che $r_{1}=r_{2} \, \blacksquare$.
+
+*Definizione*:
+Siano $a,b\in \mathbb{Z}$. Allora si dice massimo comune divisore di $a$ e $b$ ogni numero $d$ tale che:
+1. $d|a$ e $d|b$
+2. $\forall e\in \mathbb{Z}$ tale che $e|a$ e $e|b$, si ha che $e|d$
+
+*Corollario*:
+Siano $a,b\in \mathbb{Z}$. Allora $b|a$ se e solo se $b$ è il massimo comun divisore tra $a$ e $b$. Se $a=0$, un massimo comune divisore di $a$ e $b$ è $b$.
+
+*Proposizione* (Lemma di Bézout):
+Siano $a,b\in \mathbb{Z}$. Allora esiste un massimo comun divisore $d$ di $a$ e $b$. Inoltre esistono $s,t\in \mathbb{Z}$ tali che:
+$$
+sa+tb=d
+$$
+Tale uguaglianza si dice identità di Bézout. I numeri $s,t$ sono i coefficienti di Bézout di $a$ e $b$.
+
+*Dimostrazione*:
+Se $a=b$, allora $b$ è un massimo comune divisore di $a$ e $b$, e si possono scegliere $s=0$ e $t=1$. Supponiamo quindi $a$ non nullo. Sia
+$$
+X=\left\{ ax+by>0|\,x,y\in \mathbb{Z} \right\}.
+$$
+Allora $X$ è un sottoinsieme di $\mathbb{N}$. $X$ è non vuoto. Per il principio del minimo, $X$ ammette minimo $m$. Siano $s,t\in \mathbb{Z}$ tali che $as+bt=m$. Proviamo che $m$ è un massimo comune divisore di $a$ e $b$. Per provare che $m$ divide $a$ e $b$, utilizziamo il teorema di divisione euclidea. Siano $q$ ed $r$ quoziente e resto della divisione euclidea di $a$ per $m$. Allora $r<m$ e 
+$$
+r=a-mq=a-(as+bt)q=a(1-sq)+b(-tq).
+$$
+Se fosse $r>0$, allora si avrebbe che $r\in X$, e quindi $m\leq r$, che è assurdo. Quindi $r=0$, che prova che $m$ divide $a$. Analogamente si prova che $m$ divide $b$. Supponiamo ora che $e\in \mathbb{Z}$ sia tale che $e|a$ e $e|b$. Allora $e|as$ e $e|bt$ e quindi $e|as+bt=m$. Ciò prova che $m$ soddisfa la definizione di sopra, ed è dunque il massimo comune divisore tra $a$ e $b \,\blacksquare$.
+
+*Proposizione*:
+Siano $a,b\in \mathbb{Z}$ e sia $d$ un massimo comune divisore di $a$ e $b$. Allora i massimi comuni divisori di $a$ e $b$ sono $d$ e $-d$.
+
+*Corollario*:
+Due numeri interi non entrambi nulla hanno esattamente due massimi comuni divisori, che sono un l'opposto dell'altro.
+
+*Notazione*:
+Indicheremo con $MCD(a,b)$ (oppure $(a,b)$ quando non è ambiguo) il massimo comune divisore tra $a$ e $b$.
+
+*Proposizione*:
+Un massimo comune divisore di due numeri interi non nulli (che non siano uno il divisore dell'altro) è l'ultimo resto non nullo che compare nell'algoritmo delle divisioni successive.
+
+*Dimostrazione*:
+
+Dalle note.
+
+*Definizione*:
+Due numeri interi si dicono coprimi se gli unici loro divisori comuni sono $1$ e $-1$.
+
+*Corollario*:
+Siano $a,b\in \mathbb{Z}$ non entrambi nulli. Allora $a$ e $b$ sono coprimi se e solo se $(a,b)=1$.
+
+*Dimostrazione*:
+L'implicazione verso sinistra è banale. Per l'altra basta osservare che, se $1$ è un massimo comune divisore di due interi, allora ogni divisore comune divide $1$, ed è quindi uguale a $1$ o $-1\,\blacksquare$.
+
+*Proposizione* (Corollario al Lemma di Bézout):
+Siano $a,b\in \mathbb{Z}$. Allora $a$ e $b$ sono coprimi se e solo se $\exists s,t\in \mathbb{Z}$ tali che 
+$$
+sa+tb=1
+$$
+*Dimostrazione*:
+Il "solo se" è il Lemma di Bézout per $d=1$. Per l'altra implicazione, detto $d$ un comune divisore di $a$ e $b$, si ha che $d$ divide $a$ e $b$, e quindi esistono $s,t\in \mathbb{Z}$ tali che $d$ divide $1$. Quindi $d\in \left\{ -1,1 \right\}\,\blacksquare$.
+
+*Proposizione*:
+Siano $a,b,c\in \mathbb{Z}$. Se $a|bc$, e $a$ e $b$ sono coprimi allora $a|c$.
+
+*Dimostrazione*:
+Esistono $s,t\in \mathbb{Z}$ tali che $sa+tb=1$. Segue che $$
+c=1\cdot c=(sa+tb)c=sac+tbc.
+$$
+Ma per ipotesi $a$ divide questa somma, e quindi $a|c$.
+
+*Corollario*:
+Se $a,b$ sono interi non entrambi nulla, e $d=(a,b)$, allora $\frac{a}{d}$ e $\frac{b}{d}$ sono coprimi.
+
+*Definizione*:
+Siano $a,b\in \mathbb{Z}$. Allora si dice minimo comune multiplo di $a$ e $b$ ogni numero intero $h$ tale che:
+1. $a|h$ e $b|h$
+2. $\forall k\in \mathbb{Z}$ tale che $a|k$ e $b|k$, si ha che $h|k$.
+
+*Osservazione*:
+$mcd(a,b)=\frac{ab}{MCD(a,b)}$.
+
+**Numeri primi. Teorema Fondamentale dell'Aritmetica**
+
+*Definizione*:
+Un numero intero $p$, diverso di $0,1$ e $0-1$ si dice primo se $\forall a,b\in \mathbb{Z}$:
+$$
+a|ab\implies p|a \text{ oppure } p|b
+$$
+Altrimenti $p$ si dice composto.
+
+*Definizione*:
+Un numero intero $p$, diverso da $0,1,-1$ si dice irriducibile se, $\forall a,b\in \mathbb{Z}$
+$$
+p=ab \implies a \text{ è invertibile oppure } b \text{ è invertibile}.
+$$
+Altrimenti $p$ si dice riducibile.
+
+Queste due nozioni sono equivalenti come risulta dal seguente lemma:
+
+*Lemma*:
+Sia $p$ un numero intero diverso da $0,1,-1$. Allora sono fatti equivalenti:
+1. $p$ è primo
+2. $p$ è irriducibile
+3. i divisori di $p$ sono $1,-1,p,-p$.
+
+*Dimostrazione*:
+Dimostriamo che $1)\implies 2)$. Sia $p$ primo, e siano $a,b\in \mathbb{Z}$ tali che $p=ab$. Essendo $p$ non nullo, anche $a,b$ sono non nulli. Inoltre, $p|ab$, quindi $p|a$ oppure $p|b$. Nel primo caso $a=pq$, per qualche $q\in \mathbb{Z}$, perciò si ha $a=abq$, da cui, essendo $a$ cancellabile, si deduce che $bq=1$. Quindi $b$ è invertibile. Analogamente si deduce lo stesso per $a$. ciò prova che $p$ è irriducibile.
+$2)\implies3)$. Sia $p$ irriducibile, e sia $a$ un divisore di $p$. Allora si ha che $p=ab$ per quale $b\in \mathbb{Z}$. Segue che $a$ è invertibile oppure $b$ è invertibile. Nel primo caso, $a\in\left\{ 1,-1 \right\}$. Nel secondo $a\in \left\{ p,-p \right\}$. Dunque i divisore di $p$ sono $1,-1,p,-p$.
+$3) \implies 1)$. Siano $a,b\in \mathbb{Z}$ tali che $p|ab$. Sia $d$ un massimo comune divisore di $a,p$. Allora $d$ è un divisore di $p$, e quindi $d\in \left\{ 1,-1 \right\}$ oppure $d\in \left\{ p,-p \right\}$. In ogni caso allora o $p|a$ oppure $p|b$, ciò prova che $p$ è primo $\blacksquare.$
+
+*Lemma*:
+Sia $p$ un primo e siano $a_{1},\dots,a_{r}\in \mathbb{Z}$ tali che $p|a_{1}\cdots a_{r}$. Allora $p|a_{i}$ per qualche $i\in \left\{ 1,\dots,r \right\}$.
+
+*Teorema*(Teorema fondamentale dell'Aritmetica o di Fattorizzazione Unica):
+Sia $n\in \mathbb{Z},\, n>1$. Allora esistono per qualche intero positivo $s$, $s$ interi positivi primi $p_{1},p_{2},\dots,p_{s}$ tali che:
+$$
+n=p_{1}p_{2}\cdots p_{s}.
+$$
+Inoltre il numero $s$ ed i numeri primi $p_{1},p_{2},\cdots p_{s}$ sono univocamente determinati.
+
+*Dimostrazione*:
+Supponiamo che per assurdo esista un numero intero maggiore di $1$ per il quale non esiste una decomposizione come quella richiesta. Allora l'insieme $X$ di tali numeri è un sottoinsieme non vuoto di $\mathbb{N}$ ed in quanto tale, per il principio del minimo, ammette minimo $m$. In particolare $m$ non è un primo, quindi è riducibile. Quindi esistono $a,b\in \mathbb{Z}$ non invertibili tali che $m=ab$. Essendo anche $m$ positivo, possiamo suppore $SPG$, che $a,b$ siano entrambi positivi. Allora essi sono entrambi maggiori di $1$. In particolare, da $a>1$ segue che $b=\frac{m}{a}<m$. Quindi $b\not\in X$, e pertanto $b$ si scrivo come prodotto di interi positivi. Ma per simmetria lo stesso è anche vero per $a$. Combinando le due si ha che anche $m$ è prodotto di interi primi positivi, contro l'ipotesi. Ciò prova che ogni intero maggiore di $1$ ammette una decomposizione in fattori primi.
+Supponiamo ora che il numero intero positivo $n$ ammetta, oltre alla decomposizione di prima, anche la seguente decomposizione, dove $t$ è un intero positivo e $q_{1},\dots,q_{t}$ sono interi primi positivi:
+$$
+n=q_{1}\cdots q_{t}
+$$
+Proviamo allora che $s=t$ e che, a meno di riordinare i fattori in $1)$ e $2)$, si ha $p_{i}=q_{i}$ per ogni $i=1,\dots,s$. Procediamo per induzione su $s$. Se $s=1$, allora $n=p_{i}$ è primo. Segue quindi che $t=1$. Se fosse $t\geq 2$, avremmo che $n$ sarebbe il prodotto di $q_{1}$ e $q_{2}\cdots q_{t}$, che sono numeri naturali maggiori di $1$ e quindi non invertibili. $n$ sarebbe riducibile e dunque non primo. Quindi $n=q_{1}$, e dunque in particolare, $p_{1}=q_{1}$. Ciò prova la base dell'induzione. Supponiamo ora che $s>1$ e che la tesi sia vera per $s-1$. Segue che
+$$
+p_{1}\cdots p_{s}=q_{1}\cdots q_{t}.
+$$
+Poiché $p_{1}$ divide il prodotto al secondo membro, a meno di riordinare i fattori si ha che $p_{1}|q_{1}$. Ma essendo $q_{1}$ primo si ha che $p_{1}=\pm1$ o $p_{1}=q_{1}$, essendo $p_{1}\neq \pm 1$, segue che $p_{1}=q_{1}$. Allora, essendo $p_{1},q_{1}$ cancellabili segue che $p_{2}\cdots p_{s}=q_{1}\cdots q_{t}$. Il numero dei fattori al primo membro è $s-1$, mentre al secondo membro sono $t-1$, quindi, per ipotesi induttiva, si ah che $s-1=t-1$, cioè $s=t$, e, a meno di riordinare i fattori, per ogni $i=2,\dots,s$, $p_{i}=q_{i}\,\blacksquare$.
+
+*Teorema*:
+Esistono infiniti numeri primi.
+
+*Dimostrazione*:
+Supponiamo per assurdo che ciò non sia vero. Allora i numeri primi formano un insieme finito, diciamo $\left\{ p_{1},\dots,p_{k} \right\}$. Sia allora $N=p_{1}\cdots p_{k}+1$. Allora $N$ è un intero maggiore di uno, quindi per il teorema fondamentale dell'Aritmetica, ammette una decomposizione in fattori primi. In particolare $N$ è divisibile per un numero primo, quindi esiste un indice $i\in \left\{ 1,2,\dots,k \right\}$ tale che $p_{i}|N$. Segue però che $p_{i}|1$ che è assurdo. ciò produce la contraddizione cercata.
+
+**La congruenza modulo $n$. Gli anelli $\mathbb{Z}_{n}$**
+
+Sia $n$ un numero intero positivo
+
+*Definizione*:
+Siano $a,b\in \mathbb{Z}$. Diremo che $a$ è congruo a $b$ modulo $n$ se $n$ divide $a-b$. In tal caso scriveremo $a \equiv b (\text{mod }n)$.
+Ciò definisce una relazione binaria su $\mathbb{Z}$ detta congruenza modulo $n$.
+
+*Proposizione*:
+La congruenza modulo $n$ è una relazione di equivalenza.
+
+*Dimostrazione*:
+$\forall a\in \mathbb{Z}$, $n$ divide $a-a= 0$, quindi $a\equiv a(\text{mod }n)$. Ciò prova che la congruenza modulo $n$ è riflessiva. Siano ora $a,b\in \mathbb{Z}$ tali che $a\equiv b(\text{mod }n)$. Allora $n$ divide $a-b$, e quindi divide anche il suo opposto $b-a$. Dunque $b\equiv a(\text{mod }n)$ che prova la simmetria.
+Infine siano $a,b,c\in \mathbb{Z}$ tali che $a\equiv b(\text{mod }n)$ e $b\equiv c(\text{mod }n)$. Allora $n$ divide $a-b$ e $b-c$, quindi divide anche la loro somma ovvero $a-b+b-c=a-c$. Pertanto $a\equiv c(\text{mod }n)$, che prova la transitività della congruenza modulo $n\, \blacksquare$.
+
+*Proposizione* (cardinalità di $\mathbb{Z}_{n}$):
+Per ogni intero positivo $n$, $\mathbb{Z}_n$ ha $n$ elementi e, precisamente,
+$$
+\mathbb{Z}_n=\left\{ [0]_{n},\dots,[n-1]_{n} \right\}.
+$$
+*Dimostrazione*:
+Per definizione di insieme quoziente, $\mathbb{Z}_n=\left\{ [a]_{n}|a\in \mathbb{Z} \right\}$. Poniamo $S=\left\{ [0]_{n},\dots,[n-1]_{n} \right\}$. Proviamo che $\mathbb{Z}_n=S$. Basta provare l'inclusione $\mathbb{Z}_n\subset S$. Proviamo l'altra inclusione. Sia $a\in \mathbb{Z}$. Sia $r$ il resto della divisione euclidea di $a$ per $n$. Allora, detto $q$ il quoziente della stessa divisione euclidea, si ha $a=nq+r$, e quindi $n$ divide $a-r$, cioè $a\equiv r(\text{mod }n)$. Dunque $[a]_{n}=[r]_{n}\in \mathbb{Z}$. Ciò prova che $\mathbb{Z}_n\subset S$.
+Per provare che $\mathbb{Z}_n$, ha $n$ elementi, occorre provare che le classi $[0]_{n},\dots,[n-1]_{n}$, sono a due a due distinte. Ora sia $i,j\in \left\{ 0,1,\dots,n-1 \right\}$ tali che $[i]_{n}=[j_{n}]$. Poiché $i=n\cdot 0 +i$ e $0 \leq i<n$, $i$ è il resto della divisione euclidea di $i$ per $n$. D'altra parte, per ipotesi, $n$ divide $i-j$, quindi si ha che $i=nq+j$ per qualche $q\in \mathbb{Z}$. Dato che $0\leq j< n$, segue che anche $j$ è il resto della divisione di $i$ per $n$. Allora $i=j$ per l'unicità del resto $\blacksquare$.
+
+*Proposizione*:
+Siano $a,a',b,b'\in \mathbb{Z}$ tali che $a\equiv a'(\text{mod }n)$ e $b\equiv b'(\text{mod }n)$. Allora:
+1. $a+b=a'+b'(\text{mod }n)$
+2. $ab=a'b'(\text{mod }n)$.
+
+*Dimostrazione*:
+Per ipotesi $n$ divide $a-a'$ e anche $b-b'$. Quindi $n$ divide anche la loro somma $a-a'+b-b'=(a+b)-(a'+b')$ cioè $a+b\equiv a'+b' (\text{mod }n)$.
+D'altra parte $n$ divide anche $b(a-a')$ e $a'(b-b')$ e quindi divide anche la loro somma $b(a-a')+a'(b-b')=ba-ba'+a'b'-a'b'=ab-a'b'$. Pertanto $ab\equiv a'b'(\text{mod }n)\blacksquare$.
+
+*Proposizione*:
+Sia $a\in \mathbb{Z}$. Allora $[a]_{n}\in \mathbb{Z}_n$ è invertibile se e solo se $a$ e $n$ sono coprimi.
+
+*Dimostrazione*:
+L'elemento $[a]_{n}\in \mathbb{Z}_n$ ammette un inverso $[u]_{n}\in \mathbb{Z}_n$ se e solo se esiste $u\in \mathbb{Z}$ tale che $[a]_{n}[u]_{n}=[au]_{n}=[1]_{n}$, ossia tale che $n$ divide $au-1$. Ciò equivale alla condizione: $\exists u,v\in \mathbb{Z}$ tali che $nv=au-1$, cioè tali che $au-nv=1$, che avviene se e solo se $a$ e $n$ sono coprimi.
+
+*Proposizione*(Gli anelli $\mathbb{Z}_{p}$):
+Sia $n$ un numero intero maggiore di $1$. Sono equivalenti le seguenti condizioni:
+1. $n$ è primo
+2. $\mathbb{Z}_n$ è un campo
+3. $\mathbb{Z}_n$ è integro.
+
+*Dimostrazione*:
+$1)\implies 2)$. Sia $n$ primo. Allora $n$ non divide nessuno dei numeri $1,\dots,n-1$ e quindi, $n$ è coprimo con ciascuno di essi. Pertanto $\mathcal{U}(\mathbb{Z}_n)=\left\{ [1]_{n},\dots,[n-1]_{n} \right\}=\mathbb{Z}_n \setminus \left\{ [0]_{n} \right\}$. Ciò prova che $\mathbb{Z}_n$ è un campo.
+$2) \implies 3)$ ovvio, tutti i campi sono in particolare domini di integrità.
+$3) \implies 1)$ Supponiamo che $n$ non sia primo e proviamo allora $\mathbb{Z}_n$ non è integro. 

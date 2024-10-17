@@ -692,3 +692,147 @@ Il caso è banale dato che $0\in\mathbb{Q}$.
 
 3. $a<b<0$.
 Si procede applicando il punto $1)$ al caso equivalente $0<-b<-a$. Otterremo così $-q$ che è il numero razionale cercato $\blacksquare$.
+
+*Proposizione*:
+$\not\exists x \in \mathbb{Q}|\, x^{2}=2$.
+
+*Dimostrazione*:
+Supponiamo per assurdo che $\exists x \in \mathbb{Q}| x^{2}=2$. Allora $x=\frac{m}{n}$ con $m\in \mathbb{Z}$ e $n\in \mathbb{N}^{*}$, e senza perdita di generalità sono primi tra di loro.
+Essendo $x^{2}=2\implies \frac{m^{2}}{n^{2}}=2$. Cioè $m^{2}=2n^{2}$, segue che $m$ è pari. In particolare il quadrato di un numero pari è pari. Quindi $m^{2}=2n^{2}\implies (2s)^{2}=2n^{2}\implies 4s ^{2}=2n^{2}$. Ovvero $2s^{2}=n^{2}$. Quindi anche $n^{2}$ è pari, e conseguentemente anche $n$. Ma allora sia $m$ che $n$ sono pari che contraddice l'ipotesi di averli scelti coprimi.
+
+*Teorema*(incompletezza di $\mathbb{Q}$):
+$\mathbb{Q}$ non verifica l'assioma di Dedekind ($\mathbb{Q}$ non è completo).
+
+*Dimostrazione*: Basta trovare un insieme limitato, non vuoto, che non ammette estremo superiore (o inferiore) in $\mathbb{Q}$.
+Sia quindi $A=\left\{ x \in \mathbb{Q}:\,x\geq 0 ,\,x^{2}<2\right\}$. $1$ appartiene ad $A$, quindi è non vuoto, $2\in \mathcal{M}_{A}$ infatti:
+$$
+x^{2}<2 \Rightarrow x^{2} < 4 \Rightarrow x^{2}-4<0 \Rightarrow (x-2)(x+2)<0 \Rightarrow x<2.
+$$
+Quindi $A$ è superiormente limitato. Supponiamo che $\exists \lambda \in \mathbb{Q}:\, \lambda=\sup A$, in particolare vale $\lambda\geq1$.
+Ci sono $3$ casi distinti:
+$$
+1. \,\lambda^{2}<2 \qquad\qquad\qquad 2.\, \lambda^{2}=2 \qquad\qquad\qquad 3.\,\lambda^{2}>2.
+$$
+1. Per il [[Principio di Archimede|principio di Archimede]] $\exists n\in \mathbb{N}: n>\max \left\{ 1, \frac{2\lambda+1}{2-\lambda^{2}} \right\}$. Vale che $\lambda+ \frac{1}{n}\in \mathbb{Q}$, vediamo se appartiene ad $A$. Sarebbe a dire:
+$$
+\left( \lambda+ \frac{1}{n} \right)^{2}= \lambda^{2}+ \frac{2\lambda}{n}+ \frac{1}{n^{2}}< \lambda^{2} + \frac{2\lambda}{n}+ \frac{1}{n}= \lambda^{2}+ \frac{2\lambda+1}{n}.
+$$
+Se fosse minore di $2$ avremmo:
+$$
+\lambda^{2}+ \frac{2\lambda+1}{n}<2 \Rightarrow \left( \lambda+ \frac{1}{n} \right)^{2} <2 \Rightarrow \left( \lambda+ \frac{1}{n} \right)\in A.
+$$
+Ma $\lambda$ era l'estremo superiore di $A$. Otteniamo un assurdo.
+2. Senza perdita di generalità posso scrivere $\lambda= \frac{m}{n}$ con $m,n\in \mathbb{Q}$ e coprimi. Se fosse che $\lambda^{2}=2$ avrei:
+$$
+\frac{m^{2}}{n^{2}}=2 \Rightarrow m^{2}=2n^{2}\Rightarrow \exists p \in \mathbb{N}: \, m=2p.
+$$
+$$
+\frac{4p^{2}}{n^{2}}=2\Rightarrow 2p^{2}=n^{2}.
+$$
+Cioè sia $m$ che $n$ sono pari, ma li avevamo assunti coprimi, abbiamo ottenuto un assurdo.
+3. Ancora per il principio di Archimede scriviamo $\exists n\in \mathbb{N}: \, n>\max\left\{ \frac{1}{\lambda},\frac{2\lambda}{\lambda^{2}-2} \right\}$. Vale che $\lambda - \frac{1}{n}\in \mathbb{Q}$.
+$$
+\left( \lambda- \frac{1}{n} \right)^{2}= \lambda^{2}- \frac{2\lambda}{n}+ \frac{1}{n^{2}}> \lambda^{2}- \frac{2\lambda}{n}> \lambda^{2} -2\lambda \frac{\lambda^{2}-2}{2\lambda}=\lambda^{2}- \lambda^{2}+2= 2  
+$$
+Dimostriamo adesso che $\lambda- \frac{1}{n}$ è un maggiorante di $A$.
+Ricordando che $x \in A$ implica $x\geq 0$ e usando che $\lambda- \frac{1}{n}$ è positivo si ha che per ogni $x \in A$:
+$$
+\lambda-\frac{1}{n}>x \Leftrightarrow \left( \lambda-\frac{1}{n} \right)^{2}>x^{2}.
+$$
+che è vero per quanto detto sopra:
+$$
+\left( \lambda-\frac{1}{n} \right)^{2}>2>x^{2}
+$$
+Abbiamo quindi dimostrato che $\lambda-\frac{1}{n}$ è un maggiorante di $A$, in contraddizione al fatto che $\lambda=\sup A$.
+Concludendo, $\nexists \lambda \in \mathbb{Q}$ tale che $\lambda=\sup A$. $\blacksquare$
+
+*Definizione*:
+Sia $x \in \mathbb{R}$. Sia $n\in \mathbb{N},\,n \neq0$. Si chiama potenza $n-esima$ di $x$ il numero reale:
+$$
+x^{n}=\begin{cases}
+x^{n} &\text{se } m\in \mathbb{N}^{+}  \\
+1 & \text{se } n=0 \\
+\frac{1}{x^{|n|}}&\text{se }n\in-\mathbb{N}^{+} 
+\end{cases}
+$$
+
+*Proposizione*:
+$\forall x \in \mathbb{R},\, x\neq 0,\, \forall n,m\in \mathbb{Z}$:
+1. $(x^{m})^{n}=x^{mn}$
+2. $x^{n+m}=x^{n}\cdot x^{m}$
+3. $(x\cdot y)^{n}=x^{n}\cdot y^{n}$.
+
+*Proposizione*:
+1. Sia $y\in \mathbb{R},0<y\leq 1$. Si ha che: $\forall n\in \mathbb{N},\,n \neq 0: y^{n}\leq y$.
+2. Sia $y\in \mathbb{R},\,y\geq 1$. Si ha che $\forall n\in \mathbb{N},\,n\neq 0: y^{n}\geq y$.
+
+*Dimostrazione*:
+1. Sia $y\in \mathbb{R},0<y\leq 1\implies \forall n\in \mathbb{N},\,n\neq 0: y^{n}\leq y$. $P(n)=\forall n\in \mathbb{N}.\,n\neq 0: y^{n}\leq y$, il predicato che dimostreremo per induzione. Proviamo la base induttiva, sia quindi $n=1$. Allora $y^{1}=y$, verificata. Per il passo induttivo assumiamo che se $y^{n}\leq y$, dobbiamo dimostrare: $y^{n+1}\leq y$. Essendo $y^{n+1}=y \cdot y^{n}$ abbiamo che $y\cdot y^{n}\leq y^{2}$, che ci permette di concludere.
+2. Sia $y\in \mathbb{R},\,y\geq 1$. $P(n)=\forall n\in \mathbb{N},\,n\neq 0: y^{n}\geq y$. Dimostriamo il predicato per induzione. Il passo base, $P(1)$, è verificato in quanto $y^{1}\geq y$. Dimostriamo il caso $P(n+1)$. Per ipotesi $y^{n}\geq y$. Ma $y^{n+1}=y^{n}y\geq y\cdot y$ per ipotesi. Abbiamo verificato il passo induttivo $\blacksquare$.
+
+*Proposizione*:
+Siano $x,y\in \mathbb{R},\, 0<x<y$. Allora $\forall n\in \mathbb{N},\, n \neq 0: x^{n}< y^{n}$.
+
+*Dimostrazione*:
+Dimostriamolo per induzione sul predicato $P(n)=\forall n\in \mathbb{N}, n \neq0,\,x<y\implies xy^{n}<y^{n}$.
+$P(1)$ è banale in quanto $x^{1}<y^{1}$ per ipotesi. Dimostriamo il caso $P(n+1)$:
+$$
+x^{n+1}<y^{n+1}\implies x^{n}\leq y^{n}.
+$$
+Ma $x<y$ per ipotesi e $x^{n}<y^{n}$ per ipotesi induttiva. Quindi $P(n+1)$ è vera $\blacksquare$.
+
+*Teorema*(della radice $n-esima$):
+$\forall y\in \mathbb{R}^{*},\,\forall n\in \mathbb{N},\,n\geq 2$, esiste una ed una sola $x\in \mathbb{R}$ positiva tale che $x^{n}=y$.
+
+*Definizione*:
+Sia $y\in \mathbb{R}^{*}$, sia $\mathbb{N}\in \mathbb{N},\,n\geq 2$. Si chiama radice $n-esima$ di $y$ l'unica $x$ reale positiva tale che $x^{n}=y$. ($x=\sqrt[n]{ y }$ oppure $x=y^{\frac{1}{n}}$).
+
+*Dimostrazione*(Del teorema):
+
+Fissiamo $y\in \mathbb{R},\, y> 0,\, n\in \mathbb{N},\, n\geq 2$. Proviamo che se $\exists x \in \mathbb{R},\, x>0,$ tale che $x^{n} = y$ allora $x$ è unica. Se per assurdo $x_{1},x_{2}\in \mathbb{R},\, x_{1},x_{2}>0$ e tali che $x_{1}^{n}=y,\,x_{2}^{n}=y$ allora $x_{1}=x_{2}$.
+D'altra parte se $x_{1}<x_{2}$ allora si avrebbe che $x_{1}^{n}<x_{2}^{n} \implies y< y$, che è assurdo. Viceversa se $x_{2}<x_{1}$, allora si avrebbe che $x_{2}^{n}<x_{1}^{n} \implies y< y$, che è assurdo.
+Quindi se esiste una $x$ come richiesta, è unica.
+Per quanto riguarda l'esistenza della radice ennesima, invece, consideriamo l'insieme: $$
+A=\left\{ z\in \mathbb{R}|\,z> 0, z^{n}\leq y \right\}.
+$$
+Proviamo che:
+1. $A\neq \emptyset$
+2. $A$ è limitato superiormente, ($\mathcal{M_{A}}\neq \emptyset$).
+A tal fine distinguiamo due casi: $0<y\leq1$, $y>1$.
+Supponiamo che $0<y\leq 1$. Allora si ha che $y^{n}\leq y$. Pertanto $y\in A$, da cui $A\neq \emptyset$. Inoltre si ha che $1\in \mathcal{M_{A}}$. Se fosse che $1\not\in \mathcal{M_{A}}$. Allora $\exists z \in A$ tale che $z>1$, da cui $z^{n}>1$, ma essendo $z\in A,\, 1\geq y\geq z^{n}>1$ che è assurdo.
+Se invece, $y>1$. Allora $1^{n}=1<y$, quindi $1\in A$, e quindi $A$ è non vuoto. Inoltre $y\in \mathcal{M_{A}}$, infatti, se $y\not\in A$, $\exists z\in A$ tale che $z>y$. Ma allora $y^{n}<z^{n}$ ma $z^{n}\leq y$ che è assurdo.
+Per il teorema di esistenza dell'estremo superiore esiste $x=\sup A\in \mathbb{R}$. Verifichiamo che $x^{n}=y$.
+Basta provare che $\forall\varepsilon>0:\,|x^{n}-y|\leq\varepsilon$. Sia quindi $\varepsilon>0$. Poniamo $$\varepsilon'=\min\left(x,\frac{\varepsilon}{2^{n}nx^{n-1}}\right).$$
+Proveremo che $(x-\varepsilon')^{n}<x^{n}<(x+\varepsilon')^{n}$. Che segue direttamente dall'osservare che $0\leq x-\varepsilon'<x<x+\varepsilon'$, e dalla proposizione precedente. Verifichiamo inoltre che $(x-\varepsilon')^{n}<y<(x+\varepsilon')^{n}$.
+Per provare la disuguaglianza di destra basta osservare che $(x+\varepsilon')^{n}\not\in A$, dato che $x=\sup A$. Segue che $y<(x+\varepsilon')^{n}$.
+Per l'altra disuguaglianza, per la caratterizzazione dell'estremo superiore, essendo $x-\varepsilon'<x$, $\exists \bar{x}\in A$, tale che $0<x-\varepsilon'<\bar{x}<x$. Segue che $(x-\varepsilon')^{n}<\bar{x}^{n}\leq y$, perché $\bar{x}\in A$. Pertanto si ha che $(x-\varepsilon')^{n}<y<(x+\varepsilon')^{n}$.
+Concludiamo che $$0\leq|x^{n}-y|\leq |(x+\varepsilon')^{n}-(x-\varepsilon')^{n}|=|(x+\varepsilon')-(x-\varepsilon')|\cdot|(x+\varepsilon')^{n-1}+\dots+(x-\varepsilon')^{n-1}|\implies$$
+Maggioro i termini misti con $2x$.
+$$
+|2\varepsilon'|\cdot|(x+\varepsilon')^{n-1}+\dots+(x-\varepsilon')^{n-1}|\leq 2\varepsilon' \cdot (2x)^{n-1}n=2^{n}x^{n-1}n\varepsilon'\leq \frac{\varepsilon}{2^{n}x^{n-1}n}\cdot 2^{n}x^{n-1}n=\varepsilon.
+$$
+Segue che $0\leq |x^{n}-y|\leq\varepsilon$, e per l'arbitrarietà di $\varepsilon$: $|x^{n}-y|=0 \iff y=x^{n}\, \blacksquare$.
+
+*Osservazione*:
+Il teorema appena dimostrato è uno strumento matematico che ci garantisce dati  $y\in \mathbb{R}$ e $n\in \mathbb{N}$, $n\geq2$ l'esistenza e unicità di una soluzione positiva dell'equazione $x^{n}=y$.
+
+*Teorema*(Densità di $\mathbb{R}\setminus \mathbb{Q}$ in $\mathbb{R}$):
+Per ogni $a,b\in \mathbb{R}$, con $a<b$, $\exists c\in \mathbb{R}\setminus \mathbb{Q}$ tale che $a<c<b$.
+
+*Dimostrazione*:
+Sia $y=2$. Sia $n=2$. Considero, l'equazione $x^{2}=2$. Per il teorema di esistenza e unicità della radice $n-esima$, $\exists! x \in \mathbb{R},\, x> 0$ tale che $x^{2}=2$. Tale $x$ è denotata con $\sqrt{ 2 }$. Inoltre si ha che $z=\sqrt{ 2 }\not\in \mathbb{Q}$. Pertanto $\exists! x \in \mathbb{R}\setminus \mathbb{Q},$ tale che $x^{2}=2$.
+Siano $a,b\in \mathbb{R},\, a<b$. Per gli assiomi di $\mathbb{R}$ si ha che $a-\sqrt{ 2 }<b-\sqrt{ 2 }$. Siano $a'=a-\sqrt{ 2 }\in \mathbb{R}$, $b'=b-\sqrt{ 2 }\in \mathbb{R}$, risulta che $a'<b'$. Per il teorema di densità di $\mathbb{Q}$ in $\mathbb{R}$, $\exists q\in \mathbb{Q}$ tale che $a'<q<b'\implies a-\sqrt{ 2 }<q<b-\sqrt{ 2 }$. Concludiamo che $a-\sqrt{ 2 }+\sqrt{ 2 }<q+\sqrt{ 2 }<b-\sqrt{ 2 }+\sqrt{ 2 }\implies a<q+\sqrt{ 2 }<b$. Risulta che $c=q+\sqrt{ 2 }\in \mathbb{R}\setminus \mathbb{Q}$ e $a<c<b$.
+
+*Proposizione*(Proprietà della radice $n-esima$):
+1. $\forall y_{1},y_{2}\in \mathbb{R}, 0<y_{1}, 0<y_{2},\, \forall n\in \mathbb{N},\, n\geq 2$ si ha che $\sqrt[n]{ y_{1}y_{2} }=\sqrt[n]{ y_{1} }\sqrt[n]{ y_{2} }.$
+	Dimostrazione: Siano $y_{1},y_{2}\in \mathbb{R},\, y_{1},y_{2}>0,\, n\in \mathbb{N},\, n\geq 2$. Per il teorema di esistenza e unicità della radice $n-esima$, $\exists! x_{1}>0,\exists!x_{2}>0$ tali che $x_{1}^{n}=y_{1}$ e $x_{2}^{n}=y_{2}$. Pertanto $(x_{1}x_{2})^{n}=x_{1}^{n}x_{2}^{n}=y_{1}y_{2}$. Segue che $x_{1}x_{2}=\sqrt[n]{ y_{1}y_{2} }$, da cui segue che $\sqrt[n]{ y_{1} }\sqrt[n]{ y_{2} }=\sqrt[n]{ y_{1}y_{2} }$.
+2. $\forall y\in \mathbb{R},\, y>0,\, \forall n\in \mathbb{N},\, n\geq 2,\, \forall m\in \mathbb{Z}$: $\sqrt[n]{ y^{m} }=(\sqrt[n]{ y })^{n}$.
+3. $\forall y\in \mathbb{R}, y>0,\, \forall h\in \mathbb{N}, h\geq 2,\, \forall k\in \mathbb{N}, k\geq 2$: $\sqrt[h]{ \sqrt[k]{ y } }=\sqrt[hk]{ y }$.
+4. $\forall y \in \mathbb{R},\, y> 0, \forall m_{1},m_{2}\in \mathbb{Z},\, \forall n_{1},n_{2}\in \mathbb{N},\, n_{1},n_{2}\neq 0,\, n_{1}\geq2, n_{2}\geq 2$: $\frac{m_{1}}{n_{1}}=\frac{m_{2}}{2}\iff m_{1}n_{2}=m_{2}n_{1}$. Allora $\sqrt[n_{1}]{ y^{m_{1}} }=\sqrt[n_{2}]{ y^{m_{2}} }$.
+5. $\forall y \in \mathbb{R},\, y>0,\, \forall n\in \mathbb{N},\, n\geq 2$: $\sqrt[n]{ y^{n} }=y$.
+	Dimostrazione: Sia $y\in \mathbb{R},\, y>0$, sia $n\in \mathbb{N},\, n\geq2$. Posto $x=\sqrt[n]{ y^{n} }$, si ha che $x^{n}=y^{n}$. Segue che $x=y$, da cui segue che $\sqrt[n]{ y^{n} }=y$.
+6. $\forall y \in \mathbb{R}, \forall n\in \mathbb{N}, n\geq 2$ tali che $y^{n}\geq 0$: $\sqrt[n]{ y^{n} }=|y|$.
+7. $\forall y_{1},y_{2}\in \mathbb{R},\, y_{1}>0,y_{2}>0,\, \forall n\in \mathbb{N}, n\geq 2, y_{1}< y_{2}$: $\sqrt[n]{ y_{1} }\leq \sqrt[n]{ y_{2} }$.
+
+*Definizione*(Potenza razionale):
+Sia $y\in \mathbb{R},y>0$. Sia $q\in \mathbb{Q},\, q=\frac{m}{n},\,m\in \mathbb{Z},\,n\in \mathbb{N},\, n\neq 0$. Si chiama potenza razionali di $y$ di esponente $q$ il numero reale: $y^{q}=\sqrt[n]{ y^{m} }$.

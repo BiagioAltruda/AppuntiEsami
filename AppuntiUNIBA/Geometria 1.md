@@ -636,3 +636,105 @@ $$
 
 Siano $v_{1}=\begin{pmatrix}1\\0\\2\\3\end{pmatrix},v_{2}=\begin{pmatrix}0\\-1\\0\\-1\end{pmatrix},v_{3}=\begin{pmatrix}1\\-1\\2\\2\end{pmatrix}$.
 $v_{3}=v_{1}+v_{2}\implies v_{1}+v_{2}-v_{3}=\underline{0}$.
+
+*Proposizione*:
+Sia $V$ spazio vettoriale su $\mathbb{F}$. $v_{1},\dots,v_{k}\in V$ tali che $\exists\alpha_{1},\dots,\alpha_{k-1}$: $v_{k}=\alpha_{1}v_{1}+\dots+\alpha_{k-1}v_{k-1}$. Allora $Span(v_{1},\dots,v_{k})=Span(v_{1},\dots,v_{k-1})$.
+
+*Dimostrazione*:
+L'inclusione verso sinistra è ovvia, perché se $v\in Span(v_{1},\dots,v_{k-1})$ allora $\exists \gamma_{1},\dots,\gamma_{k-1}\in \mathbb{F}$ tali che $v=\gamma_{1}v_{1}+\dots+\gamma_{k-1}v_{k-1}=\gamma_{1}v_{1}+\dots+\gamma_{k-1}v_{k-1}+0v_{k}\in Span(v_{1},\dots,v_{k})$.
+Per l'altra inclusione invece, sia $w\in Span()v_{1},\dots,v_{k}\implies \exists \delta_{1},\dots,\delta_{k}$ tali che $w=\delta_{1}v_{1}+\dots+\delta_{k}v_{k}$. Essendo $v_{k}$ combinazione lineare degli altri, otteniamo:
+$$
+w=\delta_{1}v_{1}+\dots+\delta_{k}(\alpha_{1}v_{1}+\dots+\alpha_{k-1}v_{k-1}).
+$$
+$$
+w=(\delta_{1}+\delta_{k}\alpha_{1})v_{1}+\dots+(\delta _{k-1}\alpha_{k-1})v_{k-1}\in Span(v_{1},\dots,v_{k-1}) \, \blacksquare.
+$$
+
+*Definizione*:
+Sia $V$ spazio vettoriale su $\mathbb{F}$, $v_{1},\dots,v_{k}\in V$, si dicono generatori di $V$ se 
+$\forall v\in V,\, \exists\alpha_{1},\dots,\alpha_{k}\in \mathbb{F}$ tali che $v=\alpha_{1}v_{1}+\dots+\alpha_{k}v_{k}$. Ovvero $V=Span(v_{1},\dots,v_{k})$.
+
+*Definizione*:
+Sia $V$ uno spazio vettoriale su $\mathbb{F}$, $\mathcal{B}=(v_{1},\dots,v_{n})$ si dice base di $V$ se:
+1. $v_{1},\dots,v_{n}$ sono linearmente indipendenti
+2. $v_{1},\dots,v_{n}$ sono generatori di $V$.
+
+*Teorema*(Caratterizzazione delle basi):
+Sia $V$ spazio vettoriale su un campo $\mathbb{F}$. Sono fatti equivalenti:
+1. $\mathcal{B}=(v_{1},\dots,v_{n})$ è una base
+2. $v_{1},\dots,v_{n}$ sono tali che $\forall v\in V,\, \exists!\,\alpha_{1},\dots,\alpha_{n}\in \mathbb{F}$ tali che $v=\alpha_{1}v_{1}+\dots+\alpha_{n}v_{n}.$
+
+*Dimostrazione*:
+$1)\implies 2)$. Sia $\mathcal{B}$ una base di $V$. Devo dimostrare che $\forall v\in V,$ $\exists!\,\alpha_{1},\dots,\alpha_{n}\in \mathbb{F}$ tali che $v=\alpha_{1}v_{1}+\dots+\alpha_{n}v_{n}$. L'esistenza di $\alpha_{1},\dots,\alpha_{n}$ è garantita dal fatto che $v_{1},\dots,v_{n}$ sono generatori. Resta da dimostrare l'unicità. Per assurdo $\exists v\in V$ tale che $v=\alpha_{1}v_{1}+\dots,\alpha_{n}v_{n}=\beta_{1}v_{1}+\dots+\beta_{n}v_{n}$. Se e solo se $\alpha v_{1}+\dots+\alpha_{n}v_{n}-(\beta_{1}v_{1}+\dots+\beta_{n}v_{n})=\underline{0}$. Allora $(\alpha_{1}-\beta_{1})v_{1}+\dots+(\alpha_{n}-\beta_{n})v_{n}=\underline{0}$. Essendo $\mathcal{B}$ base, $v_{1},\dots,v_{n}$ sono linearmente indipendenti, l'unica combinazione lineare che da il vettore nullo è quella tale che $\alpha_{1}=\beta_{1},\dots,\alpha_{n}=\beta_{n}$. Che dimostra l'unicità.
+$2)\implies 1)$. I vettori $v_{1},\dots,v_{n}$ sono generatori perché $\forall v\in V,\, \exists \alpha_{1},\dots,\alpha_{n}\in \mathbb{F}$ tali che $v=\alpha_{1} v_{1}+\dots+\alpha_{n}v_{n}$, per ipotesi. Dimostriamo che sono linearmente indipendenti.
+Imponiamo che $\alpha_{1}v_{1}+\dots+\alpha_{n}v_{n}=\underline{0}$. Ma so che $\underline{0}=0v_{1}+\dots+0v_{n}$, però per ipotesi ho unicità della combinazione lineare. Allora $\alpha_{1}=\dots=\alpha_{n}=0\,\blacksquare.$
+
+*Esempi*:
+1. 
+In $\mathbb{F}^{n}$ è definita la base canonica. $\mathcal{B}(e_{1},\dots,e_{n})$. $e_{1}=\begin{pmatrix}1\\0\\.\\.\\0\end{pmatrix},e_{2}=\begin{pmatrix}0\\1\\0\\.\\0\end{pmatrix},\dots, e_{n}=\begin{pmatrix}0\\0\\.\\.\\1\end{pmatrix}$.
+2. 
+Sia $d\in \mathbb{N}$. $\mathbb{F}_{d}[t]=\left\{ a_{d}t^{d}+\dots+a_{1}t+a_{0} |\, a_{i}\in \mathbb{F}\right\}$. Allora $\mathcal{B}=(t^{d},t^{d-1},\dots,t,1)$ è una base.
+
+*Definizione*:
+Sia $V$ spazio vettoriale sul campo $\mathbb{F}$. $\mathcal{B}=(v_{1},\dots,v_{n})$ una base di $V$. Allora dato $v\in V$definiamo coordinate di $v$ rispetto alla base $\mathcal{B}$, indicato con $F_{\mathcal{B}}(v)=\begin{pmatrix}\alpha_{1}\\.\\.\\\alpha_{n}\end{pmatrix}\in \mathbb{F}^{n}$, tali che $v=\alpha_{1} v_{1}+\dots+\alpha_{_{n}}v_{n}$.
+
+*Osservazione*:
+Se cambio base le coordinate cambiano. Se $\mathcal{B}=(v_{1},v_{2},\dots,v_{n})$ è base, $\mathcal{B'}=(v_{2},v_{1},\dots,v_{n})$ è una base diversa. Infatti se $F_{\mathcal{B}}(v)=\begin{pmatrix}\alpha_{1}\\\alpha_{2}\\.\\\alpha_{n}\end{pmatrix} \neq F_{\mathcal{B'}}(v)=\begin{pmatrix}\alpha_{2}\\\alpha_{1}\\.\\\alpha_{n}\end{pmatrix}$.
+
+*Esempi*:
+In $\mathbb{F}^{n}$, $\mathcal{B}=(e_{1},\dots,e_{n})$. Sia $v\in \mathbb{F}^{n},\, v=\begin{pmatrix}x_{1}\\x_{2}\\.\\x_{n}\end{pmatrix}, x_{i}\in \mathbb{F}$.
+$F_{\mathcal{B}}(v)=\begin{pmatrix}x_{1}\\.\\.\\x_{n}\end{pmatrix}=v$.
+
+*Definizione*:
+Sia $V$ spazio vettoriale sul campo $\mathbb{F}$. Sia $\mathcal{A}\subset V$, $\mathcal{B}\subset \mathcal{A}$ si dice sottoinsieme massimale di vettori indipendenti in $\mathcal{A}$ se gli elementi di $\mathcal{B}$ sono indipendenti e se $\forall v\in \mathcal{A},\, \mathcal{B}\cup \left\{ v \right\}$ non sono più indipendenti.
+
+
+*Proposizione*:
+Sia $V$ spazio vettoriale sul campo $\mathbb{F}$. Sia $\mathcal{B}=\left\{ v_{1},\dots,v_{n} \right\}$ base di $V$. Allora $\mathcal{B}$ è un insieme massimale di vettori linearmente indipendenti in $V$.
+
+*Dimostrazione*:
+Essendo $\mathcal{B}$ base di $V$, tutti i suoi vettori sono indipendenti. Ora sia $v\in V$. $\mathcal{B}$ è base di $V$ quindi $\exists \alpha_{1},\dots,\alpha_{n}\in \mathbb{F}$ tali che $v=\alpha_{1}v_{1}+\dots+\alpha_{n}v_{n}$. Allora $\left\{ v_{1},\dots,v_{n, v} \right\}$ è formato da vettori dipendenti $\blacksquare$.
+
+*Lemma*:
+Sia $\mathcal{B}\subset V$ insieme finito. Se $Span(\mathcal{B})$ contiene un sistema di generatori per $V$ allora $Span(\mathcal{B})=V$.
+
+*Dimostrazione*:
+Sia $\mathcal{A}\subset Span(\mathcal{B})$ un insieme di generatori per $V$. Ovvero, $\forall v\in V$ $v$ è combinazione lineare di elementi di $\mathcal{A}$.
+$\mathcal{A}\subset Span(\mathcal{B})\implies Span(\mathcal{A})\subset Span(\mathcal{B})\subset V\,\blacksquare$.
+
+*Teorema*:
+Sia $\mathcal{A}=\left( v_{1},\dots,v_{n} \right)$ sistema di generatori di $V$ e $\mathcal{B}\subset \mathcal{A}$ sottoinsieme massimale di vettori indipendenti in $\mathcal{A}$. Allora $\mathcal{B}$ è base.
+
+*Dimostrazione*:
+Per ipotesi gli elementi di $\mathcal{B}$ sono indipendenti. Devo dimostrare che gli elementi di $\mathcal{B}$ generano $V$. Vorremmo mostrare che $\mathcal{A}\subset Span(\mathcal{B})$, e concludere per il lemma precedente. Per ipotesi $\forall v\in \mathcal{A},\, \mathcal{B}\cup \left\{ v \right\}$ non è linearmente indipendente. Allora ogni elemento di $\mathcal{A}$ lo posso scrivere come combinazione degli elementi di $\mathcal{B}$, quindi $\mathcal{A}\subset Span(\mathcal{B})$. Per il lemma precedente, ho concluso $\blacksquare$.
+
+*Corollario*:
+Sia $V$ spazio vettoriale finitamente generato, cioè contenente un sistema finito di generatori. Allora $V$ ammette una base.
+
+*Osservazione*:
+Esisto spazi vettoriali che non sono finitamente generati, ad esempio $\mathbb{R}[t]$: i polinomi a coefficienti reali nell'incognita $t$ di grado arbitrario.
+
+*Teorema*(Di completamento):
+Sia $V$ uno spazio vettoriale sul campo $\mathbb{F}$. $\mathcal{B}=(v_{1},\dots,v_{n})$ base di $V$, e $w_{1},\dots,w_{p}$ vettori linearmente indipendenti in $V$, con $p\leq n$. Allora $\exists \#n-p$ vettori di $\mathcal{B}$ che uniti a $w_{1},\dots,w_{p}$ formano una base.
+
+*Dimostrazione*:
+Per induzione su $p$. Caso $p=1$, sia $w_{1}$ è indipendente cioè $w_{1}$ è non nullo. Essendo $\mathcal{B}$ una base, $\exists! \alpha_{1},\dots,\alpha_{n}\in \mathbb{F}$ tali che $w_{1}=\alpha_{1}v_{1}+\dots+\alpha_{n}v_{n}$. Poiché $w_{1}\neq \underline{0}$, allora gli $\alpha_{i}$ non sono tutti nulli. A meno di riordinare, suppongo che $\alpha_{1}\neq 0$. Ma allora $v_{1}=\frac{1}{\alpha_{1}}\left( w_{1}-\sum_{i=2}^{n}\alpha_{i}v_{i} \right)\in Span(w_{1},v_{2},\dots,v_{n})$ e quindi sono generatori.
+Basta dimostrare che sono indipendenti. Siano $\beta_{1},\dots,\beta_{n}\in \mathbb{F}$ tali che $$\beta_{1}w_{1}+\beta_{2}v_{2}+\dots+\beta_{n}v_{n}=\underline{0}\implies \beta_{1}(\alpha_{1}v_{1}+\dots+\alpha_{n}v_{n})+\beta_{2}v_{2}+\dots+\beta_{n}v_{n}.$$
+$$
+\beta_{1}\alpha_{1}v_{1}+\sum_{i=2}^{n}(\beta_{1}\alpha_{i}+\beta_{i})v_{i}=\underline{0} 
+$$
+che è una combinazione lineare dei $v_{i}$ che sono indipendenti perché sono una base. Quindi $\beta_{1}\alpha_{1}=0$ ma essendo $\alpha_{1}\neq 0\implies \beta_{1}=0$. Allora $\beta_{i}=0,\, \forall i$.
+Supponiamo che il teorema sia vero per $p-1$ vettori e dimostriamolo per $p$ vettori.
+$w_{1},\dots,w_{p-1}$ sono indipendenti per ipotesi. Allora, a meno di riordinare, posso supporre che $(w_{1},\dots,w_{p-1},v_{p},\dots,v_{n})$ sono base di $V$. Allora $w_{p}$ è combinazione lineare di $(w_{1},\dots,w_{p-1}.v_{p},\dots,v_{n})$ cioè $\exists! \alpha_{1},\dots,\alpha_{n}\in \mathbb{F}$ tali che $w_{p}=\sum_{i=2}^{p-1}\alpha_{i}w_{i}+\sum_{j=i}^{n}\alpha_{j}v_{j}$. $w_{p}$ non è il vettore nullo, allora gli $\alpha_{i},\alpha_{j}$ non sono tutti nulli. più precisamente almeno uno tra gli $\alpha_{j}$ è diverso da $0$, altrimenti $w_{p}=\sum_{i=1}^{p-1}\alpha_{i}w_{i}$ contro l'indipendenza dei $w_{i}$. A meno di riordinare suppongo che $\alpha_{p}\neq 0$. Allora $$v_{p}=\frac{1}{\alpha_{p}}\left( \sum_{i=1}^{p-1}\alpha_{i}w_{i}+w_{p}-\sum_{j=p}^{n}\alpha_{j}v_{j} \right).$$
+Ma allora $v_{p}\in Span(w_{1},\dots,w_{p},v_{p-1},\dots,v_{n})$. Quindi $(w_{1},\dots,w_{p},v_{p+1},\dots,v_{n})$ generano. Basta dimostrare che sono linearmente indipendenti. Infatti $$\sum_{i=1}^{p}\beta_{i}w_{i}+\sum_{i=p+1}^{n}\beta_{j}v_{j}=\underline{0} \implies$$
+$$
+\implies\sum_{i=1}^{p-1} \beta_{i}w_{i}+\beta_{p}\left( \sum_{i=1}^{p-1} \alpha_{i}w_{i} +\sum_{j=p}^{n}\alpha_{j}v_{j}  \right) +\sum_{j=p+1}^{n}\beta_{j}v_{j}=\underline{0} 
+$$
+Ma quindi:
+$$
+(\beta_{1}+\beta_{p}\alpha_{1})w_{1}+(\beta_{2}+\beta_{p}\alpha_{2})w_{2}+\dots+(\beta_{p-1}+\beta_{p}\alpha_{p-1})w_{p-1}+(\beta_{p}\alpha_{p})v_{p}+(\beta_{p}\alpha_{p+1}+\beta_{p+1})v_{p+1}+\dots$$$$\dots+(\beta_{p}\alpha_{n}+\beta_{n})v_{n}=\underline{0}.
+$$
+Tutti i coefficienti di questa combinazione devono essere nulli, ma in particolare lo è $\beta_{p}\alpha_{p}$, ma $\alpha_{p}\neq 0$, quindi $\beta_{p}=0 \implies \beta_{i}=0,\, \forall i\,\blacksquare$.
+
+*Corollario*:
+Sia $V$ spazio vettoriale sul campo $\mathbb{F}$. $\mathcal{B},\mathcal{B'}$ basi. Allora $\mathcal{B}$ e $\mathcal{B'}$ hanno lo stesso numero di elementi.
