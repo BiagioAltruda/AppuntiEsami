@@ -39,7 +39,7 @@ I numeri complessi possono essere rappresentati come punti del piano, associando
 In questa rappresentazione la norma di $z$ è ricavata attraverso il teorema di Pitagora.
 
 Se $z\neq 0$ allora la semiretta uscente dall'origine che interseca $z$ forma un angolo $\theta$ con l'asse $x$. $\theta$ si dice essere *l'argomento del numero complesso $z$*, a meno di multipli di $2\pi$.
-Segue quindi che $$\tan\theta=\frac{\mathcal{Im}(z)}{\mathcal{R}(z)}$$
+Segue quindi che $$\tan\theta=\frac{\mathcal{Im}(z)}{\mathcal{R}e(z)}$$
 
 
 ---

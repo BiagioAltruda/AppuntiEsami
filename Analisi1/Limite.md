@@ -1,6 +1,14 @@
+---
+tags: SuccessionieSerie, funzioni
+---
+
+
 Diciamo che la [[Successioni|successione]] $\{a_n\}_n$ ammette *limite* $l\in\bar{\mathbb{R}}$ (i numeri reali estesi) o più brevemente, tende ad $l$, se:
 $$\forall U\in\mathcal{F}_l,\,\exists\bar{n}\in\mathbb{N}:\forall n\geq\bar{n},\quad a_n\in U$$
 in tal caso scriviamo $a_n\to l$
+
+---
+$l\in \bar{\mathbb{R}}$ si dice punto limite, o punto di accumulazione, di $\{a_n\}_n$ se e solo se per ogni $U\in \mathcal{F_{l}}$ [[definitivamente e frequentemente|frequentemente]] $a_{n}\in U$
 
 ---
 *Teorema 5.12* :
@@ -29,7 +37,7 @@ $$\forall\varepsilon>0,\exists\bar{n}:\forall n\geq \bar{n}, l-\varepsilon<a_n<l
 *Teorema 5.25*:
 Siano $\{a_n\}_n$ e $\{b_n\}_n$ due successioni tali che $$a_n\to l_a,\qquad b_n\to l_b$$
 Allora, se ha senso scrivere $l_a+l_b$, abbiamo $$(a_n+b_n)\to(l_a+l_b).$$
-E vale lo stesso per il prodotto, se ha senso.
+E vale lo stesso per il prodotto, e (se ha senso) il quoziente.
 *Dimoostrazione*:
 Iniziamo con il caso $l_a,l_b\in\mathbb{R}$: fissato $\varepsilon>0$, abbiamo definitivamente $$|a_n-l_a|<\varepsilon,\quad|b_n-l_b|<\varepsilon$$
 Per disuguaglianza triangolare otteniamo: $$|(a_n+b_n)-(l_a+l_b)|=|(a_n-l_a)+(b_n-l_b)|\leq |a_n-l_a|+|b_n-l_b|$$
@@ -43,7 +51,7 @@ Non ci rimane che il caso $l_a=+\infty$ e $l_b>0$. Scelto un numero $K\in(0,l_b)
 *Proposizione 5.27*:
 Il prodotto di una successione infinitesima per una limitata è una successione infinitesima.
 *Dimostrazione*:
-Se $a_n\to 0$ allora anche $|a_n|\to0$, mentre se $\{b_n\}_n$ è limitate esiste $K>0$ tale che $\forall n\in\mathbb{N}\quad|b_n|\leq K$. Allora $$0\leq|a_nb_n|=|a_n||b_n|\leq K|a_n|,$$ dato che $K|a_n|\to 0$, anche $|a_nb_n|\to 0$ per il teorema dei carabinieri, quindi $a_nb_n\to0$ per la caratterizzazione sui moduli delle successioni (Proposizione 5.18) [[Successioni#^9be3a8| Proposizione 5.18]]. $\blacksquare$ 
+Se $a_n\to 0$ allora anche $|a_n|\to0$, mentre se $\{b_n\}_n$ è limitata esiste $K>0$ tale che $\forall n\in\mathbb{N}\quad|b_n|\leq K$. Allora $$0\leq|a_nb_n|=|a_n||b_n|\leq K|a_n|,$$ dato che $K|a_n|\to 0$, anche $|a_nb_n|\to 0$ per il teorema dei carabinieri, quindi $a_nb_n\to0$ per la caratterizzazione sui moduli delle successioni (Proposizione 5.18) [[Successioni#^9be3a8|Proposizione 5.18]]. $\blacksquare$ 
 
 ---
 *Proposizione 5.29*:

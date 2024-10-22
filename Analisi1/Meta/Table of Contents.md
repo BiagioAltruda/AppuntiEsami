@@ -10,3 +10,5 @@ SORT file.name ASC
 LIST WHERE file.outlinks=[] and file.inlinks=[] and file.name!=this.file.name and file.name!="Board"
 ```
 # [[Board]]
+
+#meta

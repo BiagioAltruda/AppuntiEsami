@@ -9,5 +9,7 @@
   "omnisearch",
   "homepage",
   "settings-search",
-  "obsidian-latex-suite"
+  "obsidian-latex-suite",
+  "obsidian-tikzjax",
+  "obsidian-excalidraw-plugin"
 ]

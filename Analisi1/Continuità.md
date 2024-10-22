@@ -1,3 +1,8 @@
+---
+tags: continuità
+---
+
+
 una funzione $f:a\to\mathbb{R}$ che per un certo $x_{*}\in A$ verifica $$
 \forall \left\{ x_{n} \right\}_{n} \subset A,\qquad x_{ n}\to x_{*}\Rightarrow f(x_{n})\to f(x_{*})  
 $$ si dice continua in $x_{*}$, una funzione continua in ogni punto del suo dominio si dice continua.
