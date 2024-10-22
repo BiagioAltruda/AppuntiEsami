@@ -1106,4 +1106,21 @@ $$Quindi $\bar{f}(x)$ è riducibile in $\mathbb{Z}_p[x]$.
 Sia $K$ un campo. In questa lezione presentiamo, per l'anello dei polinomi $K[x]$, nozioni analoghe a quelle introdotte, per l'anello degli interi $\mathbb{Z}$.
 
 *Definizione*:
-Siano $a(x),b(x)\in K[x]$. Diremo che $a(x)$ è congruo a $b(x)$ modulo $f(x)$ se $f(x)$ divide $a(x)-b(x)$. In tal caso scriveremo $a(x)\equiv b(x) (\text{mod }f(x))$
+Siano $a(x),b(x)\in K[x]$. Diremo che $a(x)$ è congruo a $b(x)$ modulo $f(x)$ se $f(x)$ divide $a(x)-b(x)$. In tal caso scriveremo $a(x)\equiv b(x) (\text{mod }f(x))$.
+
+*Proposizione*:
+La congruenza modulo $f(x)$ è una relazione di equivalenza
+
+*Proposizione*:
+Si ha $$\frac{K[x]}{(f(x))}=\left\{ r[x]|\,r(x)\in K[x],\,r(x)=0\text{ oppure } r(x)\neq 0\text{ e } \deg(r)<\deg(f) \right\}.$$
+Inoltre, se $r_{1}(x),r_{2}(x)\in K[x]$ sono tali che $r_{1}(x)\neq r_{2}(x)$ e, per $i=1,2,$ $r_{i}=0$ oppure $r_{1}(x)\neq 0$ e $\deg(r_{i})<\deg(f)$, allora $[r_{1}(x)]\neq[r_{2}(x)]$.
+
+*Dimostrazione*:
+Per definizione di insieme quoziente, si ha che $$
+\frac{K[x]}{(f(x))}=\left\{ a(x)|\,a(x)\in K[x] \right\} .
+$$
+Chiamiamo $S$ l'insieme che compare al membro destro dell'enunciato. Proviamo che $\frac{K[x]}{(f(x))}=S$. Naturalmente $S\subset \frac{K[x]}{(f(x))}$. Non resta che provare l'altra inclusione. Sia $a(x)\in K[x]$. Sia $r(x)$ il resto della divisione euclidea di $a(x)$ per $f(x)$. Allora, detto $q(x)$ il quoziente della stessa divisione euclidea, si ha $a(x)=f(x)q(x)+r(x)$, e quindi $f(x)$ divide $a(x)-r(x)$, cioè $a(x)\equiv r(x)(\text{mod }f(x))$. Dunque $[a(x)]=[r(x)]\in S$. Che dimostra l'inclusione mancante.
+Per la seconda parte dell'enunciato, siano $r_{1}(x),r_{2}(x)\in K[x]$ tali che $[r_{1}(x)]=[r_{2}(x)]$, e tali che per $i=1,2$, $r_{i}(x)=0$ oppure $r_{i}(x)\neq 0$ e $\deg(r_{i})<\deg(f)$. Dato che $r_{i}(x)=f(x)\cdot 0+r_{1}(x)$, $r_{1}(x)$ è il resto della divisione euclidea di $r_{2}(x)$ per $f(x)$. D'altra parte, per ipotesi, $f(x)$ divide $r_{1}(x)-r_{2}(x)$, quindi si ha $r_{1}(x)=f(x)q(x)+r_{2}(x)$ per qualche $q(x)\in K[x]$. Segue anche che $r_{2}(x)$ è il resto della divisione di $r_{1}(x)$ per $f(x)$. Per l'unicità del resto segue che $r_{1}(x)=r_{2}(x)\,\blacksquare$.
+
+*Proposizione*:
+Siano $a(x),a'(x),b(x),b'(x)$
