@@ -692,3 +692,416 @@ Il caso è banale dato che $0\in\mathbb{Q}$.
 
 3. $a<b<0$.
 Si procede applicando il punto $1)$ al caso equivalente $0<-b<-a$. Otterremo così $-q$ che è il numero razionale cercato $\blacksquare$.
+
+*Proposizione*:
+$\not\exists x \in \mathbb{Q}|\, x^{2}=2$.
+
+*Dimostrazione*:
+Supponiamo per assurdo che $\exists x \in \mathbb{Q}| x^{2}=2$. Allora $x=\frac{m}{n}$ con $m\in \mathbb{Z}$ e $n\in \mathbb{N}^{*}$, e senza perdita di generalità sono primi tra di loro.
+Essendo $x^{2}=2\implies \frac{m^{2}}{n^{2}}=2$. Cioè $m^{2}=2n^{2}$, segue che $m$ è pari. In particolare il quadrato di un numero pari è pari. Quindi $m^{2}=2n^{2}\implies (2s)^{2}=2n^{2}\implies 4s ^{2}=2n^{2}$. Ovvero $2s^{2}=n^{2}$. Quindi anche $n^{2}$ è pari, e conseguentemente anche $n$. Ma allora sia $m$ che $n$ sono pari che contraddice l'ipotesi di averli scelti coprimi.
+
+*Teorema*(incompletezza di $\mathbb{Q}$):
+$\mathbb{Q}$ non verifica l'assioma di Dedekind ($\mathbb{Q}$ non è completo).
+
+*Dimostrazione*: Basta trovare un insieme limitato, non vuoto, che non ammette estremo superiore (o inferiore) in $\mathbb{Q}$.
+Sia quindi $A=\left\{ x \in \mathbb{Q}:\,x\geq 0 ,\,x^{2}<2\right\}$. $1$ appartiene ad $A$, quindi è non vuoto, $2\in \mathcal{M}_{A}$ infatti:
+$$
+x^{2}<2 \Rightarrow x^{2} < 4 \Rightarrow x^{2}-4<0 \Rightarrow (x-2)(x+2)<0 \Rightarrow x<2.
+$$
+Quindi $A$ è superiormente limitato. Supponiamo che $\exists \lambda \in \mathbb{Q}:\, \lambda=\sup A$, in particolare vale $\lambda\geq1$.
+Ci sono $3$ casi distinti:
+$$
+1. \,\lambda^{2}<2 \qquad\qquad\qquad 2.\, \lambda^{2}=2 \qquad\qquad\qquad 3.\,\lambda^{2}>2.
+$$
+1. Per il [[Principio di Archimede|principio di Archimede]] $\exists n\in \mathbb{N}: n>\max \left\{ 1, \frac{2\lambda+1}{2-\lambda^{2}} \right\}$. Vale che $\lambda+ \frac{1}{n}\in \mathbb{Q}$, vediamo se appartiene ad $A$. Sarebbe a dire:
+$$
+\left( \lambda+ \frac{1}{n} \right)^{2}= \lambda^{2}+ \frac{2\lambda}{n}+ \frac{1}{n^{2}}< \lambda^{2} + \frac{2\lambda}{n}+ \frac{1}{n}= \lambda^{2}+ \frac{2\lambda+1}{n}.
+$$
+Se fosse minore di $2$ avremmo:
+$$
+\lambda^{2}+ \frac{2\lambda+1}{n}<2 \Rightarrow \left( \lambda+ \frac{1}{n} \right)^{2} <2 \Rightarrow \left( \lambda+ \frac{1}{n} \right)\in A.
+$$
+Ma $\lambda$ era l'estremo superiore di $A$. Otteniamo un assurdo.
+2. Senza perdita di generalità posso scrivere $\lambda= \frac{m}{n}$ con $m,n\in \mathbb{Q}$ e coprimi. Se fosse che $\lambda^{2}=2$ avrei:
+$$
+\frac{m^{2}}{n^{2}}=2 \Rightarrow m^{2}=2n^{2}\Rightarrow \exists p \in \mathbb{N}: \, m=2p.
+$$
+$$
+\frac{4p^{2}}{n^{2}}=2\Rightarrow 2p^{2}=n^{2}.
+$$
+Cioè sia $m$ che $n$ sono pari, ma li avevamo assunti coprimi, abbiamo ottenuto un assurdo.
+3. Ancora per il principio di Archimede scriviamo $\exists n\in \mathbb{N}: \, n>\max\left\{ \frac{1}{\lambda},\frac{2\lambda}{\lambda^{2}-2} \right\}$. Vale che $\lambda - \frac{1}{n}\in \mathbb{Q}$.
+$$
+\left( \lambda- \frac{1}{n} \right)^{2}= \lambda^{2}- \frac{2\lambda}{n}+ \frac{1}{n^{2}}> \lambda^{2}- \frac{2\lambda}{n}> \lambda^{2} -2\lambda \frac{\lambda^{2}-2}{2\lambda}=\lambda^{2}- \lambda^{2}+2= 2  
+$$
+Dimostriamo adesso che $\lambda- \frac{1}{n}$ è un maggiorante di $A$.
+Ricordando che $x \in A$ implica $x\geq 0$ e usando che $\lambda- \frac{1}{n}$ è positivo si ha che per ogni $x \in A$:
+$$
+\lambda-\frac{1}{n}>x \Leftrightarrow \left( \lambda-\frac{1}{n} \right)^{2}>x^{2}.
+$$
+che è vero per quanto detto sopra:
+$$
+\left( \lambda-\frac{1}{n} \right)^{2}>2>x^{2}
+$$
+Abbiamo quindi dimostrato che $\lambda-\frac{1}{n}$ è un maggiorante di $A$, in contraddizione al fatto che $\lambda=\sup A$.
+Concludendo, $\nexists \lambda \in \mathbb{Q}$ tale che $\lambda=\sup A$. $\blacksquare$
+
+*Definizione*:
+Sia $x \in \mathbb{R}$. Sia $n\in \mathbb{N},\,n \neq0$. Si chiama potenza $n-esima$ di $x$ il numero reale:
+$$
+x^{n}=\begin{cases}
+x^{n} &\text{se } m\in \mathbb{N}^{+}  \\
+1 & \text{se } n=0 \\
+\frac{1}{x^{|n|}}&\text{se }n\in-\mathbb{N}^{+} 
+\end{cases}
+$$
+
+*Proposizione*:
+$\forall x \in \mathbb{R},\, x\neq 0,\, \forall n,m\in \mathbb{Z}$:
+1. $(x^{m})^{n}=x^{mn}$
+2. $x^{n+m}=x^{n}\cdot x^{m}$
+3. $(x\cdot y)^{n}=x^{n}\cdot y^{n}$.
+
+*Proposizione*:
+1. Sia $y\in \mathbb{R},0<y\leq 1$. Si ha che: $\forall n\in \mathbb{N},\,n \neq 0: y^{n}\leq y$.
+2. Sia $y\in \mathbb{R},\,y\geq 1$. Si ha che $\forall n\in \mathbb{N},\,n\neq 0: y^{n}\geq y$.
+
+*Dimostrazione*:
+1. Sia $y\in \mathbb{R},0<y\leq 1\implies \forall n\in \mathbb{N},\,n\neq 0: y^{n}\leq y$. $P(n)=\forall n\in \mathbb{N}.\,n\neq 0: y^{n}\leq y$, il predicato che dimostreremo per induzione. Proviamo la base induttiva, sia quindi $n=1$. Allora $y^{1}=y$, verificata. Per il passo induttivo assumiamo che se $y^{n}\leq y$, dobbiamo dimostrare: $y^{n+1}\leq y$. Essendo $y^{n+1}=y \cdot y^{n}$ abbiamo che $y\cdot y^{n}\leq y^{2}$, che ci permette di concludere.
+2. Sia $y\in \mathbb{R},\,y\geq 1$. $P(n)=\forall n\in \mathbb{N},\,n\neq 0: y^{n}\geq y$. Dimostriamo il predicato per induzione. Il passo base, $P(1)$, è verificato in quanto $y^{1}\geq y$. Dimostriamo il caso $P(n+1)$. Per ipotesi $y^{n}\geq y$. Ma $y^{n+1}=y^{n}y\geq y\cdot y$ per ipotesi. Abbiamo verificato il passo induttivo $\blacksquare$.
+
+*Proposizione*:
+Siano $x,y\in \mathbb{R},\, 0<x<y$. Allora $\forall n\in \mathbb{N},\, n \neq 0: x^{n}< y^{n}$.
+
+*Dimostrazione*:
+Dimostriamolo per induzione sul predicato $P(n)=\forall n\in \mathbb{N}, n \neq0,\,x<y\implies xy^{n}<y^{n}$.
+$P(1)$ è banale in quanto $x^{1}<y^{1}$ per ipotesi. Dimostriamo il caso $P(n+1)$:
+$$
+x^{n+1}<y^{n+1}\implies x^{n}\leq y^{n}.
+$$
+Ma $x<y$ per ipotesi e $x^{n}<y^{n}$ per ipotesi induttiva. Quindi $P(n+1)$ è vera $\blacksquare$.
+
+*Teorema*(della radice $n-esima$):
+$\forall y\in \mathbb{R}^{*},\,\forall n\in \mathbb{N},\,n\geq 2$, esiste una ed una sola $x\in \mathbb{R}$ positiva tale che $x^{n}=y$.
+
+*Definizione*:
+Sia $y\in \mathbb{R}^{*}$, sia $\mathbb{N}\in \mathbb{N},\,n\geq 2$. Si chiama radice $n-esima$ di $y$ l'unica $x$ reale positiva tale che $x^{n}=y$. ($x=\sqrt[n]{ y }$ oppure $x=y^{\frac{1}{n}}$).
+
+*Dimostrazione*(Del teorema):
+
+Fissiamo $y\in \mathbb{R},\, y> 0,\, n\in \mathbb{N},\, n\geq 2$. Proviamo che se $\exists x \in \mathbb{R},\, x>0,$ tale che $x^{n} = y$ allora $x$ è unica. Se per assurdo $x_{1},x_{2}\in \mathbb{R},\, x_{1},x_{2}>0$ e tali che $x_{1}^{n}=y,\,x_{2}^{n}=y$ allora $x_{1}=x_{2}$.
+D'altra parte se $x_{1}<x_{2}$ allora si avrebbe che $x_{1}^{n}<x_{2}^{n} \implies y< y$, che è assurdo. Viceversa se $x_{2}<x_{1}$, allora si avrebbe che $x_{2}^{n}<x_{1}^{n} \implies y< y$, che è assurdo.
+Quindi se esiste una $x$ come richiesta, è unica.
+Per quanto riguarda l'esistenza della radice ennesima, invece, consideriamo l'insieme: $$
+A=\left\{ z\in \mathbb{R}|\,z> 0, z^{n}\leq y \right\}.
+$$
+Proviamo che:
+1. $A\neq \emptyset$
+2. $A$ è limitato superiormente, ($\mathcal{M_{A}}\neq \emptyset$).
+A tal fine distinguiamo due casi: $0<y\leq1$, $y>1$.
+Supponiamo che $0<y\leq 1$. Allora si ha che $y^{n}\leq y$. Pertanto $y\in A$, da cui $A\neq \emptyset$. Inoltre si ha che $1\in \mathcal{M_{A}}$. Se fosse che $1\not\in \mathcal{M_{A}}$. Allora $\exists z \in A$ tale che $z>1$, da cui $z^{n}>1$, ma essendo $z\in A,\, 1\geq y\geq z^{n}>1$ che è assurdo.
+Se invece, $y>1$. Allora $1^{n}=1<y$, quindi $1\in A$, e quindi $A$ è non vuoto. Inoltre $y\in \mathcal{M_{A}}$, infatti, se $y\not\in A$, $\exists z\in A$ tale che $z>y$. Ma allora $y^{n}<z^{n}$ ma $z^{n}\leq y$ che è assurdo.
+Per il teorema di esistenza dell'estremo superiore esiste $x=\sup A\in \mathbb{R}$. Verifichiamo che $x^{n}=y$.
+Basta provare che $\forall\varepsilon>0:\,|x^{n}-y|\leq\varepsilon$. Sia quindi $\varepsilon>0$. Poniamo $$\varepsilon'=\min\left(x,\frac{\varepsilon}{2^{n}nx^{n-1}}\right).$$
+Proveremo che $(x-\varepsilon')^{n}<x^{n}<(x+\varepsilon')^{n}$. Che segue direttamente dall'osservare che $0\leq x-\varepsilon'<x<x+\varepsilon'$, e dalla proposizione precedente. Verifichiamo inoltre che $(x-\varepsilon')^{n}<y<(x+\varepsilon')^{n}$.
+Per provare la disuguaglianza di destra basta osservare che $(x+\varepsilon')^{n}\not\in A$, dato che $x=\sup A$. Segue che $y<(x+\varepsilon')^{n}$.
+Per l'altra disuguaglianza, per la caratterizzazione dell'estremo superiore, essendo $x-\varepsilon'<x$, $\exists \bar{x}\in A$, tale che $0<x-\varepsilon'<\bar{x}<x$. Segue che $(x-\varepsilon')^{n}<\bar{x}^{n}\leq y$, perché $\bar{x}\in A$. Pertanto si ha che $(x-\varepsilon')^{n}<y<(x+\varepsilon')^{n}$.
+Concludiamo che $$0\leq|x^{n}-y|\leq |(x+\varepsilon')^{n}-(x-\varepsilon')^{n}|=|(x+\varepsilon')-(x-\varepsilon')|\cdot|(x+\varepsilon')^{n-1}+\dots+(x-\varepsilon')^{n-1}|\implies$$
+Maggioro i termini misti con $2x$.
+$$
+|2\varepsilon'|\cdot|(x+\varepsilon')^{n-1}+\dots+(x-\varepsilon')^{n-1}|\leq 2\varepsilon' \cdot (2x)^{n-1}n=2^{n}x^{n-1}n\varepsilon'\leq \frac{\varepsilon}{2^{n}x^{n-1}n}\cdot 2^{n}x^{n-1}n=\varepsilon.
+$$
+Segue che $0\leq |x^{n}-y|\leq\varepsilon$, e per l'arbitrarietà di $\varepsilon$: $|x^{n}-y|=0 \iff y=x^{n}\, \blacksquare$.
+
+*Osservazione*:
+Il teorema appena dimostrato è uno strumento matematico che ci garantisce dati  $y\in \mathbb{R}$ e $n\in \mathbb{N}$, $n\geq2$ l'esistenza e unicità di una soluzione positiva dell'equazione $x^{n}=y$.
+
+*Teorema*(Densità di $\mathbb{R}\setminus \mathbb{Q}$ in $\mathbb{R}$):
+Per ogni $a,b\in \mathbb{R}$, con $a<b$, $\exists c\in \mathbb{R}\setminus \mathbb{Q}$ tale che $a<c<b$.
+
+*Dimostrazione*:
+Sia $y=2$. Sia $n=2$. Considero, l'equazione $x^{2}=2$. Per il teorema di esistenza e unicità della radice $n-esima$, $\exists! x \in \mathbb{R},\, x> 0$ tale che $x^{2}=2$. Tale $x$ è denotata con $\sqrt{ 2 }$. Inoltre si ha che $z=\sqrt{ 2 }\not\in \mathbb{Q}$. Pertanto $\exists! x \in \mathbb{R}\setminus \mathbb{Q},$ tale che $x^{2}=2$.
+Siano $a,b\in \mathbb{R},\, a<b$. Per gli assiomi di $\mathbb{R}$ si ha che $a-\sqrt{ 2 }<b-\sqrt{ 2 }$. Siano $a'=a-\sqrt{ 2 }\in \mathbb{R}$, $b'=b-\sqrt{ 2 }\in \mathbb{R}$, risulta che $a'<b'$. Per il teorema di densità di $\mathbb{Q}$ in $\mathbb{R}$, $\exists q\in \mathbb{Q}$ tale che $a'<q<b'\implies a-\sqrt{ 2 }<q<b-\sqrt{ 2 }$. Concludiamo che $a-\sqrt{ 2 }+\sqrt{ 2 }<q+\sqrt{ 2 }<b-\sqrt{ 2 }+\sqrt{ 2 }\implies a<q+\sqrt{ 2 }<b$. Risulta che $c=q+\sqrt{ 2 }\in \mathbb{R}\setminus \mathbb{Q}$ e $a<c<b$.
+
+*Proposizione*(Proprietà della radice $n-esima$):
+1. $\forall y_{1},y_{2}\in \mathbb{R}, 0<y_{1}, 0<y_{2},\, \forall n\in \mathbb{N},\, n\geq 2$ si ha che $\sqrt[n]{ y_{1}y_{2} }=\sqrt[n]{ y_{1} }\sqrt[n]{ y_{2} }.$
+	Dimostrazione: Siano $y_{1},y_{2}\in \mathbb{R},\, y_{1},y_{2}>0,\, n\in \mathbb{N},\, n\geq 2$. Per il teorema di esistenza e unicità della radice $n-esima$, $\exists! x_{1}>0,\exists!x_{2}>0$ tali che $x_{1}^{n}=y_{1}$ e $x_{2}^{n}=y_{2}$. Pertanto $(x_{1}x_{2})^{n}=x_{1}^{n}x_{2}^{n}=y_{1}y_{2}$. Segue che $x_{1}x_{2}=\sqrt[n]{ y_{1}y_{2} }$, da cui segue che $\sqrt[n]{ y_{1} }\sqrt[n]{ y_{2} }=\sqrt[n]{ y_{1}y_{2} }$.
+2. $\forall y\in \mathbb{R},\, y>0,\, \forall n\in \mathbb{N},\, n\geq 2,\, \forall m\in \mathbb{Z}$: $\sqrt[n]{ y^{m} }=(\sqrt[n]{ y })^{n}$.
+3. $\forall y\in \mathbb{R}, y>0,\, \forall h\in \mathbb{N}, h\geq 2,\, \forall k\in \mathbb{N}, k\geq 2$: $\sqrt[h]{ \sqrt[k]{ y } }=\sqrt[hk]{ y }$.
+4. $\forall y \in \mathbb{R},\, y> 0, \forall m_{1},m_{2}\in \mathbb{Z},\, \forall n_{1},n_{2}\in \mathbb{N},\, n_{1},n_{2}\neq 0,\, n_{1}\geq2, n_{2}\geq 2$: $\frac{m_{1}}{n_{1}}=\frac{m_{2}}{2}\iff m_{1}n_{2}=m_{2}n_{1}$. Allora $\sqrt[n_{1}]{ y^{m_{1}} }=\sqrt[n_{2}]{ y^{m_{2}} }$.
+5. $\forall y \in \mathbb{R},\, y>0,\, \forall n\in \mathbb{N},\, n\geq 2$: $\sqrt[n]{ y^{n} }=y$.
+	Dimostrazione: Sia $y\in \mathbb{R},\, y>0$, sia $n\in \mathbb{N},\, n\geq2$. Posto $x=\sqrt[n]{ y^{n} }$, si ha che $x^{n}=y^{n}$. Segue che $x=y$, da cui segue che $\sqrt[n]{ y^{n} }=y$.
+6. $\forall y \in \mathbb{R}, \forall n\in \mathbb{N}, n\geq 2$ tali che $y^{n}\geq 0$: $\sqrt[n]{ y^{n} }=|y|$.
+7. $\forall y_{1},y_{2}\in \mathbb{R},\, y_{1}>0,y_{2}>0,\, \forall n\in \mathbb{N}, n\geq 2, y_{1}< y_{2}$: $\sqrt[n]{ y_{1} }\leq \sqrt[n]{ y_{2} }$.
+
+*Definizione*(Potenza razionale):
+Sia $y\in \mathbb{R},y>0$. Sia $q\in \mathbb{Q},\, q=\frac{m}{n},\,m\in \mathbb{Z},\,n\in \mathbb{N},\, n\neq 0$. Si chiama potenza razionali di $y$ di esponente $q$ il numero reale: $y^{q}=\sqrt[n]{ y^{m} }$.
+
+*Proposizione*:
+Per le potenze razionali valgono le seguenti proprietà:
+1. $\forall y_{1},y_{2}\in \mathbb{R},\,y_{1},y_{2}>0,\, \forall q\in \mathbb{Q}$ si ha che: $(y_{1}\cdot y_{2})^{q}=y_{1}^{q}\cdot y_{2}^{q}$ 
+2. $\forall y\in \mathbb{R},\, y>0,\, q_{1},q_{2}\in \mathbb{Q}$ si ha che: $(y^{q_{1}})^{q_{2}}= y^{q_{1}q_{2}}$ 
+3. $\forall y\in \mathbb{R},\, y>0,\, \forall q\in \mathbb{Q}$ si ha che: $y^{-q}=\frac{1}{y^{q}}$ 
+4. $\forall y\in \mathbb{R},\, y>0,\, \forall q_{1},q_{2}\in \mathbb{Q}$ si ha che: $y^{q_{1}-q_{2}}=\frac{y^{q_{1}}}{y^{q_{2}}}$.
+
+*Proposizione*:
+Sia $a\in \mathbb{R},a>0\,$. Allora valgono le seguenti implicazioni:
+1. $a>1\implies \forall q_{1},q_{2}\in \mathbb{Q},\,q_{1}<q_{2}: a^{q_{1}}<a^{q_{2}}$.
+2. $0<a\leq1 \implies \forall q_{1},q_{2}\in \mathbb{Q},\, q_{1}<q_{2}: a^{q_{2}}<a^{q_{1}}$.
+
+*Dimostrazione*:
+1. Sia $a>1$. Siano $q_{1},q_{2}\in \mathbb{Q},\,q_{1}<q_{2}$. Allora $q_{1}=\frac{m_{1}}{n},\,q_{2}=\frac{m_{2}}{n}$, con $n\in \mathbb{N}^{*}$ e $m_{1},m_{2}\in \mathbb{Z}$.
+	$i)$ $0<m_{1}<m_{2}$. Poiché $a^{m_{1}}<a^{m_{2}}$ si ha che $a^{q_{1}}=\sqrt[n]{ a^{m_{1}} }<\sqrt[n]{ a^{m_{2}} }=a^{q_{2}}$.
+	$ii)$ $m_{1}<0<m_{2}$. Vale che $a^{m_{1}}<1=a^{0}<a^{m_{2}}$. Segue che $a^{q_{1}}<a^{q_{2}}$.
+	$iii)$ $m_{1}<m_{2}<0$. Si ha che $0<-m_{2}<-m_{1}$ da cui $a^{-m_{2}}<a^{-m_{1}}$, e pertanto $\sqrt[n]{a^{-m_{2}}}<\sqrt[n]{a^{-m_{1}} }\implies a^{-q_{2}}<a^{-q_{1}}$ che è equivalente a $a^{q_{1}}<a^{q_{2}}$.
+2. Supponiamo che $0<a<1$. Allora $a^{-1}> 1$, da cui vale la dimostrazione del punto precedente, applicandola al numero reale $a^{-1}$. Pertanto si ha $\forall q_{1},q_{2}\in \mathbb{Q},\,q_{1}<q_{2}$: $(a^{-1})^{q_{1}}<(a^{-1})^{q_{2}}$. Equivalentemente si ha $a^{-q_{1}}<a^{-q_{2}}$, ossia $a^{q_{2}}<a^{q_{1}}\,\blacksquare$.
+
+*Teorema*:
+Sia $a\in \mathbb{R},\, a>0,\,a\neq1$. Sia $q\in \mathbb{Q}$. Allora:
+1. $a>1\implies a^{q}=\sup \left\{ a^{q'}|\,q'\in \mathbb{Q},\,q'<q \right\}=\inf\left\{ a^{q'}|\,q'\in \mathbb{Q},\, q<q' \right\}$.
+2. $0<a<1\implies a^{q}=\sup\left\{ a^{q''}|\,q''\in \mathbb{Q},\,q<q'' \right\}=\inf\left\{ a^{q''}|\,q''\in \mathbb{Q}, q''<q \right\}$.
+
+*Teorema*(Radici reali):
+Sia $a\in \mathbb{R},\,a>0,\,x \in \mathbb{R}$. Poniamo $A=\left\{  a^{q'}|\,q'\in \mathbb{Q},\,q'<x \right\}$. E sia anche $B=\left\{ a^{q''}|\,q''\in \mathbb{Q},\,x<q'' \right\}$. Allora $A$ e $B$ sono non vuoti e contigui. Inoltre si ha:
+1. $a>1\implies \sup A=\inf B$.
+2. $0<a<1\implies \sup B= \inf A$.
+
+*Dimostrazione*:
+Supponiamo $a>1$, l'altro caso è analogo. Sia $x \in \mathbb{R}$. Allora Osserviamo che $A$ e $B$ sono non vuoti e separati, poiché:
+$$
+\forall q_{1},a_{2}\in \mathbb{Q},\,q_{1}<x<q_{2}:\qquad a^{q_{1}}<a^{q_{2}}.
+$$
+Proviamo che $A$ e $B$ sono contigui. Ovvero che $\sup A=\inf B$. Siano quindi $\alpha= \sup A$ e $\beta= \inf B$. Chiaramente $\alpha$ e $\beta$ sono numeri reali.
+Supponiamo per assurdo che $\alpha<\beta$. Allora per usando il teorema precedente proveremo che $\exists q\in \mathbb{Q}$ tale che $\alpha<a^{q}<\beta$. Se esistesse tale $q\in \mathbb{Q}$ allora allora la tesi del teorema sarebbe soddisfatta. Infatti essendo $\mathbb{R}$ totalmente ordinato, ricadiamo in $3$ casi:
+1. $q<x$. Ma allora $a^{q}\in A$, che è assurdo. 
+2. $x<q$. Ma allora $a^{q}\in B$, che è assurdo.
+3. $x=q$. Se così fosse allora, dal teorema precedente, $a^{q}=\sup A=\inf B=\alpha=\beta$.
+
+In tutti e $3$ i casi perveniamo ad una contraddizione, da cui segue che $\alpha=\beta$.
+
+Se invece $\exists q\in \mathbb{Q}$ tale che $\alpha<a^{q}<\beta$. Poiché $\alpha<\beta$, allora $\frac{\beta}{\alpha}>1$. Per la proprietà archimedea e la disuguaglianza di Bernoulli, si ha che $\exists n\in \mathbb{N},\,n\neq 0$ tale che $\left(\frac{\beta}{\alpha}\right)^{n}>a.$ Dato che:
+$$\frac{\beta}{\alpha}=1+\left( \frac{\beta}{\alpha} -1\right). \text{ Allora } \exists n\in \mathbb{N},\, n\neq 0:\, \left( \frac{\beta}{\alpha} \right)^{n}=\left( 1+\left(\frac{\beta}{\alpha} \right)-1\right)^{n}>1+ n\left( \frac{\beta}{\alpha} \right)>a.$$
+Definiamo $C=\left\{ m\in \mathbb{Z}|\, a^{m}\leq \alpha^{n} \right\}$. $C$ è non vuoto e $\mathcal{M}_{C}\neq \emptyset$. Per il principio del massimo intero in $\mathbb{Z}$, per cui $\exists m\in \mathbb{Z},\, m=\max C$. $m$ verifica: $a^{m}\leq \alpha^{n}$.
+Concludiamo che: $$
+a^{m+1}=a^{m}a\leq \alpha^{n}a<\beta^{n}
+$$
+inoltre essendo $m=\max C$ si ha che $\alpha^{n}<a^{m+1}$. Concludiamo che $\alpha^{n}<a^{m+1}<\beta^{n}\implies \alpha<a^{\frac{m+1}{n}}<\beta$.
+Posto $q\in \mathbb{Q}$, $q=\frac{m+1}{n}$, si ha che $\alpha<a^{q}<\beta$. Che è assurdo, in quanto avremmo trovato un numero razionale che separa $\alpha$ e $\beta$ $\blacksquare$.
+
+*Definizione*: 
+Sia $a\in \mathbb{R},\,a>0$. Sia $x \in \mathbb{R}$. Si chiama potenza reale di base $a$ ed esponente $x$ e si denota con $a^{x}$, il numero reale definito come: 
+1. $$
+a>1 \implies a^{x}=\sup \left\{ a^{q'}|\, q'\in \mathbb{Q},q'<x \right\}=\inf\left\{ a^{q''}|\, q''\in \mathbb{Q},\, x<q'' \right\} 
+$$
+2. $$
+0<a<1 \implies a^{x}=\sup\left\{ a^{q''}|\,q''\in\mathbb{Q},\,x<q'' \right\} =\sup\left\{ a^{q'}|\,q'\in \mathbb{Q},\,q'<x \right\}.
+$$
+
+*Proposizione*:
+Sia $a\in \mathbb{R},\, a>0$. Allora valgono le seguenti proprietà:
+1. $\forall x,y\in \mathbb{R}:\, a^{x+y}=a^{x}a^{y}$
+2. $\forall x,y\in \mathbb{R}:\,(a^{x})^{y}=a^{xy}$
+3. $\forall x \in \mathbb{R}:\, a^{-x}=\frac{1}{a^{x}}$
+4. Se $a>1$ allora $\forall x,y\in \mathbb{R},\, x<y:\, a^{x}<a^{y}$.
+5. Se $0<a<1$ allora $\forall x,y\in \mathbb{R},\,x<y:\, a^{y}<a^{x}$.
+
+*Definizione*:
+Siano $a,b\in \mathbb{R},\,a,b>0,\, a\neq 1$. Si chiama logaritmo di base $a$ ed argomento $b$ il numero reale denotato con $\log_{a}b$ definito nel seguente modo: $$
+x=\log_{a}b \in \mathbb{R} \text{ tale che } a^{x}=b.
+$$
+----------
+
+*Definizione*:
+Siano $X,Y$ insiemi, $X,Y\neq \emptyset$. Sia $R\subset X\times Y$. Si dice che $R$ è una relazione funzionale tra $X$ ed $Y$ se: $$
+\forall x \in X,\, \exists! y\in Y \text{ tale che } (x,y)\in R.
+$$
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Si dice che $f$ è una funzione da $X$ in $Y$, se $f$ è una terna ordinata della forma: $$
+f=(X,Y,R)
+$$
+dove $R$ è una relazione funzionale da $X$ in $Y$.
+
+*Notazione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f=(X,Y,R)$ una funzione con $R\subset X\times Y$ una relazione funzionale. Tale $f$ si denota anche con il simbolo: $$
+f:X\to Y
+$$
+la legge che $\forall x \in X$ associa l'unico $y\in Y$ tale che $f(x)=y$, ossia $(x,y)\in R$.
+con $R$ una relazione funzionale tra $X$ ed $Y$.
+
+Si chiama valore immagine di $x$ tramite $f$ e si denota con $f(x)$, l'unico $y\in Y$ tale che $y=f(x)$.
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Si chiama dominio o campo di esistenza di $f$ l'insieme $X$.  Si chiama insieme di arrivo di $f$ l'insieme $Y$. 
+
+*Definizione*:
+Si chiama insieme immagine di $f:X\to Y$ e si denota con $f(X)$, l'insieme: $$
+f(X)=\left\{ y\in Y|\, \exists x \in X:\, f(x)=y \right\}.
+$$
+Denotata con $R_{f}$ la relazione funzionale associata ad $f$, si ha che 
+$$f(X)=\left\{ y\in Y|\,\exists x \in X:\, (x,y)\in R_{f} \right\}.$$
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Si chiama grafico di $f$ insieme: $$
+G_{f}=\left\{ (x,y)\in X\times Y|\, y=f(x) \right\}=\left\{ (x,f(x))|\, x\in X \right\}\subset X\times Y .
+$$
+*Esempi*:
+Sia $X$, un insieme non vuoto. Si chiama relazione diagonale: $$
+\Delta_{X}=\left\{ (x,y)\in X\times X|\, y=x \right\}.
+$$
+Si chiama funzione identica la terna ordinata $i_{x}=(X,X,\Delta_{X})$.
+Tale $i_{X}$ si può denotare con il simbolo: $$
+i_{x}:X\to X
+$$
+$\forall x \in X\, \exists! y\in Y$ tale che $y=i_{x}(x)=x$.
+Ulteriormente si scrive $$i_{X}:x \in X \rightarrowtail i_{X}(x)=x,\qquad \forall x \in X.$$
+
+
+Sia $X$ insieme non vuoto. Sia $Y$ un insieme non vuoto. Sia anche $c\in Y$.
+Si chiama funzione costante di valore $c$ la terna ordinata $f=(X,Y,R)$ dove $$
+R\subset X \times Y,\qquad x \in X|\, \exists! y \in Y,\, y=c\text{ tale che }(x,y)\in R.
+$$
+è una legge che ad ogni $x \in X$ associa univocamente il valore $c\in Y$. $$
+f:X\to Y
+$$
+$$
+\forall x \in X,\, f(x)=c
+$$
+
+
+Siano $X$ insiemi non vuoto. Sia $A\subset X$, $A\neq \emptyset$. Si chiama funzione ingezione canonica di $A$ in $X$ e si denota $$j_{A}:A\to X$$
+la funzione che $\forall x \in A$ associa $j_{A}(x)=x$.
+Pertanto $$j_{A}:A\to X$$
+$$
+j_{A}: x \in A \rightarrowtail j_{A}(x)=x \in X
+$$
+Inoltre $j_{A}=(A,X,R)$ dove la relazione funzionale $R=\left\{ (x,y)\in A\times X| y= j_{A}(x)=x\right\}$.
+
+*Osservazione*:
+Siano $X_{1},X_{2},Y_{1},Y_{2}$ insiemi non vuoti. Siano $f_{1}=(X_{1},Y_{1},R_{1})$ e $f_{2}=(X_{2},Y_{2},R_{2})$ due funzioni. Si dice che $f_{1}=f_{2}$ se e solo se $X_{1}=X_{2},\,Y_{1}=Y_{2},\,R_{1}=R_{2}$.
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Sia $A\subset X$. Si chiama immagine diretta di $A$ tramite $f$, l'insieme: $$
+f(A)=\left\{ y\in Y| \,\exists x \in A: y=f(x) \right\}.
+$$
+*Proposizione*:
+Siano $X,Y$ insiemi non vuoti. Siano $A,B\subset X$. Sia anche $f:X\to Y$ una funzione. Allora risultano vere le seguenti proprietà:
+1. $f(A)=\emptyset \iff A=\emptyset$.
+2. $A\subset B \implies f(A)\subset f(B)\subset f(X)$.
+3. $f(A\cup B)=f(A)\cup f(B)$.
+4. $f(A\cap B)\subset f(A)\cap f(B)$.
+
+*Osservazione*:
+nella proprietà $4)$ non vale in generale l'uguaglianza, per mostrarlo cerchiamo un controesempio. Allora se $A\cap B=\emptyset$ sia $f:X\to Y$ la funzione che vale costantemente $c.$ Ma allora $f(A)\cap f(B)=\left\{ c \right\}\neq f(A\cap B)=\emptyset\,\blacksquare$.
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Consideriamo $C\subset Y$.
+Si chiama immagine reciproca di $C$ tramite $f$ l'insieme: $$
+f^{-1}(C)=\left\{ x \in X|f(x)\in C \right\}.
+$$
+*Proposizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Siano anche $C,D\subset Y$. Allora valgono le seguenti proprietà:
+1. $f^{-1}(C)\neq \emptyset \iff C \cap f(X)\neq \emptyset$
+2. $C\subset D \implies f^{-1}(C)\subset f^{-1}D$
+3. $f^{-1}(C\cup D)=f^{-1}(C)\cup f^{-1}(D)$
+4. $f^{-1}(C\cap D)=f^{-1}(C)\cap f^{-1}(D)$.
+5. $f^{-1}(Y\setminus C)=f^{-1}(\mathcal{C}_{Y}(C))=\mathcal{C}_{X}(f^{-1}(C))=X\setminus f^{-1}(C)$.
+
+
+*Esempi*:
+Sia $X$ insieme non vuoto. Sia $A\subset X$ non vuoto. Sia $\bar{x}\in X$. Sia $j_{A}:A \to X$ l'ingezione canonica di $A$. Poniamo $C=\left\{ \bar{x} \right\}$. Calcoliamo $j_{A}^{-1}(C)$. Risulta che $$
+j_{A}^{-1}(C)=\begin{cases}
+\left\{ \bar{x} \right\} &\text{ se }\bar{x}\in A, \\
+\emptyset & \text{se }\bar{x}\not\in A.
+\end{cases}
+$$
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ di costante valore $c\in Y$. Sia $B\subset Y$. Allora $$
+f^{-1}(B)=\begin{cases}
+X&\text{se }c\in B, \\
+\emptyset &\text{se } c\not\in B.
+\end{cases}
+$$
+*Proposizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Allora valgono le seguenti proprietà:
+1. Se $A\subset X$, allora $A\subset f^{-1}(f(A))$,
+2. Se $B\subset Y$, allora $f(f^{-1}(B))\subset B$.
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Si dice che $f$ è iniettiva o ingettiva, se: $$
+\forall x_{1},x_{2}\in X,\, f(x_{1})=f(x_{2})\implies x_{1}=x_{2}.
+$$
+Equivalentemente $f$ si dice ingettiva se: $$
+\forall x_{1},x_{2}\in X,\, x_{1}\neq x_{2}\implies f(x_{1})\neq f(x_{2}).
+$$
+
+*Osservazione*:
+$$f \text{ è ingettiva} \iff \forall y\in Y: f^{-1}(y)=\begin{cases}
+\emptyset \\
+\exists! x \in X: f(x)=y.
+\end{cases}$$
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. $f$ si dice surgettiva se:
+$$
+f(X)=Y
+$$
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. $f$ si dice bigettiva o invertibile se $f$ è sia ingettiva che surgettiva.
+
+*Proposizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Allora vale: 
+$f$ bigettiva $\iff$ $\forall y\in Y\,\exists! x \in X$ tale che $y=f(x)$.
+
+*Dimostrazione*:
+$(\implies)$. Assumiamo $f$ è bigettiva, dobbiamo dimostrare che $\forall y\in Y\,\exists! x \in X$ tale che $y=f(x)$. Sia $y\in Y$. Essendo $f$ surgettiva, si ha $y=f(x)$, da cui $y\in f(X)$. Pertanto $\exists x \in X$ tale che $y=f(x)$. Poiché $f$ è ingettiva tale $x \in X$ è unico. Infatti se fosse che $\exists x_{1}\in X$ tale che $f(x_{1})=y$ allora $f(x)=y=f(x_{1})$, da cui per l'ingettività $x_{1}=x\,\blacksquare.$
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione bigettiva. Si dice funzione inversa di $f$, e si denota col simbolo $f^{-1}$, la funzione da $Y$ a $X$ tale che $$
+\forall y \in Y \text{ associa l'unico }x \in X: f(x)=y.
+$$
+Pertanto $f^{-1}:Y\to X$. $f^{-1}(y)\to x \in X$ tale che $f(x)=y$.
+Scriveremo $f^{-1}(y)=x \iff f(x)=y$.
+
+*Definizione*:
+Siano $X,Y,Z$ insiemi non vuoti. Sia $f:X\to Y$ e sia $g:Y\to Z$, due funzioni.
+Si chiama funzione composta di $f$ e $g$ la funzione denotata col simbolo $g\circ f$, definita come: $$
+\forall x \in X,\, (g\circ f)(x)=g(f(x))
+$$
+è quindi una funzione da $X\to Z$.
+
+*Osservazione*:
+Se $X,Y,Z$ sono insiemi non vuoti, e $W$ insieme non vuoto, se $f:X\to W$, $g:Y\to Z$ e si ha che $f(X)\subset Y$ allora si può ancora definire la composizione $g\circ f$. E rispetta la stessa relazione funzionale. E risulta definita come prima, ovvero: $$
+\forall x \in X,\, (g\circ f)(x)=g(f(x)).
+$$
+*Proposizione*:
+Siano $X,Y$ insiemi non vuoti. Allora si ha che $$
+f \text{ è bigettiva allora}: \begin{cases}
+f\circ f^{-1}=i_{Y} \\
+f^{-1}\circ f = i_{X}.
+\end{cases}
+$$
+
+*Teorema*:
+Siano $X,Y$ insiemi non vuoti. Siano $f:X\to Y$ e $g:Y\to Z$ bigettive. Allora la funzione $g\circ f:X\to Z$ è invertibile e si ha: $$
+(g\circ f)^{-1}:Z\to X,\qquad (g\circ f)^{-1}=f^{-1}\circ g^{-1}
+$$
+
+*Proposizione*:
+Siano $X,Y$ insiemi non vuoti. Siano $f:X\to Y$ una funzione. Allora sono fatti equivalenti:
+1. $f$ è ingettiva
+2. $\forall A\subset X:\, A=f^{-1}(f(A))$.
+E anche 
+1. $f$ è surgettiva
+2. $\forall B\subset Y:\, B=f(f^{-1}(B))$.
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Si dice che $X$ e $Y$ sono equipotenti se: $$
+\exists f:X\to Y \text{ una funzione}
+$$ tale che $f$ è bigettiva.
+In tal caso si dice che $X$ e $Y$ hanno la stessa cardinalità, e si scrive, $card(X)=card(Y)$. (O anche $|X|=|Y|$) 
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Si dice che $X$ ha cardinalità minore o uguale a $Y$ se $$
+\exists f:X\to Y \text{ una funzione}
+$$
+tale che $f$ è ingettiva. E si scrive $|X|\leq|Y|$.

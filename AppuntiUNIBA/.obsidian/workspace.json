@@ -13,13 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algebra 1.md",
+                "file": "Analisi 1.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Analisi 1"
+            }
+          },
+          {
+            "id": "27dbe67e16988b1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Analisi 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Analisi 1"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -39,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -54,7 +73,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -62,15 +83,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "024063fc6a00afd1",
@@ -86,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algebra 1.md",
+                "file": "Analisi 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +116,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Analisi 1"
             }
           },
           {
@@ -103,10 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algebra 1.md",
+                "file": "Analisi 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Analisi 1"
             }
           },
           {
@@ -117,7 +143,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -126,8 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algebra 1.md"
-              }
+                "file": "Analisi 1.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Analisi 1"
             }
           }
         ]
@@ -148,15 +178,18 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "9128d02c80fa6efd",
+  "active": "27dbe67e16988b1d",
   "lastOpenFiles": [
-    "Analisi1.pdf",
-    "Geometria1.pdf",
-    "Esercizi Geometria.md",
-    "Esercizi Analisi.md",
+    "Geometria_22-10-24.pdf",
+    "Esercitazioni Analisi.md",
+    "Analisi1_22-10-24.pdf",
     "Algebra 1.md",
+    "Analisi1.pdf",
     "Geometria 1.md",
+    "Geometria1.pdf",
     "Analisi 1.md",
+    "Esercizi Analisi.md",
+    "Esercizi Geometria.md",
     "Informatica.md",
     "preamble.sty.md",
     "Welcome.md"

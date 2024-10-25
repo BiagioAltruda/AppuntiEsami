@@ -227,3 +227,4 @@ $\mathrm{}$
 2. $\tau$ è la topologia meno fine sull'insieme $X_{1}\times\dots \times X_{n}$ tale che ogni $p_{i}$ è continua.
 
 *Proposizione*: Siano $(X_1,\tau_1),\dots,(X_n,\tau_n)$ spazi topologici e sia $(X_1\times\dots\times X_n, \tau)$ il loro spazio prodotto. Allora ogni $(X_{i},\tau_{i})$ è omeomorfo ad un sottospazio di $(X_1\times\dots\times X_n, \tau)$.
+*Corollario*: Per $n \geq 2$, le proiezioni di $\mathbb{R}^{n}\to \mathbb{R}$ sono mappe aperte e continue.

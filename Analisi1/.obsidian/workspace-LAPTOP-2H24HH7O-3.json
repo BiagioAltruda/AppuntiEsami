@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "7c808bc796eed979",
+        "id": "b6965509a746deee",
         "type": "tabs",
         "children": [
           {
-            "id": "223e4651c21a6ec9",
+            "id": "469628bd6b5c699d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meta/Table of contents.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cb142f11a726c596",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Teorema di Discretezza di N.md",
+                "file": "Q non è completo.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "completo",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "0568a010d898a1d8",
@@ -100,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Teorema di Discretezza di N.md",
+                "file": "Q non è completo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Teorema di Discretezza di N.md",
+                "file": "Q non è completo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -140,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Teorema di Discretezza di N.md"
+                "file": "Q non è completo.md"
               }
             }
           }
@@ -165,24 +151,31 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cb142f11a726c596",
+  "active": "469628bd6b5c699d",
   "lastOpenFiles": [
     "Meta/Table of contents.md",
+    "Densità di Q.md",
+    "Q non è completo.md",
     "Teorema di Discretezza di N.md",
+    "General Topology.md",
+    "Gruppo fondamentale.md",
+    "Teoremi di confronto per successioni.md",
+    "topbook.pdf",
+    "Teorema Fondamentale dell'Algebra.md",
+    "omotopia.md",
+    "Untitled.md",
+    "disuguaglianza di Bernoulli.md",
+    "BUTTAZZO.pdf",
+    "Limite.md",
+    "Principio di Archimede.md",
     "Intervallo.md",
     "Estremo superiore.md",
-    "BUTTAZZO.pdf",
-    "General Topology.md",
-    "topbook.pdf",
     "ProvaTau.md",
     "Numeri Complessi.md",
     "Esercizi.md",
     "topbook.pdf.crdownload",
-    "disuguaglianza di Bernoulli.md",
     "Successioni.md",
-    "Gruppo fondamentale.md",
     "Funzioni lipschitziane e uniformemente continue.md",
-    "Limite.md",
     "Assioma di Dedekind.md",
     "Algoritmo di Bezout.md",
     "Excalidraw/Drawing 2024-06-05 16.21.52.excalidraw.md",
@@ -190,15 +183,7 @@
     "Untitled.canvas",
     "Relazioni tra insiemi.md",
     "Board.md",
-    "Infinitesimi.md",
-    "Principio di Archimede.md",
-    "Topologia degli spazi metrici.md",
-    "maggiorante.md",
-    "definitivamente e frequentemente.md",
     "Appunti_geometria_2.pdf",
-    "omotopia.md",
-    "Numeri Reali.md",
-    "Numeri naturali.md",
     "(C.i.m.e. Summer Schools volume 30) Henri Cartan (auth.), E. Martinelli (eds.) - Funzioni e varietà complesse-Springer Berlin Heidelberg (2011).pdf",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
