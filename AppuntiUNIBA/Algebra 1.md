@@ -1123,4 +1123,140 @@ Chiamiamo $S$ l'insieme che compare al membro destro dell'enunciato. Proviamo ch
 Per la seconda parte dell'enunciato, siano $r_{1}(x),r_{2}(x)\in K[x]$ tali che $[r_{1}(x)]=[r_{2}(x)]$, e tali che per $i=1,2$, $r_{i}(x)=0$ oppure $r_{i}(x)\neq 0$ e $\deg(r_{i})<\deg(f)$. Dato che $r_{i}(x)=f(x)\cdot 0+r_{1}(x)$, $r_{1}(x)$ è il resto della divisione euclidea di $r_{2}(x)$ per $f(x)$. D'altra parte, per ipotesi, $f(x)$ divide $r_{1}(x)-r_{2}(x)$, quindi si ha $r_{1}(x)=f(x)q(x)+r_{2}(x)$ per qualche $q(x)\in K[x]$. Segue anche che $r_{2}(x)$ è il resto della divisione di $r_{1}(x)$ per $f(x)$. Per l'unicità del resto segue che $r_{1}(x)=r_{2}(x)\,\blacksquare$.
 
 *Proposizione*:
-Siano $a(x),a'(x),b(x),b'(x)$
+Siano $a(x),a'(x),b(x),b'(x)\in K[x]$ tali che $a(x)\equiv a'(x)$ e $b(x)\equiv b'(x) \,(\text{mod }f(x))$. Allora:
+1. $a(x)+b(x)\equiv a'(x)+b'(x)(\text{mod }f(x))$
+2. $a(x)b(x)\equiv a'(x)b'(x)(\text{mod }f(x))$.
+
+L'insieme $\frac{K[x]}{(f(x))}$ con le usuali operazioni di somma e prodotto è un anello commutativo, unitario. L'elemento zero è $[0]$, l'elemento uno è $[1]$.
+
+*Proposizione*:
+Sia $a(x)\in K[x]$. Allora $a(x)$ è invertibile in $\frac{K[x]}{(f(x))}$ se e solo se $a(x)$ e $f(x)$ sono coprimi.
+
+*Proposizione*:
+Sia $f(x)$ non costante. Le seguenti affermazioni sono equivalenti:
+1. $f(x)$ è irriducibile
+2. $\frac{K[x]}{(f(x))}$ è un campo
+3. $\frac{K[x]}{(f(x))}$ è integro.
+
+**Prodotti diretti**
+
+Siano $(G_{1},*_{1}),(G_{2},*_{2})$ gruppi. Definiamo sul prodotto cartesiano $G_{1}\times G_{2}$ la seguente operazione:
+$$
+*_{1}\times*_{2}: (G_{1}\times G_{2})\times(G_{1}\times G_{2})\to G_{1}\times G_{2}
+$$
+$$
+((x_{1},x_{2}),(y_{1},y_{2}))\to(x_{1}*_{1}y_{1},x_{2}*_{2}y_{2})
+$$
+
+*Proposizione*:
+$(G_{1}\times G_{2},*_{1}\times*_{2})$ è un gruppo. Se $e_{1}$ e $e_{2}$ sono i rispettivi elementi neutri, l'elemento neutro del prodotto diretto è la coppia $(e_{1},e_{2})$. Inoltre $\forall x \in G_{1},\,\forall x_{2} \in G_{2}$, il simmetrico di $(x_{1},x_{2})$ è $(\bar{x}_{1},\bar{x}_{2})$, essendo $\bar{x}_{1}$ e $\bar{x}_{2}$ i simmetrici nei rispettivi gruppi.
+
+*Dimostrazione*:
+fatti i conti lol.
+
+*Proposizione*:
+Il gruppo prodotto diretto $(G_{1},G_{2},*_{1}\times*_{2})$ è abeliano se e solo se lo sono anche i fattori diretti.
+
+*Dimostrazione*:
+Conti
+
+*Proposizione*:
+$(A_{1}\times A_{2},+_{1}\times+_{2},\cdot_{1}\times \cdot_{2})$ è un anello.
+
+*Proposizione*:
+Vale la proposizione analoga per la commutatività del prodotto nel prodotto diretto di anelli.
+
+*Teorema*(Teorema Cinese del Resto II formulazione):
+Siano $m,n\in \mathbb{Z}$ positivi e coprimi. Allora gli anelli $\mathbb{Z}_n\times \mathbb{Z}_m$ e $\mathbb{Z}_{nm}$ sono isomorfi.
+
+*Dimostrazione*:
+Sia $\varphi:\mathbb{Z}_{nm}\to \mathbb{Z}_n\times \mathbb{Z}_m$ ponendo, per ogni $a\in \mathbb{Z}$, $\varphi([a]_{mn})=([a]_{n},[a]_{m})$. Questa applicazione è ben definita, infatti, se $a,a'\in \mathbb{Z}$ sono tali che $[a]_{mn}=[a']_{mn}$, allora $mn$ divide $a-a'$, quindi $n$ divide $a-a'$, ed $m$ divide $a-a'$, ossia $[a]_{n}=[a']_{n}$ e $[a]_{m}=[a']_{m}$ cioè $([a]_{n},[a]_{n})=([a']_{n},[a']_{m})$. Inoltre $\varphi$ è un omomorfismo di anelli, infatti, per ogni $a,b\in \mathbb{Z}$:
+$$
+\varphi([a]_{nm}+[b]_{nm})=\varphi([a+b]_{nm})=([a+b]_{n},[a+b]_{m})=([a]_{n}+[b]_{n},[a]_{m}+[b]_{m})=
+$$
+$$
+= ([a]_{n},[a]_{m})+([b]_{n},[b_{m}])= \varphi([a]_{nm})+\varphi([b]_{nm}).
+$$
+Analogamente si prova che:
+$$
+\varphi([a]_{nm}[b]_{nm})=\varphi([a]_{nm})\varphi([b]_{nm}).
+$$
+L'omomorfismo $\varphi$ è anche iniettivo: infatti per ogni $a\in \mathbb{Z}$, $[a]_{nm}\in Ker\varphi \iff([a]_{n},[a]_{m})=([0]_{n},[0]_{m})\iff n$ divide $a$ ed $m$ divide $a \iff nm$ divide $a \iff[a]_{nm}=[0]_{nm}$. $\varphi$ quindi è un omomorfismo iniettivo tra due insiemi della stessa cardinalità, quindi è un isomorfismo $\blacksquare$.
+
+**Elementi periodici, teoremi di Lagrange, Euler e Fermat. Gruppi Ciclici**
+
+*Definizione*:
+Sia $(G,+)$ un gruppo additivo. Sia $g\in G$. Per ogni $n\in \mathbb{Z}$ si pone:$$
+ng=\begin{cases}
+0&\text{se } n=0 \\
+g+\cdots+g& \text{se } n>0 \\
+-((-n)g)& \text{se } n<0
+\end{cases}
+$$
+Tale elemento si dice $n-esimo$ multiplo di $g$. Il numero $n$ si dice fattore del multiplo.
+
+*Proposizione*:
+Sia $(G,+)$ un gruppo additivo. Allora:
+1. $\forall g\in G,$ ed ogni $n\in \mathbb{Z}$, $(-n)g=-(ng)$
+2. $\forall n\in \mathbb{Z}$, $n0_{G}=0_{G}$
+3. $\forall g\in G$, ed ogni $n,m\in \mathbb{Z}$
+	$i)\,(n+m)g=ng+mg$
+	$ii)\, n(mg)=(nm)g$
+4. $\forall g,h\in G$ tali che $g+h=h+g$, e per ogni $n\in \mathbb{Z}$, si ha $n(g+h)=ng+nh$.
+
+*Definizione*:
+Sia $(G,\cdot)$ un gruppo moltiplicativo. Sia $g\in G$. Per ogni $n\in \mathbb{Z}$, si pone $$
+g^{n}=\begin{cases}
+1_{G}&\text{se }n=0 \\
+g\cdots g&\text{se }n>0 \\
+(g^{-n})^{-1}&\text{se }n<0
+\end{cases}
+$$
+Tale elemento si dice $n-esima$ potenza di $g$. Il numero $n$ si dice esponente della potenza.
+
+*Proposizione*:
+Sia $(G,\cdot)$ un gruppo moltiplicativo. Allora: 
+1. $\forall g\in G,$ ed ogni $n\in \mathbb{Z}$, $g^{-n}=(g^{n})^{-1}$
+2. $\forall n\in \mathbb{Z},\, 1_{G}^{n}=1_{G}$
+3. $\forall g\in G$, ed ogni $n,m\in \mathbb{Z}$,
+	$i)\, g^{n+m}=g^{n}g^{m}$
+	$ii)\,(g^{n})^{m}=g^{nm}$
+4. $\forall g,h\in G$ tali che $gh=hg$, e $\forall n\in \mathbb{Z}$, si ha $(gh)^{n}=g^{n}h^{n}$.
+
+*Definizione*:
+Sia $(G,+)$ un gruppo additivo. Sia $g\in G$. Allora $g$ si dice aperiodico se, per ogni $n\in \mathbb{Z}$ $$
+ng=0 \implies n=0
+$$
+Altrimenti si dice periodico
+
+*Definizione*:
+Sia $(G,\cdot)$ un gruppo moltiplicativo. Sia $g\in G$. Allora $g$ si dice aperiodico se, per ogni $n\in \mathbb{Z}$ $$
+g^{n}=1 \implies n=0
+$$
+altrimenti $g$ si dice periodico.
+
+*Lemma*:
+Sia $(G,+)$ un gruppo additivo. Sia $g$ un elemento periodico. Allora esiste un intero positivo $n$ tale che $ng=0$.
+
+Sia $(G,\cdot)$ un gruppo moltiplicativo. Sia $g$ un elemento periodico. Allora esiste un intero positivo $n$ tale che $g^{n}=1$
+
+*Dimostrazione*(Del caso additivo):
+Essendo $g$ periodico esiste un numero $n\in \mathbb{Z}$ tale che $ng=0$. Se $n>0$ la tesi è provata. Se $n<0$, allora $(-n)g=-(ng)=-0=0$ . Essendo $-n>0$ la tesi è dimostrata $\blacksquare$.
+
+*Definizione*:
+Sia $(G,+)$ un gruppo additivo. Sia $g$ un elemento periodico. Si dice periodo di $g$ il numero $$
+o(g)=\min\left\{ n\in \mathbb{Z},n>0|\, ng=0 \right\} 
+$$
+Vale l'analogo per i gruppi moltiplicativi.
+
+*Proposizione* (Caratterizzazione del periodo):
+Sia $(G,+)$ un gruppo additivo. Sia $g$ un elemento periodico. Allora, per ogni $n\in \mathbb{Z}$ $$
+ng=0 \iff o(g)|n
+$$
+Vale l'analogo per i gruppi moltiplicativi
+
+*Dimostrazione*(Caso additivo):
+Sia $n\in \mathbb{Z}$ e siano $q,r\in \mathbb{Z}$ rispettivamente quoziente e resto della divisione euclidea di $n$ per $o(g)$. Allora: $$
+ng=(o(g)q+r)g=(o(g)q)g + rg= (qo(g))g + rg= q(o(g)g)+rg =rg
+$$
+Ora, se $rg=0$, allora, essendo $r<o(g)$, $r$ non può essere positivo, e dunque $r=0$. in tal caso $o(g)|n$. Viceversa se $o(g)|n$, allora $r=0$, e quindi, $rg=0\,\blacksquare$.

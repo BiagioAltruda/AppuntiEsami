@@ -909,3 +909,199 @@ Sia $a\in \mathbb{R},\, a>0$. Allora valgono le seguenti proprietà:
 Siano $a,b\in \mathbb{R},\,a,b>0,\, a\neq 1$. Si chiama logaritmo di base $a$ ed argomento $b$ il numero reale denotato con $\log_{a}b$ definito nel seguente modo: $$
 x=\log_{a}b \in \mathbb{R} \text{ tale che } a^{x}=b.
 $$
+----------
+
+*Definizione*:
+Siano $X,Y$ insiemi, $X,Y\neq \emptyset$. Sia $R\subset X\times Y$. Si dice che $R$ è una relazione funzionale tra $X$ ed $Y$ se: $$
+\forall x \in X,\, \exists! y\in Y \text{ tale che } (x,y)\in R.
+$$
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Si dice che $f$ è una funzione da $X$ in $Y$, se $f$ è una terna ordinata della forma: $$
+f=(X,Y,R)
+$$
+dove $R$ è una relazione funzionale da $X$ in $Y$.
+
+*Notazione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f=(X,Y,R)$ una funzione con $R\subset X\times Y$ una relazione funzionale. Tale $f$ si denota anche con il simbolo: $$
+f:X\to Y
+$$
+la legge che $\forall x \in X$ associa l'unico $y\in Y$ tale che $f(x)=y$, ossia $(x,y)\in R$.
+con $R$ una relazione funzionale tra $X$ ed $Y$.
+
+Si chiama valore immagine di $x$ tramite $f$ e si denota con $f(x)$, l'unico $y\in Y$ tale che $y=f(x)$.
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Si chiama dominio o campo di esistenza di $f$ l'insieme $X$.  Si chiama insieme di arrivo di $f$ l'insieme $Y$. 
+
+*Definizione*:
+Si chiama insieme immagine di $f:X\to Y$ e si denota con $f(X)$, l'insieme: $$
+f(X)=\left\{ y\in Y|\, \exists x \in X:\, f(x)=y \right\}.
+$$
+Denotata con $R_{f}$ la relazione funzionale associata ad $f$, si ha che 
+$$f(X)=\left\{ y\in Y|\,\exists x \in X:\, (x,y)\in R_{f} \right\}.$$
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Si chiama grafico di $f$ insieme: $$
+G_{f}=\left\{ (x,y)\in X\times Y|\, y=f(x) \right\}=\left\{ (x,f(x))|\, x\in X \right\}\subset X\times Y .
+$$
+*Esempi*:
+Sia $X$, un insieme non vuoto. Si chiama relazione diagonale: $$
+\Delta_{X}=\left\{ (x,y)\in X\times X|\, y=x \right\}.
+$$
+Si chiama funzione identica la terna ordinata $i_{x}=(X,X,\Delta_{X})$.
+Tale $i_{X}$ si può denotare con il simbolo: $$
+i_{x}:X\to X
+$$
+$\forall x \in X\, \exists! y\in Y$ tale che $y=i_{x}(x)=x$.
+Ulteriormente si scrive $$i_{X}:x \in X \rightarrowtail i_{X}(x)=x,\qquad \forall x \in X.$$
+
+
+Sia $X$ insieme non vuoto. Sia $Y$ un insieme non vuoto. Sia anche $c\in Y$.
+Si chiama funzione costante di valore $c$ la terna ordinata $f=(X,Y,R)$ dove $$
+R\subset X \times Y,\qquad x \in X|\, \exists! y \in Y,\, y=c\text{ tale che }(x,y)\in R.
+$$
+è una legge che ad ogni $x \in X$ associa univocamente il valore $c\in Y$. $$
+f:X\to Y
+$$
+$$
+\forall x \in X,\, f(x)=c
+$$
+
+
+Siano $X$ insiemi non vuoto. Sia $A\subset X$, $A\neq \emptyset$. Si chiama funzione ingezione canonica di $A$ in $X$ e si denota $$j_{A}:A\to X$$
+la funzione che $\forall x \in A$ associa $j_{A}(x)=x$.
+Pertanto $$j_{A}:A\to X$$
+$$
+j_{A}: x \in A \rightarrowtail j_{A}(x)=x \in X
+$$
+Inoltre $j_{A}=(A,X,R)$ dove la relazione funzionale $R=\left\{ (x,y)\in A\times X| y= j_{A}(x)=x\right\}$.
+
+*Osservazione*:
+Siano $X_{1},X_{2},Y_{1},Y_{2}$ insiemi non vuoti. Siano $f_{1}=(X_{1},Y_{1},R_{1})$ e $f_{2}=(X_{2},Y_{2},R_{2})$ due funzioni. Si dice che $f_{1}=f_{2}$ se e solo se $X_{1}=X_{2},\,Y_{1}=Y_{2},\,R_{1}=R_{2}$.
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Sia $A\subset X$. Si chiama immagine diretta di $A$ tramite $f$, l'insieme: $$
+f(A)=\left\{ y\in Y| \,\exists x \in A: y=f(x) \right\}.
+$$
+*Proposizione*:
+Siano $X,Y$ insiemi non vuoti. Siano $A,B\subset X$. Sia anche $f:X\to Y$ una funzione. Allora risultano vere le seguenti proprietà:
+1. $f(A)=\emptyset \iff A=\emptyset$.
+2. $A\subset B \implies f(A)\subset f(B)\subset f(X)$.
+3. $f(A\cup B)=f(A)\cup f(B)$.
+4. $f(A\cap B)\subset f(A)\cap f(B)$.
+
+*Osservazione*:
+nella proprietà $4)$ non vale in generale l'uguaglianza, per mostrarlo cerchiamo un controesempio. Allora se $A\cap B=\emptyset$ sia $f:X\to Y$ la funzione che vale costantemente $c.$ Ma allora $f(A)\cap f(B)=\left\{ c \right\}\neq f(A\cap B)=\emptyset\,\blacksquare$.
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Consideriamo $C\subset Y$.
+Si chiama immagine reciproca di $C$ tramite $f$ l'insieme: $$
+f^{-1}(C)=\left\{ x \in X|f(x)\in C \right\}.
+$$
+*Proposizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Siano anche $C,D\subset Y$. Allora valgono le seguenti proprietà:
+1. $f^{-1}(C)\neq \emptyset \iff C \cap f(X)\neq \emptyset$
+2. $C\subset D \implies f^{-1}(C)\subset f^{-1}D$
+3. $f^{-1}(C\cup D)=f^{-1}(C)\cup f^{-1}(D)$
+4. $f^{-1}(C\cap D)=f^{-1}(C)\cap f^{-1}(D)$.
+5. $f^{-1}(Y\setminus C)=f^{-1}(\mathcal{C}_{Y}(C))=\mathcal{C}_{X}(f^{-1}(C))=X\setminus f^{-1}(C)$.
+
+
+*Esempi*:
+Sia $X$ insieme non vuoto. Sia $A\subset X$ non vuoto. Sia $\bar{x}\in X$. Sia $j_{A}:A \to X$ l'ingezione canonica di $A$. Poniamo $C=\left\{ \bar{x} \right\}$. Calcoliamo $j_{A}^{-1}(C)$. Risulta che $$
+j_{A}^{-1}(C)=\begin{cases}
+\left\{ \bar{x} \right\} &\text{ se }\bar{x}\in A, \\
+\emptyset & \text{se }\bar{x}\not\in A.
+\end{cases}
+$$
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ di costante valore $c\in Y$. Sia $B\subset Y$. Allora $$
+f^{-1}(B)=\begin{cases}
+X&\text{se }c\in B, \\
+\emptyset &\text{se } c\not\in B.
+\end{cases}
+$$
+*Proposizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Allora valgono le seguenti proprietà:
+1. Se $A\subset X$, allora $A\subset f^{-1}(f(A))$,
+2. Se $B\subset Y$, allora $f(f^{-1}(B))\subset B$.
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Si dice che $f$ è iniettiva o ingettiva, se: $$
+\forall x_{1},x_{2}\in X,\, f(x_{1})=f(x_{2})\implies x_{1}=x_{2}.
+$$
+Equivalentemente $f$ si dice ingettiva se: $$
+\forall x_{1},x_{2}\in X,\, x_{1}\neq x_{2}\implies f(x_{1})\neq f(x_{2}).
+$$
+
+*Osservazione*:
+$$f \text{ è ingettiva} \iff \forall y\in Y: f^{-1}(y)=\begin{cases}
+\emptyset \\
+\exists! x \in X: f(x)=y.
+\end{cases}$$
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. $f$ si dice surgettiva se:
+$$
+f(X)=Y
+$$
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. $f$ si dice bigettiva o invertibile se $f$ è sia ingettiva che surgettiva.
+
+*Proposizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione. Allora vale: 
+$f$ bigettiva $\iff$ $\forall y\in Y\,\exists! x \in X$ tale che $y=f(x)$.
+
+*Dimostrazione*:
+$(\implies)$. Assumiamo $f$ è bigettiva, dobbiamo dimostrare che $\forall y\in Y\,\exists! x \in X$ tale che $y=f(x)$. Sia $y\in Y$. Essendo $f$ surgettiva, si ha $y=f(x)$, da cui $y\in f(X)$. Pertanto $\exists x \in X$ tale che $y=f(x)$. Poiché $f$ è ingettiva tale $x \in X$ è unico. Infatti se fosse che $\exists x_{1}\in X$ tale che $f(x_{1})=y$ allora $f(x)=y=f(x_{1})$, da cui per l'ingettività $x_{1}=x\,\blacksquare.$
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Sia $f:X\to Y$ una funzione bigettiva. Si dice funzione inversa di $f$, e si denota col simbolo $f^{-1}$, la funzione da $Y$ a $X$ tale che $$
+\forall y \in Y \text{ associa l'unico }x \in X: f(x)=y.
+$$
+Pertanto $f^{-1}:Y\to X$. $f^{-1}(y)\to x \in X$ tale che $f(x)=y$.
+Scriveremo $f^{-1}(y)=x \iff f(x)=y$.
+
+*Definizione*:
+Siano $X,Y,Z$ insiemi non vuoti. Sia $f:X\to Y$ e sia $g:Y\to Z$, due funzioni.
+Si chiama funzione composta di $f$ e $g$ la funzione denotata col simbolo $g\circ f$, definita come: $$
+\forall x \in X,\, (g\circ f)(x)=g(f(x))
+$$
+è quindi una funzione da $X\to Z$.
+
+*Osservazione*:
+Se $X,Y,Z$ sono insiemi non vuoti, e $W$ insieme non vuoto, se $f:X\to W$, $g:Y\to Z$ e si ha che $f(X)\subset Y$ allora si può ancora definire la composizione $g\circ f$. E rispetta la stessa relazione funzionale. E risulta definita come prima, ovvero: $$
+\forall x \in X,\, (g\circ f)(x)=g(f(x)).
+$$
+*Proposizione*:
+Siano $X,Y$ insiemi non vuoti. Allora si ha che $$
+f \text{ è bigettiva allora}: \begin{cases}
+f\circ f^{-1}=i_{Y} \\
+f^{-1}\circ f = i_{X}.
+\end{cases}
+$$
+
+*Teorema*:
+Siano $X,Y$ insiemi non vuoti. Siano $f:X\to Y$ e $g:Y\to Z$ bigettive. Allora la funzione $g\circ f:X\to Z$ è invertibile e si ha: $$
+(g\circ f)^{-1}:Z\to X,\qquad (g\circ f)^{-1}=f^{-1}\circ g^{-1}
+$$
+
+*Proposizione*:
+Siano $X,Y$ insiemi non vuoti. Siano $f:X\to Y$ una funzione. Allora sono fatti equivalenti:
+1. $f$ è ingettiva
+2. $\forall A\subset X:\, A=f^{-1}(f(A))$.
+E anche 
+1. $f$ è surgettiva
+2. $\forall B\subset Y:\, B=f(f^{-1}(B))$.
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Si dice che $X$ e $Y$ sono equipotenti se: $$
+\exists f:X\to Y \text{ una funzione}
+$$ tale che $f$ è bigettiva.
+In tal caso si dice che $X$ e $Y$ hanno la stessa cardinalità, e si scrive, $card(X)=card(Y)$. (O anche $|X|=|Y|$) 
+
+*Definizione*:
+Siano $X,Y$ insiemi non vuoti. Si dice che $X$ ha cardinalità minore o uguale a $Y$ se $$
+\exists f:X\to Y \text{ una funzione}
+$$
+tale che $f$ è ingettiva. E si scrive $|X|\leq|Y|$.

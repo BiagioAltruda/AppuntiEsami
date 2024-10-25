@@ -718,7 +718,7 @@ Esisto spazi vettoriali che non sono finitamente generati, ad esempio $\mathbb{R
 Sia $V$ uno spazio vettoriale sul campo $\mathbb{F}$. $\mathcal{B}=(v_{1},\dots,v_{n})$ base di $V$, e $w_{1},\dots,w_{p}$ vettori linearmente indipendenti in $V$, con $p\leq n$. Allora $\exists \#n-p$ vettori di $\mathcal{B}$ che uniti a $w_{1},\dots,w_{p}$ formano una base.
 
 *Dimostrazione*:
-Per induzione su $p$. Caso $p=1$, sia $w_{1}$ è indipendente cioè $w_{1}$ è non nullo. Essendo $\mathcal{B}$ una base, $\exists! \alpha_{1},\dots,\alpha_{n}\in \mathbb{F}$ tali che $w_{1}=\alpha_{1}v_{1}+\dots+\alpha_{n}v_{n}$. Poiché $w_{1}\neq \underline{0}$, allora gli $\alpha_{i}$ non sono tutti nulli. A meno di riordinare, suppongo che $\alpha_{1}\neq 0$. Ma allora $v_{1}=\frac{1}{\alpha_{1}}\left( w_{1}-\sum_{i=2}^{n}\alpha_{i}v_{i} \right)\in Span(w_{1},v_{2},\dots,v_{n})$ e quindi sono generatori.
+Per induzione su $p$. Caso $p=1$, sia $w_{1}$ è indipendente cioè $w_{1}$ è non nullo. Essendo $\mathcal{B}$ una base, $\exists! \alpha_{1},\dots,\alpha_{n}\in \mathbb{F}$ tali che $w_{1}=\alpha_{1}v_{1}+\dots+\alpha_{n}v_{n}$. Poiché $w_{1}\neq \underline{0}$, allora gli $\alpha_{i}$ non sono tutti nulli. A meno di riordinare, suppongo che $\alpha_{1}\neq 0$. Ma allora $v_{1}=\frac{1}{\alpha_{1}}\left( w_{1}-\sum\limits_{i=2}^{n}\alpha_{i}v_{i} \right)\in Span(w_{1},v_{2},\dots,v_{n})$ e quindi sono generatori.
 Basta dimostrare che sono indipendenti. Siano $\beta_{1},\dots,\beta_{n}\in \mathbb{F}$ tali che $$\beta_{1}w_{1}+\beta_{2}v_{2}+\dots+\beta_{n}v_{n}=\underline{0}\implies \beta_{1}(\alpha_{1}v_{1}+\dots+\alpha_{n}v_{n})+\beta_{2}v_{2}+\dots+\beta_{n}v_{n}.$$
 $$
 \beta_{1}\alpha_{1}v_{1}+\sum_{i=2}^{n}(\beta_{1}\alpha_{i}+\beta_{i})v_{i}=\underline{0} 
@@ -805,3 +805,96 @@ Ad esempio $\mathcal{B}=\left( \begin{pmatrix}1&0&0\\0&0&0\end{pmatrix} ,\begin{
 In $\mathbb{R}_{3}[t]$, allora $\dim\mathbb{R}_{d}[t]=d+1$. Dato che $\mathcal{B}=\left( t^{d},t^{d-1},\dots,t,1 \right)$, è una base.
 Ad esempio sia $\mathcal{B'}=\left( 1+t,2+t^{3},3t^{2},2+2t+6t^{2} \right)$. Non sono una base dato che $2+2t+6t^{2}= 2(3t^{2})+2(1+t)$.
 
+-------
+
+Sia $V$ spazio vettoriale sul campo $\mathbb{F}$. Siano $U,W\subset V$ sottospazi.
+
+$U\cap W=\left\{ v\in V|\,v\in U \text{ e } v\in W \right\}$.
+$U\cup W=\left\{ v\in V|\, v\in U\text{ o } v\in W \right\}$.
+
+*Lemma*:
+Se $U,W$ sono sottospazi di $V$. Allora $U\cap W$ è sottospazio vettoriale di $V$.
+
+*Dimostrazione*:
+$\underline{0}\in U$ e anche $\underline{0}\in W$ dato che $U$ e $W$ sono sottospazi. Allora $0\in U\cap W$. Quindi l'intersezione è non vuota. Siano ora, $v_{1},v_{2}\in U\cap W,\, \alpha_{1},\alpha_{2}\in \mathbb{F}$. Mi chiedo se $\alpha_{1}v_{1}+\alpha_{2}v_{2}\in U\cap W$. Ma poiché $v_{1},v_{2}\in U\cap W$, allora $v_{1},v_{2}\in U$ e anche $v_{1},v_{2}\in W$. $U$ e $W$ sono sottospazi, allora $\alpha_{1}v_{1}+\alpha_{2}v_{2}\in U$ e anche $\alpha_{1}v_{1}+\alpha_{2}v_{2}\in W$. Quindi l'intersezione di due sottospazi è chiusa per combinazioni lineare. $U\cap W$ è quindi un sottospazio di $V\,\blacksquare$.
+
+*Osservazione*:
+L'unione di due sottospazi vettoriali, generalmente, non è un sottospazio vettoriale. (Lo è se uno è sottospazio dell'altro, e l'unione coincide con il sottospazio più grande).
+
+*Definizione*:
+Siano $U$ e $W$ sottospazi di $V$ spazio vettoriale sul campo $\mathbb{F}$. Definiamo l'insieme somma di $U$ e $W$ come:
+$$
+U+W=\left\{ v\in V|\,\exists u\in U,\,\exists w\in W:\, v=u+w \right\} =\left\{ u+w|\, u\in U,\, w\in W \right\}.
+$$
+*Proposizione*:
+Siano $U,W\subset V$ sottospazi. Allora valgono:
+1. $U \subset U+W,\, W\subset U+W$
+2. $U+W$ è sottospazio vettoriale
+3. Se $H\subset V$ sottospazio tale che $U\subset H$ e $W\subset H$, allora $U+W\subseteq H$.
+
+*Dimostrazione*:
+1. Sia $u\in U$, va mostrato che $u\in U+W$. Ma $u=u+\underline{0}$ e $\underline{0}\in W$ dato che è sottospazio. Cioè $u\in U+W$. Vale l'analogo risultato per $w\in W$.
+2. Poiché $U+W$ contiene $U$ e $W$, non vuoti, allora $U+W$ è non vuoto. Siano ora $v_{1},v_{2}\in U+W,\, \alpha_{1},\alpha_{2}\in \mathbb{F}$. Poiché $v_{1},v_{2}\in U+W\, \exists u_{1},u_{2}\in U,\,w_{1},w_{2}\in W$ tali che $v_{1}=u_{1}+w_{1},\, v_{2}=u_{2}+w_{2}$. Ma allora $$\alpha_{1}v_{1}+\alpha_{2}v_{2}=\alpha_{1}(u_{1}+w_{1})+\alpha_{2}(u_{2}+w_{2})=(\alpha_{1}u_{1}+\alpha_{2}u_{2})+ (\alpha_{1}w_{1}+\alpha_{2}w_{2})\in U+W.$$
+3. Sia $H$ sottospazio come richiesto. Sia ora $v\in U+W$.. Allora $\exists u\in U,\,\exists w\in W$ tali che $v=u+w$. In particolare sia $u$ che $w$ sono in $H$, essendo $H$ sottospazio vettoriale, è chiuso per combinazioni lineari. Quindi $u+w\in H\,\blacksquare$.
+
+*Esempi*:
+In $\mathbb{R}^{4}$. 
+$U=Span\left(\begin{pmatrix}1\\2\\0\\3\end{pmatrix},\begin{pmatrix}0\\3\\1\\1\end{pmatrix}\right),\,W=Span\left( \begin{pmatrix}4\\0\\0\\1\end{pmatrix},\,\begin{pmatrix}1\\0\\-1\\0\end{pmatrix} \right)$.
+$U+W=\left\{ u+w|\, u\in U,\,w\in W \right\}$.
+Ma $u=\alpha_{1}\begin{pmatrix}1\\2\\0\\0\end{pmatrix}+\alpha_{2}\begin{pmatrix}0\\3\\1\\1\end{pmatrix}$, e $w=\beta_{1}\begin{pmatrix}4\\0\\0\\1\end{pmatrix}+\beta_{2}\begin{pmatrix}1\\0\\-1\\0\end{pmatrix}$.
+$u+w=\alpha_{1}\begin{pmatrix}1\\2\\0\\0\end{pmatrix}+\alpha_{2}\begin{pmatrix}0\\3\\1\\1\end{pmatrix}+\beta_{1}\begin{pmatrix}4\\0\\0\\1\end{pmatrix}+\beta_{2}\begin{pmatrix}1\\0\\-1\\0\end{pmatrix}$.
+
+In $\mathbb{R}_{4}[t]$.
+$U=Span\left( (1+t^{2}), 3t^{3},2t \right)$, $W=Span\left( t^{4},-t,3 \right)$.
+$U+W=\left\{ p(t)\in \mathbb{R}_{4}[t]|\, p(t)=\alpha_{1}(1+t^{2})+\alpha_{2}(3t^{3})+\alpha_{3}(2t)+\beta_{1}(t^{4})+\beta_{2}(-t)+\beta_{3}(-3), \alpha_{i},\beta_{j}\in \mathbb{R} \right\}$.
+$p(t)=\beta_{1}t^{4}+3\alpha_{2}t^{3}+\alpha_{1}t^{2}+(2\alpha_{3})-\beta_{2})t+(\alpha_{1}+\beta_{3})$ con $\alpha_{i},\beta_{j}\in \mathbb{R}$.
+
+*Lemma*:
+Siano $U,W\subset V$. Siano $\mathcal{B}_{U}$ sistema di generatori per $U$, $\mathcal{B}_{W}$ sistema di generatori per $W$. Allora $\mathcal{B}_{U}\cup \mathcal{B}_{W}$ è un sistema di generatori per $U+W$.
+
+*Dimostrazione*:
+Siano $\mathcal{B}_{U}=\left\{ u_{1},\dots,u_{p} \right\}$, $\mathcal{B}_{W}=\left\{ w_{1},\dots,w_{s} \right\}$. Sia ora, $v\in U+W$, devo dimostrare che $v$ è combinazione lineare di $u_{1},\dots,u_{p},w_{1},\dots,w_{s}$. Essendo $v\in U+W$, $v=u+w,\,u\in U$ e $w\in W.$ Allora $u=\sum\limits_{i=1}^{p}\alpha_{i}u_{i}$ e $w=\sum\limits_{i=j}^{s}\beta_{j}w_{j}$, con $\alpha_{i},\beta_{j}\in \mathbb{F}$. Quindi: $$
+v=\sum_{i=1}^{p} \alpha_{i}u_{i} +\sum_{j=1}^{s} \beta_{j}w_{j}
+$$
+Quindi $v$ è combinazione lineare dei vettori $u_{i}$ e $w_{j}$. Quindi $\mathcal{B}_{U}\cup\mathcal{B}_{W}$ sono un sistema di generatori per $U+W\,\blacksquare$.
+
+*Teorema*(Formula di Grassmann):
+Sia $U,W\subset V$ sottospazi vettoriali di $V$ spazio vettoriale sul campo $\mathbb{F}$. Allora $$
+\dim U + \dim W= \dim(U+W) +\dim (U\cap W)
+$$
+*Definizione*:
+Siano $U,W\subset V$ sottospazi vettoriali, tali che $U\cap W=\left\{ \underline{0} \right\}$, ovvero, $\dim(U\cap W)=0$. Allora, diremo che $U$ e $W$ sono in somma diretta e si denota con $U\oplus W$.
+Inoltre se $U\oplus W=V$, allora $U$ e $W$ si dicono supplementari.
+
+*Dimostrazione*(Del teorema):
+Sia $p=\dim (U\cap W)$.
+Caso $p=0$.
+Ovvero $U\cap W=\left\{ \underline{0} \right\}$. Siano $\mathcal{B}_{U}=\left( u_{1},\dots,u_{k} \right)$, $\mathcal{B}_{W}=\left( w_{1},\dots,w_{h} \right)$. Dimostriamo che $\mathcal{B}_{U}\cup \mathcal{B}_{W}$ è base di $U+W$. Poiché $\mathcal{B}_{U}$ e $\mathcal{B}_{W}$ sono basi, vale la proposizione precedente, cioè sono generatori. Allora $\mathcal{B}_{U}\cup \mathcal{B}_{W}$ è un sistema di generatori per $U+W$. Resta da dimostrare che $\mathcal{B}_{U}\cup \mathcal{B}_{W}$ sono indipendenti.
+Considero l'equazione: $\sum\limits_{i=1}^{k}\alpha_{i}u_{i}+\sum\limits_{j=1}^{h}\beta_{j}w_{j}= \underline{0}$.
+$$
+\implies \sum\limits_{i=1}^{k} \alpha_{i}u_{i}=-\sum\limits_{j=1}^{h} \beta_{j}w_{j}.
+$$
+Essendo la prima somma un elemento di $U$ e la seconda elemento di $W$, essendo uguali tra di loro si ha che appartengono a $U\cap W=\left\{ \underline{0} \right\}$. Quindi $$
+\sum\limits_{i=1}^{k} \alpha_{i}u_{i}=\sum\limits_{j=1}^{h} \beta_{j}w_{j}=\underline{0}.
+$$
+Poiché $\mathcal{B}_{U}$ e $\mathcal{B}_{W}$ sono basi, gli $u_{i}$ sono indipendenti e allora $\forall i,\, \alpha_{i}=0$. Vale l'analogo per i $\beta_{j}$. Ovvero che $\mathcal{B}_{U}\cup \mathcal{B}_{W}$ sono indipendenti, e quindi una base della somma $U+W$. Allora $\dim(U+W)=k+h=\dim(U)+\dim(W)$.
+Caso $p>0$.
+Se e solo se $\exists \mathcal{B}=\left(v_{1},\dots,v_{p} \right)$ base di $U\cap W$. Ma $U\cap W\subset U \wedge U\cap W\subset W$. Per il teorema di completamento Posso estendere $\mathcal{B}$ ad una base $\mathcal{B}_{U}$ di $U$ e $\mathcal{B}_{W}$ di $W$.
+$\mathcal{B}_{U}=\left\{ v_{1},\dots,v_{p},u_{1},\dots,u_{k} \right\}$, $\mathcal{\mathcal{B}_{W}=\left\{ v_{1},\dots,v_{p},w_{1},\dots,w_{h} \right\}}$. Allora $\mathcal{B}_{U}\cup \mathcal{B}_{W}$ genera $U+W$. Considero $\mathcal{B'}=\left\{ v_{1},\dots,v_{p},u_{1},\dots,u_{k},w_{1},\dots,w_{h} \right\}$. Se dimostro che $\mathcal{B'}$ è base di $U+W$ allora $\dim(U+W)=p+k+h=(p+k)+(p+h)-p=\dim(U)+\dim(W)-\dim(U\cap W)$.
+Dimostro l'indipendenza degli elementi di $\mathcal{B'}$. $$
+\sum\limits_{s=1}^{p}\gamma_{s}v_{s}+\sum\limits_{i=1}^{k} \alpha_{i}u_{i}+\sum\limits_{j=1}^{h} \beta_{j}w_{j}=\underline{0} \iff
+$$
+$$
+\iff \sum\limits_{s=1}^{p}\gamma_{s}v_{s}+\sum\limits_{i=1}^{k} \alpha_{i}u_{i}=-\sum\limits_{j=1}^{h} \beta_{j}w_{j}.
+$$
+Dove a sinistra ho un elemento di $U$ e a destra uno di $W$. Quindi entrambi appartengono all'intersezione $U\cap W$. Ma quindi $$
+-\sum\limits_{j=1}^{h} \beta_{j}w_{j}\in U\cap W =Span\{v_{1},\dots,v_{p}\}.
+$$
+Che equivale a $$
+\exists \delta_{1},\dots,\delta_{p} \text{ tali che: } -\sum\limits_{j=1}^{h} \beta_{j}w_{j}=\sum\limits_{t=1}^{p} \delta_{t}v_{t} \iff
+$$
+$$
+\iff \sum\limits_{t=1}^{p} \delta_{t}v_{t}+\sum\limits_{j=1}^{h} b_{j}w_{j}=\underline{0}.
+$$
+Ma $v_{1},\dots,v_{p},w_{1},\dots,w_{h}$ sono indipendenti allora $\forall t,j\, \delta_{t}=\beta_{j}=0$. Che implica $$ \sum\limits_{s=1}^{p}\gamma_{s}v_{s}+\sum\limits_{i=1}^{k} \alpha_{i}u_{i}=\underline{0}.$$
+Come prima $v_{1},\dots,v_{p},u_{1},\dots,u_{k}$ sono indipendenti, allora $\forall s,i,\, \gamma_{s}=\alpha_{i}=0\,\blacksquare$. 
