@@ -1260,3 +1260,140 @@ Sia $n\in \mathbb{Z}$ e siano $q,r\in \mathbb{Z}$ rispettivamente quoziente e re
 ng=(o(g)q+r)g=(o(g)q)g + rg= (qo(g))g + rg= q(o(g)g)+rg =rg
 $$
 Ora, se $rg=0$, allora, essendo $r<o(g)$, $r$ non può essere positivo, e dunque $r=0$. in tal caso $o(g)|n$. Viceversa se $o(g)|n$, allora $r=0$, e quindi, $rg=0\,\blacksquare$.
+
+*Corollario*:
+Sia $(G,+)$ un gruppo additivo. Sia $g$ un elemento periodico. Allora, per ogni $m,n\in \mathbb{Z}$, $$
+ng=mg \text{ se e solo se } n\equiv m (\text{mod }o(g)).
+$$
+Vale l'analogo per $G$ moltiplicativo.
+
+*Dimostrazione*(Caso additivo):
+Sia $n,m\in \mathbb{Z}$. Allora, $$
+ng=mg\iff ng-mg=0 \iff (n-m)g=0 \iff o(g)|n-m \iff n\equiv m(\text{mod }o(g)).
+$$
+
+*Corollario*:
+Sia $(G,+)$ un gruppo additivo. Sia $g$ un elemento aperiodico. Allora, per ogni $m,n\in \mathbb{Z},$ $$
+ng=mg\iff n=m. \,\blacksquare
+$$
+Vale l'analogo per il caso moltiplicativo
+
+*Dimostrazione*(Caso additivo):
+Siano $m,n\in \mathbb{Z}$. Allora: $$
+ng=mg \iff ng-mg=0 \iff (n-m)g=0 \iff n-m=0\iff n=m.\, \blacksquare
+$$
+
+*Teorema*(Teorema di Lagrange per i gruppi abeliani finiti):
+Sia $G$ un gruppo abeliano finito, e sia $g\in G$. Allora $g$ è periodico, e $o(g)||G|$.
+
+*Dimostrazione*:
+Utilizzeremo la notazione moltiplicativa. Sia $s=|G|$, e sia $G=\left\{ a_{1},\dots,a_{s} \right\}$. Definiamo l'applicazione $\varphi:G\to G$ ponendo, per ogni $a\in G,\,\varphi(a)=ga$. Allora $\varphi$ è bigettiva, avendo come inversa l'applicazione $\psi:G\to G$ tale che per ogni $a\in G,\, \psi(a)=g^{-1}a$. Si ha dunque che $G=\mathrm{Im}\varphi=\left\{ \varphi(a_{1}),\dots,\varphi(a_{s}) \right\}=\left\{ ga_{1},\dots,ga_{s} \right\}$. Pertanto $a_{1}a_{2}\cdots a_{s}=(ga_{1})(ga_{2})\cdots (ga_{s})$. Per la proprietà associativa e commutativa si ha: $$
+a_{1}a_{2}\cdots a_{s}=g^{s}(a_{1}a_{2}\cdots a_{s}).
+$$
+Ottenendo quindi $g^{s}=1$, e quindi essendo $s>0$, g è periodico. Concludiamo quindi che $o(g)|s=\lvert G \rvert\,\blacksquare$.
+
+*Osservazione*:
+Il teorema vale anche per i gruppi non abeliani.
+
+*Definizione*:
+Sia $n$ un numero intero positivo. Si dice funzione di Eulero (o funzione totiente) di $n$ il numero: $$
+\varphi(n)=\lvert \mathcal{U}(\mathbb{Z}_n) \rvert 
+$$
+Questo numero si può equivalentemente descrivere come: $$
+\varphi(n)=\left\{ a\in \mathbb{Z}|\,0\leq a\leq n-1:\, a\text{ è coprimo con }n \right\}. 
+$$
+
+*Teorema*(Di Eulero):
+Sia $n$ un numero intero positivo. Allora, per ogni intero $a$ tale che $(a,n)=1$. $$
+a^{\varphi(n)}\equiv1\, (\text{mod }n).
+$$
+
+*Dimostrazione*:
+Sia $a$ un intero tale che $(a,n)=1$. Allora, $[a]_{m}\in \mathcal{U}(\mathbb{Z}_n)$. Quindi, in base al teorema di Lagrange, $o([a]_{n})$ divide $\varphi(n)$. Pertanto: $$
+[a]_{n}^{\varphi(n)}=[1]_{n},
+$$
+dove il primo membro è uguale a $[a]_{n}^{\varphi(n)}$. Segue la tesi $\blacksquare$.
+
+*Teorema*(Piccolo teorema di Fermat):
+Sia $p$ un numero primo positivo. Allora, per ogni intero $a$, $$
+a^{p}\equiv a(\text{mod }p).
+$$
+*Dimostrazione*:
+Sia $a$ un intero. Se $p$ divide $a$, allora $p$ divide anche $a^{p}$, e quindi $a^{p}\equiv a\equiv 0 (\text{mod }n)$. Supponiamo che $p$ non divida $a$. Allora $(p,a)=1$, e dunque, per il teorema di Eulero, $a^{\varphi(p)}\equiv1(\text{mod }p)$. Ma $\mathbb{Z}_p$ è un campo, e quindi $\mathcal{U}(\mathbb{Z}_p)=\mathbb{Z}_p\setminus \left\{ [0]_{p} \right\}$. Pertanto $\varphi(p)=p-1$. Quindi $a^{p-1}\equiv 1 (\text{mod }p)$. Moltiplicando entrambi i membri per $a$ si ottiene la tesi $\blacksquare$.
+
+*Proposizione*(Sottogruppi ciclici):
+Sia $(G,+)$ un gruppo additivo. Sia $g$ un suo elemento. Allora $$
+\left< g \right>=\left\{ ng|\,n\in \mathbb{Z} \right\}  
+$$
+è un sottogruppo abeliano di $G$.
+Vale l'analogo per il caso moltiplicativo.
+
+Inoltre, ogni sottogruppo a cui appartiene $g$ contiene $\left< g \right>$. E anche, rispetto alla relazione di inclusione tra sottogruppi, $\left< g \right>$ è il più piccolo sottogruppo di $G$ a cui $g$ appartenga.
+
+*Dimostrazione*(Caso moltiplicativo):
+Verifichiamo che $\left< g \right>$ è un sottogruppo. $i\in \left< g \right>$ dato che $g^{0}=1\in \left< g \right>$, e quindi è non vuoto. Inoltre, per ogni $n,m\in \mathbb{Z}$, $g^{n}(g^{m})^{-1}=g^{n}g^{-m}=g^{n-m}\in \left< g \right>$, abbiamo quindi provato che $\left< g \right>$ è un sottogruppo. In particolare vale che, per ogni $n,m\in \mathbb{Z},\, g^{n}g^{m}=g^{n+m}=g^{m+n}=g^{m}g^{n}$. Ciò prova che $\left< g \right>$ è abeliano.
+Adesso, consideriamo $H<G$ un sottogruppo tale che $g\in H$. 
+allora $g^{0}=1\in H$ ed essendo $H$ chiuso per prodotto si ha che, per ogni intero positivo $n$, $g^{n}\in H$. Ne consegue anche che per ogni intero negativo $n$, $g^{n}=(g^{n})^{-1}\in H\,\blacksquare.$
+
+*Definizione*:
+Il gruppo $\left< g \right>$ è detto sottogruppo ciclico di $G$ generato $g$. Se $G=\left< g \right>$, il gruppo $G$ si dice ciclico.
+
+*Teorema*(Caratterizzazione dei gruppi ciclici):
+$(G,+)$ un gruppo additivo. Sia $g$ un suo elemento. Allora valgono: 
+1. Sia $g$ aperiodico. Allora l'applicazione $\varphi: \mathbb{Z}\to \left< g \right>$ definita, per ogni $a\in \mathbb{Z}$, da $\varphi(a)=ag$ è un isomorfismo.
+2. Sia $g$ periodico di periodi $m$. Allora l'applicazione $\varphi: \mathbb{Z}\to \left< g \right>$ definita, per ogni $a\in \mathbb{Z}$, da cui $\varphi([a]_{m})=ag$, è un isomorfismo di gruppo.
+
+*Dimostrazione*:
+1. L'applicazione $\varphi$ è suriettiva per definizione. Inoltre, per ogni $a,b\in \mathbb{Z}$, $$
+\varphi(a+b)=(a+b)g=ag+gb=\varphi(a)+\varphi(b),
+$$
+	che prova che $\varphi$ è un omomorfismo di gruppi. Infine, essendo $g$ aperiodico, per ogni $a\in \mathbb{Z}$ si ha $a\in Ker\varphi \implies ag=0 \implies a=g$, quindi $Ker\varphi=\left\{ 0 \right\}$. Ciò prova che l'omomorfismo $\varphi$ è anche iniettivo quindi è un isomorfismo.
+2. Proviamo che $\varphi$ è ben definita. Sia $a,a'\in \mathbb{Z}$ tali che $[a]_{m}=[a']_{m}$. Allora $m$ divide $a-a'$. Quindi $\varphi(a)=ag=a'g=\varphi(a')$. Quindi $\varphi$ è ben definita. Come nel caso precedente ci si accorge che $\varphi$ è un omomorfismo suriettivo. Inoltre, per ogni $a\in \mathbb{Z}$ si ha che $[a]_{m}\in Ker\varphi \iff ag=0\iff m$ divide $a\iff[a]_{m}=[0]_{m}$. Ciò prova l'iniettività. Quindi è un isomorfismo $\blacksquare$.
+
+Il teorema stabilisce che i gruppi ciclici sono essenzialmente dei due tipi enunciati nel seguente
+
+*Corollario*:
+1. Ogni gruppo ciclico generato da un elemento aperiodico è isomorfo a $(\mathbb{Z},+)$.
+2. Ogni gruppo ciclico generato da un elemento periodico di periodi $m$ è isomorfo a $(\mathbb{Z}_m,+)$.
+
+*Proposizione*:
+Siano $G_{1}$ e $G_{2}$ gruppi isomorfi. Allora, se $G_{1}$ è ciclico, lo è anche $G_{2}$. Precisamente, se $G_{1}=\left< g \right>$ e $\varphi:G_{1}\to G_{2}$ è un isomorfismo di gruppi, $G_{2}=\left< \varphi(g) \right>$.
+
+*Dimostrazione*:
+Utilizzeremo la notazione moltiplicativa. Essendo $\varphi(p)$ suriettivo, si ha $$
+G_{2}=\varphi(G_{1})=\left\{ \varphi(g^{n})|\,n\in \mathbb{Z} \right\}=\left\{ \varphi(g)^{n}|\,n\in \mathbb{Z} \right\}=\left< \varphi(g) \right>\,\blacksquare.   
+$$
+*Proposizione*(Ciclicità dei sottogruppi):
+Ogni sottogruppo di un gruppo ciclico è ciclico.
+
+*Dimostrazione*:
+Sia $G$ un gruppo moltiplicativo ciclico, generato dall'elemento $g$. Sia $H$ un sottogruppo di $G$. Se $H$ è il sottogruppo banale, allora è ciclico, generato dall'elemento neutro di $G$. Altrimenti l'insieme $\left\{ n\in \mathbb{Z},n>0|\, g^{n}\in H \right\}$ è non vuoto. Sia $t$ il suo minimo. Sia $h\in H$. Allora esiste un intero $s$ tale che $h=g^{s}$. Siano $q$ ed $r$ quoziente e resto della divisione euclidea di $s$ per $t$. Allora $g^{s}=(g^{t})^{q}g^{r}$, da cui $g^{r}=(g^{t})^{-q}g^{s}\in H$. Poiché $0\leq r<t$, dalla minimalità di $t$ segue che $r=0$. Allora $g^{s}=(g^{t})^{q}$. Ciò prova che $H\subset \left< g^{t} \right>$. Ma vale anche l'inclusione opposta. Quindi $H=\left< g^{t} \right>\,\blacksquare$.
+
+*Lemma*(Formula del periodo):
+Sia $G$ un gruppo moltiplicativo, e sia $g$ un suo elemento periodico. Allora, per ogni intero $k$, l'elemento $g^{k}$ è periodico e $$
+o(g^{k})=\frac{o(g)}{MCD(o(g),k)}.
+$$
+*Dimostrazione*:
+L'elemento $g^{k}$ è periodi in quanto elemento del gruppo ciclico, abeliano e finito $\left< g \right>$. Posto $d=MCD(o(g),k)$, siano $r,s$ interi tali che $o(g)=rd, k =sd$. Allora, i numeri $r,s$ sono coprimi. Sia $n$ ora un intero. Allora, $(g^{k})^{n}=g^{kn}=1$ se e solo se $o(g)$ divide $kn$, ossia se e solo se $rd$ divide $sdn$, se e solo se $r$ divide $sn$. Il che vale solo se $r$ divide $n$. Il più piccolo intero positivo $n$ verificante questa condizione è $r$ che per definizione è uguale a $\frac{o(g)}{MCD(o(g),k)}$. Questo è dunque il periodo di $g^{k}\,\blacksquare$.
+
+*Corollario*:
+Un gruppo ciclico finito di ordine $n$ possiede esattamente $\varphi(n)$ generatori.
+
+*Dimostrazione*:
+Sia $G$ un gruppo moltiplicativo finito, di ordine $n$, generato dall'elemento $g$, così che $o(g)=n$. Allora $G=\left\{ g^{k}|\,0\leq k\leq n-1 \right\}$. Sia $k$ un intero tale che $0\leq k\leq n-1$. L'elemento $g^{k}$ è un generatore di $G$ se e solo se il suo periodo è $n$. Ora, secondo il lemma precedente, si ha $o(g^{k})=n$ se e solo se $MCD(n,k)=1$. Il numero di valori $k$ verificanti tale condizione è pari a $\varphi(n)\,\blacksquare$.
+
+*Proposizione*(Sottogruppi di un gruppo ciclico finito):
+Sia $G$ un gruppo ciclico finito di ordine $n$. Allora, per ogni intero positivo $d$ che divide $n$ esiste uno ed un solo sottogruppo di $G$ avente ordine $d$.
+
+*Dimostrazione*:
+Sia $G$ moltiplicativo, e sia $g$ un suo generatore, di modo che $o(g)=n$. Sia $d$ un intero positivo che divide $n$. Allora, sempre per il lemma precedente: $$
+o\left( g^{\frac{n}{m}} \right)=\frac{n}{MCD\left( \frac{m,n}{d} \right)}=\frac{n}{\frac{n}{d}}=d,
+$$
+e quindi $H=\left< g^{\frac{n}{d}} \right>$ è un sottogruppo di $G$ avente ordine $d$. Sia ora $K$ un sottogruppo di $G$ avente ordine $d$. $K$ è sottogruppo di un gruppo ciclico, quindi è ciclico, esiste dunque un intero $s$ tale che $K=\left< g^{s} \right>$. Si ha che $MCD(n,s)=\frac{n}{d}$. In particolare $\frac{n}{d}$ divide $s$. Ciò implica che la congruenza lineare $\frac{n}{d}x\equiv s \,\,(\text{mod }n)$ ha soluzione. Chiamiamo $q$ una soluzione, si ha che $g^{s}=g^{\frac{n}{d}q}=(g^{\frac{n}{d}})^{q}\in H$. Ne consegue che $K=\left< g^{s} \right>\subset H$. Poiché $H$ e $K$ hanno entrambi lo stesso ordine $d$ si ha dunque $H=K$, che prova l'unicità del sottogruppo di ordine $d\,\blacksquare$.
+
+Possiamo dedurne una importante identità aritmetica riguardante la funzione di Eulero.
+
+*Corollario*(Decomposizione di un intero positivo):
+Sia $n$ un intero positivo. Allora $$
+\sum\limits_{d|n}\varphi(d)=n. 
+$$
