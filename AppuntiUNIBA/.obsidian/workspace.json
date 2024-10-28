@@ -11,12 +11,14 @@
             "id": "27dbe67e16988b1d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Geomtria1_24-10-24.pdf"
+                "file": "Analisi 1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Geomtria1_24-10-24"
+              "icon": "lucide-file",
+              "title": "Analisi 1"
             }
           }
         ]
@@ -163,15 +165,16 @@
   },
   "active": "27dbe67e16988b1d",
   "lastOpenFiles": [
-    "Informatica.md",
-    "Geomtria1_24-10-24.pdf",
     "Analisi1_22-10-24.pdf",
+    "Analisi 1.md",
+    "Analisi1_24-20-24.pdf",
+    "Geomtria1_24-10-24.pdf",
+    "Informatica.md",
     "Analisi1.pdf",
     "Geometria1.pdf",
     "Geometria 1.md",
     "Geometria_22-10-24.pdf",
     "Algebra 1.md",
-    "Analisi 1.md",
     "Esercitazioni Analisi.md",
     "Esercizi Analisi.md",
     "Esercizi Geometria.md",
