@@ -11,14 +11,12 @@
             "id": "27dbe67e16988b1d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Algebra 1.md",
-                "mode": "source",
-                "source": false
+                "file": "Geomtria1_24-10-24.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Algebra 1"
+              "icon": "lucide-file-text",
+              "title": "Geomtria1_24-10-24"
             }
           }
         ]
@@ -77,8 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "024063fc6a00afd1",
@@ -166,17 +163,18 @@
   },
   "active": "27dbe67e16988b1d",
   "lastOpenFiles": [
-    "Analisi 1.md",
-    "Geometria_22-10-24.pdf",
-    "Esercitazioni Analisi.md",
+    "Informatica.md",
+    "Geomtria1_24-10-24.pdf",
     "Analisi1_22-10-24.pdf",
-    "Algebra 1.md",
     "Analisi1.pdf",
-    "Geometria 1.md",
     "Geometria1.pdf",
+    "Geometria 1.md",
+    "Geometria_22-10-24.pdf",
+    "Algebra 1.md",
+    "Analisi 1.md",
+    "Esercitazioni Analisi.md",
     "Esercizi Analisi.md",
     "Esercizi Geometria.md",
-    "Informatica.md",
     "preamble.sty.md",
     "Welcome.md"
   ]
