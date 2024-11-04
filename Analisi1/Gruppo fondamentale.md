@@ -5,7 +5,7 @@ Se $X$ è chiaro dal contesto, può essere omesso. Se $x_{0}=x_{1}$ potremo scri
 Un [[cammino]] tale che $x_{0}=x_{1}$ si dice *laccio* o *loop*.
 Un cammino  $\gamma$ è [[omotopo]] alla funzione costante $x\to\gamma(0)$. In particolare cammini con un estremo in comune sono sempre omotopi.
 *Definizione*(Omotopia di cammini):
-Una omotopia di cammini (o omotopia a estremi fissato) fra $\gamma_{0},\gamma_{1}\in\Omega(X,x_{0},x_{1})$ è un omotopia $H:[0,1]\times[0,1]\to X$ tale che
+Una omotopia di cammini (o omotopia a estremi fissati) fra $\gamma_{0},\gamma_{1}\in\Omega(X,x_{0},x_{1})$ è un omotopia $H:[0,1]\times[0,1]\to X$ tale che
 1. $H(x,0)=\gamma_{0}(x)$ e $H(x,1)=\gamma_{1}(x)$
 2. $H(0,t)=x_{0}$ e $H(1,t)=x_{1}$, cioè $H(\cdot,t)\in\Omega(X,x_{0},x_{1})$.
 

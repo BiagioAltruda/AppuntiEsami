@@ -1105,3 +1105,182 @@ Siano $X,Y$ insiemi non vuoti. Si dice che $X$ ha cardinalità minore o uguale a
 \exists f:X\to Y \text{ una funzione}
 $$
 tale che $f$ è ingettiva. E si scrive $|X|\leq|Y|$.
+
+*Definizione*:
+Sia $E$ insieme. Denoteremo con il simbolo $\mathcal{P}(E)$ l'insieme delle parti di $E$.
+
+*Osservazione*:
+Sia $E$ un insieme. La relazione $R=\left\{ (A,B)\in \mathcal{P}(E)\times \mathcal{P}(E)|\,\, |A|=|B| \right\}$ è una relazione di equivalenza su $\mathcal{P}(E)$.
+
+*Definizione*:
+Sia $E$ un insieme non vuoto. Si dice che $E$ è finito se $\exists n\in \mathbb{N},\,n\neq 0$ ed $\exists f:E\to \left\{ 1,\dots,n \right\}$ bigettiva. In tal caso scriveremo che $|E|=n$.
+Se $E$ è vuoto. Si pone $|E|=0$.
+
+*Definizione*:
+Si dice che $E$ insieme, è infinito se non è finito.
+
+*Proposizione*:
+Valgono le seguenti proprietà:
+1. Se $E,F$ sono insiemi finiti, allora $E\cup F$ e $E\cap F$ sono insiemi finiti, e si ha che $|E|+|F|=|E\cup F|+|E\cap F|$.
+2. Se $E,F$ sono insiemi finiti, allora $E\times F$ è un insieme finito e $|E\times F|=|E||F|$.
+3. Se $E$ è un insieme finito, allora ogni suo sottoinsieme è finito.
+
+*Definizione*:
+Si dice che $E$ è numerabile se $\exists f:E\to \mathbb{N}$ bigettiva. Ossia che $E$ è equipotente ad $\mathbb{N}$.
+
+*Proposizione*:
+Valgono le seguenti proprietà:
+1. Se $E$ è un insieme numerabile e $A\subset E$. Allora $A$ è finito oppure $A$ è al più numerabile.
+2. Se $E,F$ sono insiemi numerabili. Allora $E\cup F$ è numerabile e anche $E\times F$.
+
+*Proposizione*:
+$\mathbb{N}\setminus \left\{ 0 \right\}$ $(\mathbb{N}^{*})$ è numerabile.
+
+*Dimostrazione*:
+Sia $f:\mathbb{N}\to \mathbb{N}^{*}$ tale che $n\to n+1$. $f$ è bigettiva. Allora $|\mathbb{N}|=|\mathbb{N}^{*}|\,\blacksquare$.
+
+*Proposizione*:
+$\mathbb{Z}$ è numerabile.
+
+*Dimostrazione*:
+Sia $f:\mathbb{Z}\to \mathbb{N}$ tale che: $$
+f(n)=\begin{cases}
+0 & \text{ se } n=0 \\
+2n-1 & \text{se } n\in \mathbb{N} \\
+2n& \text{se } n \in \mathbb{Z}\setminus \mathbb{N}
+\end{cases}
+$$
+$f$ è una funzione bigettiva $\blacksquare$.
+
+*Proposizione*:
+$\mathbb{Q}$ è numerabile.
+
+*Dimostrazione*:
+Utilizzando l'assioma della scelta, consideriamo $f:\mathbb{Q}\to \mathbb{Z}\times \mathbb{N}^{*}$, tale che $\forall q\in \mathbb{Q}:\, f(q)=m\cdot n^{-1},\,m\in \mathbb{Z},\,n\in \mathbb{Z}^{*}$. $f$ è bigettiva e quindi $|\mathbb{Q}|=|\mathbb{Z}\times \mathbb{N}^{*}|=|\mathbb{N}|$.
+
+*Teorema*(Cantor):
+Per ogni insieme $E$ si ha che $|E|<\mathcal{P}(E)$.
+
+*Dimostrazione*:
+Sia $f:E \to \mathcal{P}(E)$, tale che $f(x)=\left\{ x \right\},\, \forall x \in E$. $f$ è ingettiva, quindi $|E|\leq |\mathcal{P}(E)|$. 
+Sia $g:E \to \mathcal{P}(E)$, una funzione. Verifichiamo che $g$ non può essere surgettiva. Ossia $g(E)\neq \mathcal{P}(E)$. Basta provare che $\mathcal{P}(E)\not\subset g(E)$.
+Consideriamo $F=\left\{ x \in E|\, x\not\in g(x) \right\}$. Tale $F\subset \mathcal{P}(E)$, ma $F\not\subset g(E)$. Se fosse che $\exists a \in E$ tale che $g(a)=F$ arriveremmo ad una contraddizione. Infatti, 
+1. $a\in F$, ma allora $a\not\in g(a)=F$, assurdo.
+2. $a\not\in F$, ma allora $a\in g(a)=F$, assurdo.
+Che dimostra che non ci possono essere funzioni surgettive da $|E|$ a $|\mathcal{P}(E)|\,\blacksquare$.
+
+*Corollario*:
+$|\mathbb{N}|<|\mathcal{P}(\mathbb{N})|$.
+
+*Proposizione*:
+$|\mathbb{R}|=|]0,1[|=|[0,1]|$.
+
+*Dimostrazione*:
+Basta dimostrare che $|\mathbb{R}|\leq |[0,1]|=|]0,1[|$.
+Sia $f:]0,1[\to \mathbb{R}$, tale che $\forall x \in]0,1[,\,f(x)=\frac{1}{x}+\frac{1}{x-1}\in \mathbb{R}$. $f$ è bigettiva $\blacksquare$.
+
+*Teorema*:
+L'intervallo $[0,1[$ non è numerabile.
+
+*Dimostrazione*:
+Se per assurdo $[0,1[$ fosse numerabile, pertanto $|[0,1[|=|\mathbb{N}|$. Ovvero $\exists f:[0,1[\to \mathbb{N}$ bigettiva.
+Denoteremo con $S$ l'insieme degli allineamenti decimali di cifre comprese tra $0$ e $9$ che non sono definitivamente $9$. Tale $S$ è in bigezione con l'intervallo $[0,1[$.
+Pertanto anche $S$ è numerabile. Vorrei costruire un $\bar{x}\in [0,1[$ che non appartiene ad $S$, tale che possiamo mettere $S$ in bigezione con l'insieme $\left\{ x_{n}|\,n\in \mathbb{N}^{*} \right\}$, con $x_{n}$ un allineamento decimale.
+$x_{n}=0,a_{1}^{(n)}a_{2}^{(n)}\dots a_{n}^{(n)}\dots \in[0,1[$, con $a_{j}^{(n)}\in \left\{ 1,\dots,9 \right\}$. Proviamo che $\exists \bar{x}\in[0,1[$ tale che $\bar{x}\not\in S$.
+Sia quindi $\bar{x}=0,b_{1}b_{2}b_{3},\dots$ dove: $$
+b_{i}=\begin{cases}
+5& \text{ se } a_{i}^{i}=\{0,1,2,3,4\} \\
+4& \text{ se }a_{i}^{i}=\left\{ 5,6,7,8,9 \right\}. 
+\end{cases}
+$$
+Si ha che $\bar{x}\not\in S$, perché differisce da ogni elemento di $S$ in almeno una posizione, quella sulla diagonale. Quindi $|[0,1[|>|\mathbb{N}|\,\blacksquare$.
+
+*Teorema*:
+L'insieme dei numeri reali $\mathbb{R}$ è equipotente a $\mathcal{P}(\mathbb{N})$.
+Ovvero $|\mathbb{R}|=|\mathcal{P}(\mathbb{N})|=2^{\aleph_{0}}$. Dove $\aleph_{0}=|\mathbb{N}|$.
+
+-----
+*Definizione*:
+$\overline{\mathbb{R}}=\mathbb{R}\cup \left\{ +\infty,-\infty \right\}$, detto $\mathbb{R}$ ampliato o esteso.
+$\mathbb{R}$ si può dotare di una struttura algebrica estendendo le usuali leggi di composizione e ordine su $\mathbb{R}$, anche se solo parzialmente.
+
+Iniziamo ad estendere il totale ordinamento di $\mathbb{R}$. Porremo, $$
+\forall x \in \mathbb{R},\, -\infty<x<+\infty
+$$
+detto ordinamento esteso.
+
+*Semialgebrizzazione di $\overline{\mathbb{R}}$*.
+La struttura algebrica assiomatizzato di $\mathbb{R}$ può essere parzialmente estesa a $\overline{\mathbb{R}}$, ponendo per definizione: $$\begin{cases}
+\forall x \in\overline{\mathbb{R}}\setminus \left\{ +\infty \right\} :-\infty+x=x+(-\infty)=-\infty \\
+\forall x \in \overline{\mathbb{R}}\setminus \left\{ -\infty \right\}: +\infty+x= x+(+\infty)=+\infty \\
+\forall x \in]0,+\infty]: -\infty \cdot x=x\cdot(-\infty)=-\infty &+\infty \cdot x =x \cdot(+\infty)=+\infty \\
+\forall x \in[-\infty,0[: -\infty \cdot x =x \cdot (-\infty)=+\infty& +\infty \cdot x= x \cdot + (\infty)=-\infty.
+\end{cases}
+$$
+Mentre non si possono definire:
+1. $+\infty-\infty$
+2. $0 \cdot (+\infty)$, come anche $0\cdot (-\infty)$
+3. Il reciproco di $0$.
+
+Vale l'esistenza dell'elemento neutro di somma e prodotto: $$
+\forall x \in\overline{\mathbb{R}}: x+0=x, \text{ e anche } x\cdot 1=x,\, x\cdot(-1)=-x.
+$$
+*Definizione*:
+Sia $x_{0}\in \mathbb{R}$, e $r\in \mathbb{R}_{0}^+$. Si chiama intorno sferico di centro $x_{0}$ e raggio $r$ l'intervallo $]x_{0}-r,x_{0}+r[$. Denotato con $B_{r}(x_{0})$ o $I_{r}(x_{0})$.
+
+*Osservazione*:
+Se $x \in I_{r}(x_{0}):\, x_{0}-r<x-x_{0}<x_{0}+r \implies |x-x_{0}|<r$.
+
+*Definizione*:
+Sia $x_{0}\in \mathbb{R}$. Si dice che $U$ è un intorno di $x_{0}$ in $\mathbb{R}$ se: $$
+\exists r>0:\, ]x_{0}-r,x_{0}+r[\in U.
+$$
+*Definizione*:
+Sia $x_{0}=+\infty \in\overline{\mathbb{R}}$. Si chiama intorno di $+\infty$ in $\mathbb{R}$ un qualunque insieme $U\in \mathbb{R}$ tale che $\exists a\in \mathbb{R}|\, ]a,+\infty[\subset U$.
+
+*Osservazione*:
+Se $x_{0}=+\infty$, un intorno di $+\infty$ in $\overline{\mathbb{R}}$. Ogni insieme $A\subset \overline{\mathbb{R}}$ tale che $A=U\cup \left\{ +\infty \right\}$ con $U$ intorno di $+\infty$. In maniera analoga si definisce introno di $-\infty$.
+
+*Notazione*:
+Sia $x_{0}\in\overline{\mathbb{R}}$, si denota con $\mathcal{J}_{x_{0}}$ l'insieme degli intorni di $x_{0}$.
+
+*Proposizione*(Principio di separazione degli intorni):
+Sia $p_{1},p_{2}\in\overline{\mathbb{R}},\,p_{1}\neq p_{2}$. Allora $\exists V_{1}\subset \mathcal{J}_{p_{1}},\,\exists V_{2}\subset \mathcal{J}_{p_{2}}$ tali che $V_{1}\cap V_{2}=\emptyset$.
+
+*Dimostrazione*:
+Per ipotesi $p_{1}\neq p_{2}$. Supponiamo $p_{1}<p_{2}$.
+1. $p_{1},p_{2}\in \mathbb{R}$. Poniamo $r=\frac{p_{2}-p_{1}}{2}>0$. Posto $V_{1}=]p_{1}-r,p_{1}+r[$ e $V_{2}=]p_{2}-r,p_{2}+r[$, chiaramente $V_{1}\cap V_{2}=\emptyset$.
+2. Se $p_{1}=-\infty$ e $p_{2}\in \mathbb{R}$. Sia $V_{1}=]-\infty,b[$, con $b\in \mathbb{R}$ e $b<p_{2}$. Sia $V_{2}=]p_{2}-r,p_{2}+r[$ con $r=\frac{p_{2}-b}{2}$, otteniamo che $V_{1}\cap V_{2}=\emptyset$.
+3. $p_{1}\in \mathbb{R}$ e $p_{2}=+\infty$. Sia $V_{2}=]b,+\infty[$, con $b\in \mathbb{R},\,p_{1},b$. Sia $V_{1}=]p_{1}-r,p_{2}+r[$ con $r=\frac{b-p_{1}}{2}$, otteniamo che $V_{1}\cap V_{2}=\emptyset\,\blacksquare$.
+
+*Proposizione*:
+sia $x_{0}\in\overline{\mathbb{R}}$. Siano $V_{1}\subset \mathcal{J}_{x_{0}},V_{2}\subset \mathcal{J}_{x_{0}}$, allora $V_{1}\cap V_{2}\subset \mathcal{J}_{x_{0}}$.
+
+*Definizione*:
+Sia $A\subset \mathbb{R}$. Sia $x_{0}\in \mathbb{R}$. Si dice che $x_{0}$ è interno all'insieme $A$ se $\exists U\subset \mathcal{J}_{x_{0}}$ tale che $U\subset A$.
+
+L'insieme dei punti interni di $A$ si denota con $\dot{A}$ (interno di $A$).
+
+*Definizione*:
+Sia $A\subset \mathbb{R}$. Si dice che $x_{0}$ è punto esterno di $A$ se $x_{0}$ è interno al complementare di $A$, ovvero $\exists U\subset \mathcal{J}_{x_{0}}$ tale che $U\subset \mathbb{R}\setminus \left\{ A \right\}$.
+
+*Definizione*:
+Sia $A\subset \mathbb{R}$. Si dice che $x_{0}\in \mathbb{R}$ è un punto di frontiera di $A$ se $x_{0}$ non è ne interno ne esterno ad $A$. L'insieme dei punti di frontiera si denota con $\partial A$ (frontiera di $A$).
+
+*Definizione*:
+Sia $A\subset \mathbb{R}$. Sia $\bar{x}\in\overline{\mathbb{R}}$. Si dice che $\bar{x}$ è punto di accumulazione per $A$ in $\overline{\mathbb{R}}$ se $\forall U\in \mathcal{J}_{\bar{x}}$ si ha che $U\cap A\setminus \left\{ \bar{x} \right\}\neq \emptyset$.
+
+L'insieme dei punti di accumulazione di $A$ si denota con $\mathcal{D}(A)\subset\overline{\mathbb{R}}$.
+
+*Definizione*:
+Sia $A\subset \mathbb{R}$, sia $\bar{x}\in\overline{\mathbb{R}}$. Si dice che $\bar{x}$ è punto di aderenza per $A$ in $\overline{\mathbb{R}}$ se $\forall U\subset \mathcal{J}_{\bar{x}}$, $U\cap A\neq \emptyset$. L'insieme dei punti di aderenza di $A$ si denota con il simbolo $\bar{A}$. Questo insieme si dice anche chiusura di $A$.
+
+*Proposizione*:
+1. Sia $A\subset \mathbb{R}$. sia $\bar{x}\in\overline{\mathbb{R}}$. Supponiamo che $\bar{x}\in B_{r}(A)$. Ogni intorno di $\bar{x}$ contiene infiniti punti di $A$, ovvero $\forall U\subset \mathcal{J}_{\bar{x}},\,\exists B\subset \mathbb{R}:\,B\subset U\cap A$. Con $B$ insieme non finito.
+2. Sia $A\subset \mathbb{R},\,A\neq \emptyset$. Allora $\sup A\in\overline{\mathbb{R}}, \inf A\in\overline{\mathbb{R}}$ sono punti di aderenza per $A$.
+
+*Definizione*:
+Si chiama successione di numeri reali ogni funzione definita in $\mathbb{N}$ a valore in $\mathbb{R}$. Con $(\mathbb{N},\mathbb{R},\mathbb{R})$ terna della successione.
+
+*Notazione*:
+Si usa convenzionalmente sostituire alla notazione $f:\mathbb{N}\to \mathbb{R}$ una notazione del tipo: $f:n\in \mathbb{N}\rightarrow f(n)=a_{n}\in \mathbb{R}$ la funzione $f$ si indica $(a_{n})_{n\in \mathbb{N}}\to \left\{ a_{n} \right\}_{n\in \mathbb{N}}$.

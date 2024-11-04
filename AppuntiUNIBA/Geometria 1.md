@@ -898,3 +898,120 @@ $$
 $$
 Ma $v_{1},\dots,v_{p},w_{1},\dots,w_{h}$ sono indipendenti allora $\forall t,j\, \delta_{t}=\beta_{j}=0$. Che implica $$ \sum\limits_{s=1}^{p}\gamma_{s}v_{s}+\sum\limits_{i=1}^{k} \alpha_{i}u_{i}=\underline{0}.$$
 Come prima $v_{1},\dots,v_{p},u_{1},\dots,u_{k}$ sono indipendenti, allora $\forall s,i,\, \gamma_{s}=\alpha_{i}=0\,\blacksquare$. 
+
+------
+
+**Applicazioni Lineari**
+
+*Definizione*:
+Siano $V$ e $W$ spazi vettoriali sul campo $\mathbb{F}$. Una funzione $f:V\to W$ si dice applicazione lineare se: $$
+\forall v_{1},v_{2}\in V,\, \forall\alpha_{1},\alpha_{2}\in \mathbb{F}\, f(\alpha_{1}v_{1}+\alpha_{2}v_{2})=\alpha_{1}f(v_{1})+\alpha_{2}f(v_{2}).
+$$
+*Esempi*:
+1. Sia $f(v)=\underline{0},\, \forall v\in V$, si dice applicazione nulla ed è lineare.
+2. Se $f:V\to V$, $f(v)=v,\, \forall v\in V$, si dice applicazione identica ed è lineare.
+
+*Definizione*:
+Se $W=V$, $f:V\to V$ applicazione lineare, si dice endomorfismo.
+
+*Osservazione*:
+Se $f:V\to W$ è lineare, allora $f(0)=0$. Infatti, sia $v\in V$, allora $f(0\cdot v)=0f(v)=0$.
+
+*Esempi*:
+3. $f:\mathbb{F}^{n}\to \mathbb{F}^{m}$.
+	Sia $A\in M_{m,n}(\mathbb{F})$. e se $x=\begin{pmatrix}x_{1}\\x_{2}\\.\\x_{n}\end{pmatrix}\in \mathbb{F}^{n}$, $f(x)=Ax$.
+	$A=(a_{i,j})$. $f(x)=\begin{pmatrix}a_{11}x_{1}+\dots+a_{1n}x_{n}\\a_{21}x_{1}+\dots+a_{2n}x_{n}\\\dots\\a_{m1}x_{1}+\dots+a_{mn}x_{n}\end{pmatrix}$.
+
+*Definizione*:
+Se $A\in M_{mn}(\mathbb{F})$, indicheremo l'applicazione lineare dell'esempio $3)$, col simbolo $L_{A}$.
+
+4. $A=\begin{pmatrix}1&2&0&-3\\-1&0&1&4\end{pmatrix}$, $L_{A}:\mathbb{R}^{4}\to \mathbb{R}^{2}$. Allora $L_{A}(x)=\begin{pmatrix}1&2&0&-3\\-1&0&1&4\end{pmatrix}\cdot \begin{pmatrix}x_{1}\\x_{2}\\x_{3}\\x_{4}\end{pmatrix}=\begin{pmatrix}x_{1}+2x_{2}-3x_{4}\\-x_{1}+x_{3}+4x_{4}\end{pmatrix}$.
+5. $f:\mathbb{R}_{2}[t]\to \mathbb{R}_{2}[t]$, $f(p(t))=p(t+1)$. Verifico che $f$ è lineare.
+	Siano $p_{1}(t),p_{2}(t)\in \mathbb{R}_{2}[t]$ e $\alpha_{1},\alpha_{2}\in \mathbb{R}$. $$f(\alpha_{1}p_{1}(t)+\alpha_{2}p_2(t))=f((\alpha_{1}p_{1}+\alpha_{2}p_{2})(t))=(\alpha_{1}p_{1}+\alpha_{2}p_{2})(t+1)=\alpha_{1}p_{1}(t+1)+\alpha_{2}p_{2}(t+1).$$
+	$f(a_{0}+a_{1}t+a_{2}t^{2})=a_{0}+a_{1}(t+1)+a_{2}(t+1)^{2}=a_{2}t^{2}+(2a_{2}+a_{1})t+a_{1}+a_{0}$.
+6. $f:\mathbb{R}_{d}[t]\to \mathbb{R}_{d}[t]$. Sia $f(p(t))=p'(t)$, dove $p(t)=a_{d}t^{d}+\dots+a_{1}t+a_{0}$, $p'(t)=da_{d}t^{d-1}+(d-1)a_{d-1}t^{d-2}+\dots 2a_{2}t+a_{1}$. è lineare. $p_{1}=\sum\limits_{i=0}^{d}a_{i}t^{i}$, $p_{2}=\sum\limits_{i=0}^{d}b_{i}t^{i}$.
+	 $(\alpha_{1}p_{1}+\alpha_{2}p_{2})'(t)=\left( \sum\limits_{i=0}^{d}(\alpha_{1}a_{i}+\alpha_{2}b_{i})t^{i} \right)'\dots$.
+7. Sia $V$ uno spazio vettoriale, $\dim V=n$, $\mathcal{B}_{1}=\left( v_{1},\dots,v_{n} \right)$, una base. Allora $\forall v\in V, \exists! \alpha_{1},\dots,\alpha_{n}$, tali che $v=\alpha_{1}v_{1}+\dots+\alpha_{n}v_{n}$. $F_{\mathcal{B}}(v)=\begin{pmatrix}\alpha_{1}\\.\\.\\.\\\alpha_{n}\end{pmatrix}$.
+	$F_{\mathcal{B}}:V\to \mathbb{F}^{n}$ è un'applicazione lineare, e si chiama applicazione lineare delle componenti (o coordinate) rispetto alla base $\mathcal{B}$.
+
+*Proposizione*:
+Siano $V,W$ spazi vettoriali sul campo $\mathbb{F}$, e sia $\mathcal{B}=\left( v_{1},\dots,v_{n} \right)$ una base di $V$. Siano $w_{1},\dots,w_{n}\in W$. Allora $\exists!T:V\to W$ applicazione lineare, tale che $T(v_{i})=w_{i},\,\forall i=1,\dots,n.$
+Tale applicazione è data da $T(\alpha_{1}v_{1}+\dots+\alpha_{n}v_{n})=\alpha_{1}w_{1}+\dots+\alpha_{n}w_{n}$.
+
+*Dimostrazione*:
+Mostriamo che $T(v_{i})=w_{i},\,\forall i$. $v_{1}=1v_{1}+0v_{2}+\dots0v_{n}$. Allora $T(v_{1})=T(1v_{1}+0v_{2}+\dots+0v_{n})=1w_{1}$. Analogamente si procede per tutti gli $i$, quindi $T(v_{i})=w_{i}$. 
+Mostriamo che $T$ è lineare. Siano $u,v\in V$, allora $u=\sum\limits_{i=1}^{n}\beta_{i}v_{i}$, $v=\sum\limits_{i=1}^{n}\gamma_{i}v_{i}$, $\lambda_{1},\lambda_{2}\in \mathbb{F}$. Allora: $$
+\lambda_{1}u+\lambda_{2}v= \sum\limits_{i=1}^{n}(\lambda_{1}\beta_{i}+\lambda_{2}\gamma_{i}) v_{i}.
+$$
+Valuterò $$T(\lambda_{1}u+\lambda_{2}v)=T\left( \sum\limits_{i=1}^{n}(\lambda_{1}\beta_{i}+\lambda_{2}\gamma_{i}) v_{i}\right)=\sum\limits_{i=1}^{n} (\lambda_{1}\beta_{i}\lambda_{2}\gamma_{2})(w_{i})=\lambda_{1}\sum\limits_{i=1}^{n}\beta_{i}v_{i}+\lambda_{2}\sum\limits_{i=1}^{n} \gamma_{i}w_{i}.$$
+Ovvero: $$
+T(\lambda_{1}u+\lambda_{2}v)=\lambda_{1}T(u)+\lambda_{2}T(v).
+$$
+Adesso dimostriamo che una $T$ come voluta è unica. Sia quindi $S:V\to W$ lineare, tale che $S(v_{i})=w_{i},\,\forall i$. Devo mostrare che $S(v)=T(v),\,\forall v\in V$.
+Sia quindi $v\in V$. Allora $\exists\alpha_{1},\dots,\alpha_{n}$ tali che $v=\sum\limits_{i=1}^{n}\alpha_{i}v_{i}$. Adesso, $$
+S(v)=S\left( \sum\limits_{i=1}^{n} \alpha_{i}v_{i} \right)= \sum\limits_{i=1}^{n} \alpha_{i}S(v_{i}).
+$$
+Per la linearità di $S$. $$
+ S(v)=\sum\limits_{i=1}^{n} \alpha_{i}S(v_{i})= \sum\limits_{i=1}^{n} \alpha_{i}w_{i}=T\left( \sum\limits_{i=1}^{n} \alpha_{i}v_{i} \right)=T(v)\,\blacksquare.
+$$
+*Esempio*:
+Sia $V=\mathbb{R}^{3},\,W=\mathbb{R}^{4}$, Sia $\mathcal{B}=\left( v_{1}=\begin{pmatrix}1\\1\\0\end{pmatrix},v_{2}=\begin{pmatrix}0\\0\\1\end{pmatrix},v_{3}=\begin{pmatrix}0\\1\\0\end{pmatrix} \right)$, una base di $V$. Siano $w_{1}=\begin{pmatrix}1\\2\\3\\4\end{pmatrix},\,w_{2}=\begin{pmatrix}0\\0\\-1\\-1\end{pmatrix},w_{3}=\begin{pmatrix}0\\0\\-1\\-1\end{pmatrix}$. Sia $v\in \mathbb{R}^{3}$, allora $\exists! \alpha_{1},\alpha_{2},\alpha_{3}\in \mathbb{R}$ tali che $v=\alpha_{1}v_{1}+\alpha_{2}v_{2}+\alpha_{3}v_{3}=\begin{pmatrix}\alpha\\\alpha_{1}+\alpha_{3}\\\alpha_{2}\end{pmatrix}$.
+Allora $T(v)=\alpha_{1}w_{1}+\alpha_{2}w_{2}+\alpha_{3}w_{3}=\alpha_{1}\begin{pmatrix}1\\2\\3\\4\end{pmatrix}+\alpha_{2}\begin{pmatrix}0\\0\\-1\\-1\end{pmatrix}+\alpha_{3}\begin{pmatrix}0\\0\\-1\\-1\end{pmatrix}=\begin{pmatrix}\alpha_{1}\\2\alpha_{1}\\3\alpha_{1}-\alpha_{2}-\alpha_{3}\\4\alpha_{1}-\alpha_{2}-\alpha_{3}\end{pmatrix}$.
+
+*Corollario* (della proposizione):
+Sia $T,S:V\to W$ applicazioni lineari, e $\mathcal{B}=\left( v_{1},\dots,v_{n} \right)$ base di $V$. Allora $T=S$ se e solo se $T(v_{i})=S(v_{i}),\, \forall i=1,\dots,n$.
+
+*Corollario*:
+Nelle ipotesi del corollario precedente, Se $T=L_{A}$ ed $S=L_{A'}$. Allora $T=S$ se e solo se $A=A'$.
+
+*Definizione*:
+Sia $T:V\to W$ applicazione lineare. Si definisce $\mathrm{Im}(T)=\left\{ w\in W|\,\exists v\in V:\, T(v)=w \right\}=\left\{ T(v)|\,v\in V \right\}$, immagine di $T$. E anche $Ker(T)=\left\{ v\in V|\, T(v)=0 \right\}$, il nucleo di $T$.
+
+*Proposizione*:
+Sia $T:V\to W$ applicazione lineare. Valgono le seguenti affermazioni:
+1. $Ker(T)$ è sottospazio vettoriale di $V$.
+2. $\mathrm{Im}(T)$ è sottospazio vettoriale di $W$.
+3. $T$ è suriettiva, allora $\mathrm{Im}(T)=W$.
+4. $T$ è iniettiva, se e solo se $Ker(T)=\left\{ \underline{0} \right\}$.
+
+*Dimostrazione*:
+1. Essendo $T$ lineare, $T(0)=\underline{0}\implies \underline{0}\in Ker(T)$. Siano ora $v_{1},v_{2}\in Ker(T)$. Allora $T(\alpha_{1}v_{1}+\alpha_{2}v_{2})=\alpha_{1}T(v_{1})+\alpha_{2}T(v_{2})=\alpha_{1}\underline{0}+\alpha_{2}\underline{0}=\underline{0}$. Quindi $Ker(T)$ è sottospazio vettoriale di $V$.
+2. $0\in \mathrm{Im}(T)$ dato che $T(0)=0$, allora $\mathrm{Im}(T)$ è non vuoto. Siano $w_{1},w_{2}\in \mathrm{Im}(T)$, $\beta_{1},\beta_{2}\in \mathbb{F}$. Tali che $\exists v_{1},v_{2}\in V: w_{1}=T(v_{1}),w_{2}=T(v_{2})$ per ipotesi. Ma allora $\beta_{1}T(v_{1})+\beta_{2}T(v_{2})=T(\beta_{1}v_{1}+\beta_{2}v_{2})\in \mathrm{Im}(T)$.
+3. Questa è la definizione di funzione suriettiva.
+4. L'implicazione verso destra è data dalla definizione di iniettività. Mentre per l'altra, $Ker(T)=\left\{ \underline{0} \right\}$ e siano $v_{1},v_{2}\in V$ tali che $T(v_{1})=T(v_{2})$. Ma allora $T(v_{1})-T(v_{2})=\underline{0}\implies T(v_{1}-v_{2})=\underline{0}$. E quindi avremmo che $v_{1}-v_{2}\in Ker(T)\iff v_{1}-v_{2}=\underline{0}\implies v_{1}=v_{2}$ che va contro l'iniettività di $T\,\blacksquare$.
+
+*Lemma*:
+Se $T:V\to W$ è un'applicazione lineare e $\mathcal{B}=\left( v_{1},\dots,v_{n} \right)$ base di $V$. Allora $\mathrm{Im}(T)=Span\left( T(v_{1}),\dots,T(v_{n}) \right)$.
+
+*Dimostrazione*:
+Dimostriamo l'inclusione verso sinistra. Infatti, $\mathrm{Im}(T)$ è sottospazio di $W$ e $T(v_{1}),\dots,T(v_{n})\in \mathrm{Im}(T)$. Allora $\forall\alpha_{1},\dots,\alpha_{n}\in F:\, \alpha_{1}T(v_{1})+\dots+\alpha_{n}T(v_{n})\in \mathrm{Im}(T)$.
+Per l'altra inclusione invece, sia $w\in \mathrm{Im}(T)\iff \exists v\in V:\, w=T(v)$, ma $v=\beta_{1}v_{1}+\dots+\beta_{n}v_{n}$, per certi $\beta_{1},\dots,\beta_{n}\in \mathbb{F}$. Segue che $w=T(v)=T(\beta_{1}v_{1}+\dots+\beta_{n}v_{n})=T(\beta_{1}v_{1})+\dots+T(\beta_{n}v_{n})\in Span(T(v_{1}),\dots,T(v_{n}))\,\blacksquare$.
+
+*Notazione*:
+Se si lavora con $L_{A}$ si scrive $\mathrm{Im}(A)$ e $Ker(A)$, dove $A$ è la matrice associata all'applicazione lineare $L_{A}$.
+
+*Definizione*:
+Sia $T:V\to W$ applicazione lineare. Si definisce $rg(T)=\mathrm{Im}(T)$/
+
+*Osservazione*:
+Il rango $rg(L_{A})=\dim L_{A}=\dim\left( Span(A_{1},\dots,A_{n}) \right)=rg(A)$. Dove $A_{1},\dots,A_{n}$ sono le colonne di $A$.
+
+*Teorema*:
+Sia $T:V\to W$ applicazione lineare. Allora $\dim V=\dim Ker(T)\dim \mathrm{Im}(T)$.
+
+*Dimostrazione*:
+Prendiamo in considerazione il nucleo di $T$. 
+1. $\dim Ker(T)=0$, ovvero $Ker(T)=\left\{ \underline{0} \right\}$. Otterremmo che $\dim V= \dim \mathrm{Im}(T)$. Sia $\mathcal{B}=\left( v_{1},\dots,v_{n} \right)$ una base per $V$. Mostriamo che $T(v_{1}),\dots,T(v_{n})$ è una base per $\mathrm{Im}(V)$. Per il lemma precedente sappiamo che i vettori di sopra sono almeno generatori. Basta mostrare che sono indipendenti. Allora $$
+\alpha_{1}T(v_{1})+\dots+\alpha_{n}T(v_{n})=\underline{0} \implies T(\alpha_{1}v_{1}+\dots+\alpha_{n}v_{n})=\underline{0}.
+$$
+	Essendo $T(v)=\underline{0}\iff v=0$ deve valere che $\alpha_{1}v_{1}+\dots\alpha_{n}v_{n}=\underline{0}\iff\alpha_{1}=\dots=\alpha_{n}=0$. Quindi sono indipendenti ed una base.
+2. $\dim Ker(T)=d>0$. Sia $\mathcal{B'}=\left\{ u_{1},\dots,u_{n} \right\}$ base del nucleo di $T$. se $\dim V=n$, per il teorema di completamente, estendo $\mathcal{B'}$ ad una base di $V$: $\mathcal{B'}=\left\{ u_{1},\dots,u_{n},v_{1},\dots,v_{n-d} \right\}$. Adesso, $\mathrm{Im}(T)=Span(T(u_{1}),\dots,T(u_{d}),T(v_{1}),\dots,T(v_{n-d}))$. Ma, per ogni $u_{i},\,T(u_{i})=\underline{0}$ dato che sono nel nucleo di $T$. Segue che $\dim \mathrm{Im}(T)=\dim Span\left( T(v_{1}),\dots,T(v_{n-d}) \right)$. Dimostriamo che questi vettori sono indipendenti. 
+	Siano quindi $\gamma_{1},\dots,\gamma_{n-d}\in \mathbb{F}$. Allora $$
+\gamma_{1}T(v_{1})+\dots+\gamma_{n-d}T(v_{n-d})=\underline{0} \implies T(\gamma_{1}v_{1}+\dots+\gamma_{n-d}v_{n-d})=\underline{0}.
+$$
+	Ovvero $\gamma_{1}v_{1}+\dots+\gamma_{n-d}v_{n-d}\in Ker(T) \implies \exists! \sigma_{1},\dots,\sigma_{d}\in \mathbb{F}$ tali che $\gamma_{1}v_{1}+\dots+\gamma_{n-d}v_{n-d}=\sigma_{1}u_{1}+\dots+\sigma_{d}u_{d}$. Ma è anche vero che $\gamma_{1}v_{1}+\dots+\gamma v_{n-d}-\sigma u_{1}-\dots-\sigma u_{d}$ sono una base di $V$, quindi $\gamma_{1}=\dots=\gamma_{n-d}=\sigma_{1}=\dots=\sigma_{d}=0$. Segue che $\dim \mathrm{Im}(T)=\dim Span(T(v_{1}),\dots,T(v_{n-d}))=n-d$. Concludiamo che $\dim \mathrm{Im}(T)+\dim Ker(T)=n-d+d=n=\dim V\,\blacksquare$.
+
+*Corollario*:
+1. $T$ è iniettiva se e solo se $rg(T)=\dim V$.
+2. $T$ è suriettiva se e solo se $rg(T)=W$.
+3. Se $\dim V=\dim W$ allora $T$ è suriettiva se e solo se è iniettiva.

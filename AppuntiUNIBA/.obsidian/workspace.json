@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "43120596e857c1c1",
+        "id": "2108215e80fd762b",
         "type": "tabs",
         "children": [
           {
-            "id": "27dbe67e16988b1d",
+            "id": "701427263975a61a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Analisi 1.md",
-                "mode": "source",
-                "source": false
+                "file": "Geometria1_04-11-2024.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Analisi 1"
+              "icon": "lucide-file-text",
+              "title": "Geometria1_04-11-2024"
             }
           }
         ]
@@ -93,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Analisi 1.md",
+                "file": "Geometria1_04-11-2024.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +101,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Analisi 1"
+              "title": "Backlinks for Geometria1_04-11-2024"
             }
           },
           {
@@ -112,12 +110,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Analisi 1.md",
+                "file": "Geometria1_04-11-2024.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Analisi 1"
+              "title": "Outgoing links from Geometria1_04-11-2024"
             }
           },
           {
@@ -139,10 +137,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Analisi 1.md"
+                "file": "Geometria1_04-11-2024.pdf"
               },
               "icon": "lucide-list",
-              "title": "Outline of Analisi 1"
+              "title": "Outline of Geometria1_04-11-2024"
             }
           }
         ]
@@ -163,21 +161,27 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "27dbe67e16988b1d",
+  "active": "701427263975a61a",
   "lastOpenFiles": [
-    "Analisi1_22-10-24.pdf",
-    "Analisi 1.md",
-    "Analisi1_24-20-24.pdf",
+    "Untitled.md",
+    "Geometria1_04-11-2024.pdf",
     "Geomtria1_24-10-24.pdf",
-    "Informatica.md",
-    "Analisi1.pdf",
-    "Geometria1.pdf",
+    "Analisi1_04-11-2024.pdf",
+    "Analisi1_24-20-24.pdf",
+    "Analisi 1.md",
     "Geometria 1.md",
-    "Geometria_22-10-24.pdf",
-    "Algebra 1.md",
+    "Geometria1 Novembre.md",
     "Esercitazioni Analisi.md",
-    "Esercizi Analisi.md",
+    "Algebra 1.md",
+    "Analisi1_22-10-24.pdf",
+    "Geometria_22-10-24.pdf",
+    "Analisi_22-10-24.pdf",
+    "Geometria1_17-10-2024.pdf",
+    "Analisi1_17-10-2024.pdf",
+    "Geometria1.pdf",
     "Esercizi Geometria.md",
+    "Esercizi Analisi.md",
+    "Informatica.md",
     "preamble.sty.md",
     "Welcome.md"
   ]

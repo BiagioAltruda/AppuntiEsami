@@ -1397,3 +1397,97 @@ Possiamo dedurne una importante identità aritmetica riguardante la funzione di 
 Sia $n$ un intero positivo. Allora $$
 \sum\limits_{d|n}\varphi(d)=n. 
 $$
+*Dimostrazione*:
+Sia $G$ un gruppo ciclico di ordine $n$. Ogni elemento di $G$ genera un sottogruppo ciclico di $G$, il cui ordine è pari al periodo dell'elemento, ed è dunque un divisore di $n$ di ordine $d$. Questo, per una delle proposizione precedenti, è l'unico sottogruppo di quell'ordine. Inoltre ammette esattamente $\varphi(d)$ generatori. Dunque $\varphi(d)$ è il numero di elementi di periodo $d$. La tesi si ottiene contando gli elementi, dopo averli ordinati in base al periodo.
+
+*Proposizione*(Sottogruppi finiti del gruppo moltiplicativo di un campo):
+Ogni sottogruppo finito del gruppo moltiplicativo di un campo è ciclico.
+
+*Dimostrazione*:
+Sia $K$ un campo, e sia $H$ un sottogruppo finito, di ordine $n$, del gruppo moltiplicativo $K^{*}$. Allora, ogni elemento di $H$ è periodico ed ha come periodo un divisore di $n$. Dunque ogni elemento di $H$ è radice del polinomio $f(x)=x^{n}-1$ a coefficienti in $K$. Avendo $f(x)$ al più $n$ radici, contate con molteplicità, gli elementi di $H$ sono le $n$ radici di $f(x)$ in $K$. Per ogni intero positivo $d$ che divide $n$, sia $H_{d}$ l'insieme delle radici in $K$ del polinomio $x^{d}-1$. Poiché questo polinomio è un divisore di $f(x)$, esso ammette $d$ radici distinte. $H_{d}$ è anche un sottogruppo di $H$ ed ha ordine $d$. Ad esso appartengono tutti gli elementi di $H$ aventi periodo $d$. Sia $\psi(d)$ il loro numero. Se $\psi(d)\neq 0$, $H_{d}$ è un gruppo ciclico, ed in tal caso, $\psi(d)=\varphi(d)$. Se ne deduce che: $$
+n=\sum\limits_{d|n}\psi(d)\leq \sum_{d|n}\varphi(d)=n. 
+$$
+La disuguaglianza, in particolare, è un uguaglianza, ma ciò non sarebbe vero se, per qualche $d$ fosse $\psi(d)=0$. Pertanto, in particolare, $\psi(n)\neq 0$, ossia $H$ ammette un elemento di periodo $n$. Quindi $H$ è ciclico $\blacksquare$.
+
+*Corollario*:
+Per ogni $p>0$, il gruppo delle unità dell'anello $\mathbb{Z}_p$ è ciclico.
+
+**Orbite e cicli di una permutazione**
+
+*Definizione*:
+Si dice ciclo (o permutazione ciclica) ogni $\sigma \in S_{n}$ per cui esistono un intero positivo $l$ e $a_{1},\dots,a_{l}\in \left\{ 1,\dots,n \right\}$ a due a due distinti tali che:
+1. $\sigma(a_{1})=a_{2},\sigma(a_{2})=a_{3},\dots,\sigma(a_{l-1}=a_{l}), \sigma(a_{l})=a_{1}$
+2. $\sigma(k)=k,\, \forall k\in \left\{ 1,\dots,n \right\}\setminus \left\{ a_{1},\dots,a_{l} \right\}$.
+Il numero $l$ si dice lunghezza di $\sigma$. Una permutazione ciclica di lunghezza $l$ si dice anche un $l-$ciclo. 
+
+Le permutazioni cicliche si possono scrivere in notazione ciclica, oltre che a quella matriciale.
+
+*Osservazione*:
+La struttura ciclica di un $l-$ciclo non è unica. Se $l>1$, le permutazioni cicliche hanno esattamente $l$ scritture distinte, ottenendo da rotazioni successive degli indici verso destra.
+
+*Proposizione*:
+Sia $l$ un intero maggiore di $1$ e non maggiore di $n$. In $S_{n}$ vi sono esattamente: $$
+\frac{1}{l} \frac{n!}{(n-l)!}
+$$
+cicli di lunghezza $l$.
+
+*Dimostrazione*:
+il più generale ciclo di lunghezza $l$ in $S_{n}$ è $\sigma=(a_{1},\dots,a_{l})$. L'insieme $\left\{ a_{1},\dots,a_{l} \right\}\subset \left\{ 1,\dots,n \right\}$ può essere scelto esattamente in $\binom{n}{l}=\frac{n!}{(n-l)!l!}$ modi distinti. D'altra parte gli elementi $a_{1},\dots,a_{l}$ possono essere disposti in $l!$ modi diversi. Pertanto esistono esattamente $\binom{n}{l}l!=\frac{n!}{(n-l)!}$ sequenze $a_{1},\dots,a_{l}$ di $l$ elementi scelti in $\left\{ 1,\dots,n \right\}$. Questo è quindi il numero di scritture cicliche distinte di lunghezza $l$. Queste rappresentano prese a $l$ a $l$ lo stesso $l-$ciclo $\blacksquare$.
+
+
+Fissiamo una permutazione $\sigma \in S_{n}$. Consideriamo sull'insieme $X=\left\{ 1,\dots,n \right\}$, la relazione binaria $\sim_{\sigma}$ così definita: per ogni $a,b\in X$ poniamo $a\sim_{\sigma}b$ se esiste un intero $i$ tale che $\sigma^{i}(a)=b$.
+
+*Proposizione*:
+La relazione $\sim_{\sigma}$ è di equivalenza.
+
+*Dimostrazione*:
+Per ogni $a\in X,\, \sigma^{0}(a)=id(a)=a$, quindi $a\sim_{\sigma}a$. Siano $a,b\in X$ tali che $a\sim_{\sigma}b$, allora esiste un intero $i$ tale che $\sigma^{i}(a)=b$. Ma allora $a=(\sigma^{i})^{-1}(b)=\sigma^{-1}(b)$, quindi $b\sim_{\sigma}a$.
+Siano $a,b,c\in X$ tali che $a\sim_{\sigma}b$ e $b\sim_{\sigma}c$. Allora esistono interi $i,j$ tali che $\sigma^{i}(a)=b$ e $\sigma^{j}(b)=c$. Ma allora $c=\sigma^{j}(\sigma^{i}(a))=\sigma^{j}\sigma^{i}(a)=\sigma^{i+j}(a)$, quindi $a\sim_{\sigma}c\,\blacksquare$.
+
+*Definizione*:
+Per ogni $a\in X$, la classe di equivalenza di $a$ rispetto alla relazione $\sim_{\sigma}$ si dice orbita di $a$ sotto l'azione $\sigma$. Si denota con $\Omega_{\sigma}(a)$. Si ha $\Omega_{\sigma}(a)=\left\{ \sigma^{i}(a)|\,i \in \mathbb{Z} \right\}$. Gli insiemi $\Omega_{\sigma}(a)$, al variare di $a$ in $X$ si dicono le orbite di $\sigma$.
+
+*Proposizione*:
+Sia $a\in X$. Allora esiste un intero positivo $l$ tale che $$
+\Omega_{\sigma}(a)=\left\{ \sigma^{0}(a),\dots,\sigma^{l-1}(a) \right\},
+$$
+ove gli elementi elencati sono a due a due distinti.
+
+*Dimostrazione*:
+Essendo $\Omega_{\sigma}(a)\subset X$, l'insieme $\Omega_{\sigma}(a)$ è finito. Quindi esistono $i,j\in \mathbb{Z},\,i>j$, tali che $\sigma^{i}(a)=\sigma^{j}(a)$. Pertanto $\sigma^{-j+1}(a)=\sigma^{-j}(\sigma^{i}(a))=a$. Poiché $i-j>0$, l'insieme $$
+\left\{ n\in \mathbb{Z},\,n>0|\, \sigma^{n}(a)=a \right\} 
+$$
+è non vuoto, e quindi ammette un minimo, $l$. Sia $i\in \mathbb{Z}$. Siano $q,r$ quoziente e resto della divisione di $i$ per $l$. Allora $$
+\sigma^{i}(a)=\sigma^{r+lq}(a)=\sigma^{r}((\sigma^{l})^{q}(a))=\sigma^{r}(a),
+$$
+poiché $\sigma^{l}(a)=a$, e, più in generale, $(\sigma^{l})^{h}(a)=a$ per ogni intero $h$. Siccome $0\leq r\leq l-1$, ciò prova che $\Omega_{\sigma}(a)\subset \left\{ \sigma^{0}(a),\dots,\sigma^{l-1}(a) \right\}$.
+L'altra inclusione è ovvia. Ciò prova l'uguaglianza voluta $\blacksquare$. 
+
+Il numero $l$ è la cardinalità dell'insieme $\Omega_{\sigma}(a)$. Per questo lo si dice lunghezza dell'orbita $\Omega_{\sigma}(a)$.
+
+*Definizione*:
+La permutazione ciclica $(\sigma^{0}(a),\dots,\sigma^{l-1}(a))$ si dice ciclo associato all'orbita di $a$ sotto l'azione $\sigma$. 
+
+*Osservazione*:
+1. Il ciclo associato ad ogni orbita di lunghezza $1$ (l'orbita banale) è la permutazione identica.
+2. Sia $\gamma=(\sigma^{0}(a),\dots,\sigma^{l-1}(a))$ il ciclo associato a $\Omega_{\sigma}(a)$. Allora $\gamma=(a,\gamma(a),\dots,\gamma^{l-1}(a))$ e in particolare $\sigma(a)=\gamma(a)$. Inoltre $\Omega_{\sigma}(a)=\Omega_{\gamma}(a)$.
+
+*Definizione*:
+Si dice supporto di una permutazione l'insieme degli elementi che essa non lascia fissi.
+
+*Osservazione*:
+1. La permutazione identica è l'unica a supporto vuoto.
+2. Se $l>1$, il supporto del ciclo $(a_{1},\dots,a_{l})$ è $\left\{ a_{1},\dots,a_{l} \right\}$, che è anche la sua unica orbita non banale.
+
+*Definizione*:
+Due permutazioni si dicono disgiunte se hanno supporti disgiunti.
+
+*Osservazione*:
+I cicli associati ad una permutazione sono a due a due disgiunti. 
+
+*Lemma*:
+Il prodotto tra permutazioni disgiunte è commutativo.
+
+*Dimostrazione*:
+Siano $\sigma_{1},\sigma_{2}\in S_{n}$ permutazioni disgiunte. Sia $a\in X$. Allora $a$ non appartiene al supporto di $\sigma_{1}$ oppure non appartiene al supporto di $\sigma_{2}$. Senza perdita di generalità sia il secondo caso. Allora $a$ è lasciato fisso da $\sigma_{2}$, quindi $\sigma_{1}\sigma_{2}(a)=\sigma_{1}(a)$.
+Se $\sigma_{1}(a)=a$ allora $\sigma_{1}\sigma_{2}(a)=\sigma_{1}(a)=\sigma(2)\sigma_{1}(a)$. Altrimenti l'orbita $\Omega_{\sigma_{1}}(a)$ non è banale ed è quindi contenuta nel supporto di $\sigma_{1}$. Ma allora $\sigma_{1}(a)$ non appartiene al supporto di $\sigma_{2}$. Pertanto $\sigma_{2}\sigma_{1}(a)=\sigma_{1}(a)$. Segue quindi che $\sigma_{1}\sigma_{2}=\sigma_{2}\sigma_{1}\,\blacksquare$.
