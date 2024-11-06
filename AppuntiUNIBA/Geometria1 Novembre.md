@@ -197,3 +197,154 @@ Se, invece, $n>r$. Sempre per il teorema di Rouché-Capelli esistono $v_{1},\dot
 
 *Osservazione*:
 Stiamo dicendo che $\dim Ker(A)+rg^{Row}(A)=n$.
+
+
+----------
+
+**Spazio delle applicazioni lineari e spazio duale**
+
+Siano $S,T:V\to W$ applicazioni lineare definite su $V$ e $W$ spazi vettoriali sul campo $\mathbb{F}$. Sia $\lambda \in \mathbb{F}$. 
+
+*Definizione*:
+$$
+S+T:V\to W,\,\lambda S:V\to W
+$$
+dove:
+$$
+(S+T)(v)=S(v)+T(v),
+$$
+$$
+\lambda S(v)=\lambda S(v).
+$$
+*Osservazione*:
+Se $S,T$ sono applicazioni lineari, allora $S+T$ e $\lambda S$ sono applicazioni lineari.
+
+*Dimostrazione*:
+Dimostriamo che $S+T$ è lineare. Siano $v_{1},v_{2}\in V$ e $\alpha_{1},\alpha_{2}\in \mathbb{F}$. Allora: $$
+(S+T)(\alpha_{1}v_{1}+\alpha_{2}v_{2})=S(\alpha_{1}v_{1}+\alpha_{2}v_{2})+T(\alpha_{1}v_{1}+\alpha_{2}v_{2}) =
+$$
+$$
+=\alpha_{1}S(v_{1})+\alpha_{2}S(v_{2})+\alpha_{1}T(v_{1})+\alpha_{2}T(v_{2})=
+$$
+$$
+=\alpha_{1}(S(v_{1})+T(v_{1}))+\alpha_{2}(S(v_{2})+T(v_{2}))=\alpha_{1}(S+T)(v_{1})+\alpha_{2}(S+T)(v_{2})\,\blacksquare.
+$$
+
+*Osservazione*:
+Si può mostrare che la somma e il prodotto per scalare appena introdotti verificano gli assiomi di spazio vettoriale.
+
+*Definizione*:
+L'insieme $\mathcal{L}(V,W)$ delle applicazioni lineari da $V$ in $W$ munito delle operazioni di somma e prodotto per scalare è uno spazio vettoriale.
+Lo spazio $\mathcal{L}(V,\mathbb{F})$ viene detto spazio duale di $V$. Denoteremo il duale di $V$ con $V'$, $V^{*}$,$V^{V}$.
+
+*Definizione*:
+Sia $V$ spazio vettoriale sul campo $\mathbb{F}$, e sia $V^{*}$ il suo spazio duale. Sia $\mathcal{B}=\left( v_{1},\dots,v_{n} \right)$ una base di $V$. Definiamo la base duale $\mathcal{B}^{*}$ di $\mathcal{B}$, quella tale che: $\mathcal{B}^{*}=(f_{1},\dots,f_{n})$, dove $f_{i}:V\to \mathbb{F}$ tale che:
+$$f_{i}(v_{j})=\delta_{i,j}=\begin{cases}
+0&\text{ se } i\neq j \\
+1&\text{ se }i=j
+\end{cases}$$
+$\delta_{i,j}$ si dice delta (o simbolo) di Kronecker.
+Ad esempio $f_{1}(v_{1})=1$ e $f_{1}(v_{2})=f_{1}(v_{2})=\dots=f_{1}(v_{n})=0$.
+
+*Esempio*:
+Sia $V=\mathbb{R}^{3}$, sia $\mathcal{B}=\left( e_{1},e_{2},e_{3} \right)$, la base canonica.
+$(\mathbb{R}^{3})^{*}=\left\{ f:\mathbb{R}^{3}\to \mathbb{R}|\,f \text{ è lineare} \right\}$. Ad esempio $g:\mathbb{R}^{3}\to \mathbb{R}$, $g\begin{pmatrix}x_{1}\\x_{2}\\x_{3}\end{pmatrix}=3x_{1}-2x_{2}-x_{3}$, oppure $h:\mathbb{R}^{3}\to \mathbb{R}$, $h\begin{pmatrix}x_{1}\\x_{2}\\x_{3}\end{pmatrix}=-x_{1}+x_{3}$.
+Cerchiamo $\mathcal{B}^{*}=\left( f_{1},f_{2},f_{3} \right)$ base duale di $\mathcal{B}$.
+$f_{1}:\mathbb{R}^{3}\to \mathbb{R}$ è un'applicazione lineare tale che $f_{1}(e_{1})=1$ e $f_{1}(e_{2})=f_{1}(e_{3})=0$.
+$f_{1}\begin{pmatrix}x_{1}\\x_{2}\\x_{3}\end{pmatrix}=\alpha_{1}x_{1}+\alpha_{2}x_{2}+\alpha_{3}x_{3}$.
+Deve valere che $f_{1}\begin{pmatrix}1\\0\\0\end{pmatrix}=\alpha_{1}=1$. $f_{1}\begin{pmatrix}0\\1\\0\end{pmatrix}=\alpha_{2}=0$. $f_{1}\begin{pmatrix}0\\0\\1\end{pmatrix}=\alpha_{3}=0$.
+Quindi $f_{1}:\mathbb{R}^{3}\to \mathbb{R}$ è la funzione $f_{1}\begin{pmatrix}x_{1}\\x_{2}\\x_{3}\end{pmatrix}=x_{1}$. Con gli stessi conti $f_{2}\begin{pmatrix}x_{1}\\x_{2}\\x_{3}\end{pmatrix}=x_{2}$ e $f_{3}\begin{pmatrix}x_{1}\\x_{2}\\x_{3}\end{pmatrix}=x_{3}$.
+
+Sempre in $\mathbb{R}^{3}$, sia $\mathcal{C}=\left( v_{1}=\begin{pmatrix}1\\2\\0\end{pmatrix},v_{2}=\begin{pmatrix}0\\0\\3\end{pmatrix},v_{3}=\begin{pmatrix}1\\1\\1\end{pmatrix} \right)$. Cerchiamo $\mathcal{C}^{*}=\left( g_{1},g_{2},g_{3} \right)$, $g_{i}:\mathbb{R}^{3}\to \mathbb{R}$ tali che $g_{i}(v_{j})=\delta_{i,j}$.
+Sappiamo che $\forall v=\begin{pmatrix}x_{1}\\x_{2}\\x_{3}\end{pmatrix}\in V,\,\exists!\gamma_{1},\gamma_{2},\gamma_{3}\in \mathbb{R}$ tali che $v=\gamma_{1}v_{1}+\gamma_{2}v_{2}+\gamma_{3}v_{3}$.
+Quindi $g_{1}\begin{pmatrix}x_{1}\\x_{2}\\x_{3}\end{pmatrix}=\gamma_{1},\,g_{2}\begin{pmatrix}x_{1}\\x_{2}\\x_{3}\end{pmatrix}=\gamma_{2},\,g_{3}\begin{pmatrix}x_{1}\\x_{2}\\x_{3}\end{pmatrix}=\gamma_{3}$.
+Calcoliamo $\gamma_{1},\gamma_{2},\gamma_{3}$.
+$$
+\begin{cases}
+x_{1}=\gamma_{1} +\gamma_{3}\\
+x_{2}=2\gamma_{1}+\gamma_{3}\\
+x_{3}=3\gamma_{2}+\gamma_{3}
+\end{cases}=
+\begin{cases}
+\gamma_{1}=x_{1}-\gamma_{3} \implies \gamma_{1}=-x_{1}+x_{2} \\
+x_{2}=2\gamma_{1}-2x_{1}-2\gamma_{3}+\gamma_{3} \implies \gamma_{3}=2x_{1}-x_{2} \\
+\gamma_{2}=\frac{1}{3}(-2x_{1}+x_{2}+x_{3}).
+\end{cases}
+$$
+Allora, $g_{1}\begin{pmatrix}x_{1}\\x_{2}\\x_{3}\end{pmatrix}=-x_{1}+x_{2}$. $g_{1}(v_{1})=1$, $g_{1}(v_{2})=0$, $g_{1}(v_{3})=0$.
+$g_{2}\begin{pmatrix}x_{1}\\x_{2}\\x_{3}\end{pmatrix}=-\frac{2}{3}x_{1}+\frac{1}{3}x_{2}+\frac{1}{3}x_{3}$ e $g_{3}\begin{pmatrix}x_{1}\\x_{2}\\x_{3}\end{pmatrix}=2x_{1}-x_{2}$.
+
+*Esercizio*:
+In $\mathbb{R}_{3}[x]$ calcolare la base duale di $\mathcal{B}=\left( 2t-1,3t^{2}+2,t^{3}+t,t^{2} \right)$.
+
+------
+Ricordiamo che se $f:A\to B$ e $g:C\to D$ funzioni. Se $B\subset C$ possiamo definire la composizione $g\circ f:A\to D$. Definita come $(g\circ f)(a)=g(f(a))$.
+
+*Proposizione*:
+Se $S:U\to V$ e $T:V\to W$ sono applicazioni lineari tra gli spazi vettoriali $U,V,W$ sul campo $\mathbb{F}$. Allora la composizione $T\circ S:U\to W$ è lineare.
+
+*Dimostrazione*:
+Siano $u_{1},u_{2}\in U,\,\alpha_{1},\alpha_{2}\in \mathbb{F}$. Allora $(T\circ S)(\alpha_{1}u_{1}+\alpha_{2}u_{2})=$ $$
+=T(S(\alpha_{1}u_{1}+\alpha_{2}u_{2}))=T(\alpha_{1}S(u_{1})+\alpha_{2}S(u_{2}))=\alpha_{1}T(S(u_{1}))+\alpha_{2}T(S(u_{2})).
+$$
+Allora: $$
+=\alpha_{1}(T\circ S)(u_{1}) + \alpha_{2}(T\circ S)(u_{2})\,\blacksquare.
+$$
+*Osservazione*:
+Ogni volta che sono ben definite, valgono le seguenti uguaglianze:
+1. $((S_{1}+S_{2}))\circ T=S_{1}\circ T +S_{2}\circ T$
+2. $(S\circ (T_{1}+T_{2}))=(S\circ T_{1})+(S\circ T_{2})$
+3. $((\lambda S)\circ T)=\lambda(S\circ T)= (S\circ (\lambda T))$.
+
+*Esempio*:
+$S:\mathbb{R}^{2}\to \mathbb{R}^{4}$, $T:\mathbb{R}^{4}\to \mathbb{R}^{3}$. Con $S\begin{pmatrix}x_{1}\\x_{2}\end{pmatrix}=\begin{pmatrix}-x_{1}+x_{2}\\2x_{1}\\x_{1}-3x_{2}\\x_{2}\end{pmatrix}$, e $T\begin{pmatrix}y_{1}\\y_{2}\\y_{3}\\y_{4}\end{pmatrix}=\begin{pmatrix}y_{1}-y_{2}\\y_{1}+y_{3}\\y_{1}+y_{2}+y_{3}\end{pmatrix}$.
+Si può definire $(T\circ S)$ ma non $(S\circ T)$. 
+Quindi $(T\circ S)\begin{pmatrix}x_{1}\\x_{2}\end{pmatrix}=T\left( S\begin{pmatrix}x_{1}\\x_{2}\end{pmatrix} \right)=T\begin{pmatrix}-x_{1}+x_{2}\\2x_{1}\\x_{1}-3x_{2}\\x_{2}\end{pmatrix}=\begin{pmatrix}-x_{1}+x_{2}-2x_{1}\\-x_{1}+x_{2}-3x_{2}\\-x_{1}+x_{2}+2x_{1}+x_{1}-3x_{2}\end{pmatrix}=\begin{pmatrix}-3x_{1}+x_{2}\\-2x_{2}\\2x_{1}-x_{2}\end{pmatrix}$.
+
+Se $S:V\to W$ e $T:W\to V$ posso definire sia $(S\circ T)$ che $(T\circ S)$.
+
+Vale che per ogni spazio vettoriale $V$, abbiamo definito $id_{V}:V\to V$ tale che $\forall v\in V,\,id_{V}(v)=v$.
+In particolare $S(id_{V}(v))=S(v)=id_{W}(S(v))=S(v)$.
+Cioè l'applicazione identica è l'elemento neutro della composizione tra applicazioni lineari.
+
+Ci chiediamo quando $(S\circ T)$ è l'inversa di $(T\circ S)$.
+
+*Definizione*:
+Diremo che un'applicazione lineare $T:V\to W$ è invertibile se $\exists S:W\to V$, applicazione lineare, tale che $(T\circ S)=id_{W}$ e $(S\circ T)=id_{V}$.
+
+*Osservazione*:
+La composizione di funzioni è associativa.
+
+*Proposizione*:
+Se $T:V\to W$ è invertibile, allora ammette un'unica inversa. Che denoteremo con $T^{-1}$.
+
+
+*Dimostrazione*:
+Siano $S_{1},S_{2}:W\to V$ inverse di $T$. Allora: $$
+(T\circ S_{1})=(T\circ S_{2})=id_{W}
+$$
+e anche $$
+(S_{1}\circ T)=(S_{2}\circ T)=id_{V}.
+$$
+Dimostriamo che $S_{1}=S_{2}$. $$
+S_{1}=(S_{1}\circ id_{W})=(S_{1}\circ (T\circ S_{2}))=((S_{1}\circ T)\circ S_{2})= (id_{V}\circ S_{2})=S_{2}\,\blacksquare.
+$$
+*Proposizione*:
+Sia $T:V\to W$ lineare. T è invertibile se e solo se $T$ è bigettiva.
+
+*Dimostrazione*:
+$T$ è bigettiva se e solo se $\exists S:W\to V$ tale che $(S\circ T)=id_{V}$.
+Dimostriamo che $S$ è lineare. Siano $w_{1},w_{2}\in W$ e siano $\beta_{1},\beta_{2}\in \mathbb{F}$. Allora valutiamo $$
+S(\beta_{1}w_{1}+\beta_{2}w_{2}).
+$$
+Essendo $T$ bigettiva, è anche suriettiva, quindi $\exists v_{1},v_{2}\in V$ tali che $T(v_{1})=w_{1}$ e $T(v_{2})=w_{2}$. Allora $$
+S(\beta_{1}T(v_{1})+\beta_{2}T(v_{2}))=S(T(\beta_{1}v_{1}+\beta_{2}v_{2}))=$$$$=(S\circ T)(\beta_{1}v_{1}+\beta_{2}v_{2})=\beta_{1}v_{1}+\beta_{2}v_{2}=\beta_{1}S(w_{1})+\beta_{2}S(w_{2})\,\blacksquare.
+$$
+*Corollario*:
+Sia $T:V\to W$ lineare con $\dim V=\dim W$. Allora sono fatti equivalenti: 
+1. $T$ è invertibile
+2. $T$ è iniettiva
+3. $T$ è suriettiva.
+
+*Definizione*:
+Siano $V$ e $W$ spazi vettoriali tali che $\exists\, T:V\to W$ lineare e invertibile. Allora $V$ e $W$ si dicono isomorfi e $T$ si dice isomorfismo.

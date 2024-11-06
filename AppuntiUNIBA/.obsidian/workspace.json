@@ -8,15 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "701427263975a61a",
+            "id": "cc47dbff562089a4",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Geometria1_04-11-2024.pdf"
+                "file": "Geometria1 Novembre.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "Geometria1_04-11-2024"
+              "icon": "lucide-file",
+              "title": "Geometria1 Novembre"
             }
           }
         ]
@@ -91,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Geometria1_04-11-2024.pdf",
+                "file": "Geometria1 Novembre.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Geometria1_04-11-2024"
+              "title": "Backlinks for Geometria1 Novembre"
             }
           },
           {
@@ -110,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Geometria1_04-11-2024.pdf",
+                "file": "Geometria1 Novembre.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Geometria1_04-11-2024"
+              "title": "Outgoing links from Geometria1 Novembre"
             }
           },
           {
@@ -137,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Geometria1_04-11-2024.pdf"
+                "file": "Geometria1 Novembre.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Geometria1_04-11-2024"
+              "title": "Outline of Geometria1 Novembre"
             }
           }
         ]
@@ -161,26 +163,26 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "701427263975a61a",
+  "active": "cc47dbff562089a4",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Geometria1_04-11-2024.pdf",
-    "Geomtria1_24-10-24.pdf",
     "Analisi1_04-11-2024.pdf",
-    "Analisi1_24-20-24.pdf",
-    "Analisi 1.md",
-    "Geometria 1.md",
     "Geometria1 Novembre.md",
+    "Geometria1_04-11-2024.pdf",
+    "Geometria1_06-11-2024.pdf",
+    "Analisi1_06-11-2024.pdf",
+    "Geometria 1.md",
+    "Analisi1 Novembre.md",
+    "Esercizi Analisi.md",
+    "Esercizi Geometria.md",
+    "Analisi 1.md",
+    "Geomtria1_24-10-24.pdf",
+    "Analisi1_24-20-24.pdf",
     "Esercitazioni Analisi.md",
     "Algebra 1.md",
     "Analisi1_22-10-24.pdf",
     "Geometria_22-10-24.pdf",
     "Analisi_22-10-24.pdf",
     "Geometria1_17-10-2024.pdf",
-    "Analisi1_17-10-2024.pdf",
-    "Geometria1.pdf",
-    "Esercizi Geometria.md",
-    "Esercizi Analisi.md",
     "Informatica.md",
     "preamble.sty.md",
     "Welcome.md"
